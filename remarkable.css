@@ -2,6 +2,53 @@ body,table tr{
     background-color:#fff
 }
 
+/* Add CSS from package.3liz.org */
+html, body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans",sans-serif;
+    color: #4b505a;
+    text-rendering: optimizeLegibility;
+    background-color: #f5f5f5;
+}
+
+article {
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid rgba(0,0,0,.1);
+    background-color: #ffffff;
+}
+
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('lizard_background.jpg');
+    background-color: #378250;
+    background-position: center;
+    background-size: cover;
+    padding: 10px 0 0 0;
+    min-height: 200px;
+    margin:0
+}
+
+header h1 {
+    text-align: center;
+    padding: 25px 0 55px;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: inherit;
+    line-height: 1.1;
+}
+/* End CSS from package.3liz.org */
+
 table tr td,table tr th{
     border:1px solid #ccc;
     text-align:left;
@@ -17,13 +64,14 @@ hr,pre code{
     background:0 0
 }
 
+/*
 body{
     font:16px Helvetica,Arial,sans-serif;
     line-height:1.4;
     color:#333;
     word-wrap:break-word;
     padding:10px 15px
-}
+}*/
 
 strong,table tr th{
     font-weight:700
