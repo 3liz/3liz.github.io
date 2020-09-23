@@ -132,13 +132,17 @@ ol{
     list-style-type:lower-roman
 }
 
+table {
+  border-collapse: collapse;
+}
+
 table tr{
     border-top:1px solid #ccc;
     margin:0
-    }
+}
 
 table tr:nth-child(2n){
-    background-color:#aaa
+    background-color:#EEEEEE
 }
 
 table tr td :first-child,table tr th :first-child{
