@@ -12,6 +12,11 @@ body {
     background-color: #f5f5f5;
 }
 
+.icon{
+    width: 100%;
+    max-width: 15px;
+    margin: 0px 10px;
+}
 
 header {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('lizard_background.jpg');
