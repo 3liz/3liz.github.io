@@ -9,16 +9,16 @@
     <h1>Custom QGIS Repository</h1>
 </header>
 <article>
+    <a href="index.html">Back</a>
     <h2>Add a custom QGIS plugin repository</h2>
-    <p>If you have a custom QGIS plugin URL repository, you can add it to QGIS.</p>
     <p>In your plugin manager, go in the <b>Settings</b> tab.</p>
     <img src="media/qgis_plugin_repository_list.png" />
-    <p>Click <b>Add...</b></p>
+    <p>Click <b>Add…</b></p>
     <img src="media/qgis_plugin_repository_detail.png" />
     <p>
         Fill required information with
         <ul>
-            <li><b>Name</b> : Name of the repository, for instance <pre>Plugin 3Liz</pre></li>
+            <li><b>Name</b> : Name of the repository, for instance <pre>Plugin 3Liz XXX</pre>. The name is free.</li>
             <li><b>URL</b> : URL which have been provided in the email, for instance <pre>https://github.com/3liz/lizmap-plugin/releases/latest/download/plugins.xml</pre></li>
             <li>Press <b>OK</b> if your plugin does not require any authentication. If your plugin requires one, read below.</li>
             <li>Press <b>Reload repositories</b> to fetch the content of the new repository.</li> <b>This does not install the plugin, it's only adding a remote server where to find plugins.</b>
@@ -27,11 +27,11 @@
     <p>
         Before going to install the plugin, do not forget to
         <ul>
-            <li>use the <b>experimental</b> if the plugin is experimental or you won't be able to see it in the next step</li>
-            <li>use the <b>checks for updates on startup</b> to let QGIS informs you about any plugin update.</li>
+            <li>use the <b>experimental</b> checkbox if the plugin is experimental or you won't be able to see it in the next step</li>
+            <li>use the <b>checks for updates on startup</b> checkbox to let QGIS informs you automatically at regular interval about any plugin updates.</li>
         </ul>
     </p>
-    <p>Go back to the <b>All</b> tab to see all available plugin and search for the plugin name. You should be able to install it.</p>
+    <p>Go back to the <b>All</b> tab to see all available plugin and search for the plugin name in the search bar. You should be able to install it.</p>
     <h2>Add an authentification</h2>
     <p>The plugin might be protected by a login/password. In the dialog below, click <b>Edit</b> in the <b>Authentification</b> section.</p>
     <img src="media/qgis_plugin_repository_detail.png" />
@@ -47,7 +47,7 @@
             <li>Press <b>Save</b></li>
         </ul>
     </p>
-    <p>QGIS will fill with a random string the authentification token to access the repository. You can now follow again the previous documentation about <b>reloading repositories</b></p>
+    <p>QGIS will fill with a random string the authentification token to access the repository. You can now follow again the previous documentation about <b>reloading repositories</b>.</p>
     <img src="media/qgis_plugin_repository_detail_credentials.png" />
 </article>
 </body>
