@@ -24,6 +24,7 @@ Cet atelier concerne les utilisateurs des journées QGIS-FR décembre 2020 sur l
 
 ## Liens
 
+* Démo https://demo.lizmap.com
 * Hébergement Lizmap clé en main https://www.lizmap.com
 * Mailing-list Osgeo Lizmap
     * http://osgeo-org.1560.x6.nabble.com/Lizmap-f5416555.html
