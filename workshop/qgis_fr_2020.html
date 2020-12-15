@@ -1,0 +1,220 @@
+
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+  <title>Atelier Lizmap</title>
+  <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/styles/github.min.css" rel="stylesheet"/>
+  <link type="text/css" href="https://docs.3liz.org/remarkable.css" rel="stylesheet"/>
+  <link type="image/png" href="media/lizmap.png" rel="icon" >
+ </head>
+ <body>
+ <header class="header-container" style="">
+    <h1>Atelier Lizmap</h1>
+ </header>
+ <article>
+<h1 id="atelier-lizmap-journee-qgis-fr">Atelier Lizmap journée QGIS-FR</h1>
+<h2 id="pre-requis">Pré-requis</h2>
+<p>Cet atelier concerne les utilisateurs des journées QGIS-FR décembre 2020 sur l'atelier Lizmap :</p>
+<ul>
+<li>FTP Client</li>
+<li>QGIS 3.10  </li>
+<li>Extension Lizmap</li>
+<li>Projet QGIS de l'email</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li><a href="https://docs.lizmap.com/current/fr/">https://docs.lizmap.com/current/fr/</a></li>
+</ul>
+<h2 id="sommaire">Sommaire</h2>
+<div class="toc"><span class="toctitle">Table of content</span><ul>
+<li><a href="#atelier-lizmap-journee-qgis-fr">Atelier Lizmap journée QGIS-FR</a><ul>
+<li><a href="#pre-requis">Pré-requis</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#sommaire">Sommaire</a></li>
+<li><a href="#premiere-publication">Première publication</a></li>
+<li><a href="#prendre-en-main-linterface-lizmap">Prendre en main l'interface Lizmap</a></li>
+<li><a href="#legende">Légende</a></li>
+<li><a href="#table-attributaire">Table attributaire</a></li>
+<li><a href="#interactions-avec-les-popups">Interactions avec les popups</a></li>
+<li><a href="#edition-dune-couche">Édition d'une couche</a></li>
+<li><a href="#dataviz">Dataviz</a></li>
+<li><a href="#impression-pdf">Impression PDF</a><ul>
+<li><a href="#choix-de-la-zone-dimpression">Choix de la zone d'impression</a></li>
+<li><a href="#depuis-une-popup">Depuis une popup</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<h2 id="premiere-publication">Première publication</h2>
+<ul>
+<li>Ouvrir le projet</li>
+<li>Vérifier l'emprise  </li>
+<li>Dans les propriétés du projet :<ul>
+<li>Onglet <strong>Relations</strong>, ajouter toutes les relations automatiquemes</li>
+<li>Onglet <strong>QGIS Serveur</strong>,<ul>
+<li><strong>Capacités des services</strong>, mettre un <strong>titre</strong> et un <strong>résumé</strong></li>
+<li><strong>Capacité WMS</strong>, utiliser l'emprise actuelle du canevas</li>
+<li><strong>Capacité WFS</strong>, publier toutes les couches</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Ouvrir l'extension Lizmap et quitter.</li>
+<li>Transférer le projet (<code>.qgs</code> et <code>.cfg</code>) dans le dossier <code>theme_formation</code></li>
+</ul>
+<p><strong>Bonus</strong> si vous avez une petite image PNG.</p>
+<h2 id="prendre-en-main-linterface-lizmap">Prendre en main l'interface Lizmap</h2>
+<ul>
+<li>La carte</li>
+<li>Les dossiers</li>
+<li>L'interface d'administration</li>
+</ul>
+<h2 id="legende">Légende</h2>
+<ul>
+<li>Faire des groupes dans la légende<ul>
+<li><code>Saisie</code></li>
+<li><code>Données</code></li>
+<li><code>hidden</code>, avec <code>h</code> minuscule</li>
+</ul>
+</li>
+<li>Renommer les couches avec un nom plus présentable<ul>
+<li><strong>Exception</strong> pour l'orthophoto IGN, dans le groupe <code>hidden</code> avec comme nom <code>ign-photo</code></li>
+</ul>
+</li>
+</ul>
+<p><img alt="legend" src="./media/legend.png"></p>
+<ul>
+<li>Faire une symbologie rapide sur les communes :<ul>
+<li><strong>Catégorisation</strong> sur <code>name</code></li>
+<li>Astuce, changer le symbole pour enlever en partie le remplissage</li>
+<li>Enlever la ligne pour <code>Water</code></li>
+</ul>
+</li>
+<li>Manipulation dans l'extension Lizmap pour l'affichage</li>
+<li>Mettre des liens sur une couche : <ul>
+<li><code>media/metadata.pdf</code>, un lien vers un PDF, stocké dans le dossier <code>media</code></li>
+<li><code>https://fr.wikipedia.org/wiki/Liste_des_communes_de_la_Polyn%C3%A9sie_fran%C3%A7aise</code></li>
+</ul>
+</li>
+<li>Dans l'extension Lizmap, ajouter un <strong>fond</strong>, <strong>IGN France</strong>, <strong>Orthophoto</strong> avec la clée <code>pratique</code></li>
+</ul>
+<h2 id="table-attributaire">Table attributaire</h2>
+<ul>
+<li>Depuis l'extension, activer la table attributaire pour la couche des <strong>communes</strong>.</li>
+</ul>
+<h2 id="interactions-avec-les-popups">Interactions avec les popups</h2>
+<ul>
+<li>Dans l'extension Lizmap, activer les popups sur la couche <code>commune</code> en mode <code>auto</code>.</li>
+<li>Utiliser les alias sur un champ pour les "nettoyer" depuis les <strong>propriétés de la couche</strong> -&gt; 
+  <strong>Formulaire d'attributs</strong> -&gt; un champ en particulier -&gt; <strong>Alias</strong>.</li>
+<li>Faire une popup un mode <strong>QGIS</strong> :</li>
+</ul>
+<p><strong>Astuce</strong> : QGIS -&gt; <strong>Vue</strong> -&gt; <strong>Afficher les infobulles</strong> pour afficher directement dans QGIS.</p>
+<pre><code class="html">&lt;ul&gt;
+&lt;li&gt;[% &quot;name&quot; %]&lt;/li&gt;
+&lt;li&gt;[% &quot;population&quot; %]&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+<p>On peut aussi utiliser des expressions QGIS : 
+    * Mettre en majuscule le nom de la commune
+    * Afficher la population en rouge si moins de 20 000 habitants</p>
+<h2 id="edition-dune-couche">Édition d'une couche</h2>
+<p>On souhaite désormais rendre éditable une couche depuis l'interface web afin de pouvoir ajouter des <strong>observations</strong>.</p>
+<ul>
+<li>Dans QGIS, faire un essai du formulaire par défaut sur la couche des <strong>observations</strong>.</li>
+<li>Améliorer le formulaire dans QGIS<ul>
+<li>Propriétés de la couche -&gt; Formulaire d'attributs -&gt; Conception par glisser/déposer</li>
+<li>Supprimer le champ <code>id</code></li>
+<li>Faire 2 groupes : <code>Requis</code> et <code>Optionel</code></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Drag/drop form" src="./media/drag_and_drop.png"></p>
+<ul>
+<li>Configurer les champs :<ul>
+<li><code>fk_id_person</code> : <ul>
+<li>Alias <code>Observateur</code></li>
+<li>Référence de la relation avec <code>name</code></li>
+</ul>
+</li>
+<li><code>fk_id_specie</code> : <ul>
+<li>Alias <code>Espèce</code></li>
+<li>Valeur relationnelle <code>species</code> <code>id</code> et <code>es_nom_commun</code></li>
+</ul>
+</li>
+<li><code>date</code> : <ul>
+<li>Alias <code>Date</code></li>
+<li>Date/heure; par défaut</li>
+</ul>
+</li>
+<li><code>photo</code> : <ul>
+<li>Alias <code>Photo</code></li>
+<li>Pièce jointe</li>
+</ul>
+</li>
+<li><code>gender</code> : <ul>
+<li>Alias <code>Genre</code></li>
+<li>Liste de valeurs : <code>Mâle</code>, <code>Femelle</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Form values" src="./media/list_value.png"></p>
+<ul>
+<li>Une fois que le formulaire est OK dans Lizmap (à peu près 🙂), ajouter l'édition dans l'extension Lizmap pour cette couche.</li>
+</ul>
+<h2 id="dataviz">Dataviz</h2>
+<ul>
+<li>Ajouter une diagramme en bar concernant la population sur la couche des communes.</li>
+<li>Ajouter un camembert de la répartition des observateurs<ul>
+<li>Ajouter un champ virtuel dans observateurs</li>
+</ul>
+</li>
+</ul>
+<pre><code>relation_aggregate(
+    relation:='observation_fk_id_person_fkey',
+    aggregate:='count',
+    expression:=&quot;id&quot;
+)
+</code></pre>
+
+<ul>
+<li>Pour le moment, ce ne sont que des Dataviz à l'échelle d'une couche. Il est possible de faire des graphiques
+  pour une entité, par ex, pour un observateur, on souhaite la répartition des genres de ses observations</li>
+</ul>
+<h2 id="impression-pdf">Impression PDF</h2>
+<h3 id="choix-de-la-zone-dimpression">Choix de la zone d'impression</h3>
+<ul>
+<li>Dans le projet QGIS, il y a déjà une mise en page.<ul>
+<li>Activer l'impression dans l'extension Lizmap</li>
+<li>Personnaliser la zone de titre.</li>
+</ul>
+</li>
+</ul>
+<h3 id="depuis-une-popup">Depuis une popup</h3>
+<ul>
+<li>Dupliquer la mise en page et en faire un atlas : <ul>
+<li>Activer l'atlas sur les communes</li>
+<li>Changer le titre pour afficher le nom de la commune</li>
+<li>Configurer la carte pour suivre l'atlas.</li>
+</ul>
+</li>
+</ul>
+  </article>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.1/highlight.min.js">
+  </script>
+  <script>
+   hljs.initHighlightingOnLoad();
+  </script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   MathJax.Hub.Config({"showProcessingMessages" : false,"messageStyle" : "none","tex2jax": { inlineMath: [ [ "$", "$" ] ] }});
+  </script>
+ </body>
+</html>
