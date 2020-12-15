@@ -5,6 +5,10 @@ Favicon: media/lizmap.png
 
 # Atelier Lizmap journée QGIS-FR
 
+## Sommaire
+
+[TOC]
+
 ## Pré-requis
 
 Cet atelier concerne les utilisateurs des journées QGIS-FR décembre 2020 sur l'atelier Lizmap :
@@ -18,9 +22,16 @@ Cet atelier concerne les utilisateurs des journées QGIS-FR décembre 2020 sur l
 
 * https://docs.lizmap.com/current/fr/
 
-## Sommaire
+## Liens
 
-[TOC]
+* Hébergement Lizmap clé en main https://www.lizmap.com
+* Mailing-list Osgeo Lizmap
+    * http://osgeo-org.1560.x6.nabble.com/Lizmap-f5416555.html
+    * https://lists.osgeo.org/mailman/listinfo/lizmap
+* Compte Twitter https://twitter.com/LizmapForQgis
+* Code source
+    * Lizmap Web Client https://github.com/3liz/lizmap-web-client/
+    * 3Liz https://github.com/3liz/
 
 ## Première publication
 
