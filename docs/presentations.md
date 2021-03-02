@@ -5,4 +5,4 @@ hide:
 
 # Presentations
 
-* [Lizmap](./lizmap-presentation/)
+* [Lizmap](../lizmap-presentation/)
