@@ -1,1 +1,8 @@
+# IDE
 .idea/
+
+# Python
+.venv/
+
+# Mkdocs
+build/

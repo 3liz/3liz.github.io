@@ -1,13 +1,4 @@
----
-Title: Atelier Lizmap
-Favicon: media/lizmap.png
-...
-
-# Atelier Lizmap journée QGIS-FR
-
-## Sommaire
-
-[TOC]
+# Atelier Lizmap journée QGIS-FR 2020
 
 ## Pré-requis
 

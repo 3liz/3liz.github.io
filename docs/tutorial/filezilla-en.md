@@ -1,12 +1,4 @@
----
-Title: FileZilla
-Favicon: ../favicon.png
-Up: True
-...
-
-[TOC]
-
-# Utilisation de filezilla
+# Filezilla
 
 ## Installation
 
@@ -21,11 +13,11 @@ https://filezilla-project.org/download.php?type=client
 * 2 Ouvrez **FileZilla Client**
 * 3 Cliquez sur le premier icône dans la barre d'outils
 
-![Filezilla](../media/filezilla/ftp_1.jpg)
+![Filezilla](./media/ftp_1.jpg)
 
 * 4 **Nouveau site**
 
-![Filezilla](../media/filezilla/ftp_2.jpg)
+![Filezilla](./media/ftp_2.jpg)
 
 * 5 Complétez les informations :
     * **1** : Protocol : `FTP`
@@ -35,7 +27,7 @@ https://filezilla-project.org/download.php?type=client
     * **5** : User : Le nom d'utilisateur reçu par email
     * **6** : Password : Le mot de passe reçu par email
 
-![Filezilla](../media/filezilla/ftp_3.jpg)
+![Filezilla](./media/ftp_3.jpg)
 
 **Note**, il est possible de synchroniser la navigation dans l'onglet **Avancé**.
 
@@ -43,11 +35,11 @@ https://filezilla-project.org/download.php?type=client
 
 * 7 En utilisant le deuxième bouton dans la barre d'outils, vous pouvez vous connecter au serveur FTP
 
-![Filezilla](../media/filezilla/ftp_4.jpg)
+![Filezilla](./media/ftp_4.jpg)
 
 * 8 Vous devriez avoir un écran semblable à celui-ci : 
 
-![Filezilla](../media/filezilla/ftp_5.jpg)
+![Filezilla](./media/ftp_5.jpg)
 
 * Description de l'interface : 
   * En haut, des commandes FTP, pas besoin de s'inquiéter des messages
