@@ -21,6 +21,8 @@ et sur le dépôt officiel QGIS :
 
 https://plugins.qgis.org/plugins/QuickOSM/
 
+![QuickOSM](./media/quickosm.png)
+
 ## Objectifs du stage
 
 L'objectif global du stage est d'améliorer l'extension QuickOSM sur plusieurs points.
