@@ -61,6 +61,8 @@ etc.
 
 # Compétences qui seront approfondies
 
+De formation bac+2 à bac+3 en géomatique ou informatique, vous souhaitez approfondir les points suivants :
+
 * Language Python
 * API PyQGIS, PyQt et Qt
 * Écriture des tests unitaires
