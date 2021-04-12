@@ -16,7 +16,6 @@ nav:
         - 'QGIS Repository FR': 'tutorial/qgis-repository-fr.md'
         - 'QGIS Repository EN': 'tutorial/qgis-repository-en.md'
     - Internships:
-        - QuickOSM: 'internships/quickosm.md'
         - GSOC: 'internships/gsoc.md'
     - Workshops:
         - QGIS-FR-2020: 'workshop/qgis-fr-2020.md'
