@@ -1,0 +1,52 @@
+name: 🔀 Plugin repository merger
+on:
+  repository_dispatch:
+    types: [merge-plugins]
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+    steps:
+      - run: >
+         echo ${{ github.event.client_payload.name }}
+         echo ${{ github.event.client_payload.version }}
+         echo ${{ github.event.client_payload.url }}
+
+      - name: Get source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2.2.1
+        with:
+          python-version: 3.8
+
+      - name: Install qgis-plugin-repo
+        run: pip3 install qgis-plugin-repo
+
+      - name: Merge
+        run: qgis-plugin-repo ${{ github.event.client_payload.url }} docs/plugins.xml
+
+      - name: Check
+        run: cat docs/plugins.xml
+
+      - name: Git identity
+        run: |
+          git config --global user.email "${{ secrets.BOT_MAIL }}"
+          git config --global user.name "${{ secrets.BOT_NAME }}"
+
+      - name: Check for changes
+        run: |
+          if git diff --exit-code; then
+            echo "::set-env name=changes_exist::false"
+          else
+            echo "::set-env name=changes_exist::true"
+          fi
+
+      - name: Commit and push
+        if: env.changes_exist == 'true'
+        run: |
+          git add -u
+          git commit -m "Publish QGIS Plugin ${{ github.event.client_payload.name }} ${{ github.event.client_payload.version }}"
+          git push --force https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git HEAD:versions
