@@ -26,7 +26,7 @@ jobs:
         run: pip3 install qgis-plugin-repo
 
       - name: Merge
-        run: qgis-plugin-repo ${{ github.event.client_payload.url }} docs/plugins.xml
+        run: qgis-plugin-repo merge ${{ github.event.client_payload.url }} docs/plugins.xml
 
       - name: Check
         run: cat docs/plugins.xml
