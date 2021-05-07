@@ -71,4 +71,22 @@
         <repository>https://github.com/3liz/qgis-wfsOutputExtension</repository>
         <tags>server,format,wfs,ogc,lizmap,web,extension</tags>
     </pyqgis_plugin>
+<pyqgis_plugin name="Drain sewer visual inspection" version="0.2.0">
+        <description>Drain and sewer systems visual inspection coding system (EN 13508-2)</description>
+        <version>0.2.0</version>
+        <qgis_minimum_version>3.4</qgis_minimum_version>
+        <homepage>https://github.com/3liz/qgis_drain_sewer_visual_inspection</homepage>
+        <file_name>drain_sewer_visual_inspection.0.2.0.zip</file_name>
+        <icon>resources/icons/icon.png</icon>
+        <author_name>3liz</author_name>
+        <download_url>https://github.com/3liz/qgis_drain_sewer_visual_inspection/releases/download/0.2.0/drain_sewer_visual_inspection.0.2.0.zip</download_url>
+        <uploaded_by>3liz</uploaded_by>
+        <create_date>2021-05-07</create_date>
+        <update_date>2021-05-07</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/qgis_drain_sewer_visual_inspection/issues</tracker>
+        <repository>https://github.com/3liz/qgis_drain_sewer_visual_inspection</repository>
+        <tags>drain,sewer,pipe,pipeline,inspection,EN13508,water,hydraulic,pvi</tags>
+    </pyqgis_plugin>
 </plugins>
