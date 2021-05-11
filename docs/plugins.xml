@@ -89,4 +89,22 @@
         <repository>https://github.com/3liz/qgis_drain_sewer_visual_inspection</repository>
         <tags>drain,sewer,pipe,pipeline,inspection,EN13508,water,hydraulic,pvi</tags>
     </pyqgis_plugin>
+<pyqgis_plugin name="V&#233;loroutes Voies Vertes" version="0.9.2">
+        <description>Standard COVADIS v&#233;loroutes et voies vertes</description>
+        <version>0.9.2</version>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <homepage>https://github.com/3liz/qgis-veloroutes_voies_vertes-plugin</homepage>
+        <file_name>veloroutes_voies_vertes.0.9.2.zip</file_name>
+        <icon>resources/icons/icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/qgis-veloroutes_voies_vertes-plugin/releases/download/0.9.2/veloroutes_voies_vertes.0.9.2.zip</download_url>
+        <uploaded_by>3Liz</uploaded_by>
+        <create_date>2021-05-11</create_date>
+        <update_date>2021-05-11</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/qgis-veloroutes_voies_vertes-plugin</tracker>
+        <repository>https://github.com/3liz/qgis-veloroutes_voies_vertes-plugin</repository>
+        <tags>covadis,veloroutes</tags>
+    </pyqgis_plugin>
 </plugins>
