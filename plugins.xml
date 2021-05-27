@@ -107,4 +107,40 @@
         <repository>https://github.com/3liz/qgis-veloroutes_voies_vertes-plugin</repository>
         <tags>covadis,veloroutes</tags>
     </pyqgis_plugin>
+<pyqgis_plugin name="cadastre" version="1.11.0">
+        <description>This plugins helps users to use French land registry data, called Cadastre, in QGIS. It is only useful in</description>
+        <version>1.11.0</version>
+        <qgis_minimum_version>3.4</qgis_minimum_version>
+        <homepage>https://docs.3liz.org/QgisCadastrePlugin/</homepage>
+        <file_name>cadastre.1.11.0.zip</file_name>
+        <icon>icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/QgisCadastrePlugin/releases/download/1.11.0/cadastre.1.11.0.zip</download_url>
+        <uploaded_by>Gustry</uploaded_by>
+        <create_date>2021-05-21</create_date>
+        <update_date>2021-05-21</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/QgisCadastrePlugin/issues</tracker>
+        <repository>https://github.com/3liz/QgisCadastrePlugin</repository>
+        <tags>cadastre, france, majic, edigeo, import</tags>
+    </pyqgis_plugin>
+<pyqgis_plugin name="PgMetadata" version="1.0.0">
+        <description>Store some metadata about layers which are stored in PostgreSQL. It's possible to define title, abstract, links, contacts etc. It also provides some search tool, in the QGIS Locator bar for instance.</description>
+        <version>1.0.0</version>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <homepage>https://docs.3liz.org/qgis-pgmetadata-plugin/</homepage>
+        <file_name>pg_metadata.1.0.0.zip</file_name>
+        <icon>resources/icons/icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/qgis-pgmetadata-plugin/releases/download/1.0.0/pg_metadata.1.0.0.zip</download_url>
+        <uploaded_by>Gustry</uploaded_by>
+        <create_date>2021-05-27</create_date>
+        <update_date>2021-05-27</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/qgis-pgmetadata-plugin/issues</tracker>
+        <repository>https://github.com/3liz/qgis-pgmetadata-plugin</repository>
+        <tags>metadata,postgresql,qgis,metadonnees,dcat,xml,csv</tags>
+    </pyqgis_plugin>
 </plugins>
