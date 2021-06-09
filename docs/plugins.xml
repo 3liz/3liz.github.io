@@ -143,4 +143,22 @@
         <repository>https://github.com/3liz/QgisCadastrePlugin</repository>
         <tags>cadastre, france, majic, edigeo, import</tags>
     </pyqgis_plugin>
+<pyqgis_plugin name="QuickOSM" version="1.17.0">
+        <description>Download OSM data thanks to the Overpass API. You can also open local OSM or PBF files. A special parser, on top of OGR, is used to let you see all OSM keys available.</description>
+        <version>1.17.0</version>
+        <qgis_minimum_version>3.4</qgis_minimum_version>
+        <homepage>https://docs.3liz.org/QuickOSM/</homepage>
+        <file_name>QuickOSM.1.17.0.zip</file_name>
+        <icon>resources/icons/QuickOSM.svg</icon>
+        <author_name>Etienne Trimaille</author_name>
+        <download_url>https://github.com/3liz/QuickOSM/releases/download/1.17.0/QuickOSM.1.17.0.zip</download_url>
+        <uploaded_by>Gustry</uploaded_by>
+        <create_date>2021-06-09</create_date>
+        <update_date>2021-06-09</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/QuickOSM/issues</tracker>
+        <repository>https://github.com/3liz/QuickOSM</repository>
+        <tags>osm,openstreetmap,overpass,download,osmdownload,josm,remote,pbf,processing,modeler</tags>
+    </pyqgis_plugin>
 </plugins>
