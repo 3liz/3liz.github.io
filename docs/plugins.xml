@@ -107,24 +107,6 @@
         <repository>https://github.com/3liz/qgis-pgmetadata-plugin</repository>
         <tags>metadata,postgresql,qgis,metadonnees,dcat,xml,csv</tags>
     </pyqgis_plugin>
-<pyqgis_plugin name="QuickOSM" version="1.17.0">
-        <description>Download OSM data thanks to the Overpass API. You can also open local OSM or PBF files. A special parser, on top of OGR, is used to let you see all OSM keys available.</description>
-        <version>1.17.0</version>
-        <qgis_minimum_version>3.4</qgis_minimum_version>
-        <homepage>https://docs.3liz.org/QuickOSM/</homepage>
-        <file_name>QuickOSM.1.17.0.zip</file_name>
-        <icon>resources/icons/QuickOSM.svg</icon>
-        <author_name>Etienne Trimaille</author_name>
-        <download_url>https://github.com/3liz/QuickOSM/releases/download/1.17.0/QuickOSM.1.17.0.zip</download_url>
-        <uploaded_by>Gustry</uploaded_by>
-        <create_date>2021-06-09</create_date>
-        <update_date>2021-06-09</update_date>
-        <experimental>False</experimental>
-        <deprecated>False</deprecated>
-        <tracker>https://github.com/3liz/QuickOSM/issues</tracker>
-        <repository>https://github.com/3liz/QuickOSM</repository>
-        <tags>osm,openstreetmap,overpass,download,osmdownload,josm,remote,pbf,processing,modeler</tags>
-    </pyqgis_plugin>
 <pyqgis_plugin name="Mercicor" version="1.0.1">
         <description>Methodology for Scaling Mitigation and Compensatory Measures in Tropical Marine Ecosystems. The plugin is available in French only for now.; M&#233;thode biophysiques d&#8217;&#233;valuation des effets de l&#8217;am&#233;nagement sur l&#8217;environnement marin tropical. L'extension est disponible en Fran&#231;ais seulement.</description>
         <version>1.0.1</version>
@@ -178,5 +160,23 @@
         <tracker>https://github.com/3liz/QgisCadastrePlugin/issues</tracker>
         <repository>https://github.com/3liz/QgisCadastrePlugin</repository>
         <tags>cadastre, france, majic, edigeo, import</tags>
+    </pyqgis_plugin>
+<pyqgis_plugin name="QuickOSM" version="1.17.1">
+        <description>Download OSM data thanks to the Overpass API. You can also open local OSM or PBF files. A special parser, on top of OGR, is used to let you see all OSM keys available.</description>
+        <version>1.17.1</version>
+        <qgis_minimum_version>3.4</qgis_minimum_version>
+        <homepage>https://docs.3liz.org/QuickOSM/</homepage>
+        <file_name>QuickOSM.1.17.1.zip</file_name>
+        <icon>resources/icons/QuickOSM.svg</icon>
+        <author_name>Etienne Trimaille</author_name>
+        <download_url>https://github.com/3liz/QuickOSM/releases/download/1.17.1/QuickOSM.1.17.1.zip</download_url>
+        <uploaded_by>Gustry</uploaded_by>
+        <create_date>2021-06-24</create_date>
+        <update_date>2021-06-24</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/QuickOSM/issues</tracker>
+        <repository>https://github.com/3liz/QuickOSM</repository>
+        <tags>osm,openstreetmap,overpass,download,osmdownload,josm,remote,pbf,processing,modeler</tags>
     </pyqgis_plugin>
 </plugins>
