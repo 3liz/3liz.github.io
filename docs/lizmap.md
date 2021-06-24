@@ -14,3 +14,4 @@ Additional modules can be added on top of Lizmap
 * [French address module](../qgis-gestion_base_adresse-plugin/)
 * [French cadastre module](../QgisCadastrePlugin/)
 * [PgMetadata](../qgis-pgmetadata-plugin/)
+* [PgRouting](../lizmap-pgrouting-module/)
