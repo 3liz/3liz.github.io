@@ -5,6 +5,8 @@ hide:
 
 # QGIS Plugins
 
+## Desktop
+
 * [Drain Sewer Visual Inspection](../qgis_drain_sewer_visual_inspection/)
 * [French address](../qgis-gestion_base_adresse-plugin/)
 * [French cadastre](../QgisCadastrePlugin/)
@@ -16,3 +18,10 @@ hide:
 * [PgMetadata](../qgis-pgmetadata-plugin/)
 * [RAEPA](../qgis-raepa-plugin/)
 * [Véloroutes et voies vertes](../qgis-veloroutes_voies_vertes-plugin/)
+
+## Server
+
+* [AtlasPrint](https://github.com/3liz/qgis-atlasprint)
+* [French cadastre](../QgisCadastrePlugin/)
+* [Lizmap](https://docs.lizmap.com/current/en/publish/lizmap_plugin/index.html)
+* [WfsOutputExtension](https://github.com/3liz/qgis-wfsOutputExtension)
