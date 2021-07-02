@@ -25,3 +25,7 @@ hide:
 * [French cadastre](../QgisCadastrePlugin/)
 * [Lizmap](https://docs.lizmap.com/current/en/publish/lizmap_plugin/index.html)
 * [WfsOutputExtension](https://github.com/3liz/qgis-wfsOutputExtension)
+* [WMTS Cache](https://github.com/3liz/qgis-server-wmts-cache-plugin)
+
+
+To manage plugins on a server, you can use [QGIS-Plugin-Manager](https://github.com/3liz/qgis-plugin-manager).
