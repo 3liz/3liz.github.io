@@ -5,4 +5,9 @@ hide:
 
 # 3Liz
 
-Because documentation is so important.
+3Liz documentation about :
+
+* [Lizmap modules](./lizmap.md)
+* [QGIS Plugins](./plugins.md)
+* [Server tools](./tools.md)
+* etc

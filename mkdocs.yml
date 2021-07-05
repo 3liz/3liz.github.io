@@ -10,6 +10,7 @@ nav:
     - Home: index.md
     - Lizmap: lizmap.md
     - QGIS Plugins: plugins.md
+    - Tools: tools.md
     - Presentations: presentations.md
     - Tutorials:
         - 'Filezilla': 'tutorial/filezilla-en.md'
@@ -21,8 +22,11 @@ nav:
         - QGIS-FR-2020: 'workshop/qgis-fr-2020.md'
     - Links: 'links.md'
 
+plugins:
+  - search
+  - git-revision-date-localized
+
 markdown_extensions:
-  # - git-revision-date:
   - toc:
       permalink: "#"
   - meta:
@@ -69,3 +73,6 @@ extra:
 
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/u/3liz
+
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCYYW2CTWR_84kB6pt2zCWbQ
