@@ -14,6 +14,8 @@ nav:
     - Presentations: presentations.md
     - Tutorials:
         - 'Filezilla': 'tutorial/filezilla-en.md'
+        - 'WinSCP EN': 'tutorial/winscp-en.md'
+        - 'WinSCP FR': 'tutorial/winscp-fr.md'
         - 'QGIS Repository FR': 'tutorial/qgis-repository-fr.md'
         - 'QGIS Repository EN': 'tutorial/qgis-repository-en.md'
     - Internships:
