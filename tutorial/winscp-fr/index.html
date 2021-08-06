@@ -13,14 +13,14 @@
         <meta name="author" content="3Liz">
       
       
-        <link rel="canonical" href="https://docs.3liz.org/tutorial/filezilla-en/">
+        <link rel="canonical" href="https://docs.3liz.org/tutorial/winscp-fr/">
       
       <link rel="icon" href="../../media/logo.png">
       <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.2.2">
     
     
       
-        <title>Filezilla - 3Liz Documentation</title>
+        <title>WinSCP FR - 3Liz Documentation</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#filezilla" class="md-skip">
+        <a href="#winscp" class="md-skip">
           Skip to content
         </a>
       
@@ -97,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Filezilla
+              WinSCP FR
             
           </span>
         </div>
@@ -224,7 +224,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="./" class="md-tabs__link md-tabs__link--active">
+      <a href="../filezilla-en/" class="md-tabs__link md-tabs__link--active">
         Tutorials
       </a>
     </li>
@@ -409,6 +409,30 @@
             
   
   
+  
+    <li class="md-nav__item">
+      <a href="../filezilla-en/" class="md-nav__link">
+        Filezilla
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../winscp-en/" class="md-nav__link">
+        WinSCP EN
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
     
   
   
@@ -421,12 +445,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Filezilla
+          WinSCP FR
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Filezilla
+        WinSCP FR
       </a>
       
         
@@ -458,8 +482,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#arborescence-par-defaut" class="md-nav__link">
-    Arborescence par défaut
+  <a href="#default-tree" class="md-nav__link">
+    Default tree
   </a>
   
 </li>
@@ -468,30 +492,6 @@
   
 </nav>
       
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../winscp-en/" class="md-nav__link">
-        WinSCP EN
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../winscp-fr/" class="md-nav__link">
-        WinSCP FR
-      </a>
     </li>
   
 
@@ -665,8 +665,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#arborescence-par-defaut" class="md-nav__link">
-    Arborescence par défaut
+  <a href="#default-tree" class="md-nav__link">
+    Default tree
   </a>
   
 </li>
@@ -684,12 +684,12 @@
               
                 
                 
-                <h1 id="filezilla">Filezilla<a class="headerlink" href="#filezilla" title="Permanent link">#</a></h1>
+                <h1 id="winscp">WinSCP<a class="headerlink" href="#winscp" title="Permanent link">#</a></h1>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">#</a></h2>
 <ul>
 <li>
-<p>Vous devez télécharger et installer le logiciel <strong>FileZilla Client</strong> depuis ce lien : 
-<a href="https://filezilla-project.org/download.php?type=client">https://filezilla-project.org/download.php?type=client</a></p>
+<p>Vous devez télécharger et installer le logiciel <strong>WinSCP</strong> depuis ce lien: 
+<a href="https://winscp.net/eng/download.php">https://winscp.net/eng/download.php</a></p>
 </li>
 <li>
 <p>Une fois l'installation effectuée, vous pouvez enregistrer la connexion vers le serveur FTP.</p>
@@ -698,54 +698,55 @@
 <h2 id="enregistrement-de-votre-serveur-lizmap">Enregistrement de votre serveur Lizmap<a class="headerlink" href="#enregistrement-de-votre-serveur-lizmap" title="Permanent link">#</a></h2>
 <ul>
 <li>1 Par email, vous avez du recevoir les identifiants de connexions vers le serveur FTP.</li>
-<li>2 Ouvrez <strong>FileZilla Client</strong></li>
-<li>3 Cliquez sur le premier icône dans la barre d'outils</li>
+<li>2 Ouvrez <strong>WinSCP</strong>.</li>
+<li>3 Le panneau pour ajouter une nouvelle connexion s'ouvre automatiquement à la première ouverture du logiciel. Sinon cliquez sur le boutton <code>Nouvelle session</code> situé en haut à gauche de la fenêtre.</li>
 </ul>
-<p><img alt="Filezilla" src="../media/ftp_1.jpg" /></p>
+<p><img alt="WinSCP" src="./media/WinSCP_1.jpg" /></p>
 <ul>
 <li>4 <strong>Nouveau site</strong></li>
 </ul>
-<p><img alt="Filezilla" src="../media/ftp_2.jpg" /></p>
+<p><img alt="WinSCP" src="./media/WinSCP_2.jpg" /></p>
 <ul>
-<li>5 Complétez les informations :<ul>
-<li><strong>1</strong> : Protocol : <code>FTP</code></li>
-<li><strong>2</strong> : Host : <code>ftp.lizmap.com</code></li>
-<li><strong>3</strong> : Encryption : <code>Use explicit FTP over TLS if available</code></li>
-<li><strong>4</strong> : Logon type : <code>Normal</code></li>
-<li><strong>5</strong> : User : Le nom d'utilisateur reçu par email</li>
-<li><strong>6</strong> : Password : Le mot de passe reçu par email</li>
+<li>5 Complétez les informations:<ul>
+<li><strong>1</strong> : Protocole de fichier: <code>FTP</code></li>
+<li><strong>2</strong> : Chiffrement: <code>Chiffrement TSL/SSL explicite</code></li>
+<li><strong>3</strong> : Nom d'hôte: <code>ftp.lizmap.com</code></li>
+<li><strong>4</strong> : Numéro de Port: <code>21</code></li>
+<li><strong>5</strong> : Nom d'utilisateur: Le nom d'utilisateur reçu par email</li>
+<li><strong>6</strong> : Mot de passe: Le mot de passe reçu par email</li>
 </ul>
 </li>
 </ul>
-<p><img alt="Filezilla" src="../media/ftp_3.jpg" /></p>
-<p><strong>Note</strong>, il est possible de synchroniser la navigation dans l'onglet <strong>Avancé</strong>.</p>
+<p><img alt="WinSCP" src="./media/WinSCP_3.jpg" /></p>
 <ul>
-<li>
-<p>6 Validez l'ajout de cette connexion.</p>
-</li>
-<li>
-<p>7 En utilisant le deuxième bouton dans la barre d'outils, vous pouvez vous connecter au serveur FTP</p>
+<li>6 Cliquer sur sauver pour enregistrer le nouveau site:<ul>
+<li><strong>1</strong> : Enregistrer la session sous: Nom du site, ex: Lizmap</li>
+<li><strong>2</strong> : Enregistrer le mot de passe: Vous pouvez côcher la case si vous le souhaitez</li>
+<li><strong>3</strong> : Créer un raccourci sur le bureau: Permet d'avoir un accès direct au site via un raccourci sur votre burreau</li>
+</ul>
 </li>
 </ul>
-<p><img alt="Filezilla" src="../media/ftp_4.jpg" /></p>
+<p><img alt="WinSCP" src="./media/WinSCP_4.jpg" /></p>
 <ul>
-<li>8 Vous devriez avoir un écran semblable à celui-ci : </li>
+<li>7 Pour vous connecter à votre nouveau site allez dans l'onglet <code>Session</code> puis <code>Sites</code> et cliquez sur votre site.</li>
 </ul>
-<p><img alt="Filezilla" src="../media/ftp_5.jpg" /></p>
+<p><img alt="WinSCP" src="./media/WinSCP_5.jpg" /></p>
 <ul>
-<li>Description de l'interface : </li>
-<li>En haut, des commandes FTP, pas besoin de s'inquiéter des messages</li>
-<li>À gauche, votre ordinateur</li>
-<li>À droite, le serveur</li>
+<li>8 Vous devriez avoir un écran semblable à celui-ci: </li>
+</ul>
+<p><img alt="WinSCP" src="./media/WinSCP_6.jpg" /></p>
+<ul>
+<li>Interface description:</li>
+<li>On the left, your computer</li>
 <li>
-<p>En bas, un récapitulatif des données qui sont en transfert.</p>
+<p>On the right, the waiter</p>
 </li>
 <li>
-<p>Par glisser/déposer, nous allons déplacer des fichiers de votre ordinateur vers le serveur.</p>
+<p>By drag &amp; drop, we will move files from your computer to the server.</p>
 </li>
 </ul>
-<h2 id="arborescence-par-defaut">Arborescence par défaut<a class="headerlink" href="#arborescence-par-defaut" title="Permanent link">#</a></h2>
-<p>Sur le serveur, <strong>toujours</strong> dans le dossier <strong>qgis</strong>, nous allons créer des répertoires qui seront vos thématiques.</p>
+<h2 id="default-tree">Default tree<a class="headerlink" href="#default-tree" title="Permanent link">#</a></h2>
+<p>On the server, <strong>always</strong> in the <strong>qgis</strong> folder, we are going to create directories which will be your themes.</p>
                 
                   
                     
@@ -754,7 +755,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 2, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 4, 2021</span>
       
     
   </small>
@@ -779,7 +780,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../../presentations/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Presentations" rel="prev">
+        <a href="../winscp-en/" class="md-footer__link md-footer__link--prev" aria-label="Previous: WinSCP EN" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -788,20 +789,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Presentations
+              WinSCP EN
             </div>
           </div>
         </a>
       
       
         
-        <a href="../winscp-en/" class="md-footer__link md-footer__link--next" aria-label="Next: WinSCP EN" rel="next">
+        <a href="../qgis-repository-fr/" class="md-footer__link md-footer__link--next" aria-label="Next: QGIS Repository FR" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              WinSCP EN
+              QGIS Repository FR
             </div>
           </div>
           <div class="md-footer__button md-icon">
