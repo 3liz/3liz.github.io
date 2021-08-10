@@ -161,15 +161,15 @@
         <repository>https://github.com/3liz/lizmap-plugin</repository>
         <tags>online,server,web,webgis,webservice,webmapping,mobile,publication,wms,wfs,wps,internet,cloud,dashboard</tags>
     </pyqgis_plugin>
-<pyqgis_plugin name="cadastre" version="1.13.0">
+<pyqgis_plugin name="cadastre" version="1.13.1">
         <description>This plugins helps users to use French land registry data, called Cadastre, in QGIS. It is only useful in</description>
-        <version>1.13.0</version>
+        <version>1.13.1</version>
         <qgis_minimum_version>3.4</qgis_minimum_version>
         <homepage>https://docs.3liz.org/QgisCadastrePlugin/</homepage>
-        <file_name>cadastre.1.13.0.zip</file_name>
+        <file_name>cadastre.1.13.1.zip</file_name>
         <icon>icon.png</icon>
         <author_name>3Liz</author_name>
-        <download_url>https://github.com/3liz/QgisCadastrePlugin/releases/download/1.13.0/cadastre.1.13.0.zip</download_url>
+        <download_url>https://github.com/3liz/QgisCadastrePlugin/releases/download/1.13.1/cadastre.1.13.1.zip</download_url>
         <uploaded_by>Gustry</uploaded_by>
         <create_date>2021-08-10</create_date>
         <update_date>2021-08-10</update_date>
