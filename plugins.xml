@@ -179,4 +179,22 @@
         <repository>https://github.com/3liz/lizmap-plugin</repository>
         <tags>online,server,web,webgis,webservice,webmapping,mobile,publication,wms,wfs,wps,internet,cloud,dashboard</tags>
     </pyqgis_plugin>
+<pyqgis_plugin name="Raepa" version="0.4.0">
+        <description>France only - Plugin dedicated to import and manage water network data by using Raepa standard</description>
+        <version>0.4.0</version>
+        <qgis_minimum_version>3.0</qgis_minimum_version>
+        <homepage>https://github.com/3liz/qgis-raepa-plugin</homepage>
+        <file_name>raepa.0.4.0.zip</file_name>
+        <icon>resources/icons/icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/qgis-raepa-plugin/releases/download/0.4.0/raepa.0.4.0.zip</download_url>
+        <uploaded_by>3Liz</uploaded_by>
+        <create_date>2021-08-23</create_date>
+        <update_date>2021-08-23</update_date>
+        <experimental>True</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/qgis-raepa-plugin</tracker>
+        <repository>https://github.com/3liz/qgis-raepa-plugin</repository>
+        <tags>water network, france, eau potable, assainissement, reseau, r&#233;seau, adduction</tags>
+    </pyqgis_plugin>
 </plugins>
