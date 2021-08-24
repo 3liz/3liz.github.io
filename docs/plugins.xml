@@ -197,4 +197,22 @@
         <repository>https://github.com/3liz/qgis-raepa-plugin</repository>
         <tags>water network, france, eau potable, assainissement, reseau, r&#233;seau, adduction</tags>
     </pyqgis_plugin>
+<pyqgis_plugin name="Gestion Adresse" version="0.8.0">
+        <description>Gestion de la base adresse avec le module Lizmap</description>
+        <version>0.8.0</version>
+        <qgis_minimum_version>3.10</qgis_minimum_version>
+        <homepage>https://github.com/3liz/qgis-gestion_base_adresse-plugin</homepage>
+        <file_name>gestion_base_adresse.0.8.0.zip</file_name>
+        <icon>resources/icons/icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/qgis-gestion_base_adresse-plugin/releases/download/0.8.0/gestion_base_adresse.0.8.0.zip</download_url>
+        <uploaded_by>3Liz</uploaded_by>
+        <create_date>2021-08-24</create_date>
+        <update_date>2021-08-24</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/qgis-gestion_base_adresse-plugin</tracker>
+        <repository>https://github.com/3liz/qgis-gestion_base_adresse-plugin</repository>
+        <tags>adresse,france,french,address,lizmap</tags>
+    </pyqgis_plugin>
 </plugins>
