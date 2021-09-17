@@ -197,15 +197,15 @@
         <repository>https://github.com/3liz/QgisCadastrePlugin</repository>
         <tags>cadastre, france, majic, edigeo, import</tags>
     </pyqgis_plugin>
-<pyqgis_plugin name="wfsOutputExtension" version="1.6.1">
+<pyqgis_plugin name="wfsOutputExtension" version="1.6.2">
         <description>Adds additional output formats to WFS GetFeature request on QGIS Server such as Geopackage, ODS, CSV etc.</description>
-        <version>1.6.1</version>
+        <version>1.6.2</version>
         <qgis_minimum_version>3.0</qgis_minimum_version>
         <homepage>https://github.com/3liz/qgis-wfsOutputExtension</homepage>
-        <file_name>wfsOutputExtension.1.6.1.zip</file_name>
+        <file_name>wfsOutputExtension.1.6.2.zip</file_name>
         <icon>icon.png</icon>
         <author_name>3Liz</author_name>
-        <download_url>https://github.com/3liz/qgis-wfsOutputExtension/releases/download/1.6.1/wfsOutputExtension.1.6.1.zip</download_url>
+        <download_url>https://github.com/3liz/qgis-wfsOutputExtension/releases/download/1.6.2/wfsOutputExtension.1.6.2.zip</download_url>
         <uploaded_by>Gustry</uploaded_by>
         <create_date>2021-09-17</create_date>
         <update_date>2021-09-17</update_date>
