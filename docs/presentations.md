@@ -5,5 +5,7 @@ hide:
 
 # Presentations
 
-* [GéoDataDays 2021](../lizmap-presentation/2021_09_geodatadays.html) (french)
-* [ApacheCon @Home 2020](../lizmap-presentation/2020_09_apachecon.html)
+## Lizmap
+
+* [GéoDataDays 2021 🇫🇷](presentations/2021-09-geodatadays.html) [PDF](presentations/pdf/GéoDataDays-2021-Lizmap-Web-Client.pdf)
+* [ApacheCon @Home 2020 🇬🇧](presentations/2020-09-apachecon.html) [PDF](docs/presentations/ApacheCon-@Home-2020-Lizmap-Web-Client.pdf)
