@@ -3,7 +3,7 @@ hide:
   - navigation
 ---
 
-# Presentations
+# Talks and presentations
 
 ## Lizmap
 

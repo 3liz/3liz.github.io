@@ -11,7 +11,7 @@ nav:
     - Lizmap: lizmap.md
     - QGIS Plugins: plugins.md
     - Tools: tools.md
-    - Presentations: presentations.md
+    - Presentations: talks.md
     - Tutorials:
         - 'Filezilla': 'tutorial/filezilla-en.md'
         - 'WinSCP EN': 'tutorial/winscp-en.md'
