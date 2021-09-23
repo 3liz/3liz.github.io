@@ -21,7 +21,8 @@ nav:
     - Internships:
         - GSOC: 'internships/gsoc.md'
     - Workshops:
-        - QGIS-FR-2020: 'workshop/qgis-fr-2020.md'
+        - Lizmap French: 'workshop/lizmap-short-french.md'
+        - Lizmap English: 'workshop/lizmap-short-english.md'
     - Links: 'links.md'
 
 plugins:
