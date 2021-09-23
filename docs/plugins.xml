@@ -197,15 +197,15 @@
         <repository>https://github.com/3liz/qgis-mercicor-plugin</repository>
         <tags>mercicor</tags>
     </pyqgis_plugin>
-<pyqgis_plugin name="Lizmap" version="3.6.1">
+<pyqgis_plugin name="Lizmap" version="3.6.2">
         <description>Publish and share your QGIS maps on the Web via Lizmap Web Client, by 3liz.com</description>
-        <version>3.6.1</version>
+        <version>3.6.2</version>
         <qgis_minimum_version>3.4</qgis_minimum_version>
         <homepage>https://docs.lizmap.com</homepage>
-        <file_name>lizmap.3.6.1.zip</file_name>
+        <file_name>lizmap.3.6.2.zip</file_name>
         <icon>resources/icons/icon.png</icon>
         <author_name>3Liz</author_name>
-        <download_url>https://github.com/3liz/lizmap-plugin/releases/download/3.6.1/lizmap.3.6.1.zip</download_url>
+        <download_url>https://github.com/3liz/lizmap-plugin/releases/download/3.6.2/lizmap.3.6.2.zip</download_url>
         <uploaded_by>Gustry</uploaded_by>
         <create_date>2021-09-23</create_date>
         <update_date>2021-09-23</update_date>
