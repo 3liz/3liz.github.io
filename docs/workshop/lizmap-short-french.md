@@ -12,16 +12,14 @@ Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
 
 ## Documentation
 
-* https://docs.lizmap.com/ pour la version en cours de Lizmap
-* https://docs.lizmap.com/next/ pour la prochaine version
+* https://docs.lizmap.com/
 
 ## Liens
 
 * Démo https://demo.lizmap.com
 * Hébergement Lizmap clé en main https://www.lizmap.com
 * Mailing-list Osgeo Lizmap
-    * Web : http://osgeo-org.1560.x6.nabble.com/Lizmap-f5416555.html
-    * Maisl : https://lists.osgeo.org/mailman/listinfo/lizmap
+    * https://lists.osgeo.org/mailman/listinfo/lizmap
 * Compte Twitter :
   * https://twitter.com/LizmapForQgis pour Lizmap uniquement
   * https://twitter.com/3lizRelease à chaque fois que l'on fait une nouvelle version sur un projet GitHub dans un de nos projets
@@ -135,14 +133,14 @@ On souhaite désormais rendre éditable une couche depuis l'interface web afin d
 
 ![Form values](./media/list_value.png)
 
-* Une fois que le formulaire est OK dans Lizmap (à peu près 🙂), ajouter l'édition dans l'extension Lizmap pour cette couche.
+* Une fois que le formulaire est OK dans QGIS (à peu près 🙂), ajouter l'édition dans l'extension Lizmap pour cette couche.
 
 ## Dataviz
 
-* Ajouter une diagramme en bar concernant la population sur la couche des communes.
-* Ajouter un camembert de la répartition des observateurs
+* Ajouter un diagramme en bar concernant la population sur la couche des communes.
+* Toujours sur la couche des communes, ajouter un camembert de la répartition des observateurs
     * Ajouter un champ virtuel dans observateurs
-    
+
 ```
 relation_aggregate(
 	relation:='observation_fk_id_person_fkey',

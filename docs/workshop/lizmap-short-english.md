@@ -12,16 +12,14 @@ This workshop is designed for Lizmap users, half day.
 
 ## Documentation
 
-* https://docs.lizmap.com/ current supported version
-* https://docs.lizmap.com/next/ next supported version
+* https://docs.lizmap.com/
 
 ## Links
 
 * Demo https://demo.lizmap.com
 * Lizmap hosting out-of-the-box https://www.lizmap.com
 * Mailing-list Osgeo Lizmap
-    * Web : http://osgeo-org.1560.x6.nabble.com/Lizmap-f5416555.html
-    * Mails : https://lists.osgeo.org/mailman/listinfo/lizmap
+    * https://lists.osgeo.org/mailman/listinfo/lizmap
 * Twitter account : 
   * https://twitter.com/LizmapForQgis dedicated to Lizmap
   * https://twitter.com/3lizRelease everytime we make a new version on GitHub in one of our project
@@ -35,7 +33,7 @@ This workshop is designed for Lizmap users, half day.
 * Open the project
 * Set the extent on the map canvas
 * In the Project Properties :
-      * **Relations** tab, add all relations **automatically* with **Discovier Relations**
+      * **Relations** tab, add all relations **automatically* with **Discover Relations**
       * **QGIS Server** tab,
           * **Service capabilities**, set a **title** and an **abstract**
           * **WMS capabilities**, use the current canvas extent
@@ -103,44 +101,44 @@ You can use expressions :
 
 ## Editing capabilities on a layer
 
-We want now to enable editing capabilities on a layer in the Lizmap interface, to let some users to add some **observations**.
+We want now to enable editing capabilities on a layer in the Lizmap interface, to let some users add some **observations**.
 
 * In QGIS, try to add a point and check how the **default** form is displayed on the layer **observations**. You need to toggle editing mode first with the **yellow** pen.
 * Improve the form in QGIS :
-* Améliorer le formulaire dans QGIS
-    * Layer Properties ➡ Formulaire d'attributs -> Conception par glisser/déposer
-    * Supprimer le champ `id`
-    * Faire 2 groupes : `Requis` et `Optionel`
+    * Layer Properties ➡ Attributes Form -> Drag&Drop layout form
+    * Remove the field `id`
+    * Make two groups : `Required` and `Optional`
     
 ![Drag/drop form](./media/drag_and_drop.png)
 
-* Configurer les champs :
-    * `fk_id_person` : 
-        * Alias `Observateur`
-        * Référence de la relation avec `name`
-    * `fk_id_specie` : 
-        * Alias `Espèce`
-        * Valeur relationnelle `species` `id` et `es_nom_commun`
-    * `date` : 
+* Field configuration :
+    * `fk_id_person` :
+        * Alias `Watcher`
+        * Relation reference with `name`
+    * `fk_id_specie` :
+        * Alias `Species`
+        * Value relation `species` `id` et `es_nom_commun`
+    * `date` :
         * Alias `Date`
-        * Date/heure; par défaut
+        * Date/Time; by default
     * `photo` : 
         * Alias `Photo`
-        * Pièce jointe
+        * Attachment
     * `gender` : 
-        * Alias `Genre`
-        * Liste de valeurs : `Mâle`, `Femelle`
+        * Alias `Gender`
+        * Value map : `Male`, `Female`
 
 ![Form values](./media/list_value.png)
 
-* Une fois que le formulaire est OK dans Lizmap (à peu près 🙂), ajouter l'édition dans l'extension Lizmap pour cette couche.
+* As soon as you have your form ready in QGIS (more or less 🙂), add the layer in the editing
+  panel in Lizmap
 
 ## Dataviz
 
-* Ajouter une diagramme en bar concernant la population sur la couche des communes.
-* Ajouter un camembert de la répartition des observateurs
+* Add bar chart in the Lizmap plugin about population in municipalities
+* Still on the municipalities layer, add a pie chart about each "watcher" in a given municipality
     * Ajouter un champ virtuel dans observateurs
-    
+
 ```
 relation_aggregate(
 	relation:='observation_fk_id_person_fkey',
@@ -149,21 +147,20 @@ relation_aggregate(
 )
 ```
 
-* Pour le moment, ce ne sont que des Dataviz à l'échelle d'une couche. Il est possible de faire des graphiques
-  pour une entité, par ex, pour un observateur, on souhaite la répartition des genres de ses observations
-  
+* For now, it's only charts at the layer level. It's possible to make charts for a given feature, for instance for a given "watcher", to know his own observations.
 
-## Impression PDF
+## PDF Print
 
-### Choix de la zone d'impression
+### Extent chosen by the user
 
-* Dans le projet QGIS, il y a déjà une mise en page.
-    * Activer l'impression dans l'extension Lizmap
-    * Personnaliser la zone de titre.
+* In the given QGIS project, there is already a layout `Landscape A4`.
+* Enable **print** in your Lizmap plugin, second tab.
+* Customize the title from Lizmap web interface
 
-### Depuis une popup
+### From a popup, extent defined by the feature
 
-* Dupliquer la mise en page et en faire un atlas : 
-    * Activer l'atlas sur les communes
-    * Changer le titre pour afficher le nom de la commune
-    * Configurer la carte pour suivre l'atlas.
+* Duplicate the layout and let's transform it to an atlas:
+  * Enable atlas on municipalities
+  * Change the title to display the name of the municipality
+  * Enable the map to "follow" the current feature
+* Check in the result in Lizmap
