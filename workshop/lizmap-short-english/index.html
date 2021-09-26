@@ -692,23 +692,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#impression-pdf" class="md-nav__link">
-    Impression PDF
+  <a href="#pdf-print" class="md-nav__link">
+    PDF Print
   </a>
   
-    <nav class="md-nav" aria-label="Impression PDF">
+    <nav class="md-nav" aria-label="PDF Print">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#choix-de-la-zone-dimpression" class="md-nav__link">
-    Choix de la zone d'impression
+  <a href="#extent-chosen-by-the-user" class="md-nav__link">
+    Extent chosen by the user
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#depuis-une-popup" class="md-nav__link">
-    Depuis une popup
+  <a href="#from-a-popup-extent-defined-by-the-feature" class="md-nav__link">
+    From a popup, extent defined by the feature
   </a>
   
 </li>
@@ -844,23 +844,23 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#impression-pdf" class="md-nav__link">
-    Impression PDF
+  <a href="#pdf-print" class="md-nav__link">
+    PDF Print
   </a>
   
-    <nav class="md-nav" aria-label="Impression PDF">
+    <nav class="md-nav" aria-label="PDF Print">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#choix-de-la-zone-dimpression" class="md-nav__link">
-    Choix de la zone d'impression
+  <a href="#extent-chosen-by-the-user" class="md-nav__link">
+    Extent chosen by the user
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#depuis-une-popup" class="md-nav__link">
-    Depuis une popup
+  <a href="#from-a-popup-extent-defined-by-the-feature" class="md-nav__link">
+    From a popup, extent defined by the feature
   </a>
   
 </li>
@@ -895,16 +895,14 @@
 </ul>
 <h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">#</a></h2>
 <ul>
-<li><a href="https://docs.lizmap.com/">https://docs.lizmap.com/</a> current supported version</li>
-<li><a href="https://docs.lizmap.com/next/">https://docs.lizmap.com/next/</a> next supported version</li>
+<li><a href="https://docs.lizmap.com/">https://docs.lizmap.com/</a></li>
 </ul>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">#</a></h2>
 <ul>
 <li>Demo <a href="https://demo.lizmap.com">https://demo.lizmap.com</a></li>
 <li>Lizmap hosting out-of-the-box <a href="https://www.lizmap.com">https://www.lizmap.com</a></li>
 <li>Mailing-list Osgeo Lizmap<ul>
-<li>Web : <a href="http://osgeo-org.1560.x6.nabble.com/Lizmap-f5416555.html">http://osgeo-org.1560.x6.nabble.com/Lizmap-f5416555.html</a></li>
-<li>Mails : <a href="https://lists.osgeo.org/mailman/listinfo/lizmap">https://lists.osgeo.org/mailman/listinfo/lizmap</a></li>
+<li><a href="https://lists.osgeo.org/mailman/listinfo/lizmap">https://lists.osgeo.org/mailman/listinfo/lizmap</a></li>
 </ul>
 </li>
 <li>Twitter account : </li>
@@ -920,7 +918,7 @@
 <li>Open the project</li>
 <li>Set the extent on the map canvas</li>
 <li>In the Project Properties :<ul>
-<li><strong>Relations</strong> tab, add all relations <strong>automatically* with </strong>Discovier Relations**</li>
+<li><strong>Relations</strong> tab, add all relations <strong>automatically* with </strong>Discover Relations**</li>
 <li><strong>QGIS Server</strong> tab,<ul>
 <li><strong>Service capabilities</strong>, set a <strong>title</strong> and an <strong>abstract</strong></li>
 <li><strong>WMS capabilities</strong>, use the current canvas extent</li>
@@ -996,43 +994,42 @@
     * to display with capital letters
     * to display in red if the population is less than 20 000 inhabitants</p>
 <h2 id="editing-capabilities-on-a-layer">Editing capabilities on a layer<a class="headerlink" href="#editing-capabilities-on-a-layer" title="Permanent link">#</a></h2>
-<p>We want now to enable editing capabilities on a layer in the Lizmap interface, to let some users to add some <strong>observations</strong>.</p>
+<p>We want now to enable editing capabilities on a layer in the Lizmap interface, to let some users add some <strong>observations</strong>.</p>
 <ul>
 <li>In QGIS, try to add a point and check how the <strong>default</strong> form is displayed on the layer <strong>observations</strong>. You need to toggle editing mode first with the <strong>yellow</strong> pen.</li>
-<li>Improve the form in QGIS :</li>
-<li>Améliorer le formulaire dans QGIS<ul>
-<li>Layer Properties ➡ Formulaire d'attributs -&gt; Conception par glisser/déposer</li>
-<li>Supprimer le champ <code>id</code></li>
-<li>Faire 2 groupes : <code>Requis</code> et <code>Optionel</code></li>
+<li>Improve the form in QGIS :<ul>
+<li>Layer Properties ➡ Attributes Form -&gt; Drag&amp;Drop layout form</li>
+<li>Remove the field <code>id</code></li>
+<li>Make two groups : <code>Required</code> and <code>Optional</code></li>
 </ul>
 </li>
 </ul>
 <p><img alt="Drag/drop form" src="../media/drag_and_drop.png" /></p>
 <ul>
-<li>Configurer les champs :<ul>
-<li><code>fk_id_person</code> : <ul>
-<li>Alias <code>Observateur</code></li>
-<li>Référence de la relation avec <code>name</code></li>
+<li>Field configuration :<ul>
+<li><code>fk_id_person</code> :<ul>
+<li>Alias <code>Watcher</code></li>
+<li>Relation reference with <code>name</code></li>
 </ul>
 </li>
-<li><code>fk_id_specie</code> : <ul>
-<li>Alias <code>Espèce</code></li>
-<li>Valeur relationnelle <code>species</code> <code>id</code> et <code>es_nom_commun</code></li>
+<li><code>fk_id_specie</code> :<ul>
+<li>Alias <code>Species</code></li>
+<li>Value relation <code>species</code> <code>id</code> et <code>es_nom_commun</code></li>
 </ul>
 </li>
-<li><code>date</code> : <ul>
+<li><code>date</code> :<ul>
 <li>Alias <code>Date</code></li>
-<li>Date/heure; par défaut</li>
+<li>Date/Time; by default</li>
 </ul>
 </li>
 <li><code>photo</code> : <ul>
 <li>Alias <code>Photo</code></li>
-<li>Pièce jointe</li>
+<li>Attachment</li>
 </ul>
 </li>
 <li><code>gender</code> : <ul>
-<li>Alias <code>Genre</code></li>
-<li>Liste de valeurs : <code>Mâle</code>, <code>Femelle</code></li>
+<li>Alias <code>Gender</code></li>
+<li>Value map : <code>Male</code>, <code>Female</code></li>
 </ul>
 </li>
 </ul>
@@ -1040,12 +1037,13 @@
 </ul>
 <p><img alt="Form values" src="../media/list_value.png" /></p>
 <ul>
-<li>Une fois que le formulaire est OK dans Lizmap (à peu près 🙂), ajouter l'édition dans l'extension Lizmap pour cette couche.</li>
+<li>As soon as you have your form ready in QGIS (more or less 🙂), add the layer in the editing
+  panel in Lizmap</li>
 </ul>
 <h2 id="dataviz">Dataviz<a class="headerlink" href="#dataviz" title="Permanent link">#</a></h2>
 <ul>
-<li>Ajouter une diagramme en bar concernant la population sur la couche des communes.</li>
-<li>Ajouter un camembert de la répartition des observateurs<ul>
+<li>Add bar chart in the Lizmap plugin about population in municipalities</li>
+<li>Still on the municipalities layer, add a pie chart about each "watcher" in a given municipality<ul>
 <li>Ajouter un champ virtuel dans observateurs</li>
 </ul>
 </li>
@@ -1062,26 +1060,22 @@
 </code></pre></div>
 </td></tr></table>
 <ul>
-<li>Pour le moment, ce ne sont que des Dataviz à l'échelle d'une couche. Il est possible de faire des graphiques
-  pour une entité, par ex, pour un observateur, on souhaite la répartition des genres de ses observations</li>
+<li>For now, it's only charts at the layer level. It's possible to make charts for a given feature, for instance for a given "watcher", to know his own observations.</li>
 </ul>
-<h2 id="impression-pdf">Impression PDF<a class="headerlink" href="#impression-pdf" title="Permanent link">#</a></h2>
-<h3 id="choix-de-la-zone-dimpression">Choix de la zone d'impression<a class="headerlink" href="#choix-de-la-zone-dimpression" title="Permanent link">#</a></h3>
+<h2 id="pdf-print">PDF Print<a class="headerlink" href="#pdf-print" title="Permanent link">#</a></h2>
+<h3 id="extent-chosen-by-the-user">Extent chosen by the user<a class="headerlink" href="#extent-chosen-by-the-user" title="Permanent link">#</a></h3>
 <ul>
-<li>Dans le projet QGIS, il y a déjà une mise en page.<ul>
-<li>Activer l'impression dans l'extension Lizmap</li>
-<li>Personnaliser la zone de titre.</li>
+<li>In the given QGIS project, there is already a layout <code>Landscape A4</code>.</li>
+<li>Enable <strong>print</strong> in your Lizmap plugin, second tab.</li>
+<li>Customize the title from Lizmap web interface</li>
 </ul>
-</li>
-</ul>
-<h3 id="depuis-une-popup">Depuis une popup<a class="headerlink" href="#depuis-une-popup" title="Permanent link">#</a></h3>
+<h3 id="from-a-popup-extent-defined-by-the-feature">From a popup, extent defined by the feature<a class="headerlink" href="#from-a-popup-extent-defined-by-the-feature" title="Permanent link">#</a></h3>
 <ul>
-<li>Dupliquer la mise en page et en faire un atlas : <ul>
-<li>Activer l'atlas sur les communes</li>
-<li>Changer le titre pour afficher le nom de la commune</li>
-<li>Configurer la carte pour suivre l'atlas.</li>
-</ul>
-</li>
+<li>Duplicate the layout and let's transform it to an atlas:</li>
+<li>Enable atlas on municipalities</li>
+<li>Change the title to display the name of the municipality</li>
+<li>Enable the map to "follow" the current feature</li>
+<li>Check in the result in Lizmap</li>
 </ul>
                 
                   
@@ -1091,7 +1085,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 26, 2021</span>
       
     
   </small>
