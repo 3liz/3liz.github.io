@@ -53,23 +53,24 @@ This workshop is designed for Lizmap users, half day.
 
 ## Legend
 
-* Faire des groupes dans la légende
-    * `Edition`
-    * `Data`
-    * `hidden`, with small `h`
+* Add some groups in the legend
+    * `Editing` with `persons` and `observations`
+    * `Data` with `municipalities`
+    * `hidden`, with small `h`, with `species` and you can add OSM base layer (from the QGIS Browser, XYZ Tiles)
 * Rename layers with a more human-readable
     * **Except** for the OSM layer, in the group `hidden`, the name must be `osm-mapnik`
 
 ![legend](./media/legend.png)
 
-**Starting from now**, often send the QGS file and the CFG file on the server to check the result between each bullet.
+**Starting from now**, often send the QGS file and the CFG file on the server to check the result between each bullet item.
 
-* Make a quick symbology on the Municipalities layer :
-    * **Categorized** on `name`
+* Make a quick symbology on a point layer :
+* Make a quick symbology on the municipalities layer : (already done ;-)
+    * **Categorized** on `name` ()
     * Tip, change the symbol to remove the fill
     * Remove the line `Water`
 * Go in the Lizmap plugin, **Layers** tab
-* Set a link on a layer : 
+* Set a link on a layer: 
     * `media/metadata.pdf`, a PDF link, stored in the folder `media` (you can see it in the FTP client) on `observations`
     * `https://en.wikipedia.org/wiki/French_Polynesia` on `municipalities`
 * In the Lizmap plugin, go in **Baselayers** and add the OpenStreetMap Mapnik background.
@@ -84,7 +85,7 @@ This workshop is designed for Lizmap users, half day.
 * Add some **aliases** on fields to "clean" them from the **layer properties** ➡ **Attributes Form** ➡ a specific field ➡ **Alias**.
 * Let's switch to a popup with **QGIS** mode :
 
-**Tip** : QGIS ➡ **View** ➡ **Display maptip** to display maptip straight in QGIS Desktop.
+**Tip** : QGIS ➡ **View** ➡ **Show Map Tips** to display maptip straight in QGIS Desktop.
 
 These **QGIS** popups are powerful with the use of QGIS **expressions**:
 
@@ -117,7 +118,7 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
         * Relation reference with `name`
     * `fk_id_specie` :
         * Alias `Species`
-        * Value relation `species` `id` et `es_nom_commun`
+        * Value relation layer `species`, key column `id` and value `es_nom_commun`
     * `date` :
         * Alias `Date`
         * Date/Time; by default
@@ -126,28 +127,12 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
         * Attachment
     * `gender` : 
         * Alias `Gender`
-        * Value map : `Male`, `Female`
+        * Value map and add some values in the table `Male`, `Female`
 
 ![Form values](./media/list_value.png)
 
 * As soon as you have your form ready in QGIS (more or less 🙂), add the layer in the editing
   panel in Lizmap
-
-## Dataviz
-
-* Add bar chart in the Lizmap plugin about population in municipalities
-* Still on the municipalities layer, add a pie chart about each "watcher" in a given municipality
-    * Ajouter un champ virtuel dans observateurs
-
-```
-relation_aggregate(
-	relation:='observation_fk_id_person_fkey',
-	aggregate:='count',
-	expression:="id"
-)
-```
-
-* For now, it's only charts at the layer level. It's possible to make charts for a given feature, for instance for a given "watcher", to know his own observations.
 
 ## PDF Print
 
@@ -164,3 +149,31 @@ relation_aggregate(
   * Change the title to display the name of the municipality
   * Enable the map to "follow" the current feature
 * Check in the result in Lizmap
+
+## Dataviz
+
+* Add **bar chart** in the Lizmap plugin about population in municipalities
+  * Layer : Municipalities
+  * X Field : Name
+  * No aggregation
+  * Trace : population
+* On "persons" layer, add a pie chart about each "watcher"
+    * Add a virtual field in "persons" called `count` :
+
+```
+relation_aggregate(
+	relation:='observation_fk_id_person_fkey',
+	aggregate:='count',
+	expression:="id"
+)
+```
+
+* Add **pie chart** in the Lizmap plugin
+  * Layer : Persons
+  * X Field : Name
+  * Aggregation sum
+  * Trace : count
+
+<!-- 
+* For now, it's only charts at the layer level. It's possible to make charts for a given feature, for instance for a given "watcher", to know his own observations.
+-->
