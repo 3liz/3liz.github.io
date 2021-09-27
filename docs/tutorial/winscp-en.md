@@ -22,7 +22,7 @@ https://winscp.net/eng/download.php
 * 5 Complete the information:
     * **1**: File protocol: `FTP`
     * **2**: Encryption: `Explicit TSL / SSL encryption`
-    * **3**: Hostname: `ftp.lizmap.com`
+    * **3**: Hostname: The FTP server received by email
     * **4**: Port Number: `21`
     * **5**: Username: The username received by email
     * **6**: Password: The password received by email

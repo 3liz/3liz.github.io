@@ -21,7 +21,7 @@ https://filezilla-project.org/download.php?type=client
 
 * 5 Complétez les informations :
     * **1** : Protocol : `FTP`
-    * **2** : Host : `ftp.lizmap.com`
+    * **2** : Host : Le serveur FTP reçu par email
     * **3** : Encryption : `Use explicit FTP over TLS if available`
     * **4** : Logon type : `Normal`
     * **5** : User : Le nom d'utilisateur reçu par email

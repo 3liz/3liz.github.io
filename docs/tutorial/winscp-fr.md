@@ -22,7 +22,7 @@ https://winscp.net/eng/download.php
 * 5 Complétez les informations:
     * **1** : Protocole de fichier: `FTP`
     * **2** : Chiffrement: `Chiffrement TSL/SSL explicite`
-    * **3** : Nom d'hôte: `ftp.lizmap.com`
+    * **3** : Nom d'hôte: Le serveur FTP reçu par email
     * **4** : Numéro de Port: `21`
     * **5** : Nom d'utilisateur: Le nom d'utilisateur reçu par email
     * **6** : Mot de passe: Le mot de passe reçu par email
