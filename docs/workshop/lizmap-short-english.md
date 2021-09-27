@@ -33,7 +33,7 @@ This workshop is designed for Lizmap users, half day.
 * Open the project
 * Set the extent on the map canvas
 * In the Project Properties :
-      * **Relations** tab, add all relations **automatically* with **Discover Relations**
+      * **Relations** tab, add all relations **automatically** with **Discover Relations**
       * **QGIS Server** tab,
           * **Service capabilities**, set a **title** and an **abstract**
           * **WMS capabilities**, use the current canvas extent
@@ -97,6 +97,7 @@ These **QGIS** popups are powerful with the use of QGIS **expressions**:
 ```
 
 You can use expressions :
+
     * to display with capital letters
     * to display in red if the population is less than 20 000 inhabitants
 
