@@ -685,13 +685,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dataviz" class="md-nav__link">
-    Dataviz
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#pdf-print" class="md-nav__link">
     PDF Print
   </a>
@@ -715,6 +708,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataviz" class="md-nav__link">
+    Dataviz
+  </a>
   
 </li>
       
@@ -837,13 +837,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dataviz" class="md-nav__link">
-    Dataviz
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#pdf-print" class="md-nav__link">
     PDF Print
   </a>
@@ -867,6 +860,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataviz" class="md-nav__link">
+    Dataviz
+  </a>
   
 </li>
       
@@ -941,10 +941,10 @@
 </ul>
 <h2 id="legend">Legend<a class="headerlink" href="#legend" title="Permanent link">#</a></h2>
 <ul>
-<li>Faire des groupes dans la légende<ul>
-<li><code>Edition</code></li>
-<li><code>Data</code></li>
-<li><code>hidden</code>, with small <code>h</code></li>
+<li>Add some groups in the legend<ul>
+<li><code>Editing</code> with <code>persons</code> and <code>observations</code></li>
+<li><code>Data</code> with <code>municipalities</code></li>
+<li><code>hidden</code>, with small <code>h</code>, with <code>species</code> and you can add OSM base layer (from the QGIS Browser, XYZ Tiles)</li>
 </ul>
 </li>
 <li>Rename layers with a more human-readable<ul>
@@ -953,16 +953,17 @@
 </li>
 </ul>
 <p><img alt="legend" src="../media/legend.png" /></p>
-<p><strong>Starting from now</strong>, often send the QGS file and the CFG file on the server to check the result between each bullet.</p>
+<p><strong>Starting from now</strong>, often send the QGS file and the CFG file on the server to check the result between each bullet item.</p>
 <ul>
-<li>Make a quick symbology on the Municipalities layer :<ul>
-<li><strong>Categorized</strong> on <code>name</code></li>
+<li>Make a quick symbology on a point layer :</li>
+<li>Make a quick symbology on the municipalities layer : (already done ;-)<ul>
+<li><strong>Categorized</strong> on <code>name</code> ()</li>
 <li>Tip, change the symbol to remove the fill</li>
 <li>Remove the line <code>Water</code></li>
 </ul>
 </li>
 <li>Go in the Lizmap plugin, <strong>Layers</strong> tab</li>
-<li>Set a link on a layer : <ul>
+<li>Set a link on a layer: <ul>
 <li><code>media/metadata.pdf</code>, a PDF link, stored in the folder <code>media</code> (you can see it in the FTP client) on <code>observations</code></li>
 <li><code>https://en.wikipedia.org/wiki/French_Polynesia</code> on <code>municipalities</code></li>
 </ul>
@@ -979,7 +980,7 @@
 <li>Add some <strong>aliases</strong> on fields to "clean" them from the <strong>layer properties</strong> ➡ <strong>Attributes Form</strong> ➡ a specific field ➡ <strong>Alias</strong>.</li>
 <li>Let's switch to a popup with <strong>QGIS</strong> mode :</li>
 </ul>
-<p><strong>Tip</strong> : QGIS ➡ <strong>View</strong> ➡ <strong>Display maptip</strong> to display maptip straight in QGIS Desktop.</p>
+<p><strong>Tip</strong> : QGIS ➡ <strong>View</strong> ➡ <strong>Show Map Tips</strong> to display maptip straight in QGIS Desktop.</p>
 <p>These <strong>QGIS</strong> popups are powerful with the use of QGIS <strong>expressions</strong>:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -1014,7 +1015,7 @@
 </li>
 <li><code>fk_id_specie</code> :<ul>
 <li>Alias <code>Species</code></li>
-<li>Value relation <code>species</code> <code>id</code> et <code>es_nom_commun</code></li>
+<li>Value relation layer <code>species</code>, key column <code>id</code> and value <code>es_nom_commun</code></li>
 </ul>
 </li>
 <li><code>date</code> :<ul>
@@ -1029,7 +1030,7 @@
 </li>
 <li><code>gender</code> : <ul>
 <li>Alias <code>Gender</code></li>
-<li>Value map : <code>Male</code>, <code>Female</code></li>
+<li>Value map and add some values in the table <code>Male</code>, <code>Female</code></li>
 </ul>
 </li>
 </ul>
@@ -1039,28 +1040,6 @@
 <ul>
 <li>As soon as you have your form ready in QGIS (more or less 🙂), add the layer in the editing
   panel in Lizmap</li>
-</ul>
-<h2 id="dataviz">Dataviz<a class="headerlink" href="#dataviz" title="Permanent link">#</a></h2>
-<ul>
-<li>Add bar chart in the Lizmap plugin about population in municipalities</li>
-<li>Still on the municipalities layer, add a pie chart about each "watcher" in a given municipality<ul>
-<li>Ajouter un champ virtuel dans observateurs</li>
-</ul>
-</li>
-</ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>relation_aggregate(
-    relation:=&#39;observation_fk_id_person_fkey&#39;,
-    aggregate:=&#39;count&#39;,
-    expression:=&quot;id&quot;
-)
-</code></pre></div>
-</td></tr></table>
-<ul>
-<li>For now, it's only charts at the layer level. It's possible to make charts for a given feature, for instance for a given "watcher", to know his own observations.</li>
 </ul>
 <h2 id="pdf-print">PDF Print<a class="headerlink" href="#pdf-print" title="Permanent link">#</a></h2>
 <h3 id="extent-chosen-by-the-user">Extent chosen by the user<a class="headerlink" href="#extent-chosen-by-the-user" title="Permanent link">#</a></h3>
@@ -1077,6 +1056,39 @@
 <li>Enable the map to "follow" the current feature</li>
 <li>Check in the result in Lizmap</li>
 </ul>
+<h2 id="dataviz">Dataviz<a class="headerlink" href="#dataviz" title="Permanent link">#</a></h2>
+<ul>
+<li>Add <strong>bar chart</strong> in the Lizmap plugin about population in municipalities</li>
+<li>Layer : Municipalities</li>
+<li>X Field : Name</li>
+<li>No aggregation</li>
+<li>Trace : population</li>
+<li>On "persons" layer, add a pie chart about each "watcher"<ul>
+<li>Add a virtual field in "persons" called <code>count</code> :</li>
+</ul>
+</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>relation_aggregate(
+    relation:=&#39;observation_fk_id_person_fkey&#39;,
+    aggregate:=&#39;count&#39;,
+    expression:=&quot;id&quot;
+)
+</code></pre></div>
+</td></tr></table>
+<ul>
+<li>Add <strong>pie chart</strong> in the Lizmap plugin</li>
+<li>Layer : Persons</li>
+<li>X Field : Name</li>
+<li>Aggregation sum</li>
+<li>Trace : count</li>
+</ul>
+<!-- 
+* For now, it's only charts at the layer level. It's possible to make charts for a given feature, for instance for a given "watcher", to know his own observations.
+-->
                 
                   
                     
@@ -1085,7 +1097,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 26, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 27, 2021</span>
       
     
   </small>
