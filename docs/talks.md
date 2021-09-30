@@ -15,3 +15,7 @@ hide:
 ## PgMetadata
 
 * [FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-Foss4G-PgMetadata.html) [PDF](https://docs.3liz.org/presentations/pdf/FOSS4G-2021-PgMetadata.pdf)
+
+## QuickOSM
+
+* [FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-foss4g-osm-in-qgis.html) [PDF](https://docs.3liz.org/presentations/pdf/FOSS4G-2021-osm-in-qgis.pdf)
