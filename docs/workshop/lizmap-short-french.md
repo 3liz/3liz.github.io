@@ -45,8 +45,6 @@ Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
 
 **Bonus** si vous avez une petite image PNG `nom_du_projet.qgs.png`
 
-**
-
 ## Prendre en main l'interface web Lizmap
 
 * La carte
@@ -74,7 +72,7 @@ Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
 * Mettre des liens sur une couche : 
     * `media/metadata.pdf`, un lien vers un PDF, stocké dans le dossier `media` (vous pouvez le voir dans le logiciel FTP)
     * `https://fr.wikipedia.org/wiki/Liste_des_communes_de_la_Polyn%C3%A9sie_fran%C3%A7aise`
-* Dans l'extension Lizmap, ajouter un **fond**, **IGN France**, **Orthophoto** avec la clée `pratique`
+* Dans l'extension Lizmap, ajouter un **fond**, **IGN France**, **Orthophoto** avec la clé `pratique`
 
 ## Table attributaire
 
@@ -87,7 +85,7 @@ Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
   **Formulaire d'attributs** ➡ un champ en particulier ➡ **Alias**.
 * Faire une popup un mode **QGIS** :
 
-**Astuce** : QGIS ➡ **Vue** ➡ **Afficher les infobulles** pour afficher directement dans QGIS bureautique.
+**Astuce** : QGIS ➡ **Vue** ➡ **Afficher les infobulles** pour afficher directement dans QGIS bureautique. Vous devez sélectionner aussi l'outil infobulle dans la barre d'outils.
 
 Ces popups **QGIS** sont très puissantes grâce à l'utilisation des **expressions** QGIS :
 
@@ -98,7 +96,8 @@ Ces popups **QGIS** sont très puissantes grâce à l'utilisation des **expressi
 </ul>
 ```
 
-On peut aussi utiliser des expressions QGIS : 
+On peut aussi utiliser des expressions QGIS :
+
     * Mettre en majuscule le nom de la commune
     * Afficher la population en rouge si moins de 20 000 habitants
 
@@ -108,7 +107,7 @@ On souhaite désormais rendre éditable une couche depuis l'interface web afin d
 
 * Dans QGIS, faire un essai du formulaire par défaut sur la couche des **observations**. Vous avez besoin de passer en mode édition d'abord avec le petit crayon **jaune**.
 * Améliorer le formulaire dans QGIS :
-    * Propriétés de la couche -> Formulaire d'attributs -> Conception par glisser/déposer
+    * Propriétés de la couche ➡ Formulaire d'attributs ➡ Conception par glisser/déposer
     * Supprimer le champ `id`
     * Faire 2 groupes : `Requis` et `Optionel`
     
@@ -123,7 +122,7 @@ On souhaite désormais rendre éditable une couche depuis l'interface web afin d
         * Valeur relationnelle `species` `id` et `es_nom_commun`
     * `date` : 
         * Alias `Date`
-        * Date/heure; par défaut
+        * Date/heure par défaut
     * `photo` : 
         * Alias `Photo`
         * Pièce jointe
@@ -135,11 +134,26 @@ On souhaite désormais rendre éditable une couche depuis l'interface web afin d
 
 * Une fois que le formulaire est OK dans QGIS (à peu près 🙂), ajouter l'édition dans l'extension Lizmap pour cette couche.
 
+## Impression PDF
+
+### Choix de la zone d'impression
+
+* Dans le projet QGIS, il y a déjà une mise en page.
+    * Activer l'impression dans l'extension Lizmap
+    * Personnaliser la zone de titre.
+
+### Depuis une popup
+
+* Dupliquer la mise en page actuelle et en faire un atlas : 
+    * Activer l'atlas sur les communes
+    * Changer le titre pour afficher le nom de la commune
+    * Configurer la carte pour suivre l'atlas.
+
 ## Dataviz
 
 * Ajouter un diagramme en bar concernant la population sur la couche des communes.
 * Toujours sur la couche des communes, ajouter un camembert de la répartition des observateurs
-    * Ajouter un champ virtuel dans observateurs
+    * Ajouter un champ virtuel dans **observateurs**
 
 ```
 relation_aggregate(
@@ -151,19 +165,3 @@ relation_aggregate(
 
 * Pour le moment, ce ne sont que des Dataviz à l'échelle d'une couche. Il est possible de faire des graphiques
   pour une entité, par ex, pour un observateur, on souhaite la répartition des genres de ses observations
-  
-
-## Impression PDF
-
-### Choix de la zone d'impression
-
-* Dans le projet QGIS, il y a déjà une mise en page.
-    * Activer l'impression dans l'extension Lizmap
-    * Personnaliser la zone de titre.
-
-### Depuis une popup
-
-* Dupliquer la mise en page et en faire un atlas : 
-    * Activer l'atlas sur les communes
-    * Changer le titre pour afficher le nom de la commune
-    * Configurer la carte pour suivre l'atlas.

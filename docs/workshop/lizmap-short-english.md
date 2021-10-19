@@ -85,7 +85,7 @@ This workshop is designed for Lizmap users, half day.
 * Add some **aliases** on fields to "clean" them from the **layer properties** ➡ **Attributes Form** ➡ a specific field ➡ **Alias**.
 * Let's switch to a popup with **QGIS** mode :
 
-**Tip** : QGIS ➡ **View** ➡ **Show Map Tips** to display maptip straight in QGIS Desktop.
+**Tip** : QGIS ➡ **View** ➡ **Show Map Tips** to display maptip straight in QGIS Desktop. You need to select the maptip tool in the toolbar as well.
 
 These **QGIS** popups are powerful with the use of QGIS **expressions**:
 
@@ -122,7 +122,7 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
         * Value relation layer `species`, key column `id` and value `es_nom_commun`
     * `date` :
         * Alias `Date`
-        * Date/Time; by default
+        * Date/Time by default
     * `photo` : 
         * Alias `Photo`
         * Attachment
@@ -145,7 +145,7 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
 
 ### From a popup, extent defined by the feature
 
-* Duplicate the layout and let's transform it to an atlas:
+* Duplicate the existing layout and let's transform it to an atlas:
   * Enable atlas on municipalities
   * Change the title to display the name of the municipality
   * Enable the map to "follow" the current feature
