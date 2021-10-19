@@ -16,7 +16,7 @@
         <link rel="canonical" href="https://docs.3liz.org/workshop/lizmap-short-french/">
       
       <link rel="icon" href="../../media/logo.png">
-      <meta name="generator" content="mkdocs-1.2.2, mkdocs-material-7.3.3">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.4">
     
     
       
@@ -24,7 +24,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.5143246d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.db9e7362.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.3f5d1f46.min.css">
@@ -671,13 +671,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dataviz" class="md-nav__link">
-    Dataviz
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#impression-pdf" class="md-nav__link">
     Impression PDF
   </a>
@@ -701,6 +694,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataviz" class="md-nav__link">
+    Dataviz
+  </a>
   
 </li>
       
@@ -837,13 +837,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#dataviz" class="md-nav__link">
-    Dataviz
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#impression-pdf" class="md-nav__link">
     Impression PDF
   </a>
@@ -867,6 +860,13 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataviz" class="md-nav__link">
+    Dataviz
+  </a>
   
 </li>
       
@@ -935,7 +935,6 @@
 <li>Transférer le projet (<code>.qgs</code> et <code>.cfg</code>) dans le dossier <code>theme_formation</code></li>
 </ul>
 <p><strong>Bonus</strong> si vous avez une petite image PNG <code>nom_du_projet.qgs.png</code></p>
-<p>**</p>
 <h2 id="prendre-en-main-linterface-web-lizmap">Prendre en main l'interface web Lizmap<a class="headerlink" href="#prendre-en-main-linterface-web-lizmap" title="Permanent link">#</a></h2>
 <ul>
 <li>La carte</li>
@@ -970,7 +969,7 @@
 <li><code>https://fr.wikipedia.org/wiki/Liste_des_communes_de_la_Polyn%C3%A9sie_fran%C3%A7aise</code></li>
 </ul>
 </li>
-<li>Dans l'extension Lizmap, ajouter un <strong>fond</strong>, <strong>IGN France</strong>, <strong>Orthophoto</strong> avec la clée <code>pratique</code></li>
+<li>Dans l'extension Lizmap, ajouter un <strong>fond</strong>, <strong>IGN France</strong>, <strong>Orthophoto</strong> avec la clé <code>pratique</code></li>
 </ul>
 <h2 id="table-attributaire">Table attributaire<a class="headerlink" href="#table-attributaire" title="Permanent link">#</a></h2>
 <ul>
@@ -983,7 +982,7 @@
   <strong>Formulaire d'attributs</strong> ➡ un champ en particulier ➡ <strong>Alias</strong>.</li>
 <li>Faire une popup un mode <strong>QGIS</strong> :</li>
 </ul>
-<p><strong>Astuce</strong> : QGIS ➡ <strong>Vue</strong> ➡ <strong>Afficher les infobulles</strong> pour afficher directement dans QGIS bureautique.</p>
+<p><strong>Astuce</strong> : QGIS ➡ <strong>Vue</strong> ➡ <strong>Afficher les infobulles</strong> pour afficher directement dans QGIS bureautique. Vous devez sélectionner aussi l'outil infobulle dans la barre d'outils.</p>
 <p>Ces popups <strong>QGIS</strong> sont très puissantes grâce à l'utilisation des <strong>expressions</strong> QGIS :</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -994,15 +993,18 @@
 <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 </code></pre></div>
 </td></tr></table>
-<p>On peut aussi utiliser des expressions QGIS : 
-    * Mettre en majuscule le nom de la commune
-    * Afficher la population en rouge si moins de 20 000 habitants</p>
+<p>On peut aussi utiliser des expressions QGIS :</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>* Mettre en majuscule le nom de la commune
+* Afficher la population en rouge si moins de 20 000 habitants
+</code></pre></div>
+</td></tr></table>
 <h2 id="edition-dune-couche">Édition d'une couche<a class="headerlink" href="#edition-dune-couche" title="Permanent link">#</a></h2>
 <p>On souhaite désormais rendre éditable une couche depuis l'interface web afin de pouvoir ajouter des <strong>observations</strong>.</p>
 <ul>
 <li>Dans QGIS, faire un essai du formulaire par défaut sur la couche des <strong>observations</strong>. Vous avez besoin de passer en mode édition d'abord avec le petit crayon <strong>jaune</strong>.</li>
 <li>Améliorer le formulaire dans QGIS :<ul>
-<li>Propriétés de la couche -&gt; Formulaire d'attributs -&gt; Conception par glisser/déposer</li>
+<li>Propriétés de la couche ➡ Formulaire d'attributs ➡ Conception par glisser/déposer</li>
 <li>Supprimer le champ <code>id</code></li>
 <li>Faire 2 groupes : <code>Requis</code> et <code>Optionel</code></li>
 </ul>
@@ -1023,7 +1025,7 @@
 </li>
 <li><code>date</code> : <ul>
 <li>Alias <code>Date</code></li>
-<li>Date/heure; par défaut</li>
+<li>Date/heure par défaut</li>
 </ul>
 </li>
 <li><code>photo</code> : <ul>
@@ -1043,11 +1045,29 @@
 <ul>
 <li>Une fois que le formulaire est OK dans QGIS (à peu près 🙂), ajouter l'édition dans l'extension Lizmap pour cette couche.</li>
 </ul>
+<h2 id="impression-pdf">Impression PDF<a class="headerlink" href="#impression-pdf" title="Permanent link">#</a></h2>
+<h3 id="choix-de-la-zone-dimpression">Choix de la zone d'impression<a class="headerlink" href="#choix-de-la-zone-dimpression" title="Permanent link">#</a></h3>
+<ul>
+<li>Dans le projet QGIS, il y a déjà une mise en page.<ul>
+<li>Activer l'impression dans l'extension Lizmap</li>
+<li>Personnaliser la zone de titre.</li>
+</ul>
+</li>
+</ul>
+<h3 id="depuis-une-popup">Depuis une popup<a class="headerlink" href="#depuis-une-popup" title="Permanent link">#</a></h3>
+<ul>
+<li>Dupliquer la mise en page actuelle et en faire un atlas : <ul>
+<li>Activer l'atlas sur les communes</li>
+<li>Changer le titre pour afficher le nom de la commune</li>
+<li>Configurer la carte pour suivre l'atlas.</li>
+</ul>
+</li>
+</ul>
 <h2 id="dataviz">Dataviz<a class="headerlink" href="#dataviz" title="Permanent link">#</a></h2>
 <ul>
 <li>Ajouter un diagramme en bar concernant la population sur la couche des communes.</li>
 <li>Toujours sur la couche des communes, ajouter un camembert de la répartition des observateurs<ul>
-<li>Ajouter un champ virtuel dans observateurs</li>
+<li>Ajouter un champ virtuel dans <strong>observateurs</strong></li>
 </ul>
 </li>
 </ul>
@@ -1066,24 +1086,6 @@
 <li>Pour le moment, ce ne sont que des Dataviz à l'échelle d'une couche. Il est possible de faire des graphiques
   pour une entité, par ex, pour un observateur, on souhaite la répartition des genres de ses observations</li>
 </ul>
-<h2 id="impression-pdf">Impression PDF<a class="headerlink" href="#impression-pdf" title="Permanent link">#</a></h2>
-<h3 id="choix-de-la-zone-dimpression">Choix de la zone d'impression<a class="headerlink" href="#choix-de-la-zone-dimpression" title="Permanent link">#</a></h3>
-<ul>
-<li>Dans le projet QGIS, il y a déjà une mise en page.<ul>
-<li>Activer l'impression dans l'extension Lizmap</li>
-<li>Personnaliser la zone de titre.</li>
-</ul>
-</li>
-</ul>
-<h3 id="depuis-une-popup">Depuis une popup<a class="headerlink" href="#depuis-une-popup" title="Permanent link">#</a></h3>
-<ul>
-<li>Dupliquer la mise en page et en faire un atlas : <ul>
-<li>Activer l'atlas sur les communes</li>
-<li>Changer le titre pour afficher le nom de la commune</li>
-<li>Configurer la carte pour suivre l'atlas.</li>
-</ul>
-</li>
-</ul>
                 
                   
                     
@@ -1092,7 +1094,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 26, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 19, 2021</span>
       
     
   </small>
@@ -1226,7 +1228,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../../assets/javascripts/workers/search.8397ff9e.min.js", "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f89c2efe.min.js"></script>
+      <script src="../../assets/javascripts/bundle.1e84347e.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
       
