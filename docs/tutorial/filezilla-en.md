@@ -2,53 +2,56 @@
 
 ## Installation
 
-* Vous devez télécharger et installer le logiciel **FileZilla Client** depuis ce lien : 
+* You need to download and install the software **FileZilla Client** from this link : 
 https://filezilla-project.org/download.php?type=client
   
-* Une fois l'installation effectuée, vous pouvez enregistrer la connexion vers le serveur FTP.
+* When the installation is done, you can register the credentials for the Lizmap FTP server.
   
-## Enregistrement de votre serveur Lizmap
+## Register a Lizmap FTP server
 
-* 1 Par email, vous avez du recevoir les identifiants de connexions vers le serveur FTP.
-* 2 Ouvrez **FileZilla Client**
-* 3 Cliquez sur le premier icône dans la barre d'outils
+* 1 By email, you should have received all informations about credentials, URL etc.
+* 2 Open **FileZilla Client**
+* 3 Click on the first icon in the toolbar
 
 ![Filezilla](./media/ftp_1.jpg)
 
-* 4 **Nouveau site**
+* 4 **New site**
 
 ![Filezilla](./media/ftp_2.jpg)
 
-* 5 Complétez les informations :
+* 5 Fill all required information :
     * **1** : Protocol : `FTP`
-    * **2** : Host : Le serveur FTP reçu par email
+    * **2** : Host : The FTP server in the email
     * **3** : Encryption : `Use explicit FTP over TLS if available`
     * **4** : Logon type : `Normal`
-    * **5** : User : Le nom d'utilisateur reçu par email
-    * **6** : Password : Le mot de passe reçu par email
+    * **5** : User : The username in the mail
+    * **6** : Password : The password in the email
 
 ![Filezilla](./media/ftp_3.jpg)
 
-**Note**, il est possible de synchroniser la navigation dans l'onglet **Avancé**.
+**Note**, it's possible to synchronize the navigation between the local directory and the
+remote directory in the **Advanced** tab. You need to fill the local and remote paths and
+also toggle the two checkboxes in the tab.
 
-* 6 Validez l'ajout de cette connexion.
+* 6 Click **ok** for this server.
 
-* 7 En utilisant le deuxième bouton dans la barre d'outils, vous pouvez vous connecter au serveur FTP
+* 7 By using the second button in the toolbar, you can now connect to the FTP server easily.
 
 ![Filezilla](./media/ftp_4.jpg)
 
-* 8 Vous devriez avoir un écran semblable à celui-ci : 
+* 8 You should have a screen similar to this one : 
 
 ![Filezilla](./media/ftp_5.jpg)
 
-* Description de l'interface : 
-  * En haut, des commandes FTP, pas besoin de s'inquiéter des messages
-  * À gauche, votre ordinateur
-  * À droite, le serveur
-  * En bas, un récapitulatif des données qui sont en transfert.
+* Description of the user interface : 
+  * At the top, some FTP logs about what is happening
+  * On the left, your computer
+  * On the right, the server
+  * At the bottom, data which are currently being transferred.
     
-* Par glisser/déposer, nous allons déplacer des fichiers de votre ordinateur vers le serveur.
+* With a **drag&drop**, we can copy files from the computer to the server.
 
-## Arborescence par défaut
+## Default tree
 
-Sur le serveur, **toujours** dans le dossier **qgis**, nous allons créer des répertoires qui seront vos thématiques.
+On the server, **always** in the directory **qgis**, we will create directories
+which will be a Lizmap theme.

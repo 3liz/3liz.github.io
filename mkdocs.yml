@@ -13,7 +13,8 @@ nav:
     - Tools: tools.md
     - Presentations: talks.md
     - Tutorials:
-        - 'Filezilla': 'tutorial/filezilla-en.md'
+        - 'Filezilla EN': 'tutorial/filezilla-en.md'
+        - 'Filezilla FR': 'tutorial/filezilla-fr.md'
         - 'WinSCP EN': 'tutorial/winscp-en.md'
         - 'WinSCP FR': 'tutorial/winscp-fr.md'
         - 'QGIS Repository FR': 'tutorial/qgis-repository-fr.md'
