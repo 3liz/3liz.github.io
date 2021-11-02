@@ -215,4 +215,22 @@
         <repository>https://github.com/3liz/qgis-gestion_base_adresse-plugin</repository>
         <tags>adresse,france,french,address,lizmap</tags>
     </pyqgis_plugin>
+<pyqgis_plugin name="OpenADS" version="0.1.0">
+        <description>Extension openADS</description>
+        <version>0.1.0</version>
+        <qgis_minimum_version>3.16</qgis_minimum_version>
+        <homepage />
+        <file_name>openads.0.1.0.zip</file_name>
+        <icon>resources/icons/icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/qgis-openads-plugin/releases/download/0.1.0/openads.0.1.0.zip</download_url>
+        <uploaded_by>3Liz</uploaded_by>
+        <create_date>2021-11-02</create_date>
+        <update_date>2021-11-02</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://projects.3liz.org/</tracker>
+        <repository>https://projects.3liz.org/</repository>
+        <tags>foncier,cadastre,urbanisme,france</tags>
+    </pyqgis_plugin>
 </plugins>
