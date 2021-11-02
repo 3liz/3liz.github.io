@@ -15,6 +15,7 @@ You need to follow the tutorial how to add a [custom repository](./tutorial/qgis
 * [Drain Sewer Visual Inspection](../qgis_drain_sewer_visual_inspection/)
 * [French address](../qgis-gestion_base_adresse-plugin/)
 * [French cadastre](../QgisCadastrePlugin/)
+* [French openADS](../qgis-openads-plugin/)
 * [G-Obs](../qgis-gobs-plugin/)
 * [Lizmap](https://docs.lizmap.com/current/en/publish/lizmap_plugin/index.html)
 * [Lizsync](../qgis-lizsync-plugin/)
