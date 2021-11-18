@@ -16,6 +16,10 @@ hide:
 
 * [FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-Foss4G-PgMetadata.html) [PDF](https://docs.3liz.org/presentations/pdf/FOSS4G-2021-PgMetadata.pdf) [Youtube](https://www.youtube.com/watch?v=CjZZwKlzYGc)
 
+## French Cadastre
+
+* [Journée technique cadastre/ortho/lidar du CRIGE 2021 🇫🇷](https://docs.3liz.org/presentations/2021-11-crige-paca-qgis-cadastre.html#/)
+
 ## Others
 
 * [OSM in QGIS FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-foss4g-osm-in-qgis.html) [PDF](https://docs.3liz.org/presentations/pdf/FOSS4G-2021-osm-in-qgis.pdf)
