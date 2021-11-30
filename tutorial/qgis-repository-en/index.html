@@ -737,7 +737,11 @@
                 
                 <h1 id="add-a-custom-qgis-plugin-repository">Add a custom QGIS plugin repository<a class="headerlink" href="#add-a-custom-qgis-plugin-repository" title="Permanent link">#</a></h1>
 <h2 id="add-the-repository">Add the repository<a class="headerlink" href="#add-the-repository" title="Permanent link">#</a></h2>
-<p>In your plugin manager, go in the <strong>Settings</strong> tab.</p>
+<p>You need to go in the <strong>plugin manager</strong> :</p>
+<ul>
+<li>Plugins ➡ Manage and install plugins</li>
+</ul>
+<p>Then, go in the <strong>Settings</strong> tab.</p>
 <p><img alt="Plugin manager" src="../media/qgis_plugin_repository_list.png" /></p>
 <ul>
 <li>Click <strong>Add…</strong></li>
@@ -750,8 +754,9 @@
 <li><strong>Name</strong> : Name of the repository. You can choose, for instance <code>Plugin 3Liz XXX</code>.</li>
 <li><strong>URL</strong> : URL which have been provided in the email, for instance 
   <code>https://github.com/3liz/lizmap-plugin/releases/latest/download/plugins.xml</code></li>
-<li>Press <strong>OK</strong> if your plugin does not require any authentication. If your plugin requires one, 
-  <a href="#add-the-authentification">read below</a>.</li>
+<li>Press <strong>OK</strong> if your plugin does not require any authentication.
+  <strong>If</strong> your plugin requires one, <a href="#add-the-authentification">read below</a> <strong>to continue</strong>.
+  If the URL of the repository starts with <code>https://packages.3liz.org/</code>, it's high probability that your repository requires an authentification.</li>
 <li>Press <strong>Reload repositories</strong> to fetch the content of the new repository. <strong>This does not install the 
   plugin</strong>, it's only adding a remote server where to find plugins.</li>
 </ul>
@@ -797,7 +802,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 2, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 30, 2021</span>
       
     
   </small>
