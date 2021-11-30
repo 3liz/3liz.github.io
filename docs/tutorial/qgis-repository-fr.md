@@ -2,7 +2,11 @@
 
 ## Ajouter le dépôt
 
-Dans votre gestionnaire des extensions, aller dans l'onglet **Paramètres**.
+Il faut se rendre dans le **gestionnaire des extensions**.
+
+* Extensions ➡ Installer/Gérer les extensions
+
+Ensuite, aller dans l'onglet **Paramètres**.
 
 ![Plugin manager](./media/qgis_plugin_repository_list.png)
 
@@ -14,8 +18,9 @@ Dans votre gestionnaire des extensions, aller dans l'onglet **Paramètres**.
     * **Nom** : Nom du dépôt. Ce nom est libre à vous, par exemple `Plugin 3Liz XXX`
     * **URL** : URL du dépôt qui a été fournie par mail, par exemple
     `https://github.com/3liz/lizmap-plugin/releases/latest/download/plugins.xml`
-    * Cliquer sur **OK** si votre extension ne nécessite pas une authentification. Si votre extension en 
-      requière une, [lire plus bas](#ajouter-une-authentification). 
+    * Cliquer sur **OK** si votre extension ne nécessite pas une authentification.
+      **Si** votre extension en requière une, [lire plus bas](#ajouter-une-authentification) **pour continuer**.
+      Si l'URL du dépôt commence par `https://packages.3liz.org/`, il y a de fortes chances que votre dépôt requière une authentification.
 * Cliquer sur **Recharger le dépôt** pour récupérer le contenu de ce nouveau dépôt. **Ceci n'installe pas 
     l'extension**, cela ajoute seulement l'adresse du serveur pour trouver des nouvelles extensions.
     

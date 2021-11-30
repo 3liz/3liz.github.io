@@ -2,7 +2,11 @@
 
 ## Add the repository
 
-In your plugin manager, go in the **Settings** tab.
+You need to go in the **plugin manager** :
+
+* Plugins ➡ Manage and install plugins
+
+Then, go in the **Settings** tab.
 
 ![Plugin manager](./media/qgis_plugin_repository_list.png)
 
@@ -14,8 +18,9 @@ In your plugin manager, go in the **Settings** tab.
     * **Name** : Name of the repository. You can choose, for instance `Plugin 3Liz XXX`.
     * **URL** : URL which have been provided in the email, for instance 
       `https://github.com/3liz/lizmap-plugin/releases/latest/download/plugins.xml`
-    * Press **OK** if your plugin does not require any authentication. If your plugin requires one, 
-      [read below](#add-the-authentification).
+    * Press **OK** if your plugin does not require any authentication.
+      **If** your plugin requires one, [read below](#add-the-authentification) **to continue**.
+      If the URL of the repository starts with `https://packages.3liz.org/`, it's high probability that your repository requires an authentification.
     * Press **Reload repositories** to fetch the content of the new repository. **This does not install the 
       plugin**, it's only adding a remote server where to find plugins.
 
