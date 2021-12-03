@@ -23,6 +23,7 @@ hide:
 * [FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-Foss4G-PgMetadata.html)
   [PDF](https://docs.3liz.org/presentations/pdf/FOSS4G-2021-PgMetadata.pdf)
   [Youtube](https://www.youtube.com/watch?v=CjZZwKlzYGc)
+* QGIS-FR 2020 🇫🇷 [Youtube](https://www.youtube.com/watch?v=o47w7zf40nw)
 
 ## French Cadastre
 
