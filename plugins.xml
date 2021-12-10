@@ -161,24 +161,6 @@
         <repository>https://github.com/3liz/qgis-pgmetadata-plugin</repository>
         <tags>metadata,postgresql,qgis,metadonnees,dcat,xml,csv</tags>
     </pyqgis_plugin>
-<pyqgis_plugin name="OpenADS" version="0.1.0">
-        <description>Extension openADS</description>
-        <version>0.1.0</version>
-        <qgis_minimum_version>3.16</qgis_minimum_version>
-        <homepage />
-        <file_name>openads.0.1.0.zip</file_name>
-        <icon>resources/icons/icon.png</icon>
-        <author_name>3Liz</author_name>
-        <download_url>https://github.com/3liz/qgis-openads-plugin/releases/download/0.1.0/openads.0.1.0.zip</download_url>
-        <uploaded_by>3Liz</uploaded_by>
-        <create_date>2021-11-02</create_date>
-        <update_date>2021-11-02</update_date>
-        <experimental>False</experimental>
-        <deprecated>False</deprecated>
-        <tracker>https://projects.3liz.org/</tracker>
-        <repository>https://projects.3liz.org/</repository>
-        <tags>foncier,cadastre,urbanisme,france</tags>
-    </pyqgis_plugin>
 <pyqgis_plugin name="Gestion Adresse" version="1.0.0">
         <description>Gestion de la base adresse avec le module Lizmap</description>
         <version>1.0.0</version>
@@ -232,5 +214,23 @@
         <tracker>https://github.com/3liz/QgisCadastrePlugin/issues</tracker>
         <repository>https://github.com/3liz/QgisCadastrePlugin</repository>
         <tags>cadastre, france, majic, edigeo, import</tags>
+    </pyqgis_plugin>
+<pyqgis_plugin name="OpenADS" version="0.9.0">
+        <description>openADS est un logiciel web destin&#233; &#224; l'instruction d&#233;mat&#233;rialis&#233;e des dossiers d'urbanisme. Cette extension fonctionne avec le module Lizmap https://github.com/3liz/lizmap-openads-module</description>
+        <version>0.9.0</version>
+        <qgis_minimum_version>3.16</qgis_minimum_version>
+        <homepage>https://docs.3liz.org/qgis-openads-plugin/</homepage>
+        <file_name>openads.0.9.0.zip</file_name>
+        <icon>resources/icons/icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/qgis-openads-plugin/releases/download/0.9.0/openads.0.9.0.zip</download_url>
+        <uploaded_by>Gustry</uploaded_by>
+        <create_date>2021-12-10</create_date>
+        <update_date>2021-12-10</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/qgis-openads-plugin/issues</tracker>
+        <repository>https://github.com/3liz/qgis-openads-plugin</repository>
+        <tags>foncier,cadastre,urbanisme,france,lizmap</tags>
     </pyqgis_plugin>
 </plugins>
