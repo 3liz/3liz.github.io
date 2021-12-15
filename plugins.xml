@@ -161,24 +161,6 @@
         <repository>https://github.com/3liz/qgis-pgmetadata-plugin</repository>
         <tags>metadata,postgresql,qgis,metadonnees,dcat,xml,csv</tags>
     </pyqgis_plugin>
-<pyqgis_plugin name="Lizmap" version="3.6.4">
-        <description>Publish and share your QGIS maps on the Web via Lizmap Web Client, by 3liz.com</description>
-        <version>3.6.4</version>
-        <qgis_minimum_version>3.4</qgis_minimum_version>
-        <homepage>https://docs.lizmap.com</homepage>
-        <file_name>lizmap.3.6.4.zip</file_name>
-        <icon>resources/icons/icon.png</icon>
-        <author_name>3Liz</author_name>
-        <download_url>https://github.com/3liz/lizmap-plugin/releases/download/3.6.4/lizmap.3.6.4.zip</download_url>
-        <uploaded_by>Gustry</uploaded_by>
-        <create_date>2021-11-15</create_date>
-        <update_date>2021-11-15</update_date>
-        <experimental>False</experimental>
-        <deprecated>False</deprecated>
-        <tracker>https://github.com/3liz/lizmap-plugin/issues</tracker>
-        <repository>https://github.com/3liz/lizmap-plugin</repository>
-        <tags>online,server,web,webgis,webservice,webmapping,mobile,publication,wms,wfs,wps,internet,cloud,dashboard</tags>
-    </pyqgis_plugin>
 <pyqgis_plugin name="OpenADS" version="0.9.0">
         <description>openADS est un logiciel web destin&#233; &#224; l'instruction d&#233;mat&#233;rialis&#233;e des dossiers d'urbanisme. Cette extension fonctionne avec le module Lizmap https://github.com/3liz/lizmap-openads-module</description>
         <version>0.9.0</version>
@@ -232,5 +214,23 @@
         <tracker>https://github.com/3liz/qgis-gestion_base_adresse-plugin</tracker>
         <repository>https://github.com/3liz/qgis-gestion_base_adresse-plugin</repository>
         <tags>adresse,france,french,address,lizmap</tags>
+    </pyqgis_plugin>
+<pyqgis_plugin name="Lizmap" version="3.6.5">
+        <description>Publish and share your QGIS maps on the Web via Lizmap Web Client, by 3liz.com</description>
+        <version>3.6.5</version>
+        <qgis_minimum_version>3.4</qgis_minimum_version>
+        <homepage>https://docs.lizmap.com</homepage>
+        <file_name>lizmap.3.6.5.zip</file_name>
+        <icon>resources/icons/icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/lizmap-plugin/releases/download/3.6.5/lizmap.3.6.5.zip</download_url>
+        <uploaded_by>Gustry</uploaded_by>
+        <create_date>2021-12-15</create_date>
+        <update_date>2021-12-15</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/lizmap-plugin/issues</tracker>
+        <repository>https://github.com/3liz/lizmap-plugin</repository>
+        <tags>online,server,web,webgis,webservice,webmapping,mobile,publication,wms,wfs,wps,internet,cloud,dashboard</tags>
     </pyqgis_plugin>
 </plugins>
