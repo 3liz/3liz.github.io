@@ -161,24 +161,6 @@
         <repository>https://github.com/3liz/qgis-pgmetadata-plugin</repository>
         <tags>metadata,postgresql,qgis,metadonnees,dcat,xml,csv</tags>
     </pyqgis_plugin>
-<pyqgis_plugin name="OpenADS" version="0.9.0">
-        <description>openADS est un logiciel web destin&#233; &#224; l'instruction d&#233;mat&#233;rialis&#233;e des dossiers d'urbanisme. Cette extension fonctionne avec le module Lizmap https://github.com/3liz/lizmap-openads-module</description>
-        <version>0.9.0</version>
-        <qgis_minimum_version>3.16</qgis_minimum_version>
-        <homepage>https://docs.3liz.org/qgis-openads-plugin/</homepage>
-        <file_name>openads.0.9.0.zip</file_name>
-        <icon>resources/icons/icon.png</icon>
-        <author_name>3Liz</author_name>
-        <download_url>https://github.com/3liz/qgis-openads-plugin/releases/download/0.9.0/openads.0.9.0.zip</download_url>
-        <uploaded_by>Gustry</uploaded_by>
-        <create_date>2021-12-10</create_date>
-        <update_date>2021-12-10</update_date>
-        <experimental>False</experimental>
-        <deprecated>False</deprecated>
-        <tracker>https://github.com/3liz/qgis-openads-plugin/issues</tracker>
-        <repository>https://github.com/3liz/qgis-openads-plugin</repository>
-        <tags>foncier,cadastre,urbanisme,france,lizmap</tags>
-    </pyqgis_plugin>
 <pyqgis_plugin name="cadastre" version="1.13.5">
         <description>This plugins helps users to use French land registry data, called Cadastre, in QGIS. It is only useful in</description>
         <version>1.13.5</version>
@@ -232,5 +214,23 @@
         <tracker>https://github.com/3liz/lizmap-plugin/issues</tracker>
         <repository>https://github.com/3liz/lizmap-plugin</repository>
         <tags>online,server,web,webgis,webservice,webmapping,mobile,publication,wms,wfs,wps,internet,cloud,dashboard</tags>
+    </pyqgis_plugin>
+<pyqgis_plugin name="OpenADS" version="0.10.0">
+        <description>openADS est un logiciel web destin&#233; &#224; l'instruction d&#233;mat&#233;rialis&#233;e des dossiers d'urbanisme. Cette extension fonctionne avec le module Lizmap https://github.com/3liz/lizmap-openads-module</description>
+        <version>0.10.0</version>
+        <qgis_minimum_version>3.16</qgis_minimum_version>
+        <homepage>https://docs.3liz.org/qgis-openads-plugin/</homepage>
+        <file_name>openads.0.10.0.zip</file_name>
+        <icon>resources/icons/icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/qgis-openads-plugin/releases/download/0.10.0/openads.0.10.0.zip</download_url>
+        <uploaded_by>Gustry</uploaded_by>
+        <create_date>2022-01-07</create_date>
+        <update_date>2022-01-07</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/qgis-openads-plugin/issues</tracker>
+        <repository>https://github.com/3liz/qgis-openads-plugin</repository>
+        <tags>foncier,cadastre,urbanisme,france,lizmap</tags>
     </pyqgis_plugin>
 </plugins>
