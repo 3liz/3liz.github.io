@@ -47,7 +47,7 @@ This workshop is designed for Lizmap users, half day.
       * **Relations** tab, add all relations **automatically** with **Discover Relations**
       * **QGIS Server** tab,
           * **Service capabilities**
-              * set a **title** and an **abstract**
+              * set a **title** such as `Lizmap training NAME` and an **abstract**
           * **WMS capabilities**
               * use the current canvas extent for the **published extent**
           * **WFS capabilities**
