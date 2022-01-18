@@ -22,6 +22,7 @@ nav:
     - Internships:
         - GSOC: 'internships/gsoc.md'
     - Workshops:
+        - Index: 'workshop/workshop.md'
         - Lizmap French: 'workshop/lizmap-short-french.md'
         - Lizmap English: 'workshop/lizmap-short-english.md'
     - Links: 'links.md'
