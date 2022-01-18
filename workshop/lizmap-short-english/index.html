@@ -256,7 +256,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../lizmap-short-french/" class="md-tabs__link md-tabs__link--active">
+      <a href="../workshop/" class="md-tabs__link md-tabs__link--active">
         Workshops
       </a>
     </li>
@@ -292,7 +292,9 @@
           
             
               
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -589,6 +591,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../workshop/" class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../lizmap-short-french/" class="md-nav__link">
         Lizmap French
       </a>
@@ -645,15 +661,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
-    Documentation
+  <a href="#links" class="md-nav__link">
+    Links
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    Links
+  <a href="#documentation" class="md-nav__link">
+    Documentation
   </a>
   
 </li>
@@ -687,9 +703,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lets-add-some-popups" class="md-nav__link">
-    Let's add some popups
+  <a href="#lets-add-some-popups-auto-and-qgis" class="md-nav__link">
+    Let's add some popups "auto" and "qgis"
   </a>
+  
+    <nav class="md-nav" aria-label="Let's add some popups "auto" and "qgis"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avec-des-expressions" class="md-nav__link">
+    Avec des expressions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -731,6 +760,33 @@
   <a href="#dataviz" class="md-nav__link">
     Dataviz
   </a>
+  
+    <nav class="md-nav" aria-label="Dataviz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bar-chart" class="md-nav__link">
+    Bar chart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pie-chart" class="md-nav__link">
+    Pie chart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-filtered-plot" class="md-nav__link">
+    Advanced filtered plot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -772,6 +828,8 @@
             
             
               
+                
+              
               <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
@@ -799,15 +857,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#documentation" class="md-nav__link">
-    Documentation
+  <a href="#links" class="md-nav__link">
+    Links
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    Links
+  <a href="#documentation" class="md-nav__link">
+    Documentation
   </a>
   
 </li>
@@ -841,9 +899,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lets-add-some-popups" class="md-nav__link">
-    Let's add some popups
+  <a href="#lets-add-some-popups-auto-and-qgis" class="md-nav__link">
+    Let's add some popups "auto" and "qgis"
   </a>
+  
+    <nav class="md-nav" aria-label="Let's add some popups "auto" and "qgis"">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#avec-des-expressions" class="md-nav__link">
+    Avec des expressions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -886,6 +957,33 @@
     Dataviz
   </a>
   
+    <nav class="md-nav" aria-label="Dataviz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bar-chart" class="md-nav__link">
+    Bar chart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pie-chart" class="md-nav__link">
+    Pie chart
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-filtered-plot" class="md-nav__link">
+    Advanced filtered plot
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -905,52 +1003,82 @@
 <h2 id="pre-requirements">Pre-requirements<a class="headerlink" href="#pre-requirements" title="Permanent link">#</a></h2>
 <p>This workshop is designed for Lizmap users, half day.</p>
 <ul>
-<li>FTP Client (WinSCP for Windows, Filezilla for MacOS/Linux)</li>
+<li>FTP Client (WinSCP for Windows, Filezilla for MacOS/Linux)<ul>
+<li><code>qgis/theme_formation</code> : for the workshop</li>
+<li><code>qgis/theme_formation/media/metadata.pdf</code> : a PDF file</li>
+</ul>
+</li>
 <li>QGIS 3.16</li>
 <li>Lizmap plugin on QGIS Desktop</li>
-<li>QGIS project attached in the email</li>
+<li>QGIS project attached in the email<ul>
 <li>The QGIS project contains layers from the PostgreSQL database</li>
 </ul>
-<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">#</a></h2>
-<ul>
-<li><a href="https://docs.lizmap.com/">https://docs.lizmap.com/</a></li>
+</li>
 </ul>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">#</a></h2>
 <ul>
 <li>Demo <a href="https://demo.lizmap.com">https://demo.lizmap.com</a></li>
 <li>Lizmap hosting out-of-the-box <a href="https://www.lizmap.com">https://www.lizmap.com</a></li>
+<li>PDF/HTML presentations <a href="https://docs.3liz.org/talks/#lizmap">https://docs.3liz.org/talks/#lizmap</a></li>
 <li>Mailing-list Osgeo Lizmap<ul>
 <li><a href="https://lists.osgeo.org/mailman/listinfo/lizmap">https://lists.osgeo.org/mailman/listinfo/lizmap</a></li>
 </ul>
 </li>
-<li>Twitter account : </li>
+<li>Twitter accounts : <ul>
 <li><a href="https://twitter.com/LizmapForQgis">https://twitter.com/LizmapForQgis</a> dedicated to Lizmap</li>
+<li><a href="https://twitter.com/3LIZ_news">https://twitter.com/3LIZ_news</a> about 3Liz</li>
 <li><a href="https://twitter.com/3lizRelease">https://twitter.com/3lizRelease</a> everytime we make a new version on GitHub in one of our project</li>
-<li>Source code</li>
+</ul>
+</li>
+<li>Source code<ul>
 <li>Lizmap Web Client <a href="https://github.com/3liz/lizmap-web-client/">https://github.com/3liz/lizmap-web-client/</a></li>
 <li>Lizmap QGIS side (desktop and server) : <a href="https://github.com/3liz/lizmap-plugin/">https://github.com/3liz/lizmap-plugin/</a></li>
 <li>3Liz <a href="https://github.com/3liz/">https://github.com/3liz/</a> for QGIS Server plugins, Lizmap modules</li>
 </ul>
+</li>
+</ul>
+<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://docs.lizmap.com/">https://docs.lizmap.com/</a></li>
+<li>Check the Lizmap architecture and manuals</li>
+</ul>
 <h2 id="first-quick-map">First quick map<a class="headerlink" href="#first-quick-map" title="Permanent link">#</a></h2>
 <ul>
 <li>Open the project</li>
-<li>Set the extent on the map canvas</li>
+<li>Set the extent on the map canvas (showing all islands)</li>
 <li>In the Project Properties :<ul>
+<li><strong>Project</strong> menu / <strong>Properties</strong></li>
 <li><strong>Relations</strong> tab, add all relations <strong>automatically</strong> with <strong>Discover Relations</strong></li>
 <li><strong>QGIS Server</strong> tab,<ul>
-<li><strong>Service capabilities</strong>, set a <strong>title</strong> and an <strong>abstract</strong></li>
-<li><strong>WMS capabilities</strong>, use the current canvas extent</li>
-<li><strong>WFS capabilities</strong>, publish all layers</li>
+<li><strong>Service capabilities</strong><ul>
+<li>set a <strong>title</strong> and an <strong>abstract</strong></li>
+</ul>
+</li>
+<li><strong>WMS capabilities</strong><ul>
+<li>use the current canvas extent for the <strong>published extent</strong></li>
+</ul>
+</li>
+<li><strong>WFS capabilities</strong><ul>
+<li><strong>publish</strong> all layers</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Open the Lizmap plugin</li>
-<li><strong>Only one time</strong>, add a server with your instance home page URL</li>
-<li>Close the Lizmap plugin (it's creating the Lizmap file when closing the window).</li>
-<li>Transfert the project (<code>.qgs</code> et <code>.cfg</code>) in the folder <code>qgis/topic_workshop</code></li>
+<li><strong>Only one time</strong>, add a server with your instance home page URL<ul>
+<li>Example <code>https://workshop.lizmap.com/foss4g_2021/</code></li>
+<li>We don't need user and password</li>
 </ul>
-<p><strong>Bonus</strong> if you have a small PNG picture called <code>name_of_project.qgs.png</code>.</p>
+</li>
+<li>Close the Lizmap plugin (it's creating the Lizmap file when closing the window).</li>
+<li>Transfert the project (<code>.qgs</code> et <code>.cfg</code>) in the folder <code>qgis/topic_workshop</code> on the FTP</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Bonus</strong> if you have a small PNG picture called <code>name_of_project.qgs.png</code> to replace the default project thumbnail.</p>
+</div>
 <h2 id="quick-overview-of-the-lizmap-web-interface">Quick overview of the Lizmap web interface<a class="headerlink" href="#quick-overview-of-the-lizmap-web-interface" title="Permanent link">#</a></h2>
 <ul>
 <li>The map</li>
@@ -965,56 +1093,108 @@
 <li><code>hidden</code>, with small <code>h</code>, with <code>species</code> and you can add OSM base layer (from the QGIS Browser, XYZ Tiles)</li>
 </ul>
 </li>
+<li>Reorder layers to put them inside these groups according to the screenshot below</li>
 <li>Rename layers with a more human-readable<ul>
 <li><strong>Except</strong> for the OSM layer, in the group <code>hidden</code>, the name must be <code>osm-mapnik</code></li>
 </ul>
 </li>
 </ul>
 <p><img alt="legend" src="../media/legend.png" /></p>
-<p><strong>Starting from now</strong>, often send the QGS file and the CFG file on the server to check the result between each bullet item.</p>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Lizmap is using <strong>QGIS Server</strong> in the background, the legend is, therefore, the same as in QGIS Desktop.</p>
+<p>Some settings in the QGIS project <strong>or</strong> in the Lizmap plugin can have effects in the web interface.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Starting from now</strong>, often send the QGS file and the CFG file on the server to check the result.</p>
+</div>
 <ul>
-<li>Make a quick symbology on a point layer :</li>
-<li>Make a quick symbology on the municipalities layer : (already done ;-)<ul>
-<li><strong>Categorized</strong> on <code>name</code> ()</li>
-<li>Tip, change the symbol to remove the fill</li>
-<li>Remove the line <code>Water</code></li>
+<li>Make a quick symbology on a point layer.</li>
+<li>Add labels on the municipalities layer and add a scale based visibility for these labels (1:300 000)<ul>
+<li><code>name</code> field for the source</li>
+<li><strong>Rendering</strong> tab, scale based visibility minimum set to 1:300 000</li>
 </ul>
 </li>
-<li>Go in the Lizmap plugin, <strong>Layers</strong> tab</li>
-<li>Set a link on a layer: <ul>
-<li><code>media/metadata.pdf</code>, a PDF link, stored in the folder <code>media</code> (you can see it in the FTP client) on <code>observations</code></li>
-<li><code>https://en.wikipedia.org/wiki/French_Polynesia</code> on <code>municipalities</code></li>
+<li>Go in the Lizmap <strong>plugin</strong>, <strong>Layers</strong> tab :<ul>
+<li>Enable the <strong>municipalities</strong> layer by default  </li>
+<li>Add some <strong>links</strong> on two layers: <ul>
+<li>PDF for the persons layer : <code>media/metadata.pdf</code>, a PDF link, stored in the folder <code>media</code> (you can see it in the FTP client)</li>
+<li>HTML for the municipalities : <code>https://en.wikipedia.org/wiki/French_Polynesia</code></li>
 </ul>
 </li>
-<li>In the Lizmap plugin, go in <strong>Baselayers</strong> and add the OpenStreetMap Mapnik background.</li>
+<li>Go in <strong>Baselayers</strong> tag and add the OpenStreetMap Mapnik background.</li>
 </ul>
+</li>
+</ul>
+<p><img alt="Lizmap layer properties" src="../media/lizmap_layer_properties.png" /></p>
 <h2 id="attribute-table">Attribute table<a class="headerlink" href="#attribute-table" title="Permanent link">#</a></h2>
 <ul>
-<li>From the plugin, enable the attribute table for the <strong>municipalities</strong> layer.</li>
+<li>From the <strong>plugin</strong>, enable the attribute table for the <strong>municipalities</strong> layer.<ul>
+<li>In the <strong>Attribute table</strong> tab, add a new layer</li>
 </ul>
-<h2 id="lets-add-some-popups">Let's add some popups<a class="headerlink" href="#lets-add-some-popups" title="Permanent link">#</a></h2>
+</li>
+</ul>
+<p><img alt="Lizmap attribute table" src="../media/lizmap_attribute_table.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We can improve our attribute table by adding some alias on the fields :</p>
 <ul>
-<li>In the Lizmap plugin, enable some popups on the layer <strong>municipalities</strong> with <code>auto</code> mode.</li>
-<li>Add some <strong>aliases</strong> on fields to "clean" them from the <strong>layer properties</strong> ➡ <strong>Attributes Form</strong> ➡ a specific field ➡ <strong>Alias</strong>.</li>
-<li>Let's switch to a popup with <strong>QGIS</strong> mode :</li>
+<li><strong>Properties</strong> on the vector layer ➡ <strong>Form attributes</strong> ➡ <strong>Alias</strong> for all fields</li>
 </ul>
-<p><strong>Tip</strong> : QGIS ➡ <strong>View</strong> ➡ <strong>Show Map Tips</strong> to display maptip straight in QGIS Desktop. You need to select the maptip tool in the toolbar as well.</p>
+</div>
+<h2 id="lets-add-some-popups-auto-and-qgis">Let's add some popups "auto" and "qgis"<a class="headerlink" href="#lets-add-some-popups-auto-and-qgis" title="Permanent link">#</a></h2>
+<ul>
+<li>In the Lizmap <strong>plugin</strong>, <strong>layers</strong> tab, enable some popups on the layer <strong>municipalities</strong> with <code>auto</code> mode and check the results by clicking on a municipality.</li>
+<li>Let's switch to a popup with <strong>QGIS</strong> mode on the same layer :</li>
+</ul>
 <p>These <strong>QGIS</strong> popups are powerful with the use of QGIS <strong>expressions</strong>:</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% &quot;name&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% &quot;name&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 </code></pre></div>
 </td></tr></table>
+<ul>
+<li>Copy/paste this HTML code in the <code>communes</code> vector layer properties, <strong>rendering</strong> tab, then <strong>HTML Maptip</strong>.</li>
+<li><strong>Tip</strong> : QGIS ➡ <strong>View</strong> ➡ <strong>Show Map Tips</strong> to display maptip straight in QGIS Desktop. You need to select the maptip tool in the toolbar as well.</li>
+</ul>
+<h3 id="avec-des-expressions">Avec des expressions<a class="headerlink" href="#avec-des-expressions" title="Permanent link">#</a></h3>
 <p>You can use expressions :</p>
+<ul>
+<li>to display with capital letters</li>
+<li>to display in red if the population is less than 20 000 inhabitants</li>
+</ul>
+<details class="note">
+<summary>Display solutions</summary>
+<ul>
+<li>The first one about capital letters :
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>* to display with capital letters
-* to display in red if the population is less than 20 000 inhabitants
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% upper(&quot;name&quot;) %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
 </code></pre></div>
-</td></tr></table>
+</td></tr></table></li>
+<li>The second one about the population in red :
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% upper(&quot;name&quot;) %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color:[% if( &quot;</span><span class="na">population</span><span class="err">&quot;</span> <span class="p">&gt;</span> 20000, &#39;black&#39;, &#39;red&#39;) %]&quot;&gt;[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table></li>
+</ul>
+</details>
+<p>We can have the same style as the <code>auto</code> popup with the <code>qgis</code> popup by reading the
+<a href="https://docs.lizmap.com/current/en/publish/configuration/popup.html#qgis-popup">documentation</a>.</p>
 <h2 id="editing-capabilities-on-a-layer">Editing capabilities on a layer<a class="headerlink" href="#editing-capabilities-on-a-layer" title="Permanent link">#</a></h2>
 <p>We want now to enable editing capabilities on a layer in the Lizmap interface, to let some users add some <strong>observations</strong>.</p>
 <ul>
@@ -1059,33 +1239,64 @@
 </ul>
 <p><img alt="Form values" src="../media/list_value.png" /></p>
 <ul>
-<li>As soon as you have your form ready in QGIS (more or less 🙂), add the layer in the editing
+<li>As soon as you have your form ready in QGIS (more or less 🙂), add the layer in the <strong>editing</strong>
   panel in Lizmap</li>
 </ul>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>We can use QGIS Expressions in the form (visibility, conditions, default value etc).
+<a href="https://docs.lizmap.com/current/en/publish/configuration/expression.html">Read the documentation</a>.</p>
+</div>
 <h2 id="pdf-print">PDF Print<a class="headerlink" href="#pdf-print" title="Permanent link">#</a></h2>
 <h3 id="extent-chosen-by-the-user">Extent chosen by the user<a class="headerlink" href="#extent-chosen-by-the-user" title="Permanent link">#</a></h3>
 <ul>
 <li>In the given QGIS project, there is already a layout <code>Landscape A4</code>.</li>
-<li>Enable <strong>print</strong> in your Lizmap plugin, second tab.</li>
-<li>Customize the title from Lizmap web interface</li>
+<li>Enable <strong>print</strong> in your Lizmap plugin, <strong>map options</strong> tab.</li>
+<li>Customize the title from Lizmap web interface in the PDF :<ul>
+<li>Click on the title <code>Example workshop</code></li>
+<li><strong>Object identifier</strong> ➡ <code>title</code></li>
 </ul>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>In this case, the user is choosing the area of interest.</p>
+</div>
 <h3 id="from-a-popup-extent-defined-by-the-feature">From a popup, extent defined by the feature<a class="headerlink" href="#from-a-popup-extent-defined-by-the-feature" title="Permanent link">#</a></h3>
 <ul>
-<li>Duplicate the existing layout and let's transform it to an atlas:</li>
-<li>Enable atlas on municipalities</li>
+<li>Duplicate the existing layout and let's transform it to an atlas<ul>
+<li><strong>Project</strong> menu, <strong>Layout  manager</strong>, <strong>Duplicate</strong>, name <code>PDF sheet</code></li>
+<li>Edit this new layout</li>
+<li>Enable atlas on the municipalities layer</li>
 <li>Change the title to display the name of the municipality</li>
 <li>Enable the map to "follow" the current feature</li>
+</ul>
+</li>
 <li>Check in the result in Lizmap</li>
 </ul>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>While in this situation, the PDF is linked to a feature.</p>
+</div>
 <h2 id="dataviz">Dataviz<a class="headerlink" href="#dataviz" title="Permanent link">#</a></h2>
+<h3 id="bar-chart">Bar chart<a class="headerlink" href="#bar-chart" title="Permanent link">#</a></h3>
 <ul>
-<li>Add <strong>bar chart</strong> in the Lizmap plugin about population in municipalities</li>
-<li>Layer : Municipalities</li>
-<li>X Field : Name</li>
+<li>Add <strong>bar chart</strong> in the Lizmap plugin about population in municipalities (and not a histogram).<ul>
+<li>Layer : <strong>Municipalities</strong></li>
+<li>X Field : <strong>Name</strong></li>
 <li>No aggregation</li>
-<li>Trace : population</li>
-<li>On "persons" layer, add a pie chart about each "watcher"<ul>
-<li>Add a virtual field in "persons" called <code>count</code> :</li>
+<li>Trace : <ul>
+<li>field <strong>population</strong></li>
+<li>color blue</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Dataviz population" src="../media/dataviz_population.png" /></p>
+<ul>
+<li>On "persons" layer, add a pie chart about each "watcher" :<ul>
+<li>Add a virtual field in "persons" called <code>count</code>, integer :</li>
 </ul>
 </li>
 </ul>
@@ -1100,16 +1311,50 @@
 )
 </code></pre></div>
 </td></tr></table>
+<h3 id="pie-chart">Pie chart<a class="headerlink" href="#pie-chart" title="Permanent link">#</a></h3>
 <ul>
-<li>Add <strong>pie chart</strong> in the Lizmap plugin</li>
+<li>Add <strong>pie chart</strong> in the Lizmap plugin<ul>
+<li>Title</li>
+<li>Description</li>
 <li>Layer : Persons</li>
 <li>X Field : Name</li>
 <li>Aggregation sum</li>
 <li>Trace : count</li>
 </ul>
-<!-- 
-* For now, it's only charts at the layer level. It's possible to make charts for a given feature, for instance for a given "watcher", to know his own observations.
--->
+</li>
+</ul>
+<p><img alt="Dataviz pie" src="../media/dataviz_pie.png" /></p>
+<h3 id="advanced-filtered-plot">Advanced filtered plot<a class="headerlink" href="#advanced-filtered-plot" title="Permanent link">#</a></h3>
+<p>For now, it's only charts at the layer level. It's possible to make charts for a given feature, for instance for a given
+"watcher", to know his own observations.</p>
+<p><img alt="Dataviz filtered pie" src="../media/filtered_plot.png" /></p>
+<ul>
+<li>Add a virtual field <code>label_species</code> (text) in the <code>observations</code> layer to have the name :</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>attribute(get_feature(&#39;species_aa247cf3_58c8_4852_8ada_1d707a593cfe&#39;, &#39;id&#39;, &quot;fk_id_specie&quot;),&#39;es_nom_commun&#39;)
+</code></pre></div>
+</td></tr></table>
+<ul>
+<li>
+<p>Add a pie chart on the <code>persons</code> layer :</p>
+<ul>
+<li>Pie</li>
+<li>Title : Species</li>
+<li>Layer : Observations</li>
+<li>X Field : <code>label_species</code></li>
+<li>Aggregation <code>Count</code></li>
+<li>Traces : <code>id</code></li>
+<li>Checkbox <strong>Display filtered plot in popups of parent layer</strong></li>
+<li>Checkbox <strong>Only show in child popup</strong></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Dataviz filtered pie" src="../media/dataviz_filtered.png" /></p>
+<details class="note">
+<summary>Final result</summary>
+<p><img alt="Dataviz filtered pie" src="../media/filtered_plot.gif" /></p>
+</details>
+<p><strong>Thanks 😎</strong></p>
                 
                   
                     
@@ -1118,7 +1363,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 19, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 18, 2022</span>
       
     
   </small>
