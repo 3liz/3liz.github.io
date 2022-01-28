@@ -1,7 +1,7 @@
 # Google Summer Of Code
 
 These are the things we would like a [GSOC](https://summerofcode.withgoogle.com/) student to dabble with. Get
-in touch with lhirlimann@3liz.com if interested.
+in touch with info@3liz.com if interested.
 
 ![Google Summer Of Code](./media/gsoc.png)
 
