@@ -25,7 +25,8 @@ hide:
 
 ## QGIS Server
 
-* [FOSS4G 2019 🇬🇧 - WPS with QGIS processing - From desktop to server](https://www.youtube.com/watch?v=YL1tdcJwimA)
+* FOSS4G 2019 🇬🇧 - WPS with QGIS processing - From desktop to server
+  | [Youtube](https://www.youtube.com/watch?v=YL1tdcJwimA)
 
 ## PgMetadata
 
