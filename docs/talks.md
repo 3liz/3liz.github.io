@@ -18,11 +18,14 @@ hide:
   | [PDF](https://docs.3liz.org/presentations/pdf/pdf/FOSS4G-2019-Lizmap-Web-Client.pdf)
   | [Youtube](https://www.youtube.com/watch?v=FkQ2UG_SO-Y)
 
-
-## QGIS
+## QGIS Desktop
 
 * [QGISFR 2022 🇫🇷 - Les expressions et les formulaires pour créer un outil de saisie professionnel](https://docs.3liz.org/presentations/2022-01_QGISFR_2022_outil_saisie_avec_expressions_Michael_DOUCHIN.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/QGISFR-2022-Outil_saisie_avec_expressions.pdf)
+
+## QGIS Server
+
+* [FOSS4G 2019 🇬🇧 - WPS with QGIS processing - From desktop to server](https://www.youtube.com/watch?v=YL1tdcJwimA)
 
 ## PgMetadata
 
