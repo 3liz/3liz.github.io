@@ -125,24 +125,6 @@
         <repository>https://github.com/3liz/qgis-mercicor-plugin</repository>
         <tags>mercicor</tags>
     </pyqgis_plugin>
-<pyqgis_plugin name="cadastre" version="1.13.5">
-        <description>This plugins helps users to use French land registry data, called Cadastre, in QGIS. It is only useful in</description>
-        <version>1.13.5</version>
-        <qgis_minimum_version>3.4</qgis_minimum_version>
-        <homepage>https://docs.3liz.org/QgisCadastrePlugin/</homepage>
-        <file_name>cadastre.1.13.5.zip</file_name>
-        <icon>icon.png</icon>
-        <author_name>3Liz</author_name>
-        <download_url>https://github.com/3liz/QgisCadastrePlugin/releases/download/1.13.5/cadastre.1.13.5.zip</download_url>
-        <uploaded_by>Gustry</uploaded_by>
-        <create_date>2021-12-14</create_date>
-        <update_date>2021-12-14</update_date>
-        <experimental>False</experimental>
-        <deprecated>False</deprecated>
-        <tracker>https://github.com/3liz/QgisCadastrePlugin/issues</tracker>
-        <repository>https://github.com/3liz/QgisCadastrePlugin</repository>
-        <tags>cadastre, france, majic, edigeo, import</tags>
-    </pyqgis_plugin>
 <pyqgis_plugin name="OpenADS" version="0.10.0">
         <description>openADS est un logiciel web destin&#233; &#224; l'instruction d&#233;mat&#233;rialis&#233;e des dossiers d'urbanisme. Cette extension fonctionne avec le module Lizmap https://github.com/3liz/lizmap-openads-module</description>
         <version>0.10.0</version>
@@ -232,5 +214,23 @@
         <tracker>https://github.com/3liz/qgis-gestion_base_adresse-plugin</tracker>
         <repository>https://github.com/3liz/qgis-gestion_base_adresse-plugin</repository>
         <tags>adresse,france,french,address,lizmap</tags>
+    </pyqgis_plugin>
+<pyqgis_plugin name="cadastre" version="1.14.0">
+        <description>This plugins helps users to use French land registry data, called Cadastre, in QGIS. It is only useful in</description>
+        <version>1.14.0</version>
+        <qgis_minimum_version>3.4</qgis_minimum_version>
+        <homepage>https://docs.3liz.org/QgisCadastrePlugin/</homepage>
+        <file_name>cadastre.1.14.0.zip</file_name>
+        <icon>icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/QgisCadastrePlugin/releases/download/1.14.0/cadastre.1.14.0.zip</download_url>
+        <uploaded_by>Gustry</uploaded_by>
+        <create_date>2022-03-09</create_date>
+        <update_date>2022-03-09</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/QgisCadastrePlugin/issues</tracker>
+        <repository>https://github.com/3liz/QgisCadastrePlugin</repository>
+        <tags>cadastre, france, majic, edigeo, import</tags>
     </pyqgis_plugin>
 </plugins>
