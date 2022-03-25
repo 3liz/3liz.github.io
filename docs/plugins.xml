@@ -197,24 +197,6 @@
         <repository>https://github.com/3liz/QgisCadastrePlugin</repository>
         <tags>cadastre, france, majic, edigeo, import</tags>
     </pyqgis_plugin>
-<pyqgis_plugin name="Lizmap" version="3.7.5">
-        <description>Publish and share your QGIS maps on the Web via Lizmap Web Client, by 3liz.com</description>
-        <version>3.7.5</version>
-        <qgis_minimum_version>3.4</qgis_minimum_version>
-        <homepage>https://docs.lizmap.com</homepage>
-        <file_name>lizmap.3.7.5.zip</file_name>
-        <icon>resources/icons/icon.png</icon>
-        <author_name>3Liz</author_name>
-        <download_url>https://github.com/3liz/lizmap-plugin/releases/download/3.7.5/lizmap.3.7.5.zip</download_url>
-        <uploaded_by>Gustry</uploaded_by>
-        <create_date>2022-03-22</create_date>
-        <update_date>2022-03-22</update_date>
-        <experimental>False</experimental>
-        <deprecated>False</deprecated>
-        <tracker>https://github.com/3liz/lizmap-plugin/issues</tracker>
-        <repository>https://github.com/3liz/lizmap-plugin</repository>
-        <tags>online,server,web,webgis,webservice,webmapping,mobile,publication,wms,wfs,wps,internet,cloud,dashboard</tags>
-    </pyqgis_plugin>
 <pyqgis_plugin name="wfsOutputExtension" version="1.7.0">
         <description>Adds additional output formats to WFS GetFeature request on QGIS Server such as Geopackage, ODS, CSV etc.</description>
         <version>1.7.0</version>
@@ -232,5 +214,23 @@
         <tracker>https://github.com/3liz/qgis-wfsOutputExtension/issues</tracker>
         <repository>https://github.com/3liz/qgis-wfsOutputExtension</repository>
         <tags>server,format,wfs,ogc,lizmap,web,extension</tags>
+    </pyqgis_plugin>
+<pyqgis_plugin name="Lizmap" version="3.7.6">
+        <description>Publish and share your QGIS maps on the Web via Lizmap Web Client, by 3liz.com</description>
+        <version>3.7.6</version>
+        <qgis_minimum_version>3.4</qgis_minimum_version>
+        <homepage>https://docs.lizmap.com</homepage>
+        <file_name>lizmap.3.7.6.zip</file_name>
+        <icon>resources/icons/icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/lizmap-plugin/releases/download/3.7.6/lizmap.3.7.6.zip</download_url>
+        <uploaded_by>Gustry</uploaded_by>
+        <create_date>2022-03-25</create_date>
+        <update_date>2022-03-25</update_date>
+        <experimental>False</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/lizmap-plugin/issues</tracker>
+        <repository>https://github.com/3liz/lizmap-plugin</repository>
+        <tags>online,server,web,webgis,webservice,webmapping,mobile,publication,wms,wfs,wps,internet,cloud,dashboard</tags>
     </pyqgis_plugin>
 </plugins>
