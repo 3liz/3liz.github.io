@@ -51,7 +51,27 @@ also toggle the two checkboxes in the tab.
     
 * With a **drag&drop**, we can copy files from the computer to the server.
 
-## Default tree
+## File tree
 
-On the server, **always** in the directory **qgis**, we will create directories
-which will be a Lizmap theme.
+On the server, **always** in the `qgis`, we are going to create directories which will be a Lizmap theme.
+
+Then, in your Lizmap panel administration, you need to add the directory.
+
+For instance :
+
+```bash
+/
+├── qgis
+│   ├── forest
+│   │   ├── jungle.qgs
+│   │   ├── jungle.qgs.cfg
+│   │   └── media
+│   │       └── logo.png
+│   ├── social
+│   └── urban
+│       ├── populated_places.qgs
+│       ├── populated_places.qgs.cfg
+│       ├── urban_project.qgs
+│       └── urban_project.qgs.cfg
+└── web
+```

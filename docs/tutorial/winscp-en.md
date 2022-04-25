@@ -11,7 +11,8 @@ https://winscp.net/eng/download.php
 
 * 1 By email, you should have received the login credentials to the FTP server.
 * 2 Open **WinSCP**.
-* 3 The panel for adding a new connection opens automatically when the software is opened for the first time. Otherwise click on the button `New session` located at the top left of the window.
+* 3 The panel for adding a new connection opens automatically when the software is opened for the first time.
+  Otherwise, click on the button `New session` located at the top left of the window.
 
 ![WinSCP](./media/ftp_winscp_1.jpg)
 
@@ -44,12 +45,33 @@ https://winscp.net/eng/download.php
 
 ![WinSCP](./media/ftp_winscp_6.jpg)
 
-* Description de l'interface : 
-  * À gauche, votre ordinateur
-  * À droite, le serveur
-    
-* Par glisser/déposer, nous allons déplacer des fichiers de votre ordinateur vers le serveur.
+* Description of the user interface : 
+  * On the left, your computer
+  * On the right, the server
 
-## Arborescence par défaut
+* With a **drag&drop**, we can copy files from the computer to the server.
 
-Sur le serveur, **toujours** dans le dossier **qgis**, nous allons créer des répertoires qui seront vos thématiques.
+## File tree
+
+On the server, **always** in the `qgis`, we are going to create directories which will be a Lizmap theme.
+
+Then, in your Lizmap panel administration, you need to add the directory.
+
+For instance :
+
+```bash
+/
+├── qgis
+│   ├── forest
+│   │   ├── jungle.qgs
+│   │   ├── jungle.qgs.cfg
+│   │   └── media
+│   │       └── logo.png
+│   ├── social
+│   └── urban
+│       ├── populated_places.qgs
+│       ├── populated_places.qgs.cfg
+│       ├── urban_project.qgs
+│       └── urban_project.qgs.cfg
+└── web
+```

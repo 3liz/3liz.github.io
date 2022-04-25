@@ -52,4 +52,25 @@ chemins locaux et distants ainsi que cocher les deux cases à cocher dans cet on
 
 ## Arborescence par défaut
 
-Sur le serveur, **toujours** dans le dossier **qgis**, nous allons créer des répertoires qui seront vos thématiques.
+Sur le serveur, **toujours** dans le dossier `qgis`, nous allons créer des répertoires qui seront vos thématiques Lizmap.
+
+Ensuite, dans votre panneau d'administration Lizmap, vous devez ajouter ce répertoire.
+
+Par exemple :
+
+```bash
+/
+├── qgis
+│   ├── forest
+│   │   ├── jungle.qgs
+│   │   ├── jungle.qgs.cfg
+│   │   └── media
+│   │       └── logo.png
+│   ├── social
+│   └── urban
+│       ├── populated_places.qgs
+│       ├── populated_places.qgs.cfg
+│       ├── urban_project.qgs
+│       └── urban_project.qgs.cfg
+└── web
+```
