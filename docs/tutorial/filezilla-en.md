@@ -43,11 +43,11 @@ also toggle the two checkboxes in the tab.
 
 ![Filezilla](./media/ftp_5.jpg)
 
-* Description of the user interface : 
-  * At the top, some FTP logs about what is happening
-  * On the left, your computer
-  * On the right, the server
-  * At the bottom, data which are currently being transferred.
+* Description of the user interface :
+    * At the top, some FTP logs about what is happening
+    * On the left, your computer
+    * On the right, the server
+    * At the bottom, data which are currently being transferred.
     
 * With a **drag&drop**, we can copy files from the computer to the server.
 

@@ -46,8 +46,8 @@ https://winscp.net/eng/download.php
 ![WinSCP](./media/ftp_winscp_6.jpg)
 
 * Description of the user interface : 
-  * On the left, your computer
-  * On the right, the server
+    * On the left, your computer
+    * On the right, the server
 
 * With a **drag&drop**, we can copy files from the computer to the server.
 

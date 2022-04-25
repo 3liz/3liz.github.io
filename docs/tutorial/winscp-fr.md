@@ -46,8 +46,8 @@ https://winscp.net/eng/download.php
 ![WinSCP](./media/ftp_winscp_6.jpg)
 
 * Description de l'interface
-  * Sur la gauche, votre ordinateur
-  * Sur la droite, le serveur
+    * Sur la gauche, votre ordinateur
+    * Sur la droite, le serveur
 
 * Par **glisser/déposer**, nous allons déplacer des fichiers de votre ordinateur vers le serveur.
 

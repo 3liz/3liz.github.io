@@ -43,10 +43,10 @@ chemins locaux et distants ainsi que cocher les deux cases à cocher dans cet on
 ![Filezilla](./media/ftp_5.jpg)
 
 * Description de l'interface : 
-  * En haut, des commandes FTP, pas besoin de s'inquiéter des messages
-  * À gauche, votre ordinateur
-  * À droite, le serveur
-  * En bas, un récapitulatif des données qui sont en transfert.
+    * En haut, des commandes FTP, pas besoin de s'inquiéter des messages
+    * À gauche, votre ordinateur
+    * À droite, le serveur
+    * En bas, un récapitulatif des données qui sont en transfert.
     
 * Par **glisser/déposer**, nous allons déplacer des fichiers de votre ordinateur vers le serveur.
 
