@@ -45,6 +45,13 @@ By default, you will have **No Authentification**. Click the **+** icon to creat
 
 ![Add repository](./media/qgis_plugin_add_credentials_empty.png)
 
+!!! warning
+    If it's the **first time** that you are using the password manager in QGIS, it will ask you to **set** the
+    **master password**. It's a password that **you must set** with your own password. It will be used to unlock the
+    password database. If you forget it, it's not possible to recover this password.
+
+    ![Master password](./media/master-password-en.png)
+
 * Fill required information with :
     * **Name** : Name of the authentification. You can choose, for instance `3Liz authentification`
     * **Basic authentification**

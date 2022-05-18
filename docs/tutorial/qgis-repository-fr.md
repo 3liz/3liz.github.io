@@ -45,7 +45,15 @@ Dans le dialogue suivant, cliquer **Éditer** dans la ligne **Authentification**
 Par défaut, vous allez obtenir **Pas d'authentification**. Cliquer sur l'icône **+** pour en créer une.
 
 ![Add repository](./media/qgis_plugin_add_credentials_empty.png)
-    
+
+!!! warning
+    Si c'est la **première fois** que vous utilisez le gestionnaire de mot de passe de QGIS, il vous demandera de
+    **définir** le **mot de passe principal**. Il s'agit d'un mot de passe que **vous devez définir**, avec votre propre
+    mot de passe. Il servira à déverrouiller la base de données des mots de passes. En cas d'oubli, ce mot de passe
+    n'est pas récupérable.
+
+    ![Mot de passe principal](./media/master-password-fr.png)
+
 * Remplir avec les informations requises :
     * **Nom** : Nom de l'authentification. Ce nom est libre à vous, par exemple `3Liz authentification`
     * **Authentification basique**
