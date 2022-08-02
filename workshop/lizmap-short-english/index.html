@@ -1143,21 +1143,16 @@
 <h2 id="lets-add-some-popups-auto-and-qgis">Let's add some popups "auto" and "qgis"<a class="headerlink" href="#lets-add-some-popups-auto-and-qgis" title="Permanent link">#</a></h2>
 <ul>
 <li>In the Lizmap <strong>plugin</strong>, <strong>layers</strong> tab, enable some popups on the layer <strong>municipalities</strong> with <code>auto</code> mode and check the results by clicking on a municipality.</li>
-<li>Let's switch to a popup with <strong>QGIS</strong> mode on the same layer :</li>
-</ul>
-<p>These <strong>QGIS</strong> popups are powerful with the use of QGIS <strong>expressions</strong>:</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% &quot;name&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-</code></pre></div></td></tr></table></div>
+<li>Let's get back in the Lizmap <strong>plugin</strong> Let's switch to a popup with <strong>QGIS</strong> mode on the same layer</li>
+<li>Click on the <strong>Generate an HTML table</strong></li>
+<li>
 <ul>
-<li>Copy/paste this HTML code in the <code>communes</code> vector layer properties, <strong>rendering</strong> tab, then <strong>HTML Maptip</strong>.</li>
+<li>In the <code>communes</code> vector layer properties, <strong>rendering</strong> tab, then <strong>HTML Maptip</strong>, check the generated HTML.</li>
+</ul>
+</li>
 <li><strong>Tip</strong> : QGIS ➡ <strong>View</strong> ➡ <strong>Show Map Tips</strong> to display maptip straight in QGIS Desktop. You need to select the maptip tool in the toolbar as well.</li>
 </ul>
+<p>These <strong>QGIS</strong> popups are powerful with the use of QGIS <strong>expressions</strong>.</p>
 <h3 id="avec-des-expressions">Avec des expressions<a class="headerlink" href="#avec-des-expressions" title="Permanent link">#</a></h3>
 <p>You can use expressions :</p>
 <ul>
@@ -1353,7 +1348,7 @@
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 18, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 2, 2022</span>
       
     
   </small>

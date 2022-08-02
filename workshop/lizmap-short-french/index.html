@@ -1143,21 +1143,12 @@
 <h2 id="interactions-avec-les-popups-auto-et-qgis">Interactions avec les popups "auto" et "qgis"<a class="headerlink" href="#interactions-avec-les-popups-auto-et-qgis" title="Permanent link">#</a></h2>
 <ul>
 <li>Dans <strong>l'extension</strong> Lizmap, onglet <strong>couches</strong>, activer les popups sur la couche <code>commune</code> en mode <code>auto</code> et vérifier le résultat en cliquant sur une commune</li>
-<li>Faire une popup un mode <strong>QGIS</strong> sur la même couche :</li>
+<li>Retourner dans l'extension Lizmap et changer la popup un mode <strong>QGIS</strong> sur la même couche et cliquer sur le bouton "Générer un tableau HTML"</li>
+<li>Dans les propriétés de la couche vecteur <code>commune</code>, onglet <strong>Affichage</strong>, puis <strong>Infobulle HTML</strong>, observer le code HTML.</li>
+<li><strong>Astuce</strong> : QGIS ➡ <strong>Vue</strong> ➡ <strong>Afficher les infobulles</strong> pour afficher directement dans QGIS bureautique.
+  Vous devez sélectionner aussi l'outil infobulle dans la barre d'outils.</li>
 </ul>
-<p>Ces popups <strong>QGIS</strong> sont très puissantes grâce à l'utilisation des <strong>expressions</strong> QGIS :</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% &quot;name&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
-</code></pre></div></td></tr></table></div>
-<ul>
-<li>Copier/coller ce code HTML dans les propriétés de la couche vecteur <code>commune</code>, onglet <strong>Affichage</strong>, puis <strong>Infobulle HTML</strong>.</li>
-<li><strong>Astuce</strong> : QGIS ➡ <strong>Vue</strong> ➡ <strong>Afficher les infobulles</strong> pour afficher directement dans QGIS bureautique. Vous devez sélectionner aussi l'outil infobulle dans la barre d'outils.</li>
-</ul>
+<p>Ces popups <strong>QGIS</strong> sont très puissantes grâce à l'utilisation des <strong>expressions</strong> QGIS.</p>
 <h3 id="avec-des-expressions">Avec des expressions<a class="headerlink" href="#avec-des-expressions" title="Permanent link">#</a></h3>
 <p>On peut aussi utiliser des expressions QGIS :</p>
 <ul>
@@ -1355,7 +1346,7 @@ précise, par exemple, la répartition des espèces pour un observateur.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 18, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 2, 2022</span>
       
     
   </small>
