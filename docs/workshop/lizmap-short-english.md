@@ -116,20 +116,12 @@ This workshop is designed for Lizmap users, half day.
 ## Let's add some popups "auto" and "qgis"
 
 * In the Lizmap **plugin**, **layers** tab, enable some popups on the layer **municipalities** with `auto` mode and check the results by clicking on a municipality.
-* Let's switch to a popup with **QGIS** mode on the same layer :
-
-
-These **QGIS** popups are powerful with the use of QGIS **expressions**:
-
-```html
-<ul>
-    <li>[% "name" %]</li>
-    <li>[% "population" %]</li>
-</ul>
-```
-
-* Copy/paste this HTML code in the `communes` vector layer properties, **rendering** tab, then **HTML Maptip**.
+* Let's get back in the Lizmap **plugin** Let's switch to a popup with **QGIS** mode on the same layer
+* Click on the **Generate an HTML table**
+* * In the `communes` vector layer properties, **rendering** tab, then **HTML Maptip**, check the generated HTML.
 * **Tip** : QGIS ➡ **View** ➡ **Show Map Tips** to display maptip straight in QGIS Desktop. You need to select the maptip tool in the toolbar as well.
+
+These **QGIS** popups are powerful with the use of QGIS **expressions**.
 
 ### Avec des expressions
 

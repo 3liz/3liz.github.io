@@ -116,19 +116,12 @@ Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
 ## Interactions avec les popups "auto" et "qgis"
 
 * Dans **l'extension** Lizmap, onglet **couches**, activer les popups sur la couche `commune` en mode `auto` et vérifier le résultat en cliquant sur une commune
-* Faire une popup un mode **QGIS** sur la même couche :
+* Retourner dans l'extension Lizmap et changer la popup un mode **QGIS** sur la même couche et cliquer sur le bouton "Générer un tableau HTML"
+* Dans les propriétés de la couche vecteur `commune`, onglet **Affichage**, puis **Infobulle HTML**, observer le code HTML.
+* **Astuce** : QGIS ➡ **Vue** ➡ **Afficher les infobulles** pour afficher directement dans QGIS bureautique.
+  Vous devez sélectionner aussi l'outil infobulle dans la barre d'outils.
 
-Ces popups **QGIS** sont très puissantes grâce à l'utilisation des **expressions** QGIS :
-
-```html
-<ul>
-    <li>[% "name" %]</li>
-    <li>[% "population" %]</li>
-</ul>
-```
-
-* Copier/coller ce code HTML dans les propriétés de la couche vecteur `commune`, onglet **Affichage**, puis **Infobulle HTML**.
-* **Astuce** : QGIS ➡ **Vue** ➡ **Afficher les infobulles** pour afficher directement dans QGIS bureautique. Vous devez sélectionner aussi l'outil infobulle dans la barre d'outils.
+Ces popups **QGIS** sont très puissantes grâce à l'utilisation des **expressions** QGIS.
 
 ### Avec des expressions
 
