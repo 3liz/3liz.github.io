@@ -71,24 +71,6 @@
         <repository>https://github.com/3liz/qgis-veloroutes_voies_vertes-plugin</repository>
         <tags>covadis,veloroutes,velo,voies vertes</tags>
     </pyqgis_plugin>
-<pyqgis_plugin name="Raepa" version="0.4.0">
-        <description>France only - Plugin dedicated to import and manage water network data by using Raepa standard</description>
-        <version>0.4.0</version>
-        <qgis_minimum_version>3.0</qgis_minimum_version>
-        <homepage>https://github.com/3liz/qgis-raepa-plugin</homepage>
-        <file_name>raepa.0.4.0.zip</file_name>
-        <icon>resources/icons/icon.png</icon>
-        <author_name>3Liz</author_name>
-        <download_url>https://github.com/3liz/qgis-raepa-plugin/releases/download/0.4.0/raepa.0.4.0.zip</download_url>
-        <uploaded_by>3Liz</uploaded_by>
-        <create_date>2021-08-23</create_date>
-        <update_date>2021-08-23</update_date>
-        <experimental>True</experimental>
-        <deprecated>False</deprecated>
-        <tracker>https://github.com/3liz/qgis-raepa-plugin</tracker>
-        <repository>https://github.com/3liz/qgis-raepa-plugin</repository>
-        <tags>water network, france, eau potable, assainissement, reseau, r&#233;seau, adduction</tags>
-    </pyqgis_plugin>
 <pyqgis_plugin name="OpenADS" version="0.10.0">
         <description>openADS est un logiciel web destin&#233; &#224; l'instruction d&#233;mat&#233;rialis&#233;e des dossiers d'urbanisme. Cette extension fonctionne avec le module Lizmap https://github.com/3liz/lizmap-openads-module</description>
         <version>0.10.0</version>
@@ -268,5 +250,23 @@
         <tracker>https://github.com/3liz/QgisCadastrePlugin/issues</tracker>
         <repository>https://github.com/3liz/QgisCadastrePlugin</repository>
         <tags>cadastre, france, majic, edigeo, import</tags>
+    </pyqgis_plugin>
+<pyqgis_plugin name="Raepa" version="0.5.0">
+        <description>France only - Plugin dedicated to import and manage water network data by using Raepa standard</description>
+        <version>0.5.0</version>
+        <qgis_minimum_version>3.16</qgis_minimum_version>
+        <homepage>https://docs.3liz.org/qgis-raepa-plugin/</homepage>
+        <file_name>raepa.0.5.0.zip</file_name>
+        <icon>resources/icons/icon.png</icon>
+        <author_name>3Liz</author_name>
+        <download_url>https://github.com/3liz/qgis-raepa-plugin/releases/download/0.5.0/raepa.0.5.0.zip</download_url>
+        <uploaded_by>3Liz</uploaded_by>
+        <create_date>2022-08-11</create_date>
+        <update_date>2022-08-11</update_date>
+        <experimental>True</experimental>
+        <deprecated>False</deprecated>
+        <tracker>https://github.com/3liz/qgis-raepa-plugin/issues</tracker>
+        <repository>https://github.com/3liz/qgis-raepa-plugin</repository>
+        <tags>water network, france, eau potable, assainissement, reseau, r&#233;seau, adduction</tags>
     </pyqgis_plugin>
 </plugins>
