@@ -27,6 +27,7 @@ hide:
   | [Youtube](https://www.youtube.com/watch?v=l95PoHGLrTI)
 * [OSM et QGIS SOTM-FR 2022 🇫🇷](https://docs.3liz.org/presentations/2022-06-sotm-fr-osm-et-qgis.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/SOTM-FR-2022-osm-et-qgis.pdf)
+  | [PeerTube](https://peertube.openstreetmap.fr/w/vDdaxGfbmKuVdReXyJhexG)
 
 ## QGIS Server
 
