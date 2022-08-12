@@ -14,6 +14,7 @@ hide:
   | [PDF](https://docs.3liz.org/presentations/pdf/GéoDataDays-2021-Lizmap-Web-Client.pdf)
 * [ApacheCon @Home 2020 🇬🇧](https://docs.3liz.org/presentations/2020-09-apachecon-lizmap.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/ApacheCon-@Home-2020-Lizmap-Web-Client.pdf)
+  | [YouTube](https://www.youtube.com/watch?v=9vNsPM8k4QY)
 * [FOSS4G 2019 🇬🇧](https://docs.3liz.org/presentations/2019-08-foss4g-lizmap.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/pdf/FOSS4G-2019-Lizmap-Web-Client.pdf)
   | [Youtube](https://www.youtube.com/watch?v=FkQ2UG_SO-Y)
