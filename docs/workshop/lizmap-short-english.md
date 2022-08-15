@@ -10,19 +10,31 @@ hide:
 This workshop is designed for Lizmap users, half day.
 
 * FTP Client (WinSCP for Windows, Filezilla for MacOS/Linux)
-     * `qgis/theme_formation` : for the workshop
-     * `qgis/theme_formation/media/metadata.pdf` : a PDF file
-* QGIS 3.16
+     * `qgis/topic_workshop` : for the workshop
+     * `qgis/topic_workshop/media/metadata.pdf` : a PDF file
+* QGIS 3.22
 * Lizmap plugin on QGIS Desktop
 * QGIS project attached in the email
      * The QGIS project contains layers from the PostgreSQL database
-  
+
+## FOSS4G
+
+Presentations talking about QGIS Server and Lizmap during this FOSS4G from 3Liz :
+
+* Room Onice, 2022-08-25 from 11h30 to 12h00
+    * [QGIS Server into the wild](https://talks.osgeo.org/foss4g-2022/talk/VC8WX9/)
+* Room 4, 2022-08-25 from 15h20 to 15h30, two lightning talks
+    * [Advanced QGIS forms into the web with Lizmap](https://talks.osgeo.org/foss4g-2022/talk/VVXS3Q/)
+    * [Dataviz in QGIS and on the web](https://talks.osgeo.org/foss4g-2022/talk/9DWW3N/) co-authored with Faunalia
+* Room Onice, 2022-08-26 from 9h00 to 9h30
+    * [State of Lizmap - Past / Present / Futur](https://talks.osgeo.org/foss4g-2022/talk/CWGULA/)
+
 ## Links
 
 * Demo https://demo.lizmap.com
 * Lizmap hosting out-of-the-box https://www.lizmap.com
-* PDF/HTML presentations https://docs.3liz.org/talks/#lizmap
-* Mailing-list Osgeo Lizmap
+* PDF/HTML presentations and videos https://docs.3liz.org/talks/#lizmap
+* Mailing-list Osgeo Lizmap 🇬🇧 (and a little bit of 🇫🇷)
     * https://lists.osgeo.org/mailman/listinfo/lizmap
 * Twitter accounts : 
     * https://twitter.com/LizmapForQgis dedicated to Lizmap
@@ -32,6 +44,9 @@ This workshop is designed for Lizmap users, half day.
     * Lizmap Web Client https://github.com/3liz/lizmap-web-client/
     * Lizmap QGIS side (desktop and server) : https://github.com/3liz/lizmap-plugin/
     * 3Liz https://github.com/3liz/ for QGIS Server plugins, Lizmap modules
+* National user group
+    * [German mailing list 🇩🇪](https://lists.osgeo.org/mailman/listinfo/lizmap-de)
+    * [Japan Facebook group 🇯🇵](https://www.facebook.com/groups/lizmapusergroupjapan)
 
 ## Documentation
 
@@ -41,26 +56,33 @@ This workshop is designed for Lizmap users, half day.
 ## First quick map
 
 * Open the project
-* Set the extent on the map canvas (showing all islands)
+* Set the extent on the map canvas to have all islands visible
 * In the Project Properties :
-      * **Project** menu / **Properties**
-      * **Relations** tab, add all relations **automatically** with **Discover Relations**
+      * **Project** menu ➡ **Properties**
+      * **Relations** tab, add all relations **automatically** with **Discover Relations** and **select them all** with **ctrl**
       * **QGIS Server** tab,
-          * **Service capabilities**
-              * set a **title** such as `Lizmap training NAME` and an **abstract**
+          * Enable **Service capabilities**
+              * set a **title** such as `Lizmap training NAME` and an **abstract** about the purpose of the project. You can fill the **author**, **organization**, **phone**, **email** as well if you want.
+              * You are free to use the text you want for these fields.
+              * You can set keywords if needed. You will be to search your project with keywords in the landing page.
           * **WMS capabilities**
-              * use the current canvas extent for the **published extent**
+              * use the current canvas extent for the **advertised extent**
           * **WFS capabilities**
-              * **publish** all layers
+              * Use the checkbox **published** for **all** layers
+      * Press **Ok** 
 * Open the Lizmap plugin
+* Check the content of the **Information** panel
 * **Only one time**, add a server with your instance home page URL
-    * Example `https://workshop.lizmap.com/foss4g_2021/`
-    * We don't need user and password
+    * Example `https://workshop.lizmap.com/foss4g/`
+    * We don't need user and password.
+    * Adding a login and password is **not** required and QGIS will ask you to set up a master password if you haven't done it before.
 * Close the Lizmap plugin (it's creating the Lizmap file when closing the window).
 * Transfert the project (`.qgs` et `.cfg`) in the folder `qgis/topic_workshop` on the FTP
+* Visit your Lizmap instance in the web browser
 
 !!! tip
     **Bonus** if you have a small PNG picture called `name_of_project.qgs.png` to replace the default project thumbnail.
+    It works as well with jpg, jpeg files.
 
 ## Quick overview of the Lizmap web interface
 
@@ -86,12 +108,14 @@ This workshop is designed for Lizmap users, half day.
     Some settings in the QGIS project **or** in the Lizmap plugin can have effects in the web interface.
 
 !!! tip
-    **Starting from now**, often send the QGS file and the CFG file on the server to check the result.
+    **Starting from now**, often send the QGS file and the CFG file on the server to check the result online.
 
-* Make a quick symbology on a point layer.
+* Make a quick symbology on a point layer :
+      * on `persons`, change the default symbol using a **single symbol**.
+      * On `observations`, we can try **Categorized** using the field `fk_id_specie`. You can use the [QML already made](./media/fk_id_species_categorized.qml) (Vector layer properties ➡ **Styles** at the bottom ➡ **Load styles**.
 * Add labels on the municipalities layer and add a scale based visibility for these labels (1:300 000)
     * `name` field for the source
-    * **Rendering** tab, scale based visibility minimum set to 1:300 000
+    * **Rendering** tab, scale based visibility minimum set to `1:300 000`
 * Go in the Lizmap **plugin**, **Layers** tab :
     * Enable the **municipalities** layer by default  
     * Add some **links** on two layers: 
@@ -112,6 +136,9 @@ This workshop is designed for Lizmap users, half day.
     We can improve our attribute table by adding some alias on the fields :
     
     * **Properties** on the vector layer ➡ **Form attributes** ➡ **Alias** for all fields
+
+!!! tip
+    Two new tools appeared in Lizmap Web Client : **Attribute table** as expected, but also **Selection**. Let's have a look.
 
 ## Let's add some popups "auto" and "qgis"
 

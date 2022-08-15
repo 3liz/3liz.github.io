@@ -21,8 +21,8 @@ Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
 
 * Démo https://demo.lizmap.com
 * Hébergement Lizmap clé en main https://www.lizmap.com
-* Présentations PDF/HTML https://docs.3liz.org/talks/#lizmap
-* Mailing-list Osgeo Lizmap
+* Présentations PDF/HTML avec les vidéos https://docs.3liz.org/talks/#lizmap
+* Mailing-list Osgeo Lizmap 🇬🇧 (et un peu de 🇫🇷)
     * https://lists.osgeo.org/mailman/listinfo/lizmap
 * Comptes Twitter :
     * https://twitter.com/LizmapForQgis pour Lizmap uniquement
@@ -32,6 +32,9 @@ Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
     * Lizmap Web Client https://github.com/3liz/lizmap-web-client/
     * Lizmap côte QGIS (bureautique et serveur) : https://github.com/3liz/lizmap-plugin/
     * 3Liz https://github.com/3liz/ pour extensions QGIS Serveur, modules Lizmap
+* Groupes Utilisateurs nationaux
+    * [Mailing list Allemande 🇩🇪](https://lists.osgeo.org/mailman/listinfo/lizmap-de)
+    * [Groupe Facebook Japonais 🇯🇵](https://www.facebook.com/groups/lizmapusergroupjapan)
 
 ## Documentation
 
