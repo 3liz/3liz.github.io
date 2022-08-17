@@ -707,16 +707,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lets-add-some-popups-auto-and-qgis" class="md-nav__link">
-    Let's add some popups "auto" and "qgis"
+  <a href="#lets-identify-the-feature-by-clicking" class="md-nav__link">
+    Let's identify the feature by clicking
   </a>
   
-    <nav class="md-nav" aria-label="Let's add some popups "auto" and "qgis"">
+    <nav class="md-nav" aria-label="Let's identify the feature by clicking">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#avec-des-expressions" class="md-nav__link">
-    Avec des expressions
+  <a href="#with-some-expressions-inside" class="md-nav__link">
+    With some expressions inside
   </a>
   
 </li>
@@ -909,16 +909,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lets-add-some-popups-auto-and-qgis" class="md-nav__link">
-    Let's add some popups "auto" and "qgis"
+  <a href="#lets-identify-the-feature-by-clicking" class="md-nav__link">
+    Let's identify the feature by clicking
   </a>
   
-    <nav class="md-nav" aria-label="Let's add some popups "auto" and "qgis"">
+    <nav class="md-nav" aria-label="Let's identify the feature by clicking">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#avec-des-expressions" class="md-nav__link">
-    Avec des expressions
+  <a href="#with-some-expressions-inside" class="md-nav__link">
+    With some expressions inside
   </a>
   
 </li>
@@ -1152,7 +1152,7 @@ It works as well with jpg, jpeg files.</p>
 <ul>
 <li>Make a quick symbology on a point layer :<ul>
 <li>on <code>persons</code>, change the default symbol using a <strong>single symbol</strong>.</li>
-<li>On <code>observations</code>, we can try <strong>Categorized</strong> using the field <code>fk_id_specie</code>. You can use the <a href="../media/fk_id_species_categorized.qml">QML already made</a> (Vector layer properties ➡ <strong>Styles</strong> at the bottom ➡ <strong>Load styles</strong>.</li>
+<li>On <code>observations</code>, we can try <strong>Categorized</strong> using the field <code>fk_id_specie</code>. You can use the <a href="../media/fk_id_species_categorized.qml">QML already made</a> (Vector layer properties ➡ <strong>Styles</strong> at the bottom ➡ <strong>Load styles</strong>).</li>
 </ul>
 </li>
 <li>Add labels on the municipalities layer and add a scale based visibility for these labels (1:300 000)<ul>
@@ -1191,20 +1191,23 @@ It works as well with jpg, jpeg files.</p>
 <p class="admonition-title">Tip</p>
 <p>Two new tools appeared in Lizmap Web Client : <strong>Attribute table</strong> as expected, but also <strong>Selection</strong>. Let's have a look.</p>
 </div>
-<h2 id="lets-add-some-popups-auto-and-qgis">Let's add some popups "auto" and "qgis"<a class="headerlink" href="#lets-add-some-popups-auto-and-qgis" title="Permanent link">#</a></h2>
+<h2 id="lets-identify-the-feature-by-clicking">Let's identify the feature by clicking<a class="headerlink" href="#lets-identify-the-feature-by-clicking" title="Permanent link">#</a></h2>
 <ul>
-<li>In the Lizmap <strong>plugin</strong>, <strong>layers</strong> tab, enable some popups on the layer <strong>municipalities</strong> with <code>auto</code> mode and check the results by clicking on a municipality.</li>
-<li>Let's get back in the Lizmap <strong>plugin</strong> Let's switch to a popup with <strong>QGIS</strong> mode on the same layer</li>
-<li>Click on the <strong>Generate an HTML table</strong></li>
-<li>
-<ul>
-<li>In the <code>communes</code> vector layer properties, <strong>rendering</strong> tab, then <strong>HTML Maptip</strong>, check the generated HTML.</li>
+<li>In the Lizmap <strong>plugin</strong>, <strong>layers</strong> tab, enable some popups on the layer <strong>municipalities</strong> with <code>automatic</code> mode and
+  check the results by clicking on a municipality.</li>
 </ul>
-</li>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <strong>automatic</strong> popup will use alias if available on the layer.</p>
+</div>
+<ul>
+<li>Let's get back in the Lizmap <strong>plugin</strong> Let's switch to a popup with <strong>QGIS HTML Maptip</strong> mode on the same layer</li>
+<li>Click on the <strong>Generate an HTML table</strong></li>
+<li>In the <code>communes</code> vector layer properties, <strong>rendering</strong> tab, then <strong>HTML Maptip</strong>, check the generated HTML.</li>
 <li><strong>Tip</strong> : QGIS ➡ <strong>View</strong> ➡ <strong>Show Map Tips</strong> to display maptip straight in QGIS Desktop. You need to select the maptip tool in the toolbar as well.</li>
 </ul>
-<p>These <strong>QGIS</strong> popups are powerful with the use of QGIS <strong>expressions</strong>.</p>
-<h3 id="avec-des-expressions">Avec des expressions<a class="headerlink" href="#avec-des-expressions" title="Permanent link">#</a></h3>
+<p>These <strong>QGIS</strong> popups are powerful with the use of QGIS <strong>expressions</strong>. 🚀</p>
+<h3 id="with-some-expressions-inside">With some expressions inside<a class="headerlink" href="#with-some-expressions-inside" title="Permanent link">#</a></h3>
 <p>You can use expressions :</p>
 <ul>
 <li>to display with capital letters</li>
@@ -1213,28 +1216,19 @@ It works as well with jpg, jpeg files.</p>
 <details class="note">
 <summary>Display solutions</summary>
 <ul>
-<li>The first one about capital letters :
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% upper(&quot;name&quot;) %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<li>The first one about capital letters, replace
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[% &quot;name&quot; %]
+</code></pre></div></td></tr></table></div>
+by
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[% upper(&quot;name&quot;) %]
 </code></pre></div></td></tr></table></div></li>
-<li>The second one about the population in red :
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>[% upper(&quot;name&quot;) %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">li</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color:[% if( &quot;</span><span class="na">population</span><span class="err">&quot;</span> <span class="p">&gt;</span> 20000, &#39;black&#39;, &#39;red&#39;) %]&quot;&gt;[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<li>The second one about the population in red, replace
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>    [% &quot;population&quot; %]
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">font</span> <span class="na">color</span><span class="o">=</span><span class="s">&quot;[% if( &quot;</span><span class="na">population</span><span class="err">&quot;</span> <span class="p">&gt;</span> 20000, &#39;black&#39;, &#39;red&#39;) %]&quot;&gt;[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div></li>
 </ul>
 </details>
-<p>We can have the same style as the <code>auto</code> popup with the <code>qgis</code> popup by reading the
-<a href="https://docs.lizmap.com/current/en/publish/configuration/popup.html#qgis-popup">documentation</a>.</p>
 <h2 id="editing-capabilities-on-a-layer">Editing capabilities on a layer<a class="headerlink" href="#editing-capabilities-on-a-layer" title="Permanent link">#</a></h2>
 <p>We want now to enable editing capabilities on a layer in the Lizmap interface, to let some users add some <strong>observations</strong>.</p>
 <ul>
@@ -1282,9 +1276,9 @@ It works as well with jpg, jpeg files.</p>
 <li>As soon as you have your form ready in QGIS (more or less 🙂), add the layer in the <strong>editing</strong>
   panel in Lizmap</li>
 </ul>
-<div class="admonition success">
-<p class="admonition-title">Success</p>
-<p>We can use QGIS Expressions in the form (visibility, conditions, default value etc).
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We can use QGIS Expressions in the form (visibility, conditions, default value etc.).
 <a href="https://docs.lizmap.com/current/en/publish/configuration/expression.html">Read the documentation</a>.</p>
 </div>
 <h2 id="pdf-print">PDF Print<a class="headerlink" href="#pdf-print" title="Permanent link">#</a></h2>
@@ -1294,20 +1288,20 @@ It works as well with jpg, jpeg files.</p>
 <li>Enable <strong>print</strong> in your Lizmap plugin, <strong>map options</strong> tab.</li>
 <li>Customize the title from Lizmap web interface in the PDF :<ul>
 <li>Click on the title <code>Example workshop</code></li>
-<li><strong>Object identifier</strong> ➡ <code>title</code></li>
+<li>In the properties, look for <strong>Object identifier</strong> and set <code>title</code></li>
 </ul>
 </li>
 </ul>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
-<p>In this case, the user is choosing the area of interest.</p>
+<p>In this case, the user is choosing the area of interest</p>
 </div>
 <h3 id="from-a-popup-extent-defined-by-the-feature">From a popup, extent defined by the feature<a class="headerlink" href="#from-a-popup-extent-defined-by-the-feature" title="Permanent link">#</a></h3>
 <ul>
-<li>Duplicate the existing layout and let's transform it to an atlas<ul>
+<li>In the <strong>QGIS layout manager</strong>, duplicate the existing layout and let's transform it to an atlas<ul>
 <li><strong>Project</strong> menu, <strong>Layout  manager</strong>, <strong>Duplicate</strong>, name <code>PDF sheet</code></li>
 <li>Edit this new layout</li>
-<li>Enable atlas on the municipalities layer</li>
+<li>Enable atlas on the <strong>municipalities</strong> layer</li>
 <li>Change the title to display the name of the municipality</li>
 <li>Enable the map to "follow" the current feature</li>
 </ul>
@@ -1334,6 +1328,7 @@ It works as well with jpg, jpeg files.</p>
 </li>
 </ul>
 <p><img alt="Dataviz population" src="../media/dataviz_population.png" /></p>
+<h3 id="pie-chart">Pie chart<a class="headerlink" href="#pie-chart" title="Permanent link">#</a></h3>
 <ul>
 <li>On "persons" layer, add a pie chart about each "watcher" :<ul>
 <li>Add a virtual field in "persons" called <code>count</code>, integer :</li>
@@ -1350,7 +1345,6 @@ It works as well with jpg, jpeg files.</p>
     expression:=&quot;id&quot;
 )
 </code></pre></div></td></tr></table></div>
-<h3 id="pie-chart">Pie chart<a class="headerlink" href="#pie-chart" title="Permanent link">#</a></h3>
 <ul>
 <li>Add <strong>pie chart</strong> in the Lizmap plugin<ul>
 <li>Title</li>
@@ -1365,8 +1359,13 @@ It works as well with jpg, jpeg files.</p>
 <p><img alt="Dataviz pie" src="../media/dataviz_pie.png" /></p>
 <h3 id="advanced-filtered-plot">Advanced filtered plot<a class="headerlink" href="#advanced-filtered-plot" title="Permanent link">#</a></h3>
 <p>For now, it's only charts at the layer level. It's possible to make charts for a given feature, for instance for a given
-"watcher", to know his own observations.</p>
+"watcher", to know his own observations. You can watch the animated GIF at the bottom to understand the expected output,
+in the <strong>"Final result"</strong>.</p>
 <p><img alt="Dataviz filtered pie" src="../media/filtered_plot.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Watch the <a href="https://www.youtube.com/watch?v=aGJnScdkEtE">video tutorial</a> about the filtered plot.</p>
+</div>
 <ul>
 <li>Add a virtual field <code>label_species</code> (text) in the <code>observations</code> layer to have the name :</li>
 </ul>
@@ -1399,7 +1398,7 @@ It works as well with jpg, jpeg files.</p>
   <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 15, 2022</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2022</span>
       
     
   </small>
