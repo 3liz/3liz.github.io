@@ -112,7 +112,7 @@ Presentations talking about QGIS Server and Lizmap during this FOSS4G from 3Liz 
 
 * Make a quick symbology on a point layer :
       * on `persons`, change the default symbol using a **single symbol**.
-      * On `observations`, we can try **Categorized** using the field `fk_id_specie`. You can use the [QML already made](./media/fk_id_species_categorized.qml) (Vector layer properties ➡ **Styles** at the bottom ➡ **Load styles**.
+      * On `observations`, we can try **Categorized** using the field `fk_id_specie`. You can use the [QML already made](./media/fk_id_species_categorized.qml) (Vector layer properties ➡ **Styles** at the bottom ➡ **Load styles**).
 * Add labels on the municipalities layer and add a scale based visibility for these labels (1:300 000)
     * `name` field for the source
     * **Rendering** tab, scale based visibility minimum set to `1:300 000`
@@ -140,17 +140,22 @@ Presentations talking about QGIS Server and Lizmap during this FOSS4G from 3Liz 
 !!! tip
     Two new tools appeared in Lizmap Web Client : **Attribute table** as expected, but also **Selection**. Let's have a look.
 
-## Let's add some popups "auto" and "qgis"
+## Let's identify the feature by clicking
 
-* In the Lizmap **plugin**, **layers** tab, enable some popups on the layer **municipalities** with `auto` mode and check the results by clicking on a municipality.
-* Let's get back in the Lizmap **plugin** Let's switch to a popup with **QGIS** mode on the same layer
+* In the Lizmap **plugin**, **layers** tab, enable some popups on the layer **municipalities** with `automatic` mode and
+  check the results by clicking on a municipality.
+
+!!! tip
+    The **automatic** popup will use alias if available on the layer.
+
+* Let's get back in the Lizmap **plugin** Let's switch to a popup with **QGIS HTML Maptip** mode on the same layer
 * Click on the **Generate an HTML table**
-* * In the `communes` vector layer properties, **rendering** tab, then **HTML Maptip**, check the generated HTML.
+* In the `communes` vector layer properties, **rendering** tab, then **HTML Maptip**, check the generated HTML.
 * **Tip** : QGIS ➡ **View** ➡ **Show Map Tips** to display maptip straight in QGIS Desktop. You need to select the maptip tool in the toolbar as well.
 
-These **QGIS** popups are powerful with the use of QGIS **expressions**.
+These **QGIS** popups are powerful with the use of QGIS **expressions**. 🚀
 
-### Avec des expressions
+### With some expressions inside
 
 You can use expressions :
 
@@ -158,23 +163,21 @@ You can use expressions :
 * to display in red if the population is less than 20 000 inhabitants
 
 ??? note "Display solutions"
-    * The first one about capital letters :
+    * The first one about capital letters, replace
     ```html
-    <ul>
-        <li>[% upper("name") %]</li>
-        <li>[% "population" %]</li>
-    </ul>
+    [% "name" %]
     ```
-    * The second one about the population in red :
+    by
     ```html
-    <ul>
-        <li>[% upper("name") %]</li>
-        <li style="color:[% if( "population" > 20000, 'black', 'red') %]">[% "population" %]</li>
-    </ul>
+    [% upper("name") %]
     ```
-
-We can have the same style as the `auto` popup with the `qgis` popup by reading the
-[documentation](https://docs.lizmap.com/current/en/publish/configuration/popup.html#qgis-popup).
+    * The second one about the population in red, replace
+    ```html
+        [% "population" %]
+    ```
+    ```html
+        <font color="[% if( "population" > 20000, 'black', 'red') %]">[% "population" %]</font>
+    ```
 
 ## Editing capabilities on a layer
 
@@ -210,8 +213,8 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
 * As soon as you have your form ready in QGIS (more or less 🙂), add the layer in the **editing**
   panel in Lizmap
 
-!!! success
-    We can use QGIS Expressions in the form (visibility, conditions, default value etc).
+!!! tip
+    We can use QGIS Expressions in the form (visibility, conditions, default value etc.).
     [Read the documentation](https://docs.lizmap.com/current/en/publish/configuration/expression.html).
 
 ## PDF Print
@@ -222,17 +225,17 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
 * Enable **print** in your Lizmap plugin, **map options** tab.
 * Customize the title from Lizmap web interface in the PDF :
     * Click on the title `Example workshop`
-    * **Object identifier** ➡ `title`
+    * In the properties, look for **Object identifier** and set `title`
 
 !!! success
-    In this case, the user is choosing the area of interest.
+    In this case, the user is choosing the area of interest
 
 ### From a popup, extent defined by the feature
 
-* Duplicate the existing layout and let's transform it to an atlas
+* In the **QGIS layout manager**, duplicate the existing layout and let's transform it to an atlas
     * **Project** menu, **Layout  manager**, **Duplicate**, name `PDF sheet`
     * Edit this new layout
-    * Enable atlas on the municipalities layer
+    * Enable atlas on the **municipalities** layer
     * Change the title to display the name of the municipality
     * Enable the map to "follow" the current feature
 * Check in the result in Lizmap
@@ -254,6 +257,8 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
 
 ![Dataviz population](./media/dataviz_population.png)
 
+### Pie chart
+
 * On "persons" layer, add a pie chart about each "watcher" :
     * Add a virtual field in "persons" called `count`, integer :
 
@@ -264,8 +269,6 @@ relation_aggregate(
 	expression:="id"
 )
 ```
-
-### Pie chart
 
 * Add **pie chart** in the Lizmap plugin
     * Title
@@ -280,9 +283,13 @@ relation_aggregate(
 ### Advanced filtered plot
 
 For now, it's only charts at the layer level. It's possible to make charts for a given feature, for instance for a given
-"watcher", to know his own observations.
+"watcher", to know his own observations. You can watch the animated GIF at the bottom to understand the expected output,
+in the **"Final result"**.
 
 ![Dataviz filtered pie](./media/filtered_plot.png)
+
+!!! tip
+    Watch the [video tutorial](https://www.youtube.com/watch?v=aGJnScdkEtE) about the filtered plot.
 
 * Add a virtual field `label_species` (text) in the `observations` layer to have the name :
 
