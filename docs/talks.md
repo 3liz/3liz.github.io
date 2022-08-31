@@ -42,6 +42,8 @@ hide:
 
 ## QGIS Server
 
+* [FOSS4G 2022 Firenze 🇬🇧 - QGIS Server into the wild](https://docs.3liz.org/presentations/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.html)
+  | [PDF](https://docs.3liz.org/presentations/pdf/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.pdf)
 * FOSS4G 2019 🇬🇧 - WPS with QGIS processing - From desktop to server
   | [YouTube](https://www.youtube.com/watch?v=YL1tdcJwimA)
 
