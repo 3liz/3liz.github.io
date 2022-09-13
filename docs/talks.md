@@ -8,7 +8,7 @@ hide:
 ## Lizmap
 
 * [GéoDataDays 2022 Formulaire avancé 🇫🇷](https://docs.3liz.org/presentations/2022-09-geodatadays-formulaire-qgis-lizmap.html)
-  | [PDF](https://docs.3liz.org/presentationsdocs/pdf/2022-09-geodatadays-formulaire-qgis-lizmap.pdf)
+  | [PDF](https://docs.3liz.org/presentations/pdf/2022-09-geodatadays-formulaire-qgis-lizmap.pdf)
 * [FOSS4G 2022 General 🇬🇧](https://docs.3liz.org/presentations/2022-08-foss4g-lizmap.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/2022-08-foss4g-lizmap.pdf)
 * [FOSS4G 2022 Advanced form 🇬🇧](https://docs.3liz.org/presentations/2022-08_FOSS4G_Advanced_QGIS_forms_into_the_web_with_Lizmap.html)
