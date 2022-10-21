@@ -13,12 +13,15 @@ nav:
     - Tools: tools.md
     - Presentations: talks.md
     - Tutorials:
-        - 'Filezilla EN': 'tutorial/filezilla-en.md'
-        - 'Filezilla FR': 'tutorial/filezilla-fr.md'
-        - 'WinSCP EN': 'tutorial/winscp-en.md'
-        - 'WinSCP FR': 'tutorial/winscp-fr.md'
-        - 'QGIS Repository FR': 'tutorial/qgis-repository-fr.md'
-        - 'QGIS Repository EN': 'tutorial/qgis-repository-en.md'
+        - 'Index': 'tutorial/index.md'
+        - 'Filezilla 🇬🇧': 'tutorial/filezilla-en.md'
+        - 'Filezilla 🇫🇷': 'tutorial/filezilla-fr.md'
+        - 'WinSCP 🇬🇧': 'tutorial/winscp-en.md'
+        - 'WinSCP 🇫🇷': 'tutorial/winscp-fr.md'
+        - 'QGIS Repository 🇬🇧': 'tutorial/qgis-repository-en.md'
+        - 'QGIS Repository 🇫🇷': 'tutorial/qgis-repository-fr.md'
+        - 'Resources sharing 🇬🇧': 'tutorial/resources-sharing-en.md'
+        - 'Resources sharing 🇫🇷': 'tutorial/resources-sharing-fr.md'
     - Internships:
         - GSOC: 'internships/gsoc.md'
     - Workshops:
