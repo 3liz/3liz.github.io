@@ -1,8 +1,10 @@
 # QGIS Resources sharing
 
-## Plugin
+## Plugin installation
 
-You need to go in the QGIS plugin manager, download the plugin **QGIS Resource Sharing**.
+* You need to go in the QGIS plugin manager, go to the plugin **QGIS Resource Sharing** page.
+* Click "Install"
+* Close the QGIS plugin manager dialog
 
 ![logo](./media/qgis-resource-sharing.png)
 

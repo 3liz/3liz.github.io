@@ -1,8 +1,10 @@
 # QGIS Resources sharing
 
-## Extension
+## Installation de l'extension
 
-Il faut aller dans le gestionnaire des extensions de QGIS, télécharger l'extension **QGIS Resource Sharing**.
+* Il faut aller dans le gestionnaire des extensions de QGIS, chercher l'extension **QGIS Resource Sharing**.
+* Cliquer sur **Installer**
+* Fermer la fenêtre
 
 ![logo](./media/qgis-resource-sharing.png)
 
