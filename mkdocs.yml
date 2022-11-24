@@ -28,11 +28,12 @@ nav:
         - Index: 'workshop/workshop.md'
         - Lizmap French: 'workshop/lizmap-short-french.md'
         - Lizmap English: 'workshop/lizmap-short-english.md'
+        - Lizmap: 'workshop/lizmap.md'
     - Links: 'links.md'
 
 plugins:
   - search
-  - git-revision-date-localized
+#  - git-revision-date-localized
 
 markdown_extensions:
   - toc:
@@ -42,6 +43,10 @@ markdown_extensions:
       linenums: true
       linenums_style: pymdownx.inline
   - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.tabbed:
       alternate_style: true
   - pymdownx.magiclink:
@@ -50,6 +55,7 @@ markdown_extensions:
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
+  - https://unpkg.com/mermaid@9.2.2/dist/mermaid.min.js
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
 
