@@ -59,8 +59,8 @@ CREATE SCHEMA z_formation;
         pmr boolean NOT NULL,
         fiche_web TEXT,
         photo TEXT,
-        date_construction TIMESTAMP,
-        date_revision_fiche TIMESTAMP DEFAULT now(),
+        date_construction DATE,
+        date_revision_fiche DATE,
         geom Geometry(Point, 2154)
     );
     CREATE TABLE z_formation.agents
@@ -87,10 +87,15 @@ N'oublions pas l'index spatial
 CREATE INDEX ON z_formation.logement USING GIST (geom);
 ```
 
+!!! info
+
+    Vous devez avoir une couche des communes avec les codes INSEE dans votre projet également.
+
 ## Propriétés du projet
 
 * Charger les couches dans le projet QGIS.
-* **Propriétés du projet**, onglet **Relations**, ajouter toutes les relations **automatiquement** avec le bouton **découvrir**
+* **Propriétés du projet**, onglet **Relations**, ajouter toutes les relations **automatiquement** avec le bouton **découvrir**.
+* Vous devriez avoir 2 relations dans le tableau.
 
 ## Formulaire logement
 
@@ -103,15 +108,36 @@ CREATE INDEX ON z_formation.logement USING GIST (geom);
   * Ajouter des **onglets** et des **groupes**
     ![dnd form](./media/longer-workshop/dnd.png)
 
+!!! tip
+    Nous n'avons pas besoin du champ `id` pour nos utilisateurs lors d'une édition. C'est une information *interne*.
+
 ### Paramétrage des "outils" pour les champs
+
+Pour l'ensemble des champs, nous allons configurer les **Type d'outil** ainsi que les contraintes si nécessaire.
+
+Nous allons utiliser la documentation Lizmap sur
+[les formulaires avancés](https://docs.lizmap.com/current/fr/publish/configuration/layer.html#edition-expressions).
 
 * `adresse` :
     * Édition de texte
-    * Ajouter une contrainte et une erreur
+    * Ajouter une expression pour la contrainte et une erreur qui sera affichée si l'expression n'est pas valide.
+
+!!! tip
+    On remarque que QGIS détecte les contraintes des champs qui sont en base de données. Mais on peut personnaliser
+    les messages d'erreurs.
+
+!!!tip
+    Concernant l'expression de **contrainte**, QGIS va l'exécuter et va vérifier si l'expression renvoi
+    une valeur **booléenne** si la saisie est **valide** ou **non**.
+
 * `code_insee` :
-    * Valeur de la relation
-    * `intersects($geometry, @current_geometry)`
+    * Valeur relationnelle
+      * Couche **commune**
+      * Clé **INSEE_COM**
+      * Valeurs **NOM**
+    * Expression de filtre `intersects($geometry, @current_geometry)`
     * Ajouter une contrainte et une erreur
+    * Renforcer la contrainte par expression
 * Liste de valeurs
     * `studio` ➡ `Studio`
     * `appartement` ➡ `Appartement`
@@ -132,8 +158,8 @@ CREATE INDEX ON z_formation.logement USING GIST (geom);
         * `false` ➡ `Non`
 * `fiche_web` :
     * Texte
-       * Renforçons la contrainte avec une expression. Une regex est plus appropriée, mais utilisons une expression simple
-         `left("fiche_web", 4) = 'http'`
+       * Renforçons la contrainte avec une expression. Une regex est plus appropriée, mais utilisons une expression
+         simple pour vérifier que la chaîne commence par `http`
        * Ajouter une description pour la contrainte
 * `date_construction`
     * Date
@@ -149,3 +175,19 @@ Nous pouvons activer :
 
 * les popups "Automatique" pour la couche des états des lieux.
 * l'affichage des popups enfants dans la couche des logements
+
+## Édition des tables filles
+
+Pour permettre l'ajout des états des lieux, il faut :
+
+* Avoir les relations
+* Avoir l'édition sur les 2 couches
+* Avoir l'outil de table attributaire sur les couches filles
+
+## Quelques solutions
+
+??? note "Vérifier qu'un champ n'est ni NULL ni une chaîne vide"
+    ` "adresse" IS NOT NULL AND "adresse" != ''`
+
+??? note "Vérifier que la chaîne commence par `http`"
+    `left("fiche_web", 4) = 'http'`
