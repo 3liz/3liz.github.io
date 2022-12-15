@@ -747,6 +747,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#edition-des-tables-filles" class="md-nav__link">
+    Édition des tables filles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quelques-solutions" class="md-nav__link">
+    Quelques solutions
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -840,6 +854,20 @@
         <li class="md-nav__item">
   <a href="#utilisation-des-popups" class="md-nav__link">
     Utilisation des popups
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#edition-des-tables-filles" class="md-nav__link">
+    Édition des tables filles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quelques-solutions" class="md-nav__link">
+    Quelques solutions
   </a>
   
 </li>
@@ -940,8 +968,8 @@ agents -- etat_des_lieux</div>
 <span class="w">    </span><span class="n">pmr</span><span class="w"> </span><span class="nb">boolean</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="n">fiche_web</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="n">photo</span><span class="w"> </span><span class="nb">TEXT</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">date_construction</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">date_revision_fiche</span><span class="w"> </span><span class="k">TIMESTAMP</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="n">now</span><span class="p">(),</span><span class="w"></span>
+<span class="w">    </span><span class="n">date_construction</span><span class="w"> </span><span class="nb">DATE</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="n">date_revision_fiche</span><span class="w"> </span><span class="nb">DATE</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="n">geom</span><span class="w"> </span><span class="n">Geometry</span><span class="p">(</span><span class="n">Point</span><span class="p">,</span><span class="w"> </span><span class="mi">2154</span><span class="p">)</span><span class="w"></span>
 <span class="p">);</span><span class="w"></span>
 <span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">z_formation</span><span class="p">.</span><span class="n">agents</span><span class="w"></span>
@@ -965,10 +993,15 @@ agents -- etat_des_lieux</div>
 <p>N'oublions pas l'index spatial</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">INDEX</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">z_formation</span><span class="p">.</span><span class="n">logement</span><span class="w"> </span><span class="k">USING</span><span class="w"> </span><span class="n">GIST</span><span class="w"> </span><span class="p">(</span><span class="n">geom</span><span class="p">);</span><span class="w"></span>
 </code></pre></div></td></tr></table></div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Vous devez avoir une couche des communes avec les codes INSEE dans votre projet également.</p>
+</div>
 <h2 id="proprietes-du-projet">Propriétés du projet<a class="headerlink" href="#proprietes-du-projet" title="Permanent link">#</a></h2>
 <ul>
 <li>Charger les couches dans le projet QGIS.</li>
-<li><strong>Propriétés du projet</strong>, onglet <strong>Relations</strong>, ajouter toutes les relations <strong>automatiquement</strong> avec le bouton <strong>découvrir</strong></li>
+<li><strong>Propriétés du projet</strong>, onglet <strong>Relations</strong>, ajouter toutes les relations <strong>automatiquement</strong> avec le bouton <strong>découvrir</strong>.</li>
+<li>Vous devriez avoir 2 relations dans le tableau.</li>
 </ul>
 <h2 id="formulaire-logement">Formulaire logement<a class="headerlink" href="#formulaire-logement" title="Permanent link">#</a></h2>
 <div class="admonition tip">
@@ -982,17 +1015,40 @@ agents -- etat_des_lieux</div>
 <li>Ajouter des <strong>onglets</strong> et des <strong>groupes</strong>
     <img alt="dnd form" src="../media/longer-workshop/dnd.png" /></li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Nous n'avons pas besoin du champ <code>id</code> pour nos utilisateurs lors d'une édition. C'est une information <em>interne</em>.</p>
+</div>
 <h3 id="parametrage-des-outils-pour-les-champs">Paramétrage des "outils" pour les champs<a class="headerlink" href="#parametrage-des-outils-pour-les-champs" title="Permanent link">#</a></h3>
+<p>Pour l'ensemble des champs, nous allons configurer les <strong>Type d'outil</strong> ainsi que les contraintes si nécessaire.</p>
+<p>Nous allons utiliser la documentation Lizmap sur
+<a href="https://docs.lizmap.com/current/fr/publish/configuration/layer.html#edition-expressions">les formulaires avancés</a>.</p>
 <ul>
 <li><code>adresse</code> :<ul>
 <li>Édition de texte</li>
-<li>Ajouter une contrainte et une erreur</li>
+<li>Ajouter une expression pour la contrainte et une erreur qui sera affichée si l'expression n'est pas valide.</li>
 </ul>
 </li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>On remarque que QGIS détecte les contraintes des champs qui sont en base de données. Mais on peut personnaliser
+les messages d'erreurs.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Concernant l'expression de <strong>contrainte</strong>, QGIS va l'exécuter et va vérifier si l'expression renvoi
+une valeur <strong>booléenne</strong> si la saisie est <strong>valide</strong> ou <strong>non</strong>.</p>
+</div>
+<ul>
 <li><code>code_insee</code> :<ul>
-<li>Valeur de la relation</li>
-<li><code>intersects($geometry, @current_geometry)</code></li>
+<li>Valeur relationnelle</li>
+<li>Couche <strong>commune</strong></li>
+<li>Clé <strong>INSEE_COM</strong></li>
+<li>Valeurs <strong>NOM</strong></li>
+<li>Expression de filtre <code>intersects($geometry, @current_geometry)</code></li>
 <li>Ajouter une contrainte et une erreur</li>
+<li>Renforcer la contrainte par expression</li>
 </ul>
 </li>
 <li>Liste de valeurs<ul>
@@ -1029,8 +1085,8 @@ agents -- etat_des_lieux</div>
 </li>
 <li><code>fiche_web</code> :<ul>
 <li>Texte</li>
-<li>Renforçons la contrainte avec une expression. Une regex est plus appropriée, mais utilisons une expression simple
-     <code>left("fiche_web", 4) = 'http'</code></li>
+<li>Renforçons la contrainte avec une expression. Une regex est plus appropriée, mais utilisons une expression
+     simple pour vérifier que la chaîne commence par <code>http</code></li>
 <li>Ajouter une description pour la contrainte</li>
 </ul>
 </li>
@@ -1056,6 +1112,22 @@ agents -- etat_des_lieux</div>
 <li>les popups "Automatique" pour la couche des états des lieux.</li>
 <li>l'affichage des popups enfants dans la couche des logements</li>
 </ul>
+<h2 id="edition-des-tables-filles">Édition des tables filles<a class="headerlink" href="#edition-des-tables-filles" title="Permanent link">#</a></h2>
+<p>Pour permettre l'ajout des états des lieux, il faut :</p>
+<ul>
+<li>Avoir les relations</li>
+<li>Avoir l'édition sur les 2 couches</li>
+<li>Avoir l'outil de table attributaire sur les couches filles</li>
+</ul>
+<h2 id="quelques-solutions">Quelques solutions<a class="headerlink" href="#quelques-solutions" title="Permanent link">#</a></h2>
+<details class="note">
+<summary>Vérifier qu'un champ n'est ni NULL ni une chaîne vide</summary>
+<p><code>"adresse" IS NOT NULL AND "adresse" != ''</code></p>
+</details>
+<details class="note">
+<summary>Vérifier que la chaîne commence par <code>http</code></summary>
+<p><code>left("fiche_web", 4) = 'http'</code></p>
+</details>
 
 
 
