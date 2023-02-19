@@ -46,10 +46,16 @@ plugins:
 markdown_extensions:
   - toc:
       permalink: "#"
+  - admonition:
+  - attr_list:
   - meta:
+  - pymdownx.details:
   - pymdownx.highlight:
       linenums: true
       linenums_style: pymdownx.inline
+  - pymdownx.keys:
+  - pymdownx.magiclink:
+  - pymdownx.progressbar:
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -57,15 +63,15 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_div_format
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.magiclink:
-  - pymdownx.details:
-  - admonition:
+  - pymdownx.tasklist:
+  - pymdownx.snippets:
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js
   - https://unpkg.com/mermaid@9.2.2/dist/mermaid.min.js
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css
+  - media/progress_bar.css
 
 theme:
   name: material

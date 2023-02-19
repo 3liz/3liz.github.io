@@ -15,3 +15,11 @@ Additional modules can be added on top of Lizmap
 * [French cadastre module](../QgisCadastrePlugin/)
 * [PgMetadata](../qgis-pgmetadata-plugin/)
 * [PgRouting](../lizmap-pgrouting-module/)
+
+## Translations
+
+<!--
+The file lizmap-i18n-stats.md.md is generated automatically on GH Action
+-->
+
+--8<-- "./docs/lizmap-i18n-stats.md"

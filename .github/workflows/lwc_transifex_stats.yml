@@ -1,0 +1,38 @@
+name: Translation statistics 🗺
+
+on:
+  schedule:
+    - cron: '0 6 2 * *'
+  workflow_dispatch:
+
+jobs:
+  translation-stats:
+
+    if: github.repository == '3liz/3liz.github.io'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+        with:
+          ref: "master"
+          fetch-depth: 1
+          token: ${{ secrets.BOT_HUB_TOKEN }}  # Important to launch CI on a commit from a bot
+
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: python3 -m pip install requests
+
+      - name: Report statistics
+        run: python3 scripts/lizmap_i18n_stats.py ${{ secrets.TRANSIFEX_TOKEN }}
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update statistics from Transifex Lizmap Web Client"
+          commit_user_name: ${{ secrets.BOT_NAME }}
+          commit_user_email: ${{ secrets.BOT_MAIL }}
+          commit_author: ${{ secrets.BOT_NAME_MAIL }}
