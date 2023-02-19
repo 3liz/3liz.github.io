@@ -7,5 +7,5 @@ hide:
 
 ## Lizmap
 
-* [Atelier 🇫🇷](./lizmap-short-french.md)
+* [Atelier 🇫🇷](fr/lizmap-short-01-intro.md)
 * [Workshop 🇬🇧](./lizmap-short-english.md)

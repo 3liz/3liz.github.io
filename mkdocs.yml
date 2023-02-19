@@ -24,9 +24,17 @@ nav:
         - 'Resources sharing 🇫🇷': 'tutorial/resources-sharing-fr.md'
     - Internships:
         - GSOC: 'internships/gsoc.md'
-    - Workshops:
+    - Workshops FR:
         - Index: 'workshop/workshop.md'
-        - Lizmap French: 'workshop/lizmap-short-french.md'
+        - Introduction: 'workshop/fr/lizmap-short-01-intro.md'
+        - Première carte: 'workshop/fr/lizmap-short-02-first-map.md'
+        - Légende: 'workshop/fr/lizmap-short-03-legend.md'
+        - Interactions: 'workshop/fr/lizmap-short-04-popups.md'
+        - Table attributaire: 'workshop/fr/lizmap-short-05-attribute-table.md'
+        - Édition: 'workshop/fr/lizmap-short-06-editing.md'
+        - Impression PDF: 'workshop/fr/lizmap-short-07-print.md'
+        - Dataviz: 'workshop/fr/lizmap-short-08-dataviz.md'
+    - Workshops EN:
         - Lizmap English: 'workshop/lizmap-short-english.md'
         - Lizmap: 'workshop/lizmap.md'
     - Links: 'links.md'
