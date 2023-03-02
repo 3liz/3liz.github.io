@@ -161,18 +161,18 @@
 		<repository>https://github.com/3liz/qgis-mercicor-plugin</repository>
 		<tags>mercicor</tags>
 	</pyqgis_plugin>
-	<pyqgis_plugin name="G-Obs" version="5.2.0">
+	<pyqgis_plugin name="G-Obs" version="5.2.1">
 		<description>This plugin provides tools to store and manage spatial and time data in a standardized way</description>
-		<version>5.2.0</version>
+		<version>5.2.1</version>
 		<qgis_minimum_version>3.16</qgis_minimum_version>
 		<homepage>https://github.com/3liz/qgis-gobs-plugin</homepage>
-		<file_name>gobs.5.2.0.zip</file_name>
+		<file_name>gobs.5.2.1.zip</file_name>
 		<icon>resources/icons/icon.png</icon>
 		<author_name>3Liz</author_name>
-		<download_url>https://github.com/3liz/qgis-gobs-plugin/releases/download/5.2.0/gobs.5.2.0.zip</download_url>
+		<download_url>https://github.com/3liz/qgis-gobs-plugin/releases/download/5.2.1/gobs.5.2.1.zip</download_url>
 		<uploaded_by>3Liz</uploaded_by>
-		<create_date>2023-02-24</create_date>
-		<update_date>2023-02-24</update_date>
+		<create_date>2023-03-02</create_date>
+		<update_date>2023-03-02</update_date>
 		<experimental>True</experimental>
 		<deprecated>False</deprecated>
 		<tracker>https://github.com/3liz/qgis-gobs-plugin</tracker>
