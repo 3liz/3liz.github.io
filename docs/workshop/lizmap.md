@@ -12,7 +12,7 @@ class logement{
     code_insee text
     type text not null
     nb_pieces int
-    besion_renov boolean
+    besoin_renov boolean
     pmr_boolean not null
     fiche_web text
     photo text,
@@ -150,7 +150,7 @@ Nous allons utiliser la documentation Lizmap sur
 * `photo` :
     * Pièce jointe
         * Chemin par défaut, ou alors un dossier comme `../media/specific_media_folder`
-        * Filtre `Images png (*.png);;Images jpeg (*.jpg *.jpeg)`
+        * Filtre `Images (*.png *.jpg *.jpeg)`
 * `besoin_renov` :
     * Liste de valeurs
         * Valeur NULL
