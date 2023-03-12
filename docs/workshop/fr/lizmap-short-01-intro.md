@@ -4,19 +4,20 @@
 
 Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
 
-* Client FTP (WinSCP sous Windows, Filezilla sous macOS/Linux)
+* Client FTP ([WinSCP sous Windows](../../tutorial/winscp-fr.md), [Filezilla sous macOS/Linux](../../tutorial/filezilla-fr.md))
      * `qgis/theme_formation` : le dossier pour l'atelier
      * `qgis/theme_formation/media/metadata.pdf` : un fichier PDF
-* QGIS **3.22**
+* QGIS **3.28**
 * Extension Lizmap dans QGIS Bureautique avec la dernière version disponible
-* Projet QGIS dans l'email
+* [Projet QGIS](https://tinyurl.com/formation-lizmap) à télécharger
      * Le projet QGIS contient déjà les couches PostgreSQL
+     * https://tinyurl.com/formation-lizmap
   
 ## Liens
 
 * Démo https://demo.lizmap.com
 * Hébergement Lizmap clé en main https://www.lizmap.com
-* Présentations PDF/HTML avec les vidéos https://docs.3liz.org/talks/#lizmap
+* Présentations PDF/HTML des dernières conférences avec les vidéos https://docs.3liz.org/talks/#lizmap
 * Mailing-list Osgeo Lizmap 🇬🇧 (et un peu de 🇫🇷)
     * https://lists.osgeo.org/mailman/listinfo/lizmap
 * Comptes Twitter :
@@ -28,13 +29,13 @@ Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
     * Lizmap côte QGIS bureautique : https://github.com/3liz/lizmap-plugin/
     * 3Liz https://github.com/3liz/ pour extensions QGIS Serveur, modules Lizmap
 * Groupes Utilisateurs nationaux
-    * [Mailing list Allemande 🇩🇪](https://lists.osgeo.org/mailman/listinfo/lizmap-de)
-    * [Groupe Facebook Japonais 🇯🇵](https://www.facebook.com/groups/lizmapusergroupjapan)
+    * [Mailing list allemande 🇩🇪](https://lists.osgeo.org/mailman/listinfo/lizmap-de)
+    * [Groupe Facebook japonais 🇯🇵](https://www.facebook.com/groups/lizmapusergroupjapan)
     * ... ?
 
 ## Documentation
 
 * https://docs.lizmap.com/
-  * Voir l'architecture de Lizmap et les manuels
+  * Voir [l'architecture de Lizmap](https://docs.lizmap.com/current/fr/introduction.html) et les manuels
 
 **Commençons enfin le TP [en publiant notre première carte](./lizmap-short-02-first-map.md) 👉**

@@ -30,3 +30,5 @@
     * Dans l'onglet **fond**, ajouter la couche **IGN France** **Orthophoto**. Désormais, on n'a plus besoin de clé.
 
 ![Lizmap layer properties](../media/lizmap_layer_properties.png)
+
+**Rendons notre carte "interactif" pour répondre au clic sur la carte avec l'usage des [popups](./lizmap-short-04-popups.md) 👉**
