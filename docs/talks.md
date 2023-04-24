@@ -7,6 +7,9 @@ hide:
 
 ## Lizmap
 
+* [QGIS FR 2023 - QGIS QFIELD LIZMAP en Martinique🇫🇷](https://docs.3liz.org/presentations/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.html)
+  | [PDF](https://docs.3liz.org/presentations/pdf/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.pdf)
+  | [YouTube](https://www.youtube.com/watch?v=Yuhs_YSpMxE)
 * [GéoDataDays 2022 Général 🇫🇷](https://docs.3liz.org/presentations/2022-09-geodatadays-lizmap.html)
 * [GéoDataDays 2022 Formulaire avancé 🇫🇷](https://docs.3liz.org/presentations/2022-09-geodatadays-formulaire-qgis-lizmap.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/2022-09-geodatadays-formulaire-qgis-lizmap.pdf)
@@ -24,7 +27,7 @@ hide:
   | [PDF](https://docs.3liz.org/presentations/pdf/ApacheCon-@Home-2020-Lizmap-Web-Client.pdf)
   | [YouTube](https://www.youtube.com/watch?v=9vNsPM8k4QY)
 * [FOSS4G 2019 🇬🇧](https://docs.3liz.org/presentations/2019-08-foss4g-lizmap.html)
-  | [PDF](https://docs.3liz.org/presentations/pdf/pdf/FOSS4G-2019-Lizmap-Web-Client.pdf)
+  | [PDF](https://docs.3liz.org/presentations/pdf/FOSS4G-2019-Lizmap-Web-Client.pdf)
   | [YouTube](https://www.youtube.com/watch?v=FkQ2UG_SO-Y)
 
 ## OpenStreetMap
