@@ -7,6 +7,9 @@ hide:
 
 ## Lizmap
 
+* [Journées OpenIG 2023 - QGIS QFIELD LIZMAP en Martinique🇫🇷](https://docs.3liz.org/presentations/2023-05-25_OPENIG_Lizmap_Carte_occupation_sol.html)
+  | [PDF](https://docs.3liz.org/presentations/pdf/2023-05-25_OPENIG_Lizmap_Carte_occupation_sol.pdf)
+  | [PeerTube](https://peertube.iriseden.eu/w/1cG3NrCHFuE9hC6aSzHdb5?start=7s)
 * [QGIS FR 2023 - QGIS QFIELD LIZMAP en Martinique🇫🇷](https://docs.3liz.org/presentations/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.pdf)
   | [YouTube](https://www.youtube.com/watch?v=Yuhs_YSpMxE)
