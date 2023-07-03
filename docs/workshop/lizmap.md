@@ -187,7 +187,7 @@ Pour permettre l'ajout des états des lieux, il faut :
 ## Quelques solutions
 
 ??? note "Vérifier qu'un champ n'est ni NULL ni une chaîne vide"
-    ` "adresse" IS NOT NULL AND "adresse" != ''`
+    ` "adresse" IS NOT NULL AND "adresse" <> ''`
 
 ??? note "Vérifier que la chaîne commence par `http`"
     `left("fiche_web", 4) = 'http'`
