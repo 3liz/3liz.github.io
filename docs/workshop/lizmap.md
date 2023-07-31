@@ -13,7 +13,7 @@ class logement{
     type text not null
     nb_pieces int
     besoin_renov boolean
-    pmr_boolean not null
+    pmr boolean not null
     fiche_web text
     photo text,
     date_construction date,
