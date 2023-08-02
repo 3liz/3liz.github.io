@@ -233,23 +233,23 @@
 		<repository>https://github.com/3liz/qgis-raepa-plugin</repository>
 		<tags>water network, france, eau potable, assainissement, reseau, réseau, adduction</tags>
 	</pyqgis_plugin>
-	<pyqgis_plugin name="cadastre" version="1.17.3">
+	<pyqgis_plugin name="cadastre" version="1.18.0">
 		<description>This plugins helps users to use French land registry data, called Cadastre, in QGIS. It is only useful in</description>
-		<version>1.17.3</version>
+		<version>1.18.0</version>
 		<qgis_minimum_version>3.4</qgis_minimum_version>
 		<homepage>https://docs.3liz.org/QgisCadastrePlugin/</homepage>
-		<file_name>cadastre.1.17.3.zip</file_name>
+		<file_name>cadastre.1.18.0.zip</file_name>
 		<icon>icon.png</icon>
 		<author_name>3Liz</author_name>
-		<download_url>https://github.com/3liz/QgisCadastrePlugin/releases/download/1.17.3/cadastre.1.17.3.zip</download_url>
+		<download_url>https://github.com/3liz/QgisCadastrePlugin/releases/download/1.18.0/cadastre.1.18.0.zip</download_url>
 		<uploaded_by>Gustry</uploaded_by>
-		<create_date>2023-02-07</create_date>
-		<update_date>2023-02-07</update_date>
+		<create_date>2023-08-02</create_date>
+		<update_date>2023-08-02</update_date>
 		<experimental>False</experimental>
 		<deprecated>False</deprecated>
 		<tracker>https://github.com/3liz/QgisCadastrePlugin/issues</tracker>
 		<repository>https://github.com/3liz/QgisCadastrePlugin</repository>
-		<tags>cadastre, france, majic, edigeo, import</tags>
+		<tags>cadastre, france, french, majic, edigeo, import</tags>
 	</pyqgis_plugin>
 	<pyqgis_plugin name="PgMetadata" version="1.2.2">
 		<description>Store some metadata about layers which are stored in PostgreSQL. It's possible to define title, abstract, links, contacts etc. It also provides some search tool, in the QGIS Locator bar for instance.</description>
