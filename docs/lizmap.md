@@ -11,10 +11,18 @@ Visit the main dedicated website for the [Lizmap documentation](https://docs.liz
 
 Additional modules can be added on top of Lizmap
 
-* [French address module](../qgis-gestion_base_adresse-plugin/)
-* [French cadastre module](../QgisCadastrePlugin/)
 * [PgMetadata](../qgis-pgmetadata-plugin/)
 * [PgRouting](../lizmap-pgrouting-module/)
+* AltiProfil
+* ...
+
+## French use cases
+
+* [Address module](../qgis-gestion_base_adresse-plugin/)
+* [Cadastre module](../QgisCadastrePlugin/)
+* [OpenADS module](../qgis-openads-plugin/)
+* [NetADS module](../qgis-netads-plugin/)
+* [Oxalis ADS](https://github.com/3liz/lizmap-javascript-scripts/blob/master/library/api/oxalis/README.md)
 
 ## Translations
 
