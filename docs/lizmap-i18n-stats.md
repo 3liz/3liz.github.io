@@ -10,38 +10,39 @@ It is generated automatically by transifex_stats.py in the scripts folder.
 These statistics are about the Lizmap Web Client application **only**, for the **two current
 maintained branches** and the **next** major version combined.
 
-*Statistics updated: 2023-08-02*
+*Statistics updated: 2023-09-02*
 
 | Number of strings | Number of target languages | Overall Translation ratio |
 |:-:|:-:|:-:|
-3119|26|61.25
+3144|27|57.99
 
 | Language | Translation ratio (%) |
 |:-:|:-:|
-Czech 🇨🇿 |[=100.0% "100.0"]|
 French 🇫🇷 |[=100.0% "100.0"]|
-Romanian 🇷🇴 |[=98.91% "98.91"]|
-Portuguese 🇵🇹 |[=97.63% "97.63"]|
-Polish (Poland) 🇵🇱 |[=88.01% "88.01"]|
-Ukrainian (Ukraine) 🇺🇦 |[=85.51% "85.51"]|
-Russian 🇷🇺 |[=85.16% "85.16"]|
-Japanese 🇯🇵 |[=84.96% "84.96"]|
-Italian 🇮🇹 |[=83.23% "83.23"]|
-German 🇩🇪 |[=77.01% "77.01"]|
-Galician  |[=73.84% "73.84"]|
-Slovak 🇸🇰 |[=73.58% "73.58"]|
-Swedish (Sweden) 🇸🇪 |[=66.66% "66.66"]|
-Portuguese (Brazil) 🇧🇷 |[=66.53% "66.53"]|
-Spanish 🇪🇸 |[=65.25% "65.25"]|
-Dutch 🇳🇱 |[=61.81% "61.81"]|
-Hungarian (Hungary) 🇭🇺 |[=58.06% "58.06"]|
-Finnish 🇫🇮 |[=53.16% "53.16"]|
-Slovenian 🇸🇮 |[=44.21% "44.21"]|
-Basque  |[=37.74% "37.74"]|
-Greek 🇬🇷 |[=30.75% "30.75"]|
-Bulgarian 🇧🇬 |[=28.98% "28.98"]|
-Norwegian 🇳🇴 |[=18.85% "18.85"]|
-Spanish (Argentina) 🇦🇷 |[=6.51% "6.51"]|
-Indonesian 🇮🇩 |[=4.78% "4.78"]|
-Serbian (Cyrillic) 🇷🇸 |[=1.31% "1.31"]|
+Romanian 🇷🇴 |[=99.9% "99.9"]|
+Portuguese 🇵🇹 |[=96.95% "96.95"]|
+Czech 🇨🇿 |[=96.85% "96.85"]|
+Japanese 🇯🇵 |[=85.43% "85.43"]|
+Polish (Poland) 🇵🇱 |[=85.43% "85.43"]|
+Ukrainian (Ukraine) 🇺🇦 |[=83.08% "83.08"]|
+Russian 🇷🇺 |[=82.73% "82.73"]|
+Italian 🇮🇹 |[=81.08% "81.08"]|
+German 🇩🇪 |[=75.19% "75.19"]|
+Galician  |[=75.16% "75.16"]|
+Slovak 🇸🇰 |[=71.82% "71.82"]|
+Swedish (Sweden) 🇸🇪 |[=64.95% "64.95"]|
+Portuguese (Brazil) 🇧🇷 |[=64.82% "64.82"]|
+Spanish 🇪🇸 |[=63.58% "63.58"]|
+Dutch 🇳🇱 |[=60.18% "60.18"]|
+Hungarian (Hungary) 🇭🇺 |[=56.49% "56.49"]|
+Finnish 🇫🇮 |[=52.19% "52.19"]|
+Slovenian 🇸🇮 |[=43.92% "43.92"]|
+Basque  |[=37.09% "37.09"]|
+Greek 🇬🇷 |[=30.12% "30.12"]|
+Bulgarian 🇧🇬 |[=27.64% "27.64"]|
+Norwegian 🇳🇴 |[=18.67% "18.67"]|
+Spanish (Argentina) 🇦🇷 |[=6.46% "6.46"]|
+Indonesian 🇮🇩 |[=4.77% "4.77"]|
+Serbian (Cyrillic) 🇷🇸 |[=1.3% "1.3"]|
+Vietnamese (Viet Nam)  |[=0.0% "0.0"]|
 
