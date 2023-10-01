@@ -14,7 +14,7 @@ jobs:
          echo ${{ github.event.client_payload.url }}
 
       - name: Get source code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
           token: ${{ secrets.BOT_HUB_TOKEN }}  # Important to launch CI on a commit from a bot
