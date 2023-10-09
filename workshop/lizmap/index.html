@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../media/logo.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.4">
     
     
       
@@ -30,10 +30,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.79e020e9.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.bd3936ea.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a5377069.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
       
       
 
@@ -1141,8 +1141,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#utilisation-des-popups" class="md-nav__link">
-    Utilisation des popups
+  <a href="#utilisation-des-popups-avec-la-relation" class="md-nav__link">
+    Utilisation des popups avec la relation
   </a>
   
 </li>
@@ -1157,6 +1157,13 @@
         <li class="md-nav__item">
   <a href="#quelques-solutions" class="md-nav__link">
     Quelques solutions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continuer-plus-loin" class="md-nav__link">
+    Continuer plus loin
   </a>
   
 </li>
@@ -1257,8 +1264,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#utilisation-des-popups" class="md-nav__link">
-    Utilisation des popups
+  <a href="#utilisation-des-popups-avec-la-relation" class="md-nav__link">
+    Utilisation des popups avec la relation
   </a>
   
 </li>
@@ -1273,6 +1280,13 @@
         <li class="md-nav__item">
   <a href="#quelques-solutions" class="md-nav__link">
     Quelques solutions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continuer-plus-loin" class="md-nav__link">
+    Continuer plus loin
   </a>
   
 </li>
@@ -1427,7 +1441,7 @@ agents -- etat_des_lieux</div>
 <h3 id="parametrage-des-outils-pour-les-champs">Paramétrage des "outils" pour les champs<a class="headerlink" href="#parametrage-des-outils-pour-les-champs" title="Permanent link">#</a></h3>
 <p>Pour l'ensemble des champs, nous allons configurer les <strong>Type d'outil</strong> ainsi que les contraintes si nécessaire.</p>
 <p>Nous allons utiliser la documentation Lizmap sur
-<a href="https://docs.lizmap.com/current/fr/publish/configuration/layer.html#edition-expressions">les formulaires avancés</a>.</p>
+<a href="https://docs.lizmap.com/current/fr/publish/layer_properties/attributes_form.html#advanced-form">les formulaires avancés</a>.</p>
 <ul>
 <li><code>adresse</code> :<ul>
 <li>Édition de texte</li>
@@ -1456,10 +1470,12 @@ une valeur <strong>booléenne</strong> si la saisie est <strong>valide</strong> 
 <li>Renforcer la contrainte par expression</li>
 </ul>
 </li>
-<li>Liste de valeurs<ul>
+<li><code>type</code> :<ul>
+<li>Liste de valeurs</li>
 <li><code>studio</code> ➡ <code>Studio</code></li>
 <li><code>appartement</code> ➡ <code>Appartement</code></li>
 <li><code>maison</code> ➡ <code>Maison</code></li>
+<li><code>villa</code> ➡ <code>Villa</code></li>
 <li>...</li>
 </ul>
 </li>
@@ -1468,7 +1484,7 @@ une valeur <strong>booléenne</strong> si la saisie est <strong>valide</strong> 
 </ul>
 </li>
 <li><code>pmr</code> :<ul>
-<li>Case à cocher</li>
+<li>Case à cocher, uniquement <strong>oui</strong> ou <strong>non</strong>, car définition non null lors de la création de la table</li>
 </ul>
 </li>
 <li><code>photo</code> :<ul>
@@ -1480,8 +1496,8 @@ une valeur <strong>booléenne</strong> si la saisie est <strong>valide</strong> 
 </ul>
 </li>
 <li><code>besoin_renov</code> :<ul>
-<li>Liste de valeurs<ul>
-<li>Valeur NULL</li>
+<li>Liste de valeurs, pour transformer la case à cocher en menu déroulant pour inclure le null possible.<ul>
+<li>Valeur NULL ➡ <code>Inderterminé</code></li>
 <li><code>true</code> ➡ <code>Oui</code></li>
 <li><code>false</code> ➡ <code>Non</code></li>
 </ul>
@@ -1498,7 +1514,8 @@ une valeur <strong>booléenne</strong> si la saisie est <strong>valide</strong> 
 <li><code>date_construction</code><ul>
 <li>Date<ul>
 <li>format <code>dd/MM/yyyy</code></li>
-<li><code>"date_construction" &lt;= now()</code></li>
+<li>La date de construction n'étant pas obligatoire, il faut en tenir compte dans l'expression de vérification</li>
+<li><code>"date_construction" is null or "date_construction" &lt;=  now()</code></li>
 </ul>
 </li>
 </ul>
@@ -1511,7 +1528,7 @@ une valeur <strong>booléenne</strong> si la saisie est <strong>valide</strong> 
 </ul>
 </li>
 </ul>
-<h2 id="utilisation-des-popups">Utilisation des popups<a class="headerlink" href="#utilisation-des-popups" title="Permanent link">#</a></h2>
+<h2 id="utilisation-des-popups-avec-la-relation">Utilisation des popups avec la relation<a class="headerlink" href="#utilisation-des-popups-avec-la-relation" title="Permanent link">#</a></h2>
 <p>Nous pouvons activer :</p>
 <ul>
 <li>les popups "Automatique" pour la couche des états des lieux.</li>
@@ -1533,6 +1550,9 @@ une valeur <strong>booléenne</strong> si la saisie est <strong>valide</strong> 
 <summary>Vérifier que la chaîne commence par <code>http</code></summary>
 <p><code>left("fiche_web", 4) = 'http'</code></p>
 </details>
+<h2 id="continuer-plus-loin">Continuer plus loin<a class="headerlink" href="#continuer-plus-loin" title="Permanent link">#</a></h2>
+<p>On peut continuer plus loin avec l'utilisation de la dataviz, par exemple pour afficher dans les informations <strong>d'une</strong>
+commune la répartition des types de logements.</p>
 
 
 
@@ -1634,10 +1654,10 @@ une valeur <strong>booléenne</strong> si la saisie est <strong>valide</strong> 
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.6eac0284.min.js"></script>
+      <script src="../../assets/javascripts/bundle.94c44541.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
       
