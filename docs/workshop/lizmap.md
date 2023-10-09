@@ -116,7 +116,7 @@ CREATE INDEX ON z_formation.logement USING GIST (geom);
 Pour l'ensemble des champs, nous allons configurer les **Type d'outil** ainsi que les contraintes si nécessaire.
 
 Nous allons utiliser la documentation Lizmap sur
-[les formulaires avancés](https://docs.lizmap.com/current/fr/publish/configuration/layer.html#edition-expressions).
+[les formulaires avancés](https://docs.lizmap.com/current/fr/publish/layer_properties/attributes_form.html#advanced-form).
 
 * `adresse` :
     * Édition de texte
@@ -126,7 +126,7 @@ Nous allons utiliser la documentation Lizmap sur
     On remarque que QGIS détecte les contraintes des champs qui sont en base de données. Mais on peut personnaliser
     les messages d'erreurs.
 
-!!!tip
+!!! tip
     Concernant l'expression de **contrainte**, QGIS va l'exécuter et va vérifier si l'expression renvoi
     une valeur **booléenne** si la saisie est **valide** ou **non**.
 
@@ -138,22 +138,24 @@ Nous allons utiliser la documentation Lizmap sur
     * Expression de filtre `intersects($geometry, @current_geometry)`
     * Ajouter une contrainte et une erreur
     * Renforcer la contrainte par expression
-* Liste de valeurs
-    * `studio` ➡ `Studio`
-    * `appartement` ➡ `Appartement`
-    * `maison` ➡ `Maison`
-    * ...
+* `type` :
+    * Liste de valeurs
+      * `studio` ➡ `Studio`
+      * `appartement` ➡ `Appartement`
+      * `maison` ➡ `Maison`
+      * `villa` ➡ `Villa`
+      * ...
 * `nb_pieces` :
     * Plage de valeur
 * `pmr` :
-    * Case à cocher
+    * Case à cocher, uniquement **oui** ou **non**, car définition non null lors de la création de la table
 * `photo` :
     * Pièce jointe
         * Chemin par défaut, ou alors un dossier comme `../media/specific_media_folder`
         * Filtre `Images (*.png *.jpg *.jpeg)`
 * `besoin_renov` :
-    * Liste de valeurs
-        * Valeur NULL
+    * Liste de valeurs, pour transformer la case à cocher en menu déroulant pour inclure le null possible.
+        * Valeur NULL ➡ `Inderterminé`
         * `true` ➡ `Oui`
         * `false` ➡ `Non`
 * `fiche_web` :
@@ -164,12 +166,13 @@ Nous allons utiliser la documentation Lizmap sur
 * `date_construction`
     * Date
         * format `dd/MM/yyyy`
-        * `"date_construction" <= now()`
+        * La date de construction n'étant pas obligatoire, il faut en tenir compte dans l'expression de vérification
+        * `"date_construction" is null or "date_construction" <=  now() `
 * `date_revision_fiche`
     * Date
         * Format date
 
-## Utilisation des popups
+## Utilisation des popups avec la relation
 
 Nous pouvons activer :
 
@@ -191,3 +194,8 @@ Pour permettre l'ajout des états des lieux, il faut :
 
 ??? note "Vérifier que la chaîne commence par `http`"
     `left("fiche_web", 4) = 'http'`
+
+## Continuer plus loin
+
+On peut continuer plus loin avec l'utilisation de la dataviz, par exemple pour afficher dans les informations **d'une**
+commune la répartition des types de logements.
