@@ -3,6 +3,16 @@
 Nous allons publier le projet QGIS qui se trouve dans l'email afin de faire notre première carte visualisable sur
 internet.
 
+## Extension Lizmap
+
+* Installer l'extension Lizmap
+* Cliquer sur **Ajouter votre premier serveur** et suivre les étapes
+    * L'URL de la page d'accueil, exemple `https://workshop.lizmap.com/osgeofr/`.
+    * Le nom d'utilisateur et son mot de passe
+    * Si ces informations sont corrects, il demande le nom du serveur. Ce nom est libre, pour votre organisation.
+* Si votre serveur s'affiche bien dans le tableau, c'est bon 👍
+* Fermer l'extension Lizmap
+
 ## Manipulation dans QGIS
 
 * Ouvrir le projet
@@ -19,14 +29,12 @@ internet.
               * **publier** toutes les couches
     * Cliquer sur **OK**."
 * Ouvrir l'extension Lizmap
-* **Seulement lors de la première utilisation**, ajouter un serveur Lizmap **en bas** avec :
-    * l'URL de la page d'accueil, exemple `https://workshop.lizmap.com/osgeofr/`.
-    * Le nom d'utilisateur et son mot de passe
 * Quitter l'extension Lizmap (le fichier Lizmap est créé dès que l'on ferme la fenêtre)
 * Transférer le projet (`.qgs` et `.cfg`) dans le dossier `qgis/theme_formation` sur le FTP
 
 !!! tip
     **Bonus** si vous avez une petite image PNG qui se nomme `nom_du_projet.qgs.png` pour remplacer l'image du projet par défaut.
+    Vous pouvez regarder l'aide dans l'extension Lizmap → **Options de la carte** pour avoir de l'aide sur la vignette.
     Il faut mettre cette image à côté de votre fichier `nom_du_projet.qgs`. L'image peut-être **jpeg** aussi.
 
 ## Prendre en main l'interface web Lizmap

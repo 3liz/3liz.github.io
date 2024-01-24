@@ -8,6 +8,7 @@ Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
      * `qgis/theme_formation` : le dossier pour l'atelier
      * `qgis/theme_formation/media/metadata.pdf` : un fichier PDF
 * QGIS **3.28**
+* Lizmap Web Client **3.7.X**
 * Extension Lizmap dans QGIS Bureautique avec la dernière version disponible
 * [Projet QGIS](https://tinyurl.com/formation-lizmap) à télécharger
      * Le projet QGIS contient déjà les couches PostgreSQL

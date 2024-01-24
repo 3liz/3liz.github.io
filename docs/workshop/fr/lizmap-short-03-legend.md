@@ -3,10 +3,11 @@
 * Faire des groupes dans la légende
     * `Saisie`
     * `Données`
-    * `hidden`, avec `h` minuscule
+* À l'aide de l'extension Lizmap, dans l'onglet **Fond de cartes** :
+    * on peut ajouter le fond "Orthophoto", qui va ajouter lui-même un groupe `baselayers`
+    * un groupe "caché" avec le bouton **hidden**
 * Ranger les couches dans les groupes en regardant la capture ci-dessous  
 * Renommer les couches avec un nom plus présentable
-    * **Exception** pour l'orthophoto IGN, dans le groupe `hidden` qui doit avoir le nom `ign-photo`
     
 ![legend](../media/legend.png)
 
