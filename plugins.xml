@@ -179,15 +179,15 @@
 		<repository>https://github.com/3liz/qgis-gobs-plugin</repository>
 		<tags>time,observation,stats,gobs</tags>
 	</pyqgis_plugin>
-	<pyqgis_plugin name="Lizmap" version="4.1.6">
+	<pyqgis_plugin name="Lizmap" version="4.1.7">
 		<description>Publish and share your QGIS maps on the Web via Lizmap Web Client, by 3liz.com</description>
-		<version>4.1.6</version>
+		<version>4.1.7</version>
 		<qgis_minimum_version>3.16</qgis_minimum_version>
 		<homepage>https://docs.lizmap.com</homepage>
-		<file_name>lizmap.4.1.6.zip</file_name>
+		<file_name>lizmap.4.1.7.zip</file_name>
 		<icon>resources/icons/icon.png</icon>
 		<author_name>3Liz</author_name>
-		<download_url>https://github.com/3liz/lizmap-plugin/releases/download/4.1.6/lizmap.4.1.6.zip</download_url>
+		<download_url>https://github.com/3liz/lizmap-plugin/releases/download/4.1.7/lizmap.4.1.7.zip</download_url>
 		<uploaded_by>Gustry</uploaded_by>
 		<create_date>2024-01-25</create_date>
 		<update_date>2024-01-25</update_date>
