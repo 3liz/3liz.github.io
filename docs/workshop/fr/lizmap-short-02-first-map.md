@@ -7,10 +7,15 @@ internet.
 
 * Installer l'extension Lizmap
 * Cliquer sur **Ajouter votre premier serveur** et suivre les étapes
-    * L'URL de la page d'accueil, exemple `https://workshop.lizmap.com/osgeofr/`.
+    * L'URL de la page d'accueil, exemple :
+        * `https://workshop.lizmap.com/osgeo_matin/`
+        * `https://workshop.lizmap.com/osgeo_am/`
     * Le nom d'utilisateur et son mot de passe
     * Si ces informations sont corrects, il demande le nom du serveur. Ce nom est libre, pour votre organisation.
 * Si votre serveur s'affiche bien dans le tableau, c'est bon 👍
+* Dans les **paramètres** :
+    * **Enregistrer le projet QGIS automatiquement**
+    * Passer en mode **Débutant** 😏
 * Fermer l'extension Lizmap
 
 ## Manipulation dans QGIS
@@ -19,7 +24,7 @@ internet.
 * Mettre un zoom et une emprise correcte (en montrant toutes les îles)
 * Dans les propriétés du projet :
     * Menu **Projet** / **Propriétés**
-    * Onglet **Relations**, ajouter toutes les relations **automatiquement** avec le bouton **découvrir**
+    * Onglet **Relations**, ajouter toutes les relations **automatiquement** avec le bouton **découvrir** (si PostgreSQL)
     * Onglet **QGIS Serveur**,
         * **Capacités des services**
               * mettre un **titre** et un **résumé**
@@ -29,8 +34,8 @@ internet.
               * **publier** toutes les couches
     * Cliquer sur **OK**."
 * Ouvrir l'extension Lizmap
+* Dans l'onglet **Envoi**, il faut envoyer les données fichiers, dans le bon dossier `theme formation`.
 * Quitter l'extension Lizmap (le fichier Lizmap est créé dès que l'on ferme la fenêtre)
-* Transférer le projet (`.qgs` et `.cfg`) dans le dossier `qgis/theme_formation` sur le FTP
 
 !!! tip
     **Bonus** si vous avez une petite image PNG qui se nomme `nom_du_projet.qgs.png` pour remplacer l'image du projet par défaut.

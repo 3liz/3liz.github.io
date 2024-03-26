@@ -10,6 +10,8 @@
     
     * **Propriétés** de la couche vecteur ➡ **Formulaire d'attribut** ➡ **Alias** pour chaque champ
 
+    Ces alias sont aussi présent dans la popup **Automatique** ou lors de la génération du HTML !
+
 !!! success
     Pour ceux qui ont le temps, vous pouvez aussi regarder les outils de sélection.
 

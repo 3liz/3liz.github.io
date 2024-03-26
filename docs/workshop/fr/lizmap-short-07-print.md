@@ -14,6 +14,12 @@
 !!! success
     Dans ce cas-là, c'est l'utilisateur qui choisit ce qu'il souhaite imprimer en PDF.
 
+!!! warning
+    Problème avec QGIS ≥ 3.34, temporaire, le texte dynamique ne fonctionne plus 😔
+    Nous sommes sur un correctif, patience ⏰
+
+    ![Contenu dynamique](../media/print_user_params.jpg)
+
 ## Après un clic sur la carte, liée à une entité
 
 * Dupliquer la mise en page actuelle et en faire un atlas :

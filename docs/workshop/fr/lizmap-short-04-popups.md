@@ -15,7 +15,7 @@ Découvrons le principe des **popups** **automatiques** et **Infobulle QGIS**.
 * Dans les propriétés de la couche vecteur `commune`, onglet **Affichage**, puis **Infobulle HTML**, observer le code HTML.
 
 !!! tip
-    Dans QGIS ➡ **Vue** ➡ **Afficher les infobulles** pour afficher directement dans QGIS bureautique.
+    Dans QGIS ➡ **Vue** ➡ **Panneaux** → **Aperçu HTML Lizmap** pour afficher directement dans QGIS bureautique.
     Vous devez sélectionner aussi l'outil infobulle dans la barre d'outils.
 
 Ces informations avec les **infobulles QGIS** sont très puissantes grâce à l'utilisation des **expressions** QGIS 🚀

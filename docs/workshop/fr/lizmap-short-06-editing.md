@@ -35,4 +35,8 @@ On souhaite désormais rendre éditable une couche depuis l'interface web afin d
     On peut utiliser des expressions QGIS dans les formulaires (visibilité, conditions, valeurs par défaut etc).
     [Lire la documentation](https://docs.lizmap.com/current/fr/publish/configuration/expression.html).
 
+!!! tip
+    En l'absence de couches PostgreSQL pour cette formation, on peut voir le projet déjà
+    [fait](https://workshop.lizmap.com/osgeo_matin/index.php/view/map?repository=edition&project=main).
+
 **Désormais, on souhaite pouvoir [proposer des exports PDF](./lizmap-short-07-print.md), avec ou sans **atlas** dans notre projet 👉**
