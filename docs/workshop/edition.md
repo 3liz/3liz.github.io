@@ -89,18 +89,20 @@ CREATE INDEX ON z_formation.logement USING GIST (geom);
 
 !!! info
 
-    Vous devez avoir une couche des communes avec les codes INSEE dans votre projet également.
+    Pour profiter pleinement de cette excerice, vous devez avoir une couche des communes avec les codes INSEE dans
+    votre projet également. Cette couche ne doit pas nécessairement être dans la base PostgreSQL, car on n'édite pas
+    la couche des communes en ligne.
 
 ## Propriétés du projet
 
 * Charger les couches dans le projet QGIS.
 * **Propriétés du projet**, onglet **Relations**, ajouter toutes les relations **automatiquement** avec le bouton **découvrir**.
-* Vous devriez avoir 2 relations dans le tableau.
 
 ## Formulaire logement
 
 !!! tip
-    Regarder uniquement le formulaire dans QGIS bureautique dans un premier temps, pendant les différentes étapes.
+    Regarder uniquement le formulaire dans QGIS bureautique dans un premier temps, pendant les différentes étapes,
+    en ouvrant une session d'édition.
 
 * Dans les propriétés de la couche `logement` :
   * Ajouter des alias sur les champs
@@ -110,6 +112,7 @@ CREATE INDEX ON z_formation.logement USING GIST (geom);
 
 !!! tip
     Nous n'avons pas besoin du champ `id` pour nos utilisateurs lors d'une édition. C'est une information *interne*.
+    Nous pouvons donc le supprimer.
 
 ### Paramétrage des "outils" pour les champs
 
@@ -121,6 +124,7 @@ Nous allons utiliser la documentation Lizmap sur
 * `adresse` :
     * Édition de texte
     * Ajouter une expression pour la contrainte et une erreur qui sera affichée si l'expression n'est pas valide.
+    * On peut vérifier si la chaîne est non `NULL` ET non vide.
 
 !!! tip
     On remarque que QGIS détecte les contraintes des champs qui sont en base de données. Mais on peut personnaliser
@@ -136,7 +140,7 @@ Nous allons utiliser la documentation Lizmap sur
       * Clé **INSEE_COM**
       * Valeurs **NOM**
     * Expression de filtre `intersects($geometry, @current_geometry)`
-    * Ajouter une contrainte et une erreur
+    * Ajouter une contrainte et une erreur pour le non NULL
     * Renforcer la contrainte par expression
 * `type` :
     * Liste de valeurs
@@ -160,7 +164,8 @@ Nous allons utiliser la documentation Lizmap sur
         * `false` ➡ `Non`
 * `fiche_web` :
     * Texte
-       * Renforçons la contrainte avec une expression. Une regex est plus appropriée, mais utilisons une expression
+       * Renforçons la contrainte avec une expression. Une [regex](https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re)
+         est plus appropriée, mais utilisons une expression
          simple pour vérifier que la chaîne commence par `http`
        * Ajouter une description pour la contrainte
 * `date_construction`
@@ -171,6 +176,13 @@ Nous allons utiliser la documentation Lizmap sur
 * `date_revision_fiche`
     * Date
         * Format date
+
+!!! warning
+    Le support **complet** des expressions est un sujet complexe et non terminé. Il y a plein de **différents**
+    contextes pour l'évaluation des expressions, voir le ticket [GitHub](https://github.com/3liz/lizmap-web-client/issues/3226).
+
+    L'évaluation d'une expression lors d'une MAJ de l'entité ne peut pas se faire via une expression QGIS.
+    Il faut utiliser un [trigger](https://docs.3liz.org/formation-postgis/triggers/)
 
 ## Utilisation des popups avec la relation
 
@@ -194,6 +206,8 @@ Pour permettre l'ajout des états des lieux, il faut :
 
 ??? note "Vérifier que la chaîne commence par `http`"
     `left("fiche_web", 4) = 'http'`
+
+    Sinon, avec [regex101](https://regex101.com/), une regexp possible: `(http|https):\/\/([\w-]+(\.[\w-]+)+)`
 
 ## Continuer plus loin
 
