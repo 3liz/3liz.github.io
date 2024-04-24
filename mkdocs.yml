@@ -42,6 +42,7 @@ nav:
 plugins:
   - search
 #  - git-revision-date-localized
+  - material-plausible
 
 markdown_extensions:
   - toc:
@@ -105,3 +106,8 @@ extra:
 
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/channel/UCYYW2CTWR_84kB6pt2zCWbQ
+
+  analytics:
+    provider: plausible
+    domain: docs.3liz.org
+    src: "https://plausible.snap.3liz.net/js/script.js"
