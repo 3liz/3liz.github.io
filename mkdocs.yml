@@ -110,4 +110,4 @@ extra:
   analytics:
     provider: plausible
     domain: docs.3liz.org
-    src: "https://plausible.snap.3liz.net/js/script.js"
+    src: "https://analytics.3liz.com/js/script.js"
