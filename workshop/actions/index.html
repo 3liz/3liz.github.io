@@ -1277,7 +1277,7 @@ Nous nous réfererons à la <a href="https://docs.lizmap.com/current/fr/publish/
 <p>En vous inspirant de la documenation, créer le SQL ainsi que le JSON de l'action. Celle-ci doit :</p>
 <ul>
 <li>Ajouter un bouton dans la popup des entités des logements</li>
-<li>Au clique, afficher le message "La plus proche borne a pour id %1 et est à %2 m", où %1 est l'identifant de la borne et %2 la distance en mètre</li>
+<li>Au clique, afficher le message "La plus proche borne a pour id <code>%1</code> et est à <code>%2</code> m", où <code>%1</code> est l'identifant de la borne et <code>%2</code> la distance en mètre</li>
 <li>Au clique, afficher une droite entre le logement et la borne incendie la plus proche et zoomer dessus</li>
 </ul>
 <h2 id="solution">Solution<a class="headerlink" href="#solution" title="Permanent link">#</a></h2>
@@ -1422,7 +1422,10 @@ Nous nous réfererons à la <a href="https://docs.lizmap.com/current/fr/publish/
 
 <span class="k">COMMENT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">FUNCTION</span><span class="w"> </span><span class="n">lizmap_get_data</span><span class="p">(</span><span class="n">json</span><span class="p">)</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="s1">&#39;Generate a valid GeoJSON from an action described by a name, PostgreSQL schema and table name of the source data, a QGIS layer name, a feature id and additional options.&#39;</span><span class="p">;</span>
 </code></pre></div></td></tr></table></div></li>
-<li>Puis créer le JSON:
+</ul>
+</details>
+<details class="note">
+<summary>JSON de l'action</summary>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -1476,8 +1479,7 @@ Nous nous réfererons à la <a href="https://docs.lizmap.com/current/fr/publish/
 <span class="w">        </span><span class="p">]</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">]</span>
-</code></pre></div></td></tr></table></div></li>
-</ul>
+</code></pre></div></td></tr></table></div>
 </details>
 
 
