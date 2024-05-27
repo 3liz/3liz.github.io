@@ -86,6 +86,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.3liz.org/workshop/actions/</loc>
+         <lastmod>2024-05-27</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.3liz.org/workshop/edition/</loc>
          <lastmod>2024-05-27</lastmod>
          <changefreq>daily</changefreq>
