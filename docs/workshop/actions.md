@@ -30,7 +30,7 @@ CREATE INDEX ON bornes_incendie USING GIST (geom);
 En vous inspirant de la documenation, créer le SQL ainsi que le JSON de l'action. Celle-ci doit :
 
 * Ajouter un bouton dans la popup des entités des logements
-* Au clique, afficher le message "La plus proche borne a pour id %1 et est à %2 m", où %1 est l'identifant de la borne et %2 la distance en mètre
+* Au clique, afficher le message "La plus proche borne a pour id `%1` et est à `%2` m", où `%1` est l'identifant de la borne et `%2` la distance en mètre
 * Au clique, afficher une droite entre le logement et la borne incendie la plus proche et zoomer dessus
 
 ## Solution
@@ -108,7 +108,8 @@ En vous inspirant de la documenation, créer le SQL ainsi que le JSON de l'actio
 
     COMMENT ON FUNCTION lizmap_get_data(json) IS 'Generate a valid GeoJSON from an action described by a name, PostgreSQL schema and table name of the source data, a QGIS layer name, a feature id and additional options.';
     ```
-    * Puis créer le JSON:
+
+??? note "JSON de l'action"
     ```json
     [
         {
