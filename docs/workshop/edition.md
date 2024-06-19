@@ -139,7 +139,7 @@ Nous allons utiliser la documentation Lizmap sur
       * Couche **commune**
       * Clé **INSEE_COM**
       * Valeurs **NOM**
-    * Expression de filtre `intersects($geometry, @current_geometry)`
+    * Expression de filtre `intersects( @geometry,  @current_geometry )`
     * Ajouter une contrainte et une erreur pour le non NULL
     * Renforcer la contrainte par expression
 * `type` :
