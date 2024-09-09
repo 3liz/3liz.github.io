@@ -7,51 +7,70 @@ hide:
 
 ## Pre-requirements
 
-This workshop is designed for Lizmap users, half day.
+This workshop is designed for QGIS users.
 
-* FTP Client (WinSCP for Windows, Filezilla for MacOS/Linux)
-     * `qgis/topic_workshop` : for the workshop
-     * `qgis/topic_workshop/media/metadata.pdf` : a PDF file
-* QGIS 3.22
-* Lizmap plugin on QGIS Desktop
-* QGIS project attached in the email
-     * The QGIS project contains layers from the PostgreSQL database
+* QGIS 3.34
+* **Latest** Lizmap plugin on QGIS Desktop
+* Lizmap Web Client **3.8.X**
 
-## FOSS4G
+## QGIS UC 2024
 
-Presentations talking about QGIS Server and Lizmap during this FOSS4G from 3Liz :
+Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz :
 
-* Room Onice, 2022-08-25 from 11h30 to 12h00
-    * [QGIS Server into the wild](https://talks.osgeo.org/foss4g-2022/talk/VC8WX9/)
-* Room 4, 2022-08-25 from 15h20 to 15h30, two lightning talks
-    * [Advanced QGIS forms into the web with Lizmap](https://talks.osgeo.org/foss4g-2022/talk/VVXS3Q/)
-    * [Dataviz in QGIS and on the web](https://talks.osgeo.org/foss4g-2022/talk/9DWW3N/) co-authored with Faunalia
-* Room Onice, 2022-08-26 from 9h00 to 9h30
-    * [State of Lizmap - Past / Present / Futur](https://talks.osgeo.org/foss4g-2022/talk/CWGULA/)
+* Room B320, this afternoon, at 4:00PM
+    * PgMetadata, metadata in PostgreSQL
+    * Bonus : Display them in Lizmap
+* Room B319, tomorrow morning, 11:30AM
+    * Py-QGIS-Server 2 : a tool to host QGIS Server
+    * How do we host QGIS server on our cloud infrastructure (for Lizmap)
+* Room B316, tomorrow afternoon, at 2:00PM
+    * Past, present and future of the Lizmap project
 
 ## Links
 
 * Demo https://demo.lizmap.com
-* Lizmap hosting out-of-the-box https://www.lizmap.com
+* Lizmap cloud out-of-the-box https://www.lizmap.com
 * PDF/HTML presentations and videos https://docs.3liz.org/talks/#lizmap
+* Discourse channel https://discourse.osgeo.org
 * Mailing-list Osgeo Lizmap 🇬🇧 (and a little bit of 🇫🇷)
     * https://lists.osgeo.org/mailman/listinfo/lizmap
 * Twitter accounts : 
     * https://twitter.com/LizmapForQgis dedicated to Lizmap
     * https://twitter.com/3LIZ_news about 3Liz
-    * https://twitter.com/3lizRelease everytime we make a new version on GitHub in one of our project
 * Source code
     * Lizmap Web Client https://github.com/3liz/lizmap-web-client/
-    * Lizmap QGIS side (desktop and server) : https://github.com/3liz/lizmap-plugin/
+    * Lizmap QGIS Desktop side https://github.com/3liz/lizmap-plugin/
+    * Lizmap QGIS Server side https://github.com/3liz/qgis-lizmap-server-plugin
     * 3Liz https://github.com/3liz/ for QGIS Server plugins, Lizmap modules
 * National user group
     * [German mailing list 🇩🇪](https://lists.osgeo.org/mailman/listinfo/lizmap-de)
     * [Japan Facebook group 🇯🇵](https://www.facebook.com/groups/lizmapusergroupjapan)
+    * ... ?
 
 ## Documentation
 
 * https://docs.lizmap.com/
-  * Check the Lizmap architecture and manuals
+  * Check [the architecture and manuals](https://docs.lizmap.com/current/en/introduction.html)
+
+## Setting up the training
+
+* Install the **Lizmap** plugin on your QGIS
+* Open it, either from the toolbar, or from the **Web** menu
+* Click **Add your first server** or the **+** icon at the bottom
+* Fill the wizard :
+     * URL : https://workshop.lizmap.com/bratislava
+     * Login : `qgisuc_X`, replace `X` by your number
+     * Password : `qgisuc?X`
+
+!!! warning
+    QGIS **might** ask you to set up a **master password**. This password belongs to **you** and is not linked to Lizmap.
+    It's to lock **your internal QGIS password manager**.
+
+!!! question
+    Is-it 👍 or something else ?
+
+!!! info
+    This workshop was designed for **3 hours**, so some steps in the QGIS downloaded project are already.
 
 ## First quick map
 
@@ -62,7 +81,7 @@ Presentations talking about QGIS Server and Lizmap during this FOSS4G from 3Liz 
       * **Relations** tab, add all relations **automatically** with **Discover Relations** and **select them all** with **ctrl**
       * **QGIS Server** tab,
           * Enable **Service capabilities**
-              * set a **title** such as `Lizmap training NAME` and an **abstract** about the purpose of the project. You can fill the **author**, **organization**, **phone**, **email** as well if you want.
+              * set a **title** such as `NAME Training` and an **abstract** about the purpose of the project. You can fill the **author**, **organization**, **phone**, **email** as well if you want.
               * You are free to use the text you want for these fields.
               * You can set keywords if needed. You will be to search your project with keywords in the landing page.
           * **WMS capabilities**
@@ -71,13 +90,10 @@ Presentations talking about QGIS Server and Lizmap during this FOSS4G from 3Liz 
               * Use the checkbox **published** for **all** layers
       * Press **Ok** 
 * Open the Lizmap plugin
-* Check the content of the **Information** panel
-* **Only one time**, add a server with your instance home page URL
-    * Example `https://workshop.lizmap.com/foss4g/`
-    * We don't need user and password.
-    * Adding a login and password is **not** required and QGIS will ask you to set up a master password if you haven't done it before.
-* Close the Lizmap plugin (it's creating the Lizmap file when closing the window).
-* Transfert the project (`.qgs` et `.cfg`) in the folder `qgis/topic_workshop` on the FTP
+* In the `Layers` tab, make some layers visible by default
+* At the bottom, let's choose the remote "directory" where to send this project
+* Press "Apply" or "OK" to start the Lizmap file generation
+* Let's fix the "blocking" error
 * Visit your Lizmap instance in the web browser
 
 !!! tip
@@ -106,9 +122,6 @@ Presentations talking about QGIS Server and Lizmap during this FOSS4G from 3Liz 
     Lizmap is using **QGIS Server** in the background, the legend is, therefore, the same as in QGIS Desktop.
 
     Some settings in the QGIS project **or** in the Lizmap plugin can have effects in the web interface.
-
-!!! tip
-    **Starting from now**, often send the QGS file and the CFG file on the server to check the result online.
 
 * Make a quick symbology on a point layer :
       * on `persons`, change the default symbol using a **single symbol**.
