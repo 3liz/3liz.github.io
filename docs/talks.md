@@ -7,11 +7,11 @@ hide:
 
 ## Lizmap
 
-* QGIS UC 2024 State of Lizmap
+* QGIS UC 2024 🇬🇧 State of Lizmap
   | [YouTube](https://www.youtube.com/watch?v=bntpf-yUNAo)
-* QGIS QOD January 2024 - News about Lizmap Web Client and its plugin - With Faunalia
+* QGIS QOD January 2024 🇬🇧 - News about Lizmap Web Client and its plugin - With Faunalia
   | [YouTube](https://www.youtube.com/watch?v=RYLLexGMVcQ)
-* [Journées OpenIG 2023 - QGIS QFIELD LIZMAP en Martinique🇫🇷](https://docs.3liz.org/presentations/2023-05-25_OPENIG_Lizmap_Carte_occupation_sol.html)
+* [Journées OpenIG 2023 - QGIS QFIELD LIZMAP en Martinique 🇫🇷](https://docs.3liz.org/presentations/2023-05-25_OPENIG_Lizmap_Carte_occupation_sol.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/2023-05-25_OPENIG_Lizmap_Carte_occupation_sol.pdf)
   | [PeerTube](https://peertube.iriseden.eu/w/1cG3NrCHFuE9hC6aSzHdb5?start=7s)
 * [QGIS FR 2023 - QGIS QFIELD LIZMAP en Martinique🇫🇷](https://docs.3liz.org/presentations/2023-03-13_QGISFR_2023_SI_naturaliste_Martinique.html)
@@ -25,7 +25,7 @@ hide:
 * [FOSS4G 2022 Advanced form 🇬🇧](https://docs.3liz.org/presentations/2022-08_FOSS4G_Advanced_QGIS_forms_into_the_web_with_Lizmap.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.pdf)
   | [YouTube](https://www.youtube.com/watch?v=yY2yygjPCEA)
-* FOSS4G 2022 Dataviz in QGIS and on the web - With Faunalia
+* FOSS4G 2022 🇬🇧 Dataviz in QGIS and on the web - With Faunalia
   | [YouTube](https://www.youtube.com/watch?v=LF1C2H4BPQc)
 * [FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-foss4g-lizmap.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/FOSS4G-2021-Lizmap-Web-Client.pdf)
@@ -54,7 +54,7 @@ hide:
 
 ## QFieldCloud
 
-* QGIS-FR 2024 - QFieldCloud auto-hébergé
+* QGIS-FR 2024 🇫🇷 - QFieldCloud auto-hébergé
   | [YouTube](https://www.youtube.com/watch?v=NISp36T8A7c)
 
 ## QGIS Desktop
@@ -64,7 +64,7 @@ hide:
 
 ## QGIS Server
 
-* Py-QGIS-Server2 - QGIS Server ready for the cloud
+* Py-QGIS-Server2 🇬🇧 - QGIS Server ready for the cloud
   | [YouTube](https://www.youtube.com/watch?v=MtjxRIll4zs)
 * [FOSS4G 2022 Firenze 🇬🇧 - QGIS Server into the wild](https://docs.3liz.org/presentations/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.pdf)
@@ -74,7 +74,7 @@ hide:
 
 ## PgMetadata
 
-* QGIS UC 2024
+* QGIS UC 2024 🇬🇧
   | [YouTube](https://www.youtube.com/watch?v=UgnZ6GwTfcg)
 * [FOSS4G 2022 Firenze 🇬🇧](https://docs.3liz.org/presentations/2022-08-Foss4G-Firenze-PgMetadata.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/2022-08-Foss4G-Firenze-PgMetadata.pdf)
@@ -86,7 +86,7 @@ hide:
 
 ## Véloroutes et Voies Vertes
 
-* QGIS-FR 2024 - QGIS et les actions
+* QGIS-FR 2024 🇫🇷 - QGIS et les actions
   | [YouTube](https://www.youtube.com/watch?v=h2QBeU2XKBQ)
 
 ## French Cadastre
