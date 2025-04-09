@@ -305,18 +305,18 @@
 		<repository>https://github.com/3liz/lizmap-plugin</repository>
 		<tags>online,server,web,webgis,webservice,webmapping,mobile,publication,wms,wfs,wps,internet,cloud</tags>
 	</pyqgis_plugin>
-	<pyqgis_plugin name="Dynamic Layers" version="0.7.3">
+	<pyqgis_plugin name="Dynamic Layers" version="0.8.0">
 		<description>Change the datasource of chosen layers dynamically by searching and replacing user defined variables.</description>
-		<version>0.7.3</version>
+		<version>0.8.0</version>
 		<qgis_minimum_version>3.28</qgis_minimum_version>
 		<homepage>https://docs.3liz.org/QgisDynamicLayersPlugin/</homepage>
-		<file_name>dynamic_layers.0.7.3.zip</file_name>
+		<file_name>dynamic_layers.0.8.0.zip</file_name>
 		<icon>resources/icons/icon.png</icon>
 		<author_name>3Liz</author_name>
-		<download_url>https://github.com/3liz/QgisDynamicLayersPlugin/releases/download/0.7.3/dynamic_layers.0.7.3.zip</download_url>
+		<download_url>https://github.com/3liz/QgisDynamicLayersPlugin/releases/download/0.8.0/dynamic_layers.0.8.0.zip</download_url>
 		<uploaded_by>3Liz</uploaded_by>
-		<create_date>2025-02-14</create_date>
-		<update_date>2025-02-14</update_date>
+		<create_date>2025-04-09</create_date>
+		<update_date>2025-04-09</update_date>
 		<experimental>False</experimental>
 		<deprecated>False</deprecated>
 		<tracker>https://github.com/3liz/QgisDynamicLayersPlugin/issues</tracker>
