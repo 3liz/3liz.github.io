@@ -197,18 +197,18 @@
 		<repository>https://github.com/3liz/lizmap-plugin</repository>
 		<tags>online,server,web,webgis,webservice,webmapping,mobile,publication,wms,wfs,wps,internet,cloud</tags>
 	</pyqgis_plugin>
-	<pyqgis_plugin name="Lizmap server" version="2.13.0">
+	<pyqgis_plugin name="Lizmap server" version="2.13.1">
 		<description>Designed only for QGIS server. For QGIS Desktop, install the other plugin called "Lizmap".</description>
-		<version>2.13.0</version>
+		<version>2.13.1</version>
 		<qgis_minimum_version>3.28</qgis_minimum_version>
 		<homepage>https://docs.lizmap.com/current/fr/install/pre_requirements.html#lizmap-qgis-server-plugin</homepage>
-		<file_name>lizmap_server.2.13.0.zip</file_name>
+		<file_name>lizmap_server.2.13.1.zip</file_name>
 		<icon>resources/icons/icon.png</icon>
 		<author_name>3Liz</author_name>
-		<download_url>https://github.com/3liz/qgis-lizmap-server-plugin/releases/download/2.13.0/lizmap_server.2.13.0.zip</download_url>
+		<download_url>https://github.com/3liz/qgis-lizmap-server-plugin/releases/download/2.13.1/lizmap_server.2.13.1.zip</download_url>
 		<uploaded_by>Gustry</uploaded_by>
-		<create_date>2025-04-01</create_date>
-		<update_date>2025-04-01</update_date>
+		<create_date>2025-05-05</create_date>
+		<update_date>2025-05-05</update_date>
 		<experimental>False</experimental>
 		<deprecated>False</deprecated>
 		<tracker>https://github.com/3liz/qgis-lizmap-server-plugin/issues</tracker>
