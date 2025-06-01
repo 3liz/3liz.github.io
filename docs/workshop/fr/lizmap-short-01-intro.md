@@ -4,13 +4,13 @@
 
 Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
 
-* QGIS **3.34**
-* Lizmap Web Client **3.7.X**
+* QGIS **3.40**
+* Lizmap Web Client **3.8.X**, _mais on va tester **3.9**_.
 * Extension Lizmap dans QGIS Bureautique avec la dernière version disponible
 * [Projet QGIS](https://tinyurl.com/formation-lizmap) à télécharger
      * Le projet QGIS contient déjà les couches PostgreSQL
      * https://tinyurl.com/formation-lizmap
-* Client FTP ([WinSCP sous Windows](../../tutorial/winscp-fr.md), [Filezilla sous macOS/Linux](../../tutorial/filezilla-fr.md))
+* Client WebDAV ([WinSCP sous Windows](../../tutorial/winscp-fr.md))
      * `qgis/theme_formation` : le dossier pour l'atelier
      * `qgis/theme_formation/media/metadata.pdf` : un fichier PDF
 
@@ -33,6 +33,7 @@ Cet atelier concerne les utilisateurs de l'atelier Lizmap sur 1/2 journée.
     * [Mailing list allemande 🇩🇪](https://lists.osgeo.org/mailman/listinfo/lizmap-de)
     * [Groupe Facebook japonais 🇯🇵](https://www.facebook.com/groups/lizmapusergroupjapan)
     * ... ?
+* [État des traductions](https://docs.3liz.org/lizmap/#translations)
 
 ## Documentation
 

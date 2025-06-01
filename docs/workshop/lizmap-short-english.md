@@ -9,22 +9,20 @@ hide:
 
 This workshop is designed for QGIS users.
 
-* QGIS 3.34
+* QGIS 3.40
 * **Latest** Lizmap plugin on QGIS Desktop
-* Lizmap Web Client **3.8.X**
+* Lizmap Web Client **3.9.X**
 
-## QGIS UC 2024
+## QGIS UC 2025
 
 Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz :
 
-* Room B320, this afternoon, at 4:00PM
-    * PgMetadata, metadata in PostgreSQL
-    * Bonus : Display them in Lizmap
-* Room B319, tomorrow morning, 11:30AM
-    * Py-QGIS-Server 2 : a tool to host QGIS Server
-    * How do we host QGIS server on our cloud infrastructure (for Lizmap)
-* Room B316, tomorrow afternoon, at 2:00PM
-    * Past, present and future of the Lizmap project
+* Today, one hour ago
+    * Lizmap, past, present and future
+    * Wait for the replay
+* Room Statisten, tomorrow morning, 12:00PM
+    * Dynamic layers : a single project to rule them all
+    * Bonus, use the output of Dynamic Layers plugin in Lizmap
 
 ## Links
 
@@ -32,8 +30,6 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
 * Lizmap cloud out-of-the-box https://www.lizmap.com
 * PDF/HTML presentations and videos https://docs.3liz.org/talks/#lizmap
 * Discourse channel https://discourse.osgeo.org
-* Mailing-list Osgeo Lizmap 🇬🇧 (and a little bit of 🇫🇷)
-    * https://lists.osgeo.org/mailman/listinfo/lizmap
 * Twitter accounts : 
     * https://twitter.com/LizmapForQgis dedicated to Lizmap
     * https://twitter.com/3LIZ_news about 3Liz
@@ -46,6 +42,7 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
     * [German mailing list 🇩🇪](https://lists.osgeo.org/mailman/listinfo/lizmap-de)
     * [Japan Facebook group 🇯🇵](https://www.facebook.com/groups/lizmapusergroupjapan)
     * ... ?
+* [Stafe of translations](https://docs.3liz.org/lizmap/#translations)
 
 ## Documentation
 
@@ -58,9 +55,9 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
 * Open it, either from the toolbar, or from the **Web** menu
 * Click **Add your first server** or the **+** icon at the bottom
 * Fill the wizard :
-     * URL : https://workshop.lizmap.com/bratislava
-     * Login : `qgisuc_X`, replace `X` by your number
-     * Password : `qgisuc?X`
+     * URL : https://workshop.lizmap.com/norrkoping
+     * Login : `user_X`, replace `X` by your number in login and password
+     * Password : `user@X`
 
 !!! warning
     QGIS **might** ask you to set up a **master password**. This password belongs to **you** and is not linked to Lizmap.
@@ -70,7 +67,7 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
     Is-it 👍 or something else ?
 
 !!! info
-    This workshop was designed for **3 hours**, so some steps in the QGIS downloaded project are already.
+    This workshop was designed for **3 hours**, so some steps in the QGIS downloaded project are already done.
 
 ## First quick map
 
@@ -78,10 +75,12 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
 * Set the extent on the map canvas to have all islands visible
 * In the Project Properties :
       * **Project** menu ➡ **Properties**
-      * **Relations** tab, add all relations **automatically** with **Discover Relations** and **select them all** with **ctrl**
+      * **Relations** tab, add all relations **automatically** with **Discover Relations** and **select them all**
+        with **ctrl**
       * **QGIS Server** tab,
           * Enable **Service capabilities**
-              * set a **title** such as `NAME Training` and an **abstract** about the purpose of the project. You can fill the **author**, **organization**, **phone**, **email** as well if you want.
+              * set a **title** such as `NAME Training` and an **abstract** about the purpose of the project.
+                You can fill the **author**, **organization**, **phone**, **email** as well if you want.
               * You are free to use the text you want for these fields.
               * You can set keywords if needed. You will be to search your project with keywords in the landing page.
           * **WMS capabilities**
@@ -111,12 +110,16 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
 * Add some groups in the legend
     * `Editing` with `persons` and `observations`
     * `Data` with `municipalities`
-    * `hidden`, with small `h`, with `species` and you can add OSM base layer (from the QGIS Browser, XYZ Tiles)
+    * With the help of the plugin, in the fourth tab
+        * You can add OSM base layer and the IGN Orthophoto.
+        * `hidden` with `species`
 * Reorder layers to put them inside these groups according to the screenshot below
 * Rename layers with a more human-readable
-    * **Except** for the OSM layer, in the group `hidden`, the name must be `osm-mapnik`
 
 ![legend](./media/legend.png)
+
+!!! tip
+    The `baselayers` group, you can add layers you want. This group will display layers inside as a drop-down menu.
 
 !!! success
     Lizmap is using **QGIS Server** in the background, the legend is, therefore, the same as in QGIS Desktop.
@@ -125,14 +128,17 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
 
 * Make a quick symbology on a point layer :
       * on `persons`, change the default symbol using a **single symbol**.
-      * On `observations`, we can try **Categorized** using the field `fk_id_specie`. You can use the [QML already made](./media/fk_id_species_categorized.qml) (Vector layer properties ➡ **Styles** at the bottom ➡ **Load styles**).
+      * On `observations`, we can try **Categorized** using the field `fk_id_specie`.
+        You can use the [QML already made](./media/fk_id_species_categorized.qml)
+        (Vector layer properties ➡ **Styles** at the bottom ➡ **Load styles**).
 * Add labels on the municipalities layer and add a scale based visibility for these labels (1:300 000)
     * `name` field for the source
     * **Rendering** tab, scale based visibility minimum set to `1:300 000`
 * Go in the Lizmap **plugin**, **Layers** tab :
     * Enable the **municipalities** layer by default  
     * Add some **links** on two layers: 
-        * PDF for the persons layer : `media/metadata.pdf`, a PDF link, stored in the folder `media` (you can see it in the FTP client)
+        * PDF for the persons layer : `media/metadata.pdf`, a PDF link, stored in the folder `media` on the server
+          (you can see it in the WebDAV client)
         * HTML for the municipalities : `https://en.wikipedia.org/wiki/French_Polynesia`
     * Go in **Baselayers** tag and add the OpenStreetMap Mapnik background.
 
@@ -151,7 +157,8 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
     * **Properties** on the vector layer ➡ **Form attributes** ➡ **Alias** for all fields
 
 !!! tip
-    Two new tools appeared in Lizmap Web Client : **Attribute table** as expected, but also **Selection**. Let's have a look.
+    Two new tools appeared in Lizmap Web Client : **Attribute table** as expected, but also **Selection**. Let's have a
+    look.
 
 ## Let's identify the feature by clicking
 
@@ -164,7 +171,8 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
 * Let's get back in the Lizmap **plugin** Let's switch to a popup with **QGIS HTML Maptip** mode on the same layer
 * Click on the **Generate an HTML table**
 * In the `communes` vector layer properties, **rendering** tab, then **HTML Maptip**, check the generated HTML.
-* **Tip** : QGIS ➡ **View** ➡ **Show Map Tips** to display maptip straight in QGIS Desktop. You need to select the maptip tool in the toolbar as well.
+* **Tip** : QGIS ➡ **View** ➡ **Show Map Tips** to display maptip straight in QGIS Desktop. You need to select the
+  maptip tool in the toolbar as well.
 
 These **QGIS** popups are powerful with the use of QGIS **expressions**. 🚀
 
@@ -174,6 +182,8 @@ You can use expressions :
 
 * to display with capital letters
 * to display in red if the population is less than 20 000 inhabitants
+
+Conditional formating is often used, for land surveying, date inferior to 2 months...
 
 ??? note "Display solutions"
     * The first one about capital letters, replace
@@ -196,7 +206,8 @@ You can use expressions :
 
 We want now to enable editing capabilities on a layer in the Lizmap interface, to let some users add some **observations**.
 
-* In QGIS, try to add a point and check how the **default** form is displayed on the layer **observations**. You need to toggle editing mode first with the **yellow** pen.
+* In QGIS, try to add a point and check how the **default** form is displayed on the layer **observations**.
+  You need to toggle editing mode first with the **yellow** pen.
 * Improve the form in QGIS :
     * Layer Properties ➡ Attributes Form -> Drag&Drop layout form
     * Remove the field `id`
@@ -220,6 +231,13 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
     * `gender` : 
         * Alias `Gender`
         * Value map and add some values in the table `Male`, `Female`
+    * `fk_id_municipality` :
+        * Alias `Municipality`
+        * Value relation
+        * Layer `municipalities`
+        * Key `id`
+        * Value `name`
+        * Filter expression `intersects( @geometry,  @current_geometry )`
 
 ![Form values](./media/list_value.png)
 
@@ -227,8 +245,8 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
   panel in Lizmap
 
 !!! tip
-    We can use QGIS Expressions in the form (visibility, conditions, default value etc.).
-    [Read the documentation](https://docs.lizmap.com/current/en/publish/configuration/expression.html).
+    We can use QGIS Expressions in the form (visibility, conditions, default value, etc.).
+    [Read the documentation](https://docs.lizmap.com/current/en/publish/configuration/expression.html). It's ongoing work as there are different contexts for evaluating expressions.
 
 ## PDF Print
 
