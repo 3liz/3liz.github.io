@@ -1262,9 +1262,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#qgis-uc-2024" class="md-nav__link">
+  <a href="#qgis-uc-2025" class="md-nav__link">
     <span class="md-ellipsis">
-      QGIS UC 2024
+      QGIS UC 2025
     </span>
   </a>
   
@@ -1540,9 +1540,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#qgis-uc-2024" class="md-nav__link">
+  <a href="#qgis-uc-2025" class="md-nav__link">
     <span class="md-ellipsis">
-      QGIS UC 2024
+      QGIS UC 2025
     </span>
   </a>
   
@@ -1741,25 +1741,21 @@
 <h2 id="pre-requirements">Pre-requirements<a class="headerlink" href="#pre-requirements" title="Permanent link">#</a></h2>
 <p>This workshop is designed for QGIS users.</p>
 <ul>
-<li>QGIS 3.34</li>
+<li>QGIS 3.40</li>
 <li><strong>Latest</strong> Lizmap plugin on QGIS Desktop</li>
-<li>Lizmap Web Client <strong>3.8.X</strong></li>
+<li>Lizmap Web Client <strong>3.9.X</strong></li>
 </ul>
-<h2 id="qgis-uc-2024">QGIS UC 2024<a class="headerlink" href="#qgis-uc-2024" title="Permanent link">#</a></h2>
+<h2 id="qgis-uc-2025">QGIS UC 2025<a class="headerlink" href="#qgis-uc-2025" title="Permanent link">#</a></h2>
 <p>Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz :</p>
 <ul>
-<li>Room B320, this afternoon, at 4:00PM<ul>
-<li>PgMetadata, metadata in PostgreSQL</li>
-<li>Bonus : Display them in Lizmap</li>
+<li>Today, one hour ago<ul>
+<li>Lizmap, past, present and future</li>
+<li>Wait for the replay</li>
 </ul>
 </li>
-<li>Room B319, tomorrow morning, 11:30AM<ul>
-<li>Py-QGIS-Server 2 : a tool to host QGIS Server</li>
-<li>How do we host QGIS server on our cloud infrastructure (for Lizmap)</li>
-</ul>
-</li>
-<li>Room B316, tomorrow afternoon, at 2:00PM<ul>
-<li>Past, present and future of the Lizmap project</li>
+<li>Room Statisten, tomorrow morning, 12:00PM<ul>
+<li>Dynamic layers : a single project to rule them all</li>
+<li>Bonus, use the output of Dynamic Layers plugin in Lizmap</li>
 </ul>
 </li>
 </ul>
@@ -1769,10 +1765,6 @@
 <li>Lizmap cloud out-of-the-box <a href="https://www.lizmap.com">https://www.lizmap.com</a></li>
 <li>PDF/HTML presentations and videos <a href="https://docs.3liz.org/talks/#lizmap">https://docs.3liz.org/talks/#lizmap</a></li>
 <li>Discourse channel <a href="https://discourse.osgeo.org">https://discourse.osgeo.org</a></li>
-<li>Mailing-list Osgeo Lizmap 🇬🇧 (and a little bit of 🇫🇷)<ul>
-<li><a href="https://lists.osgeo.org/mailman/listinfo/lizmap">https://lists.osgeo.org/mailman/listinfo/lizmap</a></li>
-</ul>
-</li>
 <li>Twitter accounts : <ul>
 <li><a href="https://twitter.com/LizmapForQgis">https://twitter.com/LizmapForQgis</a> dedicated to Lizmap</li>
 <li><a href="https://twitter.com/3LIZ_news">https://twitter.com/3LIZ_news</a> about 3Liz</li>
@@ -1791,6 +1783,7 @@
 <li>... ?</li>
 </ul>
 </li>
+<li><a href="https://docs.3liz.org/lizmap/#translations">Stafe of translations</a></li>
 </ul>
 <h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">#</a></h2>
 <ul>
@@ -1803,9 +1796,9 @@
 <li>Open it, either from the toolbar, or from the <strong>Web</strong> menu</li>
 <li>Click <strong>Add your first server</strong> or the <strong>+</strong> icon at the bottom</li>
 <li>Fill the wizard :<ul>
-<li>URL : <a href="https://workshop.lizmap.com/bratislava">https://workshop.lizmap.com/bratislava</a></li>
-<li>Login : <code>qgisuc_X</code>, replace <code>X</code> by your number</li>
-<li>Password : <code>qgisuc?X</code></li>
+<li>URL : <a href="https://workshop.lizmap.com/norrkoping">https://workshop.lizmap.com/norrkoping</a></li>
+<li>Login : <code>user_X</code>, replace <code>X</code> by your number in login and password</li>
+<li>Password : <code>user@X</code></li>
 </ul>
 </li>
 </ul>
@@ -1820,7 +1813,7 @@ It's to lock <strong>your internal QGIS password manager</strong>.</p>
 </div>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>This workshop was designed for <strong>3 hours</strong>, so some steps in the QGIS downloaded project are already.</p>
+<p>This workshop was designed for <strong>3 hours</strong>, so some steps in the QGIS downloaded project are already done.</p>
 </div>
 <h2 id="first-quick-map">First quick map<a class="headerlink" href="#first-quick-map" title="Permanent link">#</a></h2>
 <ul>
@@ -1828,10 +1821,12 @@ It's to lock <strong>your internal QGIS password manager</strong>.</p>
 <li>Set the extent on the map canvas to have all islands visible</li>
 <li>In the Project Properties :<ul>
 <li><strong>Project</strong> menu ➡ <strong>Properties</strong></li>
-<li><strong>Relations</strong> tab, add all relations <strong>automatically</strong> with <strong>Discover Relations</strong> and <strong>select them all</strong> with <strong>ctrl</strong></li>
+<li><strong>Relations</strong> tab, add all relations <strong>automatically</strong> with <strong>Discover Relations</strong> and <strong>select them all</strong>
+    with <strong>ctrl</strong></li>
 <li><strong>QGIS Server</strong> tab,<ul>
 <li>Enable <strong>Service capabilities</strong><ul>
-<li>set a <strong>title</strong> such as <code>NAME Training</code> and an <strong>abstract</strong> about the purpose of the project. You can fill the <strong>author</strong>, <strong>organization</strong>, <strong>phone</strong>, <strong>email</strong> as well if you want.</li>
+<li>set a <strong>title</strong> such as <code>NAME Training</code> and an <strong>abstract</strong> about the purpose of the project.
+    You can fill the <strong>author</strong>, <strong>organization</strong>, <strong>phone</strong>, <strong>email</strong> as well if you want.</li>
 <li>You are free to use the text you want for these fields.</li>
 <li>You can set keywords if needed. You will be to search your project with keywords in the landing page.</li>
 </ul>
@@ -1872,16 +1867,21 @@ It works as well with jpg, jpeg files.</p>
 <li>Add some groups in the legend<ul>
 <li><code>Editing</code> with <code>persons</code> and <code>observations</code></li>
 <li><code>Data</code> with <code>municipalities</code></li>
-<li><code>hidden</code>, with small <code>h</code>, with <code>species</code> and you can add OSM base layer (from the QGIS Browser, XYZ Tiles)</li>
+<li>With the help of the plugin, in the fourth tab<ul>
+<li>You can add OSM base layer and the IGN Orthophoto.</li>
+<li><code>hidden</code> with <code>species</code></li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Reorder layers to put them inside these groups according to the screenshot below</li>
-<li>Rename layers with a more human-readable<ul>
-<li><strong>Except</strong> for the OSM layer, in the group <code>hidden</code>, the name must be <code>osm-mapnik</code></li>
-</ul>
-</li>
+<li>Rename layers with a more human-readable</li>
 </ul>
 <p><img alt="legend" src="../media/legend.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <code>baselayers</code> group, you can add layers you want. This group will display layers inside as a drop-down menu.</p>
+</div>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
 <p>Lizmap is using <strong>QGIS Server</strong> in the background, the legend is, therefore, the same as in QGIS Desktop.</p>
@@ -1890,7 +1890,9 @@ It works as well with jpg, jpeg files.</p>
 <ul>
 <li>Make a quick symbology on a point layer :<ul>
 <li>on <code>persons</code>, change the default symbol using a <strong>single symbol</strong>.</li>
-<li>On <code>observations</code>, we can try <strong>Categorized</strong> using the field <code>fk_id_specie</code>. You can use the <a href="../media/fk_id_species_categorized.qml">QML already made</a> (Vector layer properties ➡ <strong>Styles</strong> at the bottom ➡ <strong>Load styles</strong>).</li>
+<li>On <code>observations</code>, we can try <strong>Categorized</strong> using the field <code>fk_id_specie</code>.
+    You can use the <a href="../media/fk_id_species_categorized.qml">QML already made</a>
+    (Vector layer properties ➡ <strong>Styles</strong> at the bottom ➡ <strong>Load styles</strong>).</li>
 </ul>
 </li>
 <li>Add labels on the municipalities layer and add a scale based visibility for these labels (1:300 000)<ul>
@@ -1901,7 +1903,8 @@ It works as well with jpg, jpeg files.</p>
 <li>Go in the Lizmap <strong>plugin</strong>, <strong>Layers</strong> tab :<ul>
 <li>Enable the <strong>municipalities</strong> layer by default  </li>
 <li>Add some <strong>links</strong> on two layers: <ul>
-<li>PDF for the persons layer : <code>media/metadata.pdf</code>, a PDF link, stored in the folder <code>media</code> (you can see it in the FTP client)</li>
+<li>PDF for the persons layer : <code>media/metadata.pdf</code>, a PDF link, stored in the folder <code>media</code> on the server
+  (you can see it in the WebDAV client)</li>
 <li>HTML for the municipalities : <code>https://en.wikipedia.org/wiki/French_Polynesia</code></li>
 </ul>
 </li>
@@ -1927,7 +1930,8 @@ It works as well with jpg, jpeg files.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Two new tools appeared in Lizmap Web Client : <strong>Attribute table</strong> as expected, but also <strong>Selection</strong>. Let's have a look.</p>
+<p>Two new tools appeared in Lizmap Web Client : <strong>Attribute table</strong> as expected, but also <strong>Selection</strong>. Let's have a
+look.</p>
 </div>
 <h2 id="lets-identify-the-feature-by-clicking">Let's identify the feature by clicking<a class="headerlink" href="#lets-identify-the-feature-by-clicking" title="Permanent link">#</a></h2>
 <ul>
@@ -1942,7 +1946,8 @@ It works as well with jpg, jpeg files.</p>
 <li>Let's get back in the Lizmap <strong>plugin</strong> Let's switch to a popup with <strong>QGIS HTML Maptip</strong> mode on the same layer</li>
 <li>Click on the <strong>Generate an HTML table</strong></li>
 <li>In the <code>communes</code> vector layer properties, <strong>rendering</strong> tab, then <strong>HTML Maptip</strong>, check the generated HTML.</li>
-<li><strong>Tip</strong> : QGIS ➡ <strong>View</strong> ➡ <strong>Show Map Tips</strong> to display maptip straight in QGIS Desktop. You need to select the maptip tool in the toolbar as well.</li>
+<li><strong>Tip</strong> : QGIS ➡ <strong>View</strong> ➡ <strong>Show Map Tips</strong> to display maptip straight in QGIS Desktop. You need to select the
+  maptip tool in the toolbar as well.</li>
 </ul>
 <p>These <strong>QGIS</strong> popups are powerful with the use of QGIS <strong>expressions</strong>. 🚀</p>
 <h3 id="with-some-expressions-inside">With some expressions inside<a class="headerlink" href="#with-some-expressions-inside" title="Permanent link">#</a></h3>
@@ -1951,6 +1956,7 @@ It works as well with jpg, jpeg files.</p>
 <li>to display with capital letters</li>
 <li>to display in red if the population is less than 20 000 inhabitants</li>
 </ul>
+<p>Conditional formating is often used, for land surveying, date inferior to 2 months...</p>
 <details class="note">
 <summary>Display solutions</summary>
 <ul>
@@ -1970,7 +1976,8 @@ by
 <h2 id="editing-capabilities-on-a-layer">Editing capabilities on a layer<a class="headerlink" href="#editing-capabilities-on-a-layer" title="Permanent link">#</a></h2>
 <p>We want now to enable editing capabilities on a layer in the Lizmap interface, to let some users add some <strong>observations</strong>.</p>
 <ul>
-<li>In QGIS, try to add a point and check how the <strong>default</strong> form is displayed on the layer <strong>observations</strong>. You need to toggle editing mode first with the <strong>yellow</strong> pen.</li>
+<li>In QGIS, try to add a point and check how the <strong>default</strong> form is displayed on the layer <strong>observations</strong>.
+  You need to toggle editing mode first with the <strong>yellow</strong> pen.</li>
 <li>Improve the form in QGIS :<ul>
 <li>Layer Properties ➡ Attributes Form -&gt; Drag&amp;Drop layout form</li>
 <li>Remove the field <code>id</code></li>
@@ -2006,6 +2013,15 @@ by
 <li>Value map and add some values in the table <code>Male</code>, <code>Female</code></li>
 </ul>
 </li>
+<li><code>fk_id_municipality</code> :<ul>
+<li>Alias <code>Municipality</code></li>
+<li>Value relation</li>
+<li>Layer <code>municipalities</code></li>
+<li>Key <code>id</code></li>
+<li>Value <code>name</code></li>
+<li>Filter expression <code>intersects( @geometry,  @current_geometry )</code></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -2016,8 +2032,8 @@ by
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>We can use QGIS Expressions in the form (visibility, conditions, default value etc.).
-<a href="https://docs.lizmap.com/current/en/publish/configuration/expression.html">Read the documentation</a>.</p>
+<p>We can use QGIS Expressions in the form (visibility, conditions, default value, etc.).
+<a href="https://docs.lizmap.com/current/en/publish/configuration/expression.html">Read the documentation</a>. It's ongoing work as there are different contexts for evaluating expressions.</p>
 </div>
 <h2 id="pdf-print">PDF Print<a class="headerlink" href="#pdf-print" title="Permanent link">#</a></h2>
 <h3 id="extent-chosen-by-the-user">Extent chosen by the user<a class="headerlink" href="#extent-chosen-by-the-user" title="Permanent link">#</a></h3>
