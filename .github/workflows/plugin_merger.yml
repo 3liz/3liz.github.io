@@ -31,7 +31,7 @@ jobs:
         run: qgis-plugin-repo merge ${{ github.event.client_payload.url }} docs/plugins.xml
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: "Publish QGIS Plugin ${{ github.event.client_payload.name }} ${{ github.event.client_payload.version }}"
           commit_user_name: ${{ secrets.BOT_NAME }}
