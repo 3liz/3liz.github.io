@@ -1,0 +1,2278 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Ressources for 3Liz projects">
+      
+      
+        <meta name="author" content="3Liz">
+      
+      
+        <link rel="canonical" href="https://docs.3liz.org/workshop/lizmap-short-english.html">
+      
+      
+        <link rel="prev" href="fr/lizmap-short-08-dataviz.html">
+      
+      
+        <link rel="next" href="../links.html">
+      
+      
+      <link rel="icon" href="../media/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>Lizmap English - 3Liz Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/styles/default.min.css">
+    
+      <link rel="stylesheet" href="../media/progress_bar.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  <script
+  defer
+  data-domain="docs.3liz.org"
+  src="https://bourbon.3liz.com/js/script.js"
+  
+></script>
+
+<script>
+  window.plausible = window.plausible || function () { (window.plausible.q = window.plausible.q || []).push(arguments) };
+
+  /* Register event handlers after documented loaded */
+  document.addEventListener("DOMContentLoaded", function () {
+    /* Set up search tracking */
+    if (document.forms.search) {
+      var query = document.forms.search.query;
+      query.addEventListener("blur", function() {
+        if (this.value) plausible("Search", { props: { search_term: this.value } });
+      })
+    }
+
+    /* Set up feedback, i.e. "Was this page helpful?" */
+    document$.subscribe(function () {
+      var feedback = document.forms.feedback;
+      if (typeof feedback === "undefined") return;
+
+      /* Send feedback to Plausible */
+      for (var button of feedback.querySelectorAll("[type=submit]")) {
+        button.addEventListener("click", function (ev) {
+          ev.preventDefault();
+
+          var page = document.location.pathname;
+          var value = this.getAttribute("data-md-value");
+          console.log("[feedback] User clicked", { value });
+          plausible(`Feedback: ${value}`);
+
+          /* Disable form and show note, if given */
+          feedback.firstElementChild.disabled = true;
+          var note = feedback.querySelector(".md-feedback__note [data-md-value='" + value + "']");
+          if (note) note.hidden = false;
+        })
+
+        /* Show feedback */
+        feedback.hidden = false;
+      }
+    });
+  });
+</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="preference" data-md-color-primary="green" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#workshop-lizmap" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../index.html" title="3Liz Documentation" class="md-header__button md-logo" aria-label="3Liz Documentation" data-md-component="logo">
+      
+  <img src="../media/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            3Liz Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Lizmap English
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../lizmap.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Lizmap
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../plugins.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  QGIS Plugins
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tools.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Tools
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../talks.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Presentations
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../tutorial/index.html" class="md-tabs__link">
+          
+  
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../internships/gsoc.html" class="md-tabs__link">
+          
+  
+  
+  Internships
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="workshop.html" class="md-tabs__link">
+          
+  
+  
+  Workshops FR
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="lizmap-short-english.html" class="md-tabs__link">
+          
+  
+  
+  Workshops EN
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../links.html" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Links
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../index.html" title="3Liz Documentation" class="md-nav__button md-logo" aria-label="3Liz Documentation" data-md-component="logo">
+      
+  <img src="../media/logo.png" alt="logo">
+
+    </a>
+    3Liz Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lizmap.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lizmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../plugins.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QGIS Plugins
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../talks.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Presentations
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Tutorials
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/filezilla-en.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Filezilla 🇬🇧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/filezilla-fr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Filezilla 🇫🇷
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/winscp-en.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WinSCP 🇬🇧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/winscp-fr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    WinSCP 🇫🇷
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/qgis-repository-en.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QGIS Repository 🇬🇧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/qgis-repository-fr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    QGIS Repository 🇫🇷
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/resources-sharing-en.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resources sharing 🇬🇧
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tutorial/resources-sharing-fr.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Resources sharing 🇫🇷
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Internships
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Internships
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../internships/gsoc.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    GSOC
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Workshops FR
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Workshops FR
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="workshop.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Index
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fr/lizmap-short-01-intro.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fr/lizmap-short-02-first-map.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Première carte
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fr/lizmap-short-03-legend.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Légende
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fr/lizmap-short-04-popups.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Interactions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fr/lizmap-short-05-attribute-table.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Table attributaire
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fr/lizmap-short-06-editing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Édition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fr/lizmap-short-07-print.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Impression PDF
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="fr/lizmap-short-08-dataviz.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dataviz
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Workshops EN
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Workshops EN
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Lizmap English
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="lizmap-short-english.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lizmap English
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qgis-uc-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      QGIS UC 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Links
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-the-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up the training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-quick-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      First quick map
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-overview-of-the-lizmap-web-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick overview of the Lizmap web interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legend
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribute-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attribute table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lets-identify-the-feature-by-clicking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Let's identify the feature by clicking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Let&#39;s identify the feature by clicking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#with-some-expressions-inside" class="md-nav__link">
+    <span class="md-ellipsis">
+      With some expressions inside
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-capabilities-on-a-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Editing capabilities on a layer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pdf-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      PDF Print
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PDF Print">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extent-chosen-by-the-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extent chosen by the user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-a-popup-extent-defined-by-the-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      From a popup, extent defined by the feature
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataviz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataviz
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataviz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bar-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bar chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pie-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pie chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-filtered-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced filtered plot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="lizmap.md" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Lizmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../links.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Links
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qgis-uc-2025" class="md-nav__link">
+    <span class="md-ellipsis">
+      QGIS UC 2025
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Links
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-the-training" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting up the training
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#first-quick-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      First quick map
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-overview-of-the-lizmap-web-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick overview of the Lizmap web interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#legend" class="md-nav__link">
+    <span class="md-ellipsis">
+      Legend
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#attribute-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attribute table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lets-identify-the-feature-by-clicking" class="md-nav__link">
+    <span class="md-ellipsis">
+      Let's identify the feature by clicking
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Let&#39;s identify the feature by clicking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#with-some-expressions-inside" class="md-nav__link">
+    <span class="md-ellipsis">
+      With some expressions inside
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editing-capabilities-on-a-layer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Editing capabilities on a layer
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pdf-print" class="md-nav__link">
+    <span class="md-ellipsis">
+      PDF Print
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PDF Print">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#extent-chosen-by-the-user" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extent chosen by the user
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#from-a-popup-extent-defined-by-the-feature" class="md-nav__link">
+    <span class="md-ellipsis">
+      From a popup, extent defined by the feature
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dataviz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dataviz
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Dataviz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bar-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bar chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pie-chart" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pie chart
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-filtered-plot" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced filtered plot
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="workshop-lizmap">Workshop Lizmap<a class="headerlink" href="#workshop-lizmap" title="Permanent link">#</a></h1>
+<h2 id="pre-requirements">Pre-requirements<a class="headerlink" href="#pre-requirements" title="Permanent link">#</a></h2>
+<p>This workshop is designed for QGIS users.</p>
+<ul>
+<li>QGIS 3.40</li>
+<li><strong>Latest</strong> Lizmap plugin on QGIS Desktop</li>
+<li>Lizmap Web Client <strong>3.9.X</strong></li>
+</ul>
+<h2 id="qgis-uc-2025">QGIS UC 2025<a class="headerlink" href="#qgis-uc-2025" title="Permanent link">#</a></h2>
+<p>Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz :</p>
+<ul>
+<li>Today, one hour ago<ul>
+<li>Lizmap, past, present and future</li>
+<li>Wait for the replay</li>
+</ul>
+</li>
+<li>Room Statisten, tomorrow morning, 12:00PM<ul>
+<li>Dynamic layers : a single project to rule them all</li>
+<li>Bonus, use the output of Dynamic Layers plugin in Lizmap</li>
+</ul>
+</li>
+</ul>
+<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">#</a></h2>
+<ul>
+<li>Demo <a href="https://demo.lizmap.com">https://demo.lizmap.com</a></li>
+<li>Lizmap cloud out-of-the-box <a href="https://www.lizmap.com">https://www.lizmap.com</a></li>
+<li>PDF/HTML presentations and videos <a href="https://docs.3liz.org/talks/#lizmap">https://docs.3liz.org/talks/#lizmap</a></li>
+<li>Discourse channel <a href="https://discourse.osgeo.org">https://discourse.osgeo.org</a></li>
+<li>Twitter accounts : <ul>
+<li><a href="https://twitter.com/LizmapForQgis">https://twitter.com/LizmapForQgis</a> dedicated to Lizmap</li>
+<li><a href="https://twitter.com/3LIZ_news">https://twitter.com/3LIZ_news</a> about 3Liz</li>
+</ul>
+</li>
+<li>Source code<ul>
+<li>Lizmap Web Client <a href="https://github.com/3liz/lizmap-web-client/">https://github.com/3liz/lizmap-web-client/</a></li>
+<li>Lizmap QGIS Desktop side <a href="https://github.com/3liz/lizmap-plugin/">https://github.com/3liz/lizmap-plugin/</a></li>
+<li>Lizmap QGIS Server side <a href="https://github.com/3liz/qgis-lizmap-server-plugin">https://github.com/3liz/qgis-lizmap-server-plugin</a></li>
+<li>3Liz <a href="https://github.com/3liz/">https://github.com/3liz/</a> for QGIS Server plugins, Lizmap modules</li>
+</ul>
+</li>
+<li>National user group<ul>
+<li><a href="https://lists.osgeo.org/mailman/listinfo/lizmap-de">German mailing list 🇩🇪</a></li>
+<li><a href="https://www.facebook.com/groups/lizmapusergroupjapan">Japan Facebook group 🇯🇵</a></li>
+<li>... ?</li>
+</ul>
+</li>
+<li><a href="https://docs.3liz.org/lizmap/#translations">Stafe of translations</a></li>
+</ul>
+<h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://docs.lizmap.com/">https://docs.lizmap.com/</a></li>
+<li>Check <a href="https://docs.lizmap.com/current/en/introduction.html">the architecture and manuals</a></li>
+</ul>
+<h2 id="setting-up-the-training">Setting up the training<a class="headerlink" href="#setting-up-the-training" title="Permanent link">#</a></h2>
+<ul>
+<li>Install the <strong>Lizmap</strong> plugin on your QGIS</li>
+<li>Open it, either from the toolbar, or from the <strong>Web</strong> menu</li>
+<li>Click <strong>Add your first server</strong> or the <strong>+</strong> icon at the bottom</li>
+<li>Fill the wizard :<ul>
+<li>URL : <a href="https://workshop.lizmap.com/norrkoping">https://workshop.lizmap.com/norrkoping</a></li>
+<li>Login : <code>user_X</code>, replace <code>X</code> by your number in login and password</li>
+<li>Password : <code>user@X</code></li>
+</ul>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>QGIS <strong>might</strong> ask you to set up a <strong>master password</strong>. This password belongs to <strong>you</strong> and is not linked to Lizmap.
+It's to lock <strong>your internal QGIS password manager</strong>.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Is-it 👍 or something else ?</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This workshop was designed for <strong>3 hours</strong>, so some steps in the QGIS downloaded project are already done.</p>
+</div>
+<h2 id="first-quick-map">First quick map<a class="headerlink" href="#first-quick-map" title="Permanent link">#</a></h2>
+<ul>
+<li>Open the project</li>
+<li>Set the extent on the map canvas to have all islands visible</li>
+<li>In the Project Properties :<ul>
+<li><strong>Project</strong> menu ➡ <strong>Properties</strong></li>
+<li><strong>Relations</strong> tab, add all relations <strong>automatically</strong> with <strong>Discover Relations</strong> and <strong>select them all</strong>
+    with <strong>ctrl</strong></li>
+<li><strong>QGIS Server</strong> tab,<ul>
+<li>Enable <strong>Service capabilities</strong><ul>
+<li>set a <strong>title</strong> such as <code>NAME Training</code> and an <strong>abstract</strong> about the purpose of the project.
+    You can fill the <strong>author</strong>, <strong>organization</strong>, <strong>phone</strong>, <strong>email</strong> as well if you want.</li>
+<li>You are free to use the text you want for these fields.</li>
+<li>You can set keywords if needed. You will be to search your project with keywords in the landing page.</li>
+</ul>
+</li>
+<li><strong>WMS capabilities</strong><ul>
+<li>use the current canvas extent for the <strong>advertised extent</strong></li>
+</ul>
+</li>
+<li><strong>WFS capabilities</strong><ul>
+<li>Use the checkbox <strong>published</strong> for <strong>all</strong> layers</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Press <strong>Ok</strong> </li>
+</ul>
+</li>
+<li>Open the Lizmap plugin</li>
+<li>In the <code>Layers</code> tab, make some layers visible by default</li>
+<li>At the bottom, let's choose the remote "directory" where to send this project</li>
+<li>Press "Apply" or "OK" to start the Lizmap file generation</li>
+<li>Let's fix the "blocking" error</li>
+<li>Visit your Lizmap instance in the web browser</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Bonus</strong> if you have a small PNG picture called <code>name_of_project.qgs.png</code> to replace the default project thumbnail.
+It works as well with jpg, jpeg files.</p>
+</div>
+<h2 id="quick-overview-of-the-lizmap-web-interface">Quick overview of the Lizmap web interface<a class="headerlink" href="#quick-overview-of-the-lizmap-web-interface" title="Permanent link">#</a></h2>
+<ul>
+<li>The map</li>
+<li>Lizmap folders</li>
+<li>Administration panel</li>
+</ul>
+<h2 id="legend">Legend<a class="headerlink" href="#legend" title="Permanent link">#</a></h2>
+<ul>
+<li>Add some groups in the legend<ul>
+<li><code>Editing</code> with <code>persons</code> and <code>observations</code></li>
+<li><code>Data</code> with <code>municipalities</code></li>
+<li>With the help of the plugin, in the fourth tab<ul>
+<li>You can add OSM base layer and the IGN Orthophoto.</li>
+<li><code>hidden</code> with <code>species</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Reorder layers to put them inside these groups according to the screenshot below</li>
+<li>Rename layers with a more human-readable</li>
+</ul>
+<p><img alt="legend" src="media/legend.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <code>baselayers</code> group, you can add layers you want. This group will display layers inside as a drop-down menu.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Lizmap is using <strong>QGIS Server</strong> in the background, the legend is, therefore, the same as in QGIS Desktop.</p>
+<p>Some settings in the QGIS project <strong>or</strong> in the Lizmap plugin can have effects in the web interface.</p>
+</div>
+<ul>
+<li>Make a quick symbology on a point layer :<ul>
+<li>on <code>persons</code>, change the default symbol using a <strong>single symbol</strong>.</li>
+<li>On <code>observations</code>, we can try <strong>Categorized</strong> using the field <code>fk_id_specie</code>.
+    You can use the <a href="media/fk_id_species_categorized.qml">QML already made</a>
+    (Vector layer properties ➡ <strong>Styles</strong> at the bottom ➡ <strong>Load styles</strong>).</li>
+</ul>
+</li>
+<li>Add labels on the municipalities layer and add a scale based visibility for these labels (1:300 000)<ul>
+<li><code>name</code> field for the source</li>
+<li><strong>Rendering</strong> tab, scale based visibility minimum set to <code>1:300 000</code></li>
+</ul>
+</li>
+<li>Go in the Lizmap <strong>plugin</strong>, <strong>Layers</strong> tab :<ul>
+<li>Enable the <strong>municipalities</strong> layer by default  </li>
+<li>Add some <strong>links</strong> on two layers: <ul>
+<li>PDF for the persons layer : <code>media/metadata.pdf</code>, a PDF link, stored in the folder <code>media</code> on the server
+  (you can see it in the WebDAV client)</li>
+<li>HTML for the municipalities : <code>https://en.wikipedia.org/wiki/French_Polynesia</code></li>
+</ul>
+</li>
+<li>Go in <strong>Baselayers</strong> tag and add the OpenStreetMap Mapnik background.</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Lizmap layer properties" src="media/lizmap_layer_properties.png" /></p>
+<h2 id="attribute-table">Attribute table<a class="headerlink" href="#attribute-table" title="Permanent link">#</a></h2>
+<ul>
+<li>From the <strong>plugin</strong>, enable the attribute table for the <strong>municipalities</strong> layer.<ul>
+<li>In the <strong>Attribute table</strong> tab, add a new layer</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Lizmap attribute table" src="media/lizmap_attribute_table.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We can improve our attribute table by adding some alias on the fields :</p>
+<ul>
+<li><strong>Properties</strong> on the vector layer ➡ <strong>Form attributes</strong> ➡ <strong>Alias</strong> for all fields</li>
+</ul>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Two new tools appeared in Lizmap Web Client : <strong>Attribute table</strong> as expected, but also <strong>Selection</strong>. Let's have a
+look.</p>
+</div>
+<h2 id="lets-identify-the-feature-by-clicking">Let's identify the feature by clicking<a class="headerlink" href="#lets-identify-the-feature-by-clicking" title="Permanent link">#</a></h2>
+<ul>
+<li>In the Lizmap <strong>plugin</strong>, <strong>layers</strong> tab, enable some popups on the layer <strong>municipalities</strong> with <code>automatic</code> mode and
+  check the results by clicking on a municipality.</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The <strong>automatic</strong> popup will use alias if available on the layer.</p>
+</div>
+<ul>
+<li>Let's get back in the Lizmap <strong>plugin</strong> Let's switch to a popup with <strong>QGIS HTML Maptip</strong> mode on the same layer</li>
+<li>Click on the <strong>Generate an HTML table</strong></li>
+<li>In the <code>communes</code> vector layer properties, <strong>rendering</strong> tab, then <strong>HTML Maptip</strong>, check the generated HTML.</li>
+<li><strong>Tip</strong> : QGIS ➡ <strong>View</strong> ➡ <strong>Show Map Tips</strong> to display maptip straight in QGIS Desktop. You need to select the
+  maptip tool in the toolbar as well.</li>
+</ul>
+<p>These <strong>QGIS</strong> popups are powerful with the use of QGIS <strong>expressions</strong>. 🚀</p>
+<h3 id="with-some-expressions-inside">With some expressions inside<a class="headerlink" href="#with-some-expressions-inside" title="Permanent link">#</a></h3>
+<p>You can use expressions :</p>
+<ul>
+<li>to display with capital letters</li>
+<li>to display in red if the population is less than 20 000 inhabitants</li>
+</ul>
+<p>Conditional formating is often used, for land surveying, date inferior to 2 months...</p>
+<details class="note">
+<summary>Display solutions</summary>
+<ul>
+<li>The first one about capital letters, replace
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[% &quot;name&quot; %]
+</code></pre></div></td></tr></table></div>
+by
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[% upper(&quot;name&quot;) %]
+</code></pre></div></td></tr></table></div></li>
+<li>The second one about the population in red, replace
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>    [% &quot;population&quot; %]
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">font</span> <span class="na">color</span><span class="o">=</span><span class="s">&quot;[% if( &quot;</span><span class="na">population</span><span class="err">&quot;</span> <span class="p">&gt;</span> 20000, &#39;black&#39;, &#39;red&#39;) %]&quot;&gt;[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
+</code></pre></div></td></tr></table></div></li>
+</ul>
+</details>
+<h2 id="editing-capabilities-on-a-layer">Editing capabilities on a layer<a class="headerlink" href="#editing-capabilities-on-a-layer" title="Permanent link">#</a></h2>
+<p>We want now to enable editing capabilities on a layer in the Lizmap interface, to let some users add some <strong>observations</strong>.</p>
+<ul>
+<li>In QGIS, try to add a point and check how the <strong>default</strong> form is displayed on the layer <strong>observations</strong>.
+  You need to toggle editing mode first with the <strong>yellow</strong> pen.</li>
+<li>Improve the form in QGIS :<ul>
+<li>Layer Properties ➡ Attributes Form -&gt; Drag&amp;Drop layout form</li>
+<li>Remove the field <code>id</code></li>
+<li>Make two groups : <code>Required</code> and <code>Optional</code></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Drag/drop form" src="media/drag_and_drop.png" /></p>
+<ul>
+<li>Field configuration :<ul>
+<li><code>fk_id_person</code> :<ul>
+<li>Alias <code>Watcher</code></li>
+<li>Relation reference with <code>name</code></li>
+</ul>
+</li>
+<li><code>fk_id_specie</code> :<ul>
+<li>Alias <code>Species</code></li>
+<li>Value relation layer <code>species</code>, key column <code>id</code> and value <code>es_nom_commun</code></li>
+</ul>
+</li>
+<li><code>date</code> :<ul>
+<li>Alias <code>Date</code></li>
+<li>Date/Time by default</li>
+</ul>
+</li>
+<li><code>photo</code> : <ul>
+<li>Alias <code>Photo</code></li>
+<li>Attachment</li>
+</ul>
+</li>
+<li><code>gender</code> : <ul>
+<li>Alias <code>Gender</code></li>
+<li>Value map and add some values in the table <code>Male</code>, <code>Female</code></li>
+</ul>
+</li>
+<li><code>fk_id_municipality</code> :<ul>
+<li>Alias <code>Municipality</code></li>
+<li>Value relation</li>
+<li>Layer <code>municipalities</code></li>
+<li>Key <code>id</code></li>
+<li>Value <code>name</code></li>
+<li>Filter expression <code>intersects( @geometry,  @current_geometry )</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Form values" src="media/list_value.png" /></p>
+<ul>
+<li>As soon as you have your form ready in QGIS (more or less 🙂), add the layer in the <strong>editing</strong>
+  panel in Lizmap</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We can use QGIS Expressions in the form (visibility, conditions, default value, etc.).
+<a href="https://docs.lizmap.com/current/en/publish/configuration/expression.html">Read the documentation</a>. It's ongoing work as there are different contexts for evaluating expressions.</p>
+</div>
+<h2 id="pdf-print">PDF Print<a class="headerlink" href="#pdf-print" title="Permanent link">#</a></h2>
+<h3 id="extent-chosen-by-the-user">Extent chosen by the user<a class="headerlink" href="#extent-chosen-by-the-user" title="Permanent link">#</a></h3>
+<ul>
+<li>In the given QGIS project, there is already a layout <code>Landscape A4</code>.</li>
+<li>Enable <strong>print</strong> in your Lizmap plugin, <strong>map options</strong> tab.</li>
+<li>Customize the title from Lizmap web interface in the PDF :<ul>
+<li>Click on the title <code>Example workshop</code></li>
+<li>In the properties, look for <strong>Object identifier</strong> and set <code>title</code></li>
+</ul>
+</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>In this case, the user is choosing the area of interest</p>
+</div>
+<h3 id="from-a-popup-extent-defined-by-the-feature">From a popup, extent defined by the feature<a class="headerlink" href="#from-a-popup-extent-defined-by-the-feature" title="Permanent link">#</a></h3>
+<ul>
+<li>In the <strong>QGIS layout manager</strong>, duplicate the existing layout and let's transform it to an atlas<ul>
+<li><strong>Project</strong> menu, <strong>Layout  manager</strong>, <strong>Duplicate</strong>, name <code>PDF sheet</code></li>
+<li>Edit this new layout</li>
+<li>Enable atlas on the <strong>municipalities</strong> layer</li>
+<li>Change the title to display the name of the municipality</li>
+<li>Enable the map to "follow" the current feature</li>
+</ul>
+</li>
+<li>Check in the result in Lizmap</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>While in this situation, the PDF is linked to a feature.</p>
+</div>
+<h2 id="dataviz">Dataviz<a class="headerlink" href="#dataviz" title="Permanent link">#</a></h2>
+<h3 id="bar-chart">Bar chart<a class="headerlink" href="#bar-chart" title="Permanent link">#</a></h3>
+<ul>
+<li>Add <strong>bar chart</strong> in the Lizmap plugin about population in municipalities (and not a histogram).<ul>
+<li>Layer : <strong>Municipalities</strong></li>
+<li>X Field : <strong>Name</strong></li>
+<li>No aggregation</li>
+<li>Trace : <ul>
+<li>field <strong>population</strong></li>
+<li>color blue</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Dataviz population" src="media/dataviz_population.png" /></p>
+<h3 id="pie-chart">Pie chart<a class="headerlink" href="#pie-chart" title="Permanent link">#</a></h3>
+<ul>
+<li>On "persons" layer, add a pie chart about each "watcher" :<ul>
+<li>Add a virtual field in "persons" called <code>count</code>, integer :</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>relation_aggregate(
+    relation:=&#39;observation_fk_id_person_fkey&#39;,
+    aggregate:=&#39;count&#39;,
+    expression:=&quot;id&quot;
+)
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>Add <strong>pie chart</strong> in the Lizmap plugin<ul>
+<li>Title</li>
+<li>Description</li>
+<li>Layer : Persons</li>
+<li>X Field : Name</li>
+<li>Aggregation sum</li>
+<li>Trace : count</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Dataviz pie" src="media/dataviz_pie.png" /></p>
+<h3 id="advanced-filtered-plot">Advanced filtered plot<a class="headerlink" href="#advanced-filtered-plot" title="Permanent link">#</a></h3>
+<p>For now, it's only charts at the layer level. It's possible to make charts for a given feature, for instance for a given
+"watcher", to know his own observations. You can watch the animated GIF at the bottom to understand the expected output,
+in the <strong>"Final result"</strong>.</p>
+<p><img alt="Dataviz filtered pie" src="media/filtered_plot.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Watch the <a href="https://www.youtube.com/watch?v=aGJnScdkEtE">video tutorial</a> about the filtered plot.</p>
+</div>
+<ul>
+<li>Add a virtual field <code>label_species</code> (text) in the <code>observations</code> layer to have the name :</li>
+</ul>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>attribute(get_feature(&#39;species_aa247cf3_58c8_4852_8ada_1d707a593cfe&#39;, &#39;id&#39;, &quot;fk_id_specie&quot;),&#39;es_nom_commun&#39;)
+</code></pre></div></td></tr></table></div>
+<ul>
+<li>
+<p>Add a pie chart on the <code>persons</code> layer :</p>
+<ul>
+<li>Pie</li>
+<li>Title : Species</li>
+<li>Layer : Observations</li>
+<li>X Field : <code>label_species</code></li>
+<li>Aggregation <code>Count</code></li>
+<li>Traces : <code>id</code></li>
+<li>Checkbox <strong>Display filtered plot in popups of parent layer</strong></li>
+<li>Checkbox <strong>Only show in child popup</strong></li>
+</ul>
+</li>
+</ul>
+<p><img alt="Dataviz filtered pie" src="media/dataviz_filtered.png" /></p>
+<details class="note">
+<summary>Final result</summary>
+<p><img alt="Dataviz filtered pie" src="media/filtered_plot.gif" /></p>
+</details>
+<p><strong>Thanks 😎</strong></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <span class="copyleft">&copy;</span> 3Liz
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/3LIZ_news" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/company/3liz" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/3liz/" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://hub.docker.com/u/3liz" target="_blank" rel="noopener" title="hub.docker.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M349.9 236.3h-66.1v-59.4h66.1zm0-204.3h-66.1v60.7h66.1zm78.2 144.8H362v59.4h66.1zm-156.3-72.1h-66.1v60.1h66.1zm78.1 0h-66.1v60.1h66.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4.4 67.6.1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1zm78.1 0h-66.1v59.4h66.1zm-78.1-72.1h-66.1v60.1h66.1z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/channel/UCYYW2CTWR_84kB6pt2zCWbQ" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M549.7 124.1c-6.2-23.7-24.8-42.3-48.3-48.6C458.9 64 288.1 64 288.1 64S117.3 64 74.7 75.5c-23.5 6.3-42 24.9-48.3 48.6C15 167 15 256.4 15 256.4s0 89.4 11.4 132.3c6.3 23.6 24.8 41.5 48.3 47.8C117.3 448 288.1 448 288.1 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232.2 337.6V175.2l142.7 81.2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.1/highlight.min.js"></script>
+      
+        <script src="https://unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script>
+      
+    
+  </body>
+</html>
