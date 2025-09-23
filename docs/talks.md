@@ -7,6 +7,7 @@ hide:
 
 ## Lizmap
 
+* [FOSS4G Belgium 2025 Bruxelles 🇬🇧](https://docs.3liz.org/presentations/2025-09-25-FOSS4G-Belgium-Lizmap.html)
 * QGIS UC 2024 🇬🇧 State of Lizmap
   | [YouTube](https://www.youtube.com/watch?v=bntpf-yUNAo)
 * QGIS QOD January 2024 🇬🇧 - News about Lizmap Web Client and its plugin - With Faunalia
