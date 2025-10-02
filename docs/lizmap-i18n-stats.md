@@ -10,35 +10,35 @@ It is generated automatically by transifex_stats.py in the scripts folder.
 These statistics are about the Lizmap Web Client application **only**, for the **two current
 maintained branches** and the **next** major version combined.
 
-*Statistics updated: 2025-09-02*
+*Statistics updated: 2025-10-02*
 
 | Number of strings | Number of target languages | Overall Translation ratio |
 |:-:|:-:|:-:|
-4938|29|50.64
+4939|29|51.04
 
 | Language | Translation ratio (%) |
 |:-:|:-:|
-French 🇫🇷 |[=100.0% "100.0"]|
-Romanian 🇷🇴 |[=99.98% "99.98"]|
-Portuguese 🇵🇹 |[=99.19% "99.19"]|
-Czech 🇨🇿 |[=98.46% "98.46"]|
-Italian 🇮🇹 |[=96.66% "96.66"]|
-Polish (Poland) 🇵🇱 |[=89.02% "89.02"]|
-Dutch 🇳🇱 |[=81.33% "81.33"]|
-Japanese 🇯🇵 |[=74.89% "74.89"]|
-German 🇩🇪 |[=70.58% "70.58"]|
-Ukrainian (Ukraine) 🇺🇦 |[=66.69% "66.69"]|
-Russian 🇷🇺 |[=66.63% "66.63"]|
-Galician  |[=60.65% "60.65"]|
-Slovak 🇸🇰 |[=58.02% "58.02"]|
-Spanish 🇪🇸 |[=54.76% "54.76"]|
-Swedish (Sweden) 🇸🇪 |[=53.69% "53.69"]|
-Portuguese (Brazil) 🇧🇷 |[=52.79% "52.79"]|
-Slovenian 🇸🇮 |[=49.53% "49.53"]|
-Hungarian (Hungary) 🇭🇺 |[=46.29% "46.29"]|
-Finnish 🇫🇮 |[=43.72% "43.72"]|
+Czech 🇨🇿 |[=99.96% "99.96"]|
+French 🇫🇷 |[=99.96% "99.96"]|
+Romanian 🇷🇴 |[=99.96% "99.96"]|
+Portuguese 🇵🇹 |[=99.15% "99.15"]|
+Italian 🇮🇹 |[=96.62% "96.62"]|
+Polish (Poland) 🇵🇱 |[=88.99% "88.99"]|
+Dutch 🇳🇱 |[=81.29% "81.29"]|
+Japanese 🇯🇵 |[=74.87% "74.87"]|
+German 🇩🇪 |[=71.13% "71.13"]|
+Ukrainian (Ukraine) 🇺🇦 |[=66.67% "66.67"]|
+Russian 🇷🇺 |[=66.61% "66.61"]|
+Galician  |[=60.64% "60.64"]|
+Slovak 🇸🇰 |[=58.01% "58.01"]|
+Spanish 🇪🇸 |[=54.75% "54.75"]|
+Finnish 🇫🇮 |[=53.72% "53.72"]|
+Swedish (Sweden) 🇸🇪 |[=53.67% "53.67"]|
+Portuguese (Brazil) 🇧🇷 |[=52.78% "52.78"]|
+Slovenian 🇸🇮 |[=49.52% "49.52"]|
+Hungarian (Hungary) 🇭🇺 |[=46.28% "46.28"]|
 Basque  |[=31.79% "31.79"]|
-Greek 🇬🇷 |[=24.91% "24.91"]|
+Greek 🇬🇷 |[=24.9% "24.9"]|
 Bulgarian 🇧🇬 |[=22.66% "22.66"]|
 Norwegian 🇳🇴 |[=16.0% "16.0"]|
 Spanish (Argentina) 🇦🇷 |[=5.02% "5.02"]|
