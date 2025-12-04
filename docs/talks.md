@@ -7,6 +7,7 @@ hide:
 
 ## Lizmap
 
+* [Rencontre des utilisateurs et futurs utilisateurs de Lizmap de La Réunion 🇫🇷](https://docs.3liz.org/presentations/2025-12-04_La_Réunion_Lizmap_nouveautés_bonnes_pratiques.html)
 * [FOSS4G Belgium 2025 Bruxelles 🇬🇧](https://docs.3liz.org/presentations/2025-09-25-FOSS4G-Belgium-Lizmap.html)
 * QGIS UC 2024 🇬🇧 State of Lizmap
   | [YouTube](https://www.youtube.com/watch?v=bntpf-yUNAo)
