@@ -10,41 +10,43 @@ It is generated automatically by transifex_stats.py in the scripts folder.
 These statistics are about the Lizmap Web Client application **only**, for the **two current
 maintained branches** and the **next** major version combined.
 
-*Statistics updated: 2026-01-02*
+*Statistics updated: 2026-02-02*
 
 | Number of strings | Number of target languages | Overall Translation ratio |
 |:-:|:-:|:-:|
-4950|30|49.44
+4949|32|46.61
 
 | Language | Translation ratio (%) |
 |:-:|:-:|
 Czech 🇨🇿 |[=100.0% "100.0"]|
 French 🇫🇷 |[=100.0% "100.0"]|
+Portuguese 🇵🇹 |[=100.0% "100.0"]|
 Romanian 🇷🇴 |[=99.98% "99.98"]|
-Portuguese 🇵🇹 |[=98.93% "98.93"]|
-Italian 🇮🇹 |[=96.59% "96.59"]|
-Polish (Poland) 🇵🇱 |[=88.79% "88.79"]|
-Dutch 🇳🇱 |[=81.11% "81.11"]|
-German 🇩🇪 |[=76.2% "76.2"]|
-Japanese 🇯🇵 |[=74.71% "74.71"]|
-Ukrainian (Ukraine) 🇺🇦 |[=66.53% "66.53"]|
-Russian 🇷🇺 |[=66.46% "66.46"]|
-Galician  |[=60.51% "60.51"]|
-Slovak 🇸🇰 |[=57.88% "57.88"]|
-Spanish 🇪🇸 |[=54.63% "54.63"]|
-Finnish 🇫🇮 |[=53.6% "53.6"]|
-Swedish (Sweden) 🇸🇪 |[=53.56% "53.56"]|
-Portuguese (Brazil) 🇧🇷 |[=52.67% "52.67"]|
-Slovenian 🇸🇮 |[=49.41% "49.41"]|
-Hungarian (Hungary) 🇭🇺 |[=46.18% "46.18"]|
+Italian 🇮🇹 |[=96.56% "96.56"]|
+Polish (Poland) 🇵🇱 |[=88.87% "88.87"]|
+Dutch 🇳🇱 |[=81.09% "81.09"]|
+German 🇩🇪 |[=76.22% "76.22"]|
+Japanese 🇯🇵 |[=74.72% "74.72"]|
+Ukrainian (Ukraine) 🇺🇦 |[=66.54% "66.54"]|
+Russian 🇷🇺 |[=66.48% "66.48"]|
+Galician  |[=60.52% "60.52"]|
+Slovak 🇸🇰 |[=57.89% "57.89"]|
+Spanish 🇪🇸 |[=54.64% "54.64"]|
+Finnish 🇫🇮 |[=53.61% "53.61"]|
+Swedish (Sweden) 🇸🇪 |[=53.57% "53.57"]|
+Portuguese (Brazil) 🇧🇷 |[=52.68% "52.68"]|
+Slovenian 🇸🇮 |[=49.42% "49.42"]|
+Hungarian (Hungary) 🇭🇺 |[=46.19% "46.19"]|
 Basque  |[=31.72% "31.72"]|
 Greek 🇬🇷 |[=24.85% "24.85"]|
 Bulgarian 🇧🇬 |[=22.61% "22.61"]|
 Norwegian 🇳🇴 |[=15.96% "15.96"]|
+Latvian  |[=7.03% "7.03"]|
 Spanish (Argentina) 🇦🇷 |[=5.01% "5.01"]|
 Indonesian 🇮🇩 |[=4.1% "4.1"]|
 Serbian (Cyrillic) 🇷🇸 |[=1.17% "1.17"]|
 Arabic  |[=0.0% "0.0"]|
+Catalan  |[=0.0% "0.0"]|
 Spanish (El Salvador)  |[=0.0% "0.0"]|
 Basque (Spain)  |[=0.0% "0.0"]|
 Vietnamese (Viet Nam)  |[=0.0% "0.0"]|
