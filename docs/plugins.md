@@ -7,7 +7,7 @@ hide:
 
 Some plugins are available on https://plugins.qgis.org.
 
-Most of our plugins are available on our own custom repository https://docs.3liz.org/plugins.xml.
+Most of our plugins are available on our own custom repository https://qgis-plugins.3liz.org/plugins.xml?qgis=X.YZ (replace X.YZ by the qgis version)
 You need to follow the tutorial how to add a [custom repository](./tutorial/qgis-repository-en.md).
 
 ## Desktop
@@ -35,4 +35,3 @@ You need to follow the tutorial how to add a [custom repository](./tutorial/qgis
 
 To manage plugins on a server, you can use [QGIS-Plugin-Manager](https://github.com/3liz/qgis-plugin-manager).
 
-For managing the `plugins.xml`, you can use [QGIS-Plugin-Repo](https://github.com/3liz/qgis-plugin-repo).
