@@ -8,8 +8,7 @@ internet.
 * Installer l'extension Lizmap
 * Cliquer sur **Ajouter votre premier serveur** et suivre les étapes
     * L'URL de la page d'accueil, exemple :
-        * `https://workshop.lizmap.com/osgeo_matin/`
-        * `https://workshop.lizmap.com/osgeo_am/`
+        * `https://workshop.lizmap.com/qgisfr/`
     * Le nom d'utilisateur et son mot de passe
     * Si ces informations sont corrects, il demande le nom du serveur. Ce nom est libre, pour votre organisation.
 * Si votre serveur s'affiche bien dans le tableau, c'est bon 👍
