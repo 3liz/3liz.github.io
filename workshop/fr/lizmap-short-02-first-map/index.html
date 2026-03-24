@@ -1188,10 +1188,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prendre-en-main-linterface-web-lizmap" class="md-nav__link">
+  <a href="#configurer-lizmap-web-client-pour-recevoir-les-projets-qgis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prendre en main l'interface web Lizmap
+        Configurer Lizmap Web Client pour recevoir les projets QGIS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#envoyer-votre-projet-qgis-et-la-configuration-lizmap-sur-le-serveur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Envoyer votre projet QGIS et la configuration Lizmap sur le serveur
       
     </span>
   </a>
@@ -1571,10 +1582,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#prendre-en-main-linterface-web-lizmap" class="md-nav__link">
+  <a href="#configurer-lizmap-web-client-pour-recevoir-les-projets-qgis" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Prendre en main l'interface web Lizmap
+        Configurer Lizmap Web Client pour recevoir les projets QGIS
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#envoyer-votre-projet-qgis-et-la-configuration-lizmap-sur-le-serveur" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Envoyer votre projet QGIS et la configuration Lizmap sur le serveur
       
     </span>
   </a>
@@ -1610,7 +1632,7 @@ internet.</p>
 </ul>
 </li>
 <li>Le nom d'utilisateur et son mot de passe</li>
-<li>Si ces informations sont corrects, il demande le nom du serveur. Ce nom est libre, pour votre organisation.</li>
+<li>Si ces informations sont correctes, il demande le nom du serveur. Ce nom est libre, pour votre organisation.</li>
 </ul>
 </li>
 <li>Si votre serveur s'affiche bien dans le tableau, c'est bon 👍</li>
@@ -1619,15 +1641,26 @@ internet.</p>
 <li>Passer en mode <strong>Débutant</strong> 😏</li>
 </ul>
 </li>
-<li>Fermer l'extension Lizmap</li>
+<li>Fermer l'extension Lizmap <strong>avec la croix</strong> (pas avec le bouton OK)</li>
+<li>Réouvrir l'extension, et aller sur l'onglet <code>Formation</code></li>
+<li>Suivre les étapes 1 à 5 qui vont vous permettre de <strong>télécharger le projet de formation</strong>
+    dans un répertoire que vous aurez créé spécifiquement sur votre ordinateur</li>
 </ul>
 <h2 id="manipulation-dans-qgis">Manipulation dans QGIS<a class="headerlink" href="#manipulation-dans-qgis" title="Permanent link">#</a></h2>
 <ul>
-<li>Ouvrir le projet</li>
+<li>Ouvrir le projet qui vient d'être téléchargé</li>
 <li>Mettre un zoom et une emprise correcte (en montrant toutes les îles)</li>
 <li>Dans les propriétés du projet :<ul>
 <li>Menu <strong>Projet</strong> / <strong>Propriétés</strong></li>
-<li>Onglet <strong>Relations</strong>, ajouter toutes les relations <strong>automatiquement</strong> avec le bouton <strong>découvrir</strong> (si PostgreSQL)</li>
+<li>Onglet <strong>Relations</strong>, ajouter toutes les relations</li>
+<li>Couches PostgreSQL : <strong>automatiquement</strong> avec le bouton <strong>découvrir</strong></li>
+<li>Sinon ajouter 3 relations entre les couches respectives<ul>
+<li><code>municipalities</code> &amp; <code>observations</code>,</li>
+<li><code>municipalities</code> &amp; <code>persons</code>,</li>
+<li><code>species</code> et <code>observations</code></li>
+</ul>
+</li>
+<li><img alt="Relations QGIS" src="../../media/project_relations.png" /></li>
 <li>Onglet <strong>QGIS Serveur</strong>,<ul>
 <li><strong>Capacités des services</strong><ul>
 <li>mettre un <strong>titre</strong> et un <strong>résumé</strong></li>
@@ -1647,8 +1680,9 @@ internet.</p>
 </ul>
 </li>
 <li>Ouvrir l'extension Lizmap</li>
-<li>Dans l'onglet <strong>Envoi</strong>, il faut envoyer les données fichiers, dans le bon dossier <code>theme formation</code>.</li>
-<li>Quitter l'extension Lizmap (le fichier Lizmap est créé dès que l'on ferme la fenêtre)</li>
+<li>Appliquer la configuration Lizmap en cliquant sur le bouton <code>Appliquer</code>
+  (le fichier Lizmap <code>.qgs.cfg</code> est créé dès que l'on applique on qu'on ferme la fenêtre avec <code>OK</code>)</li>
+<li>Quitter l'extension Lizmap en cliquant sur OK</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -1656,19 +1690,34 @@ internet.</p>
 Vous pouvez regarder l'aide dans l'extension Lizmap → <strong>Options de la carte</strong> pour avoir de l'aide sur la vignette.
 Il faut mettre cette image à côté de votre fichier <code>nom_du_projet.qgs</code>. L'image peut-être <strong>jpeg</strong> aussi.</p>
 </div>
-<h2 id="prendre-en-main-linterface-web-lizmap">Prendre en main l'interface web Lizmap<a class="headerlink" href="#prendre-en-main-linterface-web-lizmap" title="Permanent link">#</a></h2>
-<ul>
-<li>Se rendre dans l'interface d'administration<ul>
-<li>Les dossiers</li>
-</ul>
-</li>
-</ul>
+<h2 id="configurer-lizmap-web-client-pour-recevoir-les-projets-qgis">Configurer Lizmap Web Client pour recevoir les projets QGIS<a class="headerlink" href="#configurer-lizmap-web-client-pour-recevoir-les-projets-qgis" title="Permanent link">#</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Seul un</strong> participant va faire la manipulation suivante afin de publier le dossier avec <strong>l'ensemble</strong> des projets QGIS.</p>
 </div>
 <ul>
-<li>Se rendre sur la page d'accueil puis sur votre carte</li>
+<li>Se rendre dans l'interface d'administration<ul>
+<li>Menu <code>Lizmap</code> / <code>Gestion des cartes</code></li>
+<li>Bouton <code>Ajouter un répertoire</code></li>
+<li>Choisir le répertoire local <code>theme_formation</code>, puis remplir les autres champs</li>
+<li>Valider</li>
+</ul>
+</li>
+</ul>
+<h2 id="envoyer-votre-projet-qgis-et-la-configuration-lizmap-sur-le-serveur">Envoyer votre projet QGIS et la configuration Lizmap sur le serveur<a class="headerlink" href="#envoyer-votre-projet-qgis-et-la-configuration-lizmap-sur-le-serveur" title="Permanent link">#</a></h2>
+<ul>
+<li>Dans votre QGIS, ouvrir l'<strong>extension Lizmap</strong></li>
+<li>Dans le panneau <code>Information</code>, cliquer sur le bouton "double-flèche bleue" <code>Rafraîchir les serveurs</code>
+  <img alt="Rafraîchir les serveurs" src="../../media/refresh_servers.png" /></li>
+<li>Le nom du répertoire <code>Theme formation</code> apparaît dans la liste déroulante située tout en bas
+  à gauche du plugin</li>
+<li>Dans l'onglet <strong>Envoi</strong>, il faut</li>
+<li>cocher la case <code>Envoi automatique lors de l'enregistrement</code></li>
+<li>Cliquer sur les boutons <code>1. Actualiser les fichiers locaux utilisés</code> puis <code>2. Envoyer ces fichiers sur le serveur</code></li>
+<li>En bas à gauche, à gauche de la liste déroulante qui affiche <code>Theme formation</code>,
+  cliquer sur le bouton <code>Envoi sur le serveur</code> (nuage avec flèche vers le haut)
+  <img alt="Send project" src="../../media/send_project.png" /></li>
+<li>Se rendre sur la page d'accueil de l'application Lizmap Web Client puis sur votre carte</li>
 </ul>
 <div class="admonition success">
 <p class="admonition-title">Success</p>
