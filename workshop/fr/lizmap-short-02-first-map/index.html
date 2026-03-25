@@ -1621,16 +1621,14 @@
 
 
 <h1 id="premiere-publication-rapide">Première publication rapide<a class="headerlink" href="#premiere-publication-rapide" title="Permanent link">#</a></h1>
-<p>Nous allons publier le projet QGIS qui se trouve dans l'email afin de faire notre première carte visualisable sur
+<p>Nous allons d'abord <strong>installer l'extension Lizmap pour QGIS</strong>,
+récupérer le <strong>projet de formation</strong>, puis <strong>publier notre première carte</strong> visualisable sur
 internet.</p>
 <h2 id="extension-lizmap">Extension Lizmap<a class="headerlink" href="#extension-lizmap" title="Permanent link">#</a></h2>
 <ul>
 <li>Installer l'extension Lizmap</li>
 <li>Cliquer sur <strong>Ajouter votre premier serveur</strong> et suivre les étapes<ul>
-<li>L'URL de la page d'accueil, exemple :<ul>
-<li><code>https://workshop.lizmap.com/qgisfr/</code></li>
-</ul>
-</li>
+<li>L'URL de la page d'accueil, exemple : <code>https://workshop.lizmap.com/qgisfr/</code></li>
 <li>Le nom d'utilisateur et son mot de passe</li>
 <li>Si ces informations sont correctes, il demande le nom du serveur. Ce nom est libre, pour votre organisation.</li>
 </ul>
@@ -1642,9 +1640,11 @@ internet.</p>
 </ul>
 </li>
 <li>Fermer l'extension Lizmap <strong>avec la croix</strong> (pas avec le bouton OK)</li>
-<li>Réouvrir l'extension, et aller sur l'onglet <code>Formation</code></li>
+<li>Réouvrir l'extension, et aller sur l'onglet <code>Formation</code><ul>
 <li>Suivre les étapes 1 à 5 qui vont vous permettre de <strong>télécharger le projet de formation</strong>
-    dans un répertoire que vous aurez créé spécifiquement sur votre ordinateur</li>
+  dans un répertoire que vous aurez créé spécifiquement sur votre ordinateur</li>
+</ul>
+</li>
 </ul>
 <h2 id="manipulation-dans-qgis">Manipulation dans QGIS<a class="headerlink" href="#manipulation-dans-qgis" title="Permanent link">#</a></h2>
 <ul>
@@ -1652,15 +1652,17 @@ internet.</p>
 <li>Mettre un zoom et une emprise correcte (en montrant toutes les îles)</li>
 <li>Dans les propriétés du projet :<ul>
 <li>Menu <strong>Projet</strong> / <strong>Propriétés</strong></li>
-<li>Onglet <strong>Relations</strong>, ajouter toutes les relations</li>
+<li>Onglet <strong>Relations</strong>, ajouter toutes les relations<ul>
 <li>Couches PostgreSQL : <strong>automatiquement</strong> avec le bouton <strong>découvrir</strong></li>
 <li>Sinon ajouter 3 relations entre les couches respectives<ul>
 <li><code>municipalities</code> &amp; <code>observations</code>,</li>
 <li><code>municipalities</code> &amp; <code>persons</code>,</li>
-<li><code>species</code> et <code>observations</code></li>
+<li><code>species</code> et <code>observations</code>
+  <img alt="Relations QGIS" src="../../media/project_relations.png" /></li>
 </ul>
 </li>
-<li><img alt="Relations QGIS" src="../../media/project_relations.png" /></li>
+</ul>
+</li>
 <li>Onglet <strong>QGIS Serveur</strong>,<ul>
 <li><strong>Capacités des services</strong><ul>
 <li>mettre un <strong>titre</strong> et un <strong>résumé</strong></li>
@@ -1711,9 +1713,11 @@ Il faut mettre cette image à côté de votre fichier <code>nom_du_projet.qgs</c
   <img alt="Rafraîchir les serveurs" src="../../media/refresh_servers.png" /></li>
 <li>Le nom du répertoire <code>Theme formation</code> apparaît dans la liste déroulante située tout en bas
   à gauche du plugin</li>
-<li>Dans l'onglet <strong>Envoi</strong>, il faut</li>
+<li>Dans l'onglet <strong>Envoi</strong>, il faut<ul>
 <li>cocher la case <code>Envoi automatique lors de l'enregistrement</code></li>
 <li>Cliquer sur les boutons <code>1. Actualiser les fichiers locaux utilisés</code> puis <code>2. Envoyer ces fichiers sur le serveur</code></li>
+</ul>
+</li>
 <li>En bas à gauche, à gauche de la liste déroulante qui affiche <code>Theme formation</code>,
   cliquer sur le bouton <code>Envoi sur le serveur</code> (nuage avec flèche vers le haut)
   <img alt="Send project" src="../../media/send_project.png" /></li>
