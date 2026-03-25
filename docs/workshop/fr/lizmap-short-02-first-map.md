@@ -1,14 +1,14 @@
 # Première publication rapide
 
-Nous allons publier le projet QGIS qui se trouve dans l'email afin de faire notre première carte visualisable sur
+Nous allons d'abord **installer l'extension Lizmap pour QGIS**,
+récupérer le **projet de formation**, puis **publier notre première carte** visualisable sur
 internet.
 
 ## Extension Lizmap
 
 * Installer l'extension Lizmap
 * Cliquer sur **Ajouter votre premier serveur** et suivre les étapes
-    * L'URL de la page d'accueil, exemple :
-        * `https://workshop.lizmap.com/qgisfr/`
+    * L'URL de la page d'accueil, exemple : `https://workshop.lizmap.com/qgisfr/`
     * Le nom d'utilisateur et son mot de passe
     * Si ces informations sont correctes, il demande le nom du serveur. Ce nom est libre, pour votre organisation.
 * Si votre serveur s'affiche bien dans le tableau, c'est bon 👍
@@ -17,8 +17,8 @@ internet.
     * Passer en mode **Débutant** 😏
 * Fermer l'extension Lizmap **avec la croix** (pas avec le bouton OK)
 * Réouvrir l'extension, et aller sur l'onglet `Formation`
-  * Suivre les étapes 1 à 5 qui vont vous permettre de **télécharger le projet de formation**
-    dans un répertoire que vous aurez créé spécifiquement sur votre ordinateur
+    * Suivre les étapes 1 à 5 qui vont vous permettre de **télécharger le projet de formation**
+      dans un répertoire que vous aurez créé spécifiquement sur votre ordinateur
 
 ## Manipulation dans QGIS
 
@@ -27,19 +27,19 @@ internet.
 * Dans les propriétés du projet :
     * Menu **Projet** / **Propriétés**
     * Onglet **Relations**, ajouter toutes les relations
-      * Couches PostgreSQL : **automatiquement** avec le bouton **découvrir**
-      * Sinon ajouter 3 relations entre les couches respectives
-        * `municipalities` & `observations`,
-        * `municipalities` & `persons`,
-        * `species` et `observations`
-      * ![Relations QGIS](../media/project_relations.png)
+        * Couches PostgreSQL : **automatiquement** avec le bouton **découvrir**
+        * Sinon ajouter 3 relations entre les couches respectives
+            * `municipalities` & `observations`,
+            * `municipalities` & `persons`,
+            * `species` et `observations`
+          ![Relations QGIS](../media/project_relations.png)
     * Onglet **QGIS Serveur**,
         * **Capacités des services**
-              * mettre un **titre** et un **résumé**
+            * mettre un **titre** et un **résumé**
         * **Capacité WMS**
-              * utiliser l'emprise actuelle du canevas dans l'**étendue annoncée**.
+            * utiliser l'emprise actuelle du canevas dans l'**étendue annoncée**.
         * **Capacité WFS**
-              * **publier** toutes les couches
+            * **publier** toutes les couches
     * Cliquer sur **OK**."
 * Ouvrir l'extension Lizmap
 * Appliquer la configuration Lizmap en cliquant sur le bouton `Appliquer`
@@ -70,8 +70,8 @@ internet.
 * Le nom du répertoire `Theme formation` apparaît dans la liste déroulante située tout en bas
   à gauche du plugin
 * Dans l'onglet **Envoi**, il faut
-  * cocher la case `Envoi automatique lors de l'enregistrement`
-  * Cliquer sur les boutons `1. Actualiser les fichiers locaux utilisés` puis `2. Envoyer ces fichiers sur le serveur`
+    * cocher la case `Envoi automatique lors de l'enregistrement`
+    * Cliquer sur les boutons `1. Actualiser les fichiers locaux utilisés` puis `2. Envoyer ces fichiers sur le serveur`
 * En bas à gauche, à gauche de la liste déroulante qui affiche `Theme formation`,
   cliquer sur le bouton `Envoi sur le serveur` (nuage avec flèche vers le haut)
   ![Send project](../media/send_project.png)
