@@ -1501,29 +1501,35 @@
 <p><img alt="Drag/drop form" src="../../media/drag_and_drop.png" /></p>
 <ul>
 <li>Configurer les champs :<ul>
-<li><code>fk_id_person</code> : <ul>
+<li><code>fk_id_person</code> :<ul>
 <li>Alias <code>Observateur</code></li>
 <li>Référence de la relation avec <code>name</code></li>
 </ul>
 </li>
-<li><code>fk_id_specie</code> : <ul>
+<li><code>fk_id_specie</code> :<ul>
 <li>Alias <code>Espèce</code></li>
-<li>Valeur relationnelle <code>species</code> <code>id</code> et <code>es_nom_commun</code></li>
+<li>Valeur relationnelle <code>species</code> Colonne clé <code>id</code> et  Valeur <code>es_nom_commun</code></li>
 </ul>
 </li>
-<li><code>date</code> : <ul>
+<li><code>date</code> :<ul>
 <li>Alias <code>Date</code></li>
 <li>Date/heure par défaut</li>
 </ul>
 </li>
-<li><code>photo</code> : <ul>
+<li><code>photo</code> :<ul>
 <li>Alias <code>Photo</code></li>
 <li>Pièce jointe</li>
 </ul>
 </li>
-<li><code>gender</code> : <ul>
+<li><code>gender</code> :<ul>
 <li>Alias <code>Genre</code></li>
 <li>Liste de valeurs : <code>Mâle</code>, <code>Femelle</code></li>
+</ul>
+</li>
+<li><code>fk_id_municipality</code> :<ul>
+<li>Alias <code>Commune</code></li>
+<li>Valeur relationnelle <code>Communes</code> Colonne clé <code>id</code> et Valeur <code>name</code></li>
+<li>Filtre par expression possible <code>intersects($geometry, @current_geometry)</code></li>
 </ul>
 </li>
 </ul>
@@ -1540,8 +1546,8 @@
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>En l'absence de couches PostgreSQL pour cette formation, on peut voir le projet déjà
-<a href="https://workshop.lizmap.com/osgeo_matin/index.php/view/map?repository=edition&amp;project=main">fait</a>.</p>
+<p>En l'absence de couches PostgreSQL pour cette formation, on peut voir le projet
+<a href="https://workshop.lizmap.com/qgisfr/index.php/view/map?repository=themeformation&amp;project=formateur">fait</a>.</p>
 </div>
 <p><strong>Désormais, on souhaite pouvoir <a href="../lizmap-short-07-print/">proposer des exports PDF</a>, avec ou sans </strong>atlas<strong> dans notre projet 👉</strong></p>
 
