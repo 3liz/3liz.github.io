@@ -29,9 +29,10 @@ internet.
     * Onglet **Relations**, ajouter toutes les relations
         * Couches PostgreSQL : **automatiquement** avec le bouton **découvrir**
         * Sinon ajouter 3 relations entre les couches respectives
-            * `municipalities` & `observations`,
-            * `municipalities` & `persons`,
-            * `species` et `observations`
+            * `municipalities` & `observations` : les observations par commune,
+            * `municipalities` & `persons` : les personnes par commune,
+            * `species` & `observations` : les observations par espèces,
+            * `persons` & `observations` : les observations par personne
           ![Relations QGIS](../media/project_relations.png)
     * Onglet **QGIS Serveur**,
         * **Capacités des services**
