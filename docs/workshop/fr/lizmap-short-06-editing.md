@@ -7,25 +7,29 @@ On souhaite désormais rendre éditable une couche depuis l'interface web afin d
     * Propriétés de la couche ➡ Formulaire d'attributs ➡ Conception par glisser/déposer
     * Supprimer le champ `id`
     * Faire 2 groupes : `Requis` et `Optionel`
-    
+
 ![Drag/drop form](../media/drag_and_drop.png)
 
 * Configurer les champs :
-    * `fk_id_person` : 
+    * `fk_id_person` :
         * Alias `Observateur`
         * Référence de la relation avec `name`
-    * `fk_id_specie` : 
+    * `fk_id_specie` :
         * Alias `Espèce`
-        * Valeur relationnelle `species` `id` et `es_nom_commun`
-    * `date` : 
+        * Valeur relationnelle `species` Colonne clé `id` et  Valeur `es_nom_commun`
+    * `date` :
         * Alias `Date`
         * Date/heure par défaut
-    * `photo` : 
+    * `photo` :
         * Alias `Photo`
         * Pièce jointe
-    * `gender` : 
+    * `gender` :
         * Alias `Genre`
         * Liste de valeurs : `Mâle`, `Femelle`
+    * `fk_id_municipality` :
+        * Alias `Commune`
+        * Valeur relationnelle `Communes` Colonne clé `id` et Valeur `name`
+          * Filtre par expression possible `intersects($geometry, @current_geometry)`
 
 ![Form values](../media/list_value.png)
 
@@ -36,7 +40,7 @@ On souhaite désormais rendre éditable une couche depuis l'interface web afin d
     [Lire la documentation](https://docs.lizmap.com/current/fr/publish/configuration/expression.html).
 
 !!! tip
-    En l'absence de couches PostgreSQL pour cette formation, on peut voir le projet déjà
-    [fait](https://workshop.lizmap.com/osgeo_matin/index.php/view/map?repository=edition&project=main).
+    En l'absence de couches PostgreSQL pour cette formation, on peut voir le projet
+    [fait](https://workshop.lizmap.com/qgisfr/index.php/view/map?repository=themeformation&project=formateur).
 
 **Désormais, on souhaite pouvoir [proposer des exports PDF](./lizmap-short-07-print.md), avec ou sans **atlas** dans notre projet 👉**
