@@ -10,17 +10,17 @@ It is generated automatically by transifex_stats.py in the scripts folder.
 These statistics are about the Lizmap Web Client application **only**, for the **two current
 maintained branches** and the **next** major version combined.
 
-*Statistics updated: 2026-08-02*
+*Statistics updated: 2026-09-02*
 
 | Number of strings | Number of target languages | Overall Translation ratio |
 |:-:|:-:|:-:|
-4416|31|44.76
+4416|31|44.79
 
 | Language | Translation ratio (%) |
 |:-:|:-:|
+Romanian 🇷🇴 |[=100.0% "100.0"]|
 Portuguese 🇵🇹 |[=99.95% "99.95"]|
 French 🇫🇷 |[=99.52% "99.52"]|
-Romanian 🇷🇴 |[=99.32% "99.32"]|
 Italian 🇮🇹 |[=96.78% "96.78"]|
 Czech 🇨🇿 |[=96.31% "96.31"]|
 Polish (Poland) 🇵🇱 |[=80.1% "80.1"]|
