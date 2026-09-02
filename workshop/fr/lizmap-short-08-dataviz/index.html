@@ -1628,9 +1628,9 @@
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>relation_aggregate(
-    relation:=&#39;observation_fk_id_person_fkey&#39;,
-    aggregate:=&#39;count&#39;,
-    expression:=&quot;id&quot;
+    relation:='observation_fk_id_person_fkey',
+    aggregate:='count',
+    expression:="id"
 )
 </code></pre></div></td></tr></table></div>
 <ul>
@@ -1652,7 +1652,7 @@ précise, par exemple, la répartition des espèces pour un observateur.</p>
 <ul>
 <li>Ajouter un champ virtuel <code>label_species</code> (text) dans la couche <code>observations</code> pour avoir le nom de l'espèce :</li>
 </ul>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>attribute(get_feature(&#39;species_aa247cf3_58c8_4852_8ada_1d707a593cfe&#39;, &#39;id&#39;, &quot;fk_id_specie&quot;),&#39;es_nom_commun&#39;)
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>attribute(get_feature('species_aa247cf3_58c8_4852_8ada_1d707a593cfe', 'id', "fk_id_specie"),'es_nom_commun')
 </code></pre></div></td></tr></table></div>
 <ul>
 <li>

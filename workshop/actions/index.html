@@ -1642,21 +1642,21 @@ Nous nous réfererons à la <a href="https://docs.lizmap.com/current/fr/publish/
 <span class="w">    </span><span class="n">ajson</span><span class="w"> </span><span class="n">json</span><span class="p">;</span>
 <span class="k">BEGIN</span>
 
-<span class="w">    </span><span class="n">action_name</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="k">parameters</span><span class="o">-&gt;&gt;</span><span class="s1">&#39;action_name&#39;</span><span class="p">;</span>
-<span class="w">    </span><span class="n">feature_id</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">parameters</span><span class="o">-&gt;&gt;</span><span class="s1">&#39;feature_id&#39;</span><span class="p">)::</span><span class="nb">varchar</span><span class="p">;</span>
-<span class="w">    </span><span class="n">layer_name</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="k">parameters</span><span class="o">-&gt;&gt;</span><span class="s1">&#39;layer_name&#39;</span><span class="p">;</span>
-<span class="w">    </span><span class="n">layer_schema</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="k">parameters</span><span class="o">-&gt;&gt;</span><span class="s1">&#39;layer_schema&#39;</span><span class="p">;</span>
-<span class="w">    </span><span class="n">layer_table</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="k">parameters</span><span class="o">-&gt;&gt;</span><span class="s1">&#39;layer_table&#39;</span><span class="p">;</span>
+<span class="w">    </span><span class="n">action_name</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="k">parameters</span><span class="o">-&gt;&gt;</span><span class="s1">'action_name'</span><span class="p">;</span>
+<span class="w">    </span><span class="n">feature_id</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="k">parameters</span><span class="o">-&gt;&gt;</span><span class="s1">'feature_id'</span><span class="p">)::</span><span class="nb">varchar</span><span class="p">;</span>
+<span class="w">    </span><span class="n">layer_name</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="k">parameters</span><span class="o">-&gt;&gt;</span><span class="s1">'layer_name'</span><span class="p">;</span>
+<span class="w">    </span><span class="n">layer_schema</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="k">parameters</span><span class="o">-&gt;&gt;</span><span class="s1">'layer_schema'</span><span class="p">;</span>
+<span class="w">    </span><span class="n">layer_table</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="k">parameters</span><span class="o">-&gt;&gt;</span><span class="s1">'layer_table'</span><span class="p">;</span>
 
-<span class="w">    </span><span class="k">IF</span><span class="w"> </span><span class="n">action_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;plus_proche_borne_incendie&#39;</span><span class="w"> </span><span class="k">THEN</span>
-<span class="w">        </span><span class="c1">-- Dessine une ligne jusqu&#39;à la plus proche borne à incendie</span>
-<span class="w">        </span><span class="n">datasource</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;</span>
+<span class="w">    </span><span class="k">IF</span><span class="w"> </span><span class="n">action_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'plus_proche_borne_incendie'</span><span class="w"> </span><span class="k">THEN</span>
+<span class="w">        </span><span class="c1">-- Dessine une ligne jusqu'à la plus proche borne à incendie</span>
+<span class="w">        </span><span class="n">datasource</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="p">(</span><span class="s1">'</span>
 <span class="s1">            WITH tmp_logement AS (</span>
-<span class="s1">            SELECT geom FROM logement WHERE id = &#39;&#39;%1$s&#39;&#39;</span>
+<span class="s1">            SELECT geom FROM logement WHERE id = ''%1$s''</span>
 <span class="s1">            )</span>
 <span class="s1">            SELECT</span>
 <span class="s1">                id, ST_Distance(bornes_incendie.geom, logement.geom),</span>
-<span class="s1">                &#39;&#39;La plus proche borne a pour id &#39;&#39; || bornes_incendie.id || &#39;&#39; et est à &#39;&#39; || ST_Distance(bornes_incendie.geom, logement.geom)::integer || &#39;&#39;m&#39;&#39; AS message,</span>
+<span class="s1">                ''La plus proche borne a pour id '' || bornes_incendie.id || '' et est à '' || ST_Distance(bornes_incendie.geom, logement.geom)::integer || ''m'' AS message,</span>
 <span class="s1">                ST_MakeLine(logement.geom, bornes_incendie.geom) AS geom,</span>
 <span class="s1">                bornes_incendie.id AS borne_id</span>
 <span class="s1">                FROM</span>
@@ -1664,19 +1664,19 @@ Nous nous réfererons à la <a href="https://docs.lizmap.com/current/fr/publish/
 <span class="s1">                    tmp_logement logement</span>
 <span class="s1">                ORDER BY ST_Distance(bornes_incendie.geom, logement.geom)</span>
 <span class="s1">            LIMIT 1</span>
-<span class="s1">        &#39;</span><span class="p">,</span>
+<span class="s1">        '</span><span class="p">,</span>
 <span class="w">        </span><span class="n">feature_id</span>
 <span class="w">        </span><span class="p">);</span>
 <span class="w">    </span><span class="k">ELSE</span>
 <span class="w">    </span><span class="c1">-- Default : return geometry</span>
-<span class="w">        </span><span class="n">datasource</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="p">(</span><span class="s1">&#39;</span>
+<span class="w">        </span><span class="n">datasource</span><span class="p">:</span><span class="o">=</span><span class="w"> </span><span class="n">format</span><span class="p">(</span><span class="s1">'</span>
 <span class="s1">            SELECT</span>
 <span class="s1">            %1$s AS id,</span>
-<span class="s1">            &#39;&#39;The geometry of the object have been displayed in the map&#39;&#39; AS message</span>
+<span class="s1">            ''The geometry of the object have been displayed in the map'' AS message</span>
 <span class="s1">            geom</span>
-<span class="s1">            FROM &quot;%2$s&quot;.&quot;%3$s&quot;</span>
+<span class="s1">            FROM "%2$s"."%3$s"</span>
 <span class="s1">            WHERE id = %1$s</span>
-<span class="s1">        &#39;</span><span class="p">,</span>
+<span class="s1">        '</span><span class="p">,</span>
 <span class="w">        </span><span class="n">feature_id</span><span class="p">,</span>
 <span class="w">        </span><span class="n">layer_schema</span><span class="p">,</span>
 <span class="w">        </span><span class="n">layer_table</span>
@@ -1690,10 +1690,10 @@ Nous nous réfererons à la <a href="https://docs.lizmap.com/current/fr/publish/
 <span class="w">    </span><span class="k">RETURN</span><span class="w"> </span><span class="n">ajson</span><span class="p">;</span>
 <span class="k">END</span><span class="p">;</span>
 <span class="err">$$</span>
-<span class="k">LANGUAGE</span><span class="w"> </span><span class="s1">&#39;plpgsql&#39;</span>
+<span class="k">LANGUAGE</span><span class="w"> </span><span class="s1">'plpgsql'</span>
 <span class="k">IMMUTABLE</span><span class="w"> </span><span class="k">STRICT</span><span class="p">;</span>
 
-<span class="k">COMMENT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">FUNCTION</span><span class="w"> </span><span class="n">lizmap_get_data</span><span class="p">(</span><span class="n">json</span><span class="p">)</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="s1">&#39;Generate a valid GeoJSON from an action described by a name, PostgreSQL schema and table name of the source data, a QGIS layer name, a feature id and additional options.&#39;</span><span class="p">;</span>
+<span class="k">COMMENT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="k">FUNCTION</span><span class="w"> </span><span class="n">lizmap_get_data</span><span class="p">(</span><span class="n">json</span><span class="p">)</span><span class="w"> </span><span class="k">IS</span><span class="w"> </span><span class="s1">'Generate a valid GeoJSON from an action described by a name, PostgreSQL schema and table name of the source data, a QGIS layer name, a feature id and additional options.'</span><span class="p">;</span>
 </code></pre></div></td></tr></table></div></li>
 </ul>
 </details>
@@ -1727,28 +1727,28 @@ Nous nous réfererons à la <a href="https://docs.lizmap.com/current/fr/publish/
 <span class="normal">26</span>
 <span class="normal">27</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">[</span>
 <span class="w">    </span><span class="p">{</span>
-<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;plus_proche_borne_incendie&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Trouver la plus proche borne à incendie de ce logement&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;scope&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;feature&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;layers&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">            </span><span class="s2">&quot;logement_47b4d824_19f3_40a6_95ac_c144f8e53562&quot;</span>
+<span class="w">        </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"plus_proche_borne_incendie"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Trouver la plus proche borne à incendie de ce logement"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"scope"</span><span class="p">:</span><span class="w"> </span><span class="s2">"feature"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"layers"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="s2">"logement_47b4d824_19f3_40a6_95ac_c144f8e53562"</span>
 <span class="w">        </span><span class="p">],</span>
-<span class="w">        </span><span class="nt">&quot;icon&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;icon-resize-small&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
-<span class="w">        </span><span class="nt">&quot;style&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">            </span><span class="nt">&quot;graphicName&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;circle&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;pointRadius&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;fill&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;fillColor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;lightred&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;fillOpacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.3</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;stroke&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;strokeWidth&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;strokeColor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;red&quot;</span><span class="p">,</span>
-<span class="w">            </span><span class="nt">&quot;strokeOpacity&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">0.8</span>
+<span class="w">        </span><span class="nt">"icon"</span><span class="p">:</span><span class="w"> </span><span class="s2">"icon-resize-small"</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">"options"</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span>
+<span class="w">        </span><span class="nt">"style"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">"graphicName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"circle"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"pointRadius"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"fill"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"fillColor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"lightred"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"fillOpacity"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.3</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"stroke"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"strokeWidth"</span><span class="p">:</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"strokeColor"</span><span class="p">:</span><span class="w"> </span><span class="s2">"red"</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">"strokeOpacity"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.8</span>
 <span class="w">        </span><span class="p">},</span>
-<span class="w">        </span><span class="nt">&quot;callbacks&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-<span class="w">            </span><span class="p">{</span><span class="nt">&quot;method&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;zoom&quot;</span><span class="p">},</span>
-<span class="w">            </span><span class="p">{</span><span class="nt">&quot;method&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;select&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;layerId&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;bornes_incendie_7e4f3577_4c55_4351_8949_a4359ae05340&quot;</span><span class="p">}</span>
+<span class="w">        </span><span class="nt">"callbacks"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">{</span><span class="nt">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"zoom"</span><span class="p">},</span>
+<span class="w">            </span><span class="p">{</span><span class="nt">"method"</span><span class="p">:</span><span class="w"> </span><span class="s2">"select"</span><span class="p">,</span><span class="w"> </span><span class="nt">"layerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"bornes_incendie_7e4f3577_4c55_4351_8949_a4359ae05340"</span><span class="p">}</span>
 <span class="w">        </span><span class="p">]</span>
 <span class="w">    </span><span class="p">}</span>
 <span class="p">]</span>

@@ -1644,10 +1644,10 @@ Vous devez sélectionner aussi l'outil infobulle dans la barre d'outils.</p>
 <summary>Afficher les solutions</summary>
 <ul>
 <li>Première solution pour les majuscules :
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[% upper(&quot;name&quot;) %]
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[% upper("name") %]
 </code></pre></div></td></tr></table></div></li>
 <li>Deuxième solution pour la population en rouge :
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">td</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color:[% if( &quot;</span><span class="na">population</span><span class="err">&quot;</span> <span class="p">&gt;</span> 20000, &#39;black&#39;, &#39;red&#39;) %]&quot;&gt;[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">&lt;</span><span class="nt">td</span> <span class="na">style</span><span class="o">=</span><span class="s">"color:[% if( "</span><span class="na">population</span><span class="err">"</span> <span class="p">&gt;</span> 20000, 'black', 'red') %]"&gt;[% "population" %]<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div></li>
 </ul>
 </details>

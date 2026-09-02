@@ -2216,15 +2216,15 @@ look.</p>
 <summary>Display solutions</summary>
 <ul>
 <li>The first one about capital letters, replace
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[% &quot;name&quot; %]
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[% "name" %]
 </code></pre></div></td></tr></table></div>
 by
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[% upper(&quot;name&quot;) %]
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>[% upper("name") %]
 </code></pre></div></td></tr></table></div></li>
 <li>The second one about the population in red, replace
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>    [% &quot;population&quot; %]
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>    [% "population" %]
 </code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">font</span> <span class="na">color</span><span class="o">=</span><span class="s">&quot;[% if( &quot;</span><span class="na">population</span><span class="err">&quot;</span> <span class="p">&gt;</span> 20000, &#39;black&#39;, &#39;red&#39;) %]&quot;&gt;[% &quot;population&quot; %]<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>    <span class="p">&lt;</span><span class="nt">font</span> <span class="na">color</span><span class="o">=</span><span class="s">"[% if( "</span><span class="na">population</span><span class="err">"</span> <span class="p">&gt;</span> 20000, 'black', 'red') %]"&gt;[% "population" %]<span class="p">&lt;/</span><span class="nt">font</span><span class="p">&gt;</span>
 </code></pre></div></td></tr></table></div></li>
 </ul>
 </details>
@@ -2349,9 +2349,9 @@ by
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code>relation_aggregate(
-    relation:=&#39;observation_fk_id_person_fkey&#39;,
-    aggregate:=&#39;count&#39;,
-    expression:=&quot;id&quot;
+    relation:='observation_fk_id_person_fkey',
+    aggregate:='count',
+    expression:="id"
 )
 </code></pre></div></td></tr></table></div>
 <ul>
@@ -2378,7 +2378,7 @@ in the <strong>"Final result"</strong>.</p>
 <ul>
 <li>Add a virtual field <code>label_species</code> (text) in the <code>observations</code> layer to have the name :</li>
 </ul>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>attribute(get_feature(&#39;species_aa247cf3_58c8_4852_8ada_1d707a593cfe&#39;, &#39;id&#39;, &quot;fk_id_specie&quot;),&#39;es_nom_commun&#39;)
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>attribute(get_feature('species_aa247cf3_58c8_4852_8ada_1d707a593cfe', 'id', "fk_id_specie"),'es_nom_commun')
 </code></pre></div></td></tr></table></div>
 <ul>
 <li>
