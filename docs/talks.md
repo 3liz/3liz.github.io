@@ -9,7 +9,8 @@ hide:
 
 * [Rencontre des utilisateurs et futurs utilisateurs de Lizmap de La Réunion 🇫🇷](https://docs.3liz.org/presentations/2025-12-04_La_Réunion_Lizmap_nouveautés_bonnes_pratiques.html)
 * [FOSS4G Belgium 2025 Bruxelles 🇬🇧](https://docs.3liz.org/presentations/2025-09-25-FOSS4G-Belgium-Lizmap.html)
-* QGIS UC 2024 🇬🇧 State of Lizmap
+* [QGIS UC 2025 Norrköping 🇬🇧](https://docs.3liz.org/presentations/2025-06-QGIS-UC-Norrkoping-Lizmap.html)
+* QGIS UC 2024 Bratislava 🇬🇧 State of Lizmap
   | [YouTube](https://www.youtube.com/watch?v=bntpf-yUNAo)
 * QGIS QOD January 2024 🇬🇧 - News about Lizmap Web Client and its plugin - With Faunalia
   | [YouTube](https://www.youtube.com/watch?v=RYLLexGMVcQ)
@@ -47,10 +48,10 @@ hide:
 * [OSM and QGIS, FOSS4G and SOTM 2022 🇬🇧](https://docs.3liz.org/presentations/2022-08-foss4g-osm-in-qgis.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/2022-08-foss4g-osm-in-qgis.pdf)
   | [YouTube](https://www.youtube.com/watch?v=pcVVloGDGPs)
-* [OSM et QGIS SOTM-FR 2022 🇫🇷](https://docs.3liz.org/presentations/2022-06-sotm-fr-osm-et-qgis.html)
+* [OSM et QGIS, SOTM-FR 2022 🇫🇷](https://docs.3liz.org/presentations/2022-06-sotm-fr-osm-et-qgis.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/SOTM-FR-2022-osm-et-qgis.pdf)
   | [PeerTube](https://peertube.openstreetmap.fr/w/vDdaxGfbmKuVdReXyJhexG)
-* [OSM in QGIS FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-foss4g-osm-in-qgis.html)
+* [OSM in QGIS, FOSS4G 2021 🇬🇧](https://docs.3liz.org/presentations/2021-09-foss4g-osm-in-qgis.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/FOSS4G-2021-osm-in-qgis.pdf)
   | [YouTube](https://www.youtube.com/watch?v=l95PoHGLrTI)
 
@@ -61,6 +62,8 @@ hide:
 
 ## QGIS Desktop
 
+* [QGISFR 2024 🇫🇷 - Utilisation des “actions QGIS” pour la gestion des données Véloroutes et Voies Vertes](https://docs.3liz.org/presentations/2024-03-28_QGISFR_2024_Actions.html)
+  | [PDF](https://docs.3liz.org/presentations/docs/pdf/2024-03-28_QGISFR_2024_Actions.pdf)
 * [QGIS-FR 2022 🇫🇷 - Les expressions et les formulaires pour créer un outil de saisie professionnel](https://docs.3liz.org/presentations/2022-01_QGISFR_2022_outil_saisie_avec_expressions_Michael_DOUCHIN.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/QGISFR-2022-Outil_saisie_avec_expressions.pdf)
 
@@ -74,9 +77,17 @@ hide:
 * FOSS4G 2019 🇬🇧 - WPS with QGIS processing - From desktop to server
   | [YouTube](https://www.youtube.com/watch?v=YL1tdcJwimA)
 
+## QField & QFieldCloud
+
+[QGISFR 2024 🇫🇷 - QFieldCloud auto-hébergé](https://docs.3liz.org/presentations/2024-03-28_QGISFR_retour_experience_qfieldcloud_heberge.html)
+  | [PDF](https://docs.3liz.org/presentations/pdf/2024-03-28_QGISFR_retour_experience_qfieldcloud_heberge.pdf)
+## Dynamic layers
+
+* [QGIS UC 2025 Norrköping 🇬🇧](https://docs.3liz.org/presentations/2025-06-QGIS-UC-Norrkoping-Dynamic-Layers.html)
+
 ## PgMetadata
 
-* QGIS UC 2024 🇬🇧
+* QGIS UC 2024 Bratislava 🇬🇧
   | [YouTube](https://www.youtube.com/watch?v=UgnZ6GwTfcg)
 * [FOSS4G 2022 Firenze 🇬🇧](https://docs.3liz.org/presentations/2022-08-Foss4G-Firenze-PgMetadata.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/2022-08-Foss4G-Firenze-PgMetadata.pdf)
@@ -85,6 +96,11 @@ hide:
   | [PDF](https://docs.3liz.org/presentations/pdf/FOSS4G-2021-PgMetadata.pdf)
   | [YouTube](https://www.youtube.com/watch?v=CjZZwKlzYGc)
 * QGIS-FR 2020 🇫🇷 [YouTube](https://www.youtube.com/watch?v=o47w7zf40nw)
+
+## RoadNetwork
+
+* [QGIS UC 2026 Laax 🇬🇧](https://docs.3liz.org/presentations/2026-10-06_RoadNetwork-Plugin_QGIS_UC_Laax.html)
+  | [PDF](https://docs.3liz.org/presentations/pdf/2026-10-06_RoadNetwork-Plugin_QGIS_UC_Laax.pdf)
 
 ## Véloroutes et Voies Vertes
 
