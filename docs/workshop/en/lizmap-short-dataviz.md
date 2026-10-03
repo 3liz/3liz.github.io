@@ -23,7 +23,7 @@ Presentations from 3Liz talking about **QGIS Server** during this QGIS UC :
     * "Lizmap Web Client: next steps": 9:30 AMn room Hangar
     * "Managing a topological county road 🚗 network: linear referencing with QGIS & PostGIS": 2:00 PM, room Bridge 2
 
-## Links
+## Lizmap related Links
 
 * Demo https://demo.lizmap.com
 * Lizmap cloud out-of-the-box https://www.lizmap.com
@@ -47,14 +47,15 @@ Presentations from 3Liz talking about **QGIS Server** during this QGIS UC :
 
 * https://docs.lizmap.com/
   * Check [the architecture and manuals](https://docs.lizmap.com/current/en/introduction.html)
+* **Dataviz documentation** https://docs.lizmap.com/current/en/publish/lizmap_plugin/dataviz.html
 
 ## Discover the data
 
-**Land use polygon layer** from "Le Grand Narbonne" open-data website: format **FlatGeoBUF** `.fgb)`
+**Land use polygon layer** from "Le Grand Narbonne" open-data website: format **FlatGeoBUF** (`.fgb` extension)
 
 ![data in QGIS](media/short_dataviz/00_portail_openig.jpg)
 
-Direct access:
+Direct access (no need to download these files at the moment):
 
 * [Land use in 2021](media/short_dataviz/data/ocsol_gn_pnr_2021.fgb)
 * [Evolution between 2018 & 2021](media/short_dataviz/data/evol_2018_2021.fgb)
@@ -85,9 +86,6 @@ Direct access:
 !!! question
     Is-it 👍 or something else ?
 
-!!! info
-    This short workshop was designed for **90 minutes**, so some steps in the QGIS downloaded project are already done.
-
 Now you should be able to go to the **Lizmap plugin** `Training` tab (the last one at the bottom of the left menu), fill the form, and click the `Download and extract` button, then `Open file browser`
 
 ![Get the workshop project](media/short_dataviz/get_workshop_qgis_project.png)
@@ -95,6 +93,8 @@ Now you should be able to go to the **Lizmap plugin** `Training` tab (the last o
 !!! info
     Please open the newly created QGIS project in QGIS.
 
+!!! info
+    This short workshop was designed for **90 minutes**, so some steps in the QGIS downloaded project are already done.
 
 ## The workshop QGIS project
 
@@ -103,11 +103,11 @@ The QGIS project **demo_XXXX.qgs** built for this shot workshop:
 * **shows the data** organized in a **layer tree**
 * the **layers have been styled** based on the given metadata (colors corresponding to the land use categories)
 * Each land use data layer has
-  * a `code_insee` field, which is the unique code of one of the 5 cities.
-  * a `color` field containing the color of the corresponding category. It is based on a **QGIS expression** using the field from a join with the `glossary` layer.
-* the **group Land use** have been configured to let only one layer visible at a time (mutually exclusive)
-* **relations** have been set up in the QGIS project properties dialog (links between cities and the other layers)
-* A **aerial photo** layer has been added
+    * a `code_insee` field, which is the **unique code** of one of the 5 **cities**.
+    * a `color` field containing **the color of the corresponding category**. It is based on a **QGIS expression** using the field from a join with the `glossary` layer.
+* the **group Land use** have been configured to let only **one layer visible at a time** (mutually exclusive)
+* **relations** have been set up in the **QGIS project properties** dialog (links between cities and the other layers)
+* A **aerial photo** layer has been added as a background layer
 
 ![styled data in QGIS](media/short_dataviz/data_in_qgis_styled.png)
 
@@ -136,7 +136,7 @@ You can **add as many plots as needed**.
 
 Each plot is based on the **data** of a **QGIS vector layer**.
 
-To **add a new plot** in your Lizmap project map:
+To **add a new plot** in your Lizmap project map, we will soon use the **following steps**:
 
 * Click on the **+** button
 * Select the **type of chart** to add. Use `bar` or `pie`. (`histogram` must rarely be used !)
@@ -149,21 +149,17 @@ To **add a new plot** in your Lizmap project map:
 * **Traces** : You can add one or many traces : the **Y field(s)** of your graph.
   They represent **the value to be ploted**. If more than one value in the chosen Y fields share the same X value, they will be aggregated.
 
-<details>
-  <summary>Additional plot options (click to show)</summary>
+## Additional plot options
 
-  * **Layout** : The layout can be customized. It must be a JSON dictionary.
-    You can read the [documentation of Plotly](https://plotly.com/javascript/reference/layout/) about the **layout configuration**
-  * **Display filtered plot in popups of parent layer** : if you check this checkbox, the children of your
-    layer will get the same graph as the parent plot but filtered only for them.
-    It's useful if you want to see the statistics of one entity instead of all.
-  * **Only show child popup** : The main graph will not be shown in the main container and only the filtered
-    graph of the relation of the layer will be displayed in the popup when you select the element.
-  * **Display the legend**, sometimes, the legend is not necessary.
-  * **Display plot only when the layer is visible**.
-</details>
-
-
+* **Layout** : The layout can be customized. It must be a JSON dictionary.
+  You can read the [documentation of Plotly](https://plotly.com/javascript/reference/layout/) about the **layout configuration**
+* **Display filtered plot in popups of parent layer** : if you check this checkbox, the children of your
+  layer will get the same graph as the parent plot but filtered only for them.
+  It's useful if you want to see the statistics of one entity instead of all.
+* **Only show child popup** : The main graph will not be shown in the main container and only the filtered
+  graph of the relation of the layer will be displayed in the popup when you select the element.
+* **Display the legend**, sometimes, the legend is not necessary.
+* **Display plot only when the layer is visible**.
 
 !!! info
     Some options might be visible or not according to the kind of chart, like choosing for horizontal/vertical layout for a bar chart.
@@ -203,46 +199,93 @@ We would like to show a **bar chart** of the **Level 2** categories, displayed b
 
 ![lizmap second plot](media/short_dataviz/lizmap_second_plot.png)
 
+Lets configure the **bar chart**, layer `Detailed landuse
 
+![second plot configuration](media/short_dataviz/lizmap_plugin_second_plot_conf.png)
 
-<details>
-  <summary><b>Try it yourself !</b> Configure the bar chart, layer "Detailed landuse"</summary>
+Here is the JSON to add in the **layout**
+```json
+{"margin": {"l": 70}, "xaxis": {"categoryorder": "total descending", "showticklabels": false}, "yaxis": {"tickformat": ",.2f", "ticksuffix": " ha"}}
+```
 
-  ![second plot configuration](media/short_dataviz/lizmap_plugin_second_plot_conf.png)
+Also **uncheck** the checkbox `Display the legend`
+and **check** the checkbox `Display plot only when the layer is visible`
 
-  Here is the JSON to add in the **layout**
-  ```json
-  {"margin": {"l": 70}, "xaxis": {"categoryorder": "total descending", "showticklabels": false}, "yaxis": {"tickformat": ",.2f", "ticksuffix": " ha"}}
-  ```
-
-  Also **uncheck** the checkbox `Display the legend`
-  and **check** the checkbox `Display plot only when the layer is visible`
-</details>
-
-Once configured, you can also apply & send, to see the result in Lizmap Web Client
+!!! info
+    Once configured, you can also apply & send, to see the result in Lizmap Web Client
 
 ## A special & versatile plot type: the HTML plot
 
-This type of plot allows to **create and style your own content** based on the source vector data.
-
-We will try a **very simple example first**, and then try to add **a more complexe plot**.
-
-### Simple HTML plot
+This type of plot allows **creating and styling your own content** based on the source vector data.
 
 **Principle** : you can use the `HTML` language, as in some parts of **QGIS** (print layouts, labels, etc.) to create your content.
 
 Lizmap will automatically replace variables `{$x}` with the values from the **X** field and `{$y1}`, `{$y2}` from the  **aggregated values** of the traces (Y) data.
 
-Lets configure it with **Lizmap plugin**
+Let's configure it with **Lizmap plugin**
 
 ![HTML plot for the cities](media/short_dataviz/html_city_plot.png)
 
-Result:
+**Result**:
 
 ![HTML plot for the cities result](media/short_dataviz/html_cities_result.png)
 
-You see Lizmap will display **one HTML block per X unique value**. If you want to sum up all data (and lose the City name), you could use `depart` for the **X field** (which is unique accross all cities) and remove the line `City: {$x}` from the HTML template.
+You see Lizmap will display **one HTML block per X unique value**.
 
-## Filter the data for a given city
+If you want to **sum up all data** (but loose the City name),
+you could use `depart` for the **X field** (which is unique across all cities)
+and remove the line `City: {$x}` from the **HTML template**.
 
-TODO
+## Plots filtered in the City popups
+
+Lizmap allows the user to click on the map and get the object data,
+as QGIS does with the `Identify features` map tool.
+
+In the **Lizmap plugin** `Layers` tab:
+* Select the layer `Cities` in the layer tree
+* Under the group `layer tree options`, check the checkbox `Popup`
+  and select the radio button `No children displayed`
+
+Then **Apply & send**, and see the result: when clicking on a city,
+the popup is displayed, and show a **table of all the fields aliases & values**
+for this city.
+
+!!! info
+    You can completely configure the content of Lizmap popup.
+    See more information [in the documentation](https://docs.lizmap.com/current/fr/publish/configuration/popup.html)
+
+Now, we would like to show the filtered plots under the City popup,
+showing only the data for this city.
+
+To do so, we only need to check the checkbox `Display filtered plot in popus of parent layer`
+in the plot configuration
+
+![Display filtered plot in parent layer popup](media/short_dataviz/lizmap_plugin_display_filtered_plot.png)
+
+Then, **save & publish**, and click again on a city in Lizmap Web Client.
+
+![Filtered plot in popup result](media/short_dataviz/lizmap_popup_filted_plot_result.png)
+
+## Add filtering capability
+
+We have already defined **relations** in the QGIS project properties between the layer `Cities` and the **land use vector layers**.
+
+Configure the **attribute tables** for the parent and the child layers in Lizmap plugin.
+
+![Attribute tables](media/short_dataviz/lizmap_plugin_attribute_table.png)
+
+Add the tool `Locate by layer` for the parent layer `Cities` and set it to trigger the filter on change.
+
+![Locate by layer](media/short_dataviz/lizmap_plugin_locate_by_layer.png)
+
+After applying these configurations, and publish it to the server, you will then be able to **select a city** with the combo box in the top-right corner of the map, and Lizmap will:
+
+* **zoom** to the city,
+* show only the polygons **related to this city**,
+* and **filter the plots** accordingly
+
+![Final view with city filter](media/short_dataviz/final_view_with_locate_filter.gif)
+
+## Conclusion
+
+😎 **Thanks for your participation**
