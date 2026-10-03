@@ -30,7 +30,7 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
 * Lizmap cloud out-of-the-box https://www.lizmap.com
 * PDF/HTML presentations and videos https://docs.3liz.org/talks/#lizmap
 * Discourse channel https://discourse.osgeo.org
-* Twitter accounts : 
+* Twitter accounts :
     * https://twitter.com/LizmapForQgis dedicated to Lizmap
     * https://twitter.com/3LIZ_news about 3Liz
 * Source code
@@ -87,7 +87,7 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
               * use the current canvas extent for the **advertised extent**
           * **WFS capabilities**
               * Use the checkbox **published** for **all** layers
-      * Press **Ok** 
+      * Press **Ok**
 * Open the Lizmap plugin
 * In the `Layers` tab, make some layers visible by default
 * At the bottom, let's choose the remote "directory" where to send this project
@@ -116,7 +116,7 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
 * Reorder layers to put them inside these groups according to the screenshot below
 * Rename layers with a more human-readable
 
-![legend](./media/legend.png)
+![legend](../media/legend.png)
 
 !!! tip
     The `baselayers` group, you can add layers you want. This group will display layers inside as a drop-down menu.
@@ -129,31 +129,31 @@ Presentations talking about QGIS Server and Lizmap during this QGIS UC from 3Liz
 * Make a quick symbology on a point layer :
       * on `persons`, change the default symbol using a **single symbol**.
       * On `observations`, we can try **Categorized** using the field `fk_id_specie`.
-        You can use the [QML already made](./media/fk_id_species_categorized.qml)
+        You can use the [QML already made](../media/fk_id_species_categorized.qml)
         (Vector layer properties ➡ **Styles** at the bottom ➡ **Load styles**).
 * Add labels on the municipalities layer and add a scale based visibility for these labels (1:300 000)
     * `name` field for the source
     * **Rendering** tab, scale based visibility minimum set to `1:300 000`
 * Go in the Lizmap **plugin**, **Layers** tab :
-    * Enable the **municipalities** layer by default  
-    * Add some **links** on two layers: 
+    * Enable the **municipalities** layer by default
+    * Add some **links** on two layers:
         * PDF for the persons layer : `media/metadata.pdf`, a PDF link, stored in the folder `media` on the server
           (you can see it in the WebDAV client)
         * HTML for the municipalities : `https://en.wikipedia.org/wiki/French_Polynesia`
     * Go in **Baselayers** tag and add the OpenStreetMap Mapnik background.
 
-![Lizmap layer properties](./media/lizmap_layer_properties.png)
+![Lizmap layer properties](../media/lizmap_layer_properties.png)
 
 ## Attribute table
 
 * From the **plugin**, enable the attribute table for the **municipalities** layer.
     * In the **Attribute table** tab, add a new layer
 
-![Lizmap attribute table](./media/lizmap_attribute_table.png)
+![Lizmap attribute table](../media/lizmap_attribute_table.png)
 
 !!! tip
     We can improve our attribute table by adding some alias on the fields :
-    
+
     * **Properties** on the vector layer ➡ **Form attributes** ➡ **Alias** for all fields
 
 !!! tip
@@ -212,8 +212,8 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
     * Layer Properties ➡ Attributes Form -> Drag&Drop layout form
     * Remove the field `id`
     * Make two groups : `Required` and `Optional`
-    
-![Drag/drop form](./media/drag_and_drop.png)
+
+![Drag/drop form](../media/drag_and_drop.png)
 
 * Field configuration :
     * `fk_id_person` :
@@ -225,10 +225,10 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
     * `date` :
         * Alias `Date`
         * Date/Time by default
-    * `photo` : 
+    * `photo` :
         * Alias `Photo`
         * Attachment
-    * `gender` : 
+    * `gender` :
         * Alias `Gender`
         * Value map and add some values in the table `Male`, `Female`
     * `fk_id_municipality` :
@@ -239,7 +239,7 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
         * Value `name`
         * Filter expression `intersects( @geometry,  @current_geometry )`
 
-![Form values](./media/list_value.png)
+![Form values](../media/list_value.png)
 
 * As soon as you have your form ready in QGIS (more or less 🙂), add the layer in the **editing**
   panel in Lizmap
@@ -282,11 +282,11 @@ We want now to enable editing capabilities on a layer in the Lizmap interface, t
     * Layer : **Municipalities**
     * X Field : **Name**
     * No aggregation
-    * Trace : 
+    * Trace :
         * field **population**
         * color blue
 
-![Dataviz population](./media/dataviz_population.png)
+![Dataviz population](../media/dataviz_population.png)
 
 ### Pie chart
 
@@ -309,7 +309,7 @@ relation_aggregate(
     * Aggregation sum
     * Trace : count
 
-![Dataviz pie](./media/dataviz_pie.png)
+![Dataviz pie](../media/dataviz_pie.png)
 
 ### Advanced filtered plot
 
@@ -317,7 +317,7 @@ For now, it's only charts at the layer level. It's possible to make charts for a
 "watcher", to know his own observations. You can watch the animated GIF at the bottom to understand the expected output,
 in the **"Final result"**.
 
-![Dataviz filtered pie](./media/filtered_plot.png)
+![Dataviz filtered pie](../media/filtered_plot.png)
 
 !!! tip
     Watch the [video tutorial](https://www.youtube.com/watch?v=aGJnScdkEtE) about the filtered plot.
@@ -339,9 +339,9 @@ attribute(get_feature('species_aa247cf3_58c8_4852_8ada_1d707a593cfe', 'id', "fk_
     * Checkbox **Display filtered plot in popups of parent layer**
     * Checkbox **Only show in child popup**
 
-![Dataviz filtered pie](./media/dataviz_filtered.png)
+![Dataviz filtered pie](../media/dataviz_filtered.png)
 
 ??? note "Final result"
-    ![Dataviz filtered pie](./media/filtered_plot.gif)
+    ![Dataviz filtered pie](../media/filtered_plot.gif)
 
 **Thanks 😎**

@@ -11,4 +11,5 @@ hide:
 * [QGIS Plugins](./plugins.md)
 * [Server tools](./tools.md)
 * [Tutorials for some softwares and tools](./tutorial)
+* [Workshops](./workshop/workshop.md)
 * etc

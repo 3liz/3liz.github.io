@@ -35,8 +35,7 @@ nav:
         - Impression PDF: 'workshop/fr/lizmap-short-07-print.md'
         - Dataviz: 'workshop/fr/lizmap-short-08-dataviz.md'
     - Workshops EN:
-        - Lizmap English: 'workshop/lizmap-short-english.md'
-        - Lizmap: 'workshop/lizmap.md'
+        - Index: workshop/workshop_en.md
     - Links: 'links.md'
 
 plugins:
