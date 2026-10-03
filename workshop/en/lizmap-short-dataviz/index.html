@@ -1456,10 +1456,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
+  <a href="#lizmap-related-links" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Links
+        Lizmap related Links
       
     </span>
   </a>
@@ -1533,6 +1533,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#additional-plot-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional plot options
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#create-our-first-plot-a-pie-chart-with-the-main-landuse-categories" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1563,30 +1574,35 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="A special &amp; versatile plot type: the HTML plot">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#simple-html-plot" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#plots-filtered-in-the-city-popups" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Simple HTML plot
+        Plots filtered in the City popups
       
     </span>
   </a>
   
 </li>
-        
-      </ul>
-    </nav>
+      
+        <li class="md-nav__item">
+  <a href="#add-filtering-capability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Add filtering capability
+      
+    </span>
+  </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#filter-the-data-for-a-given-city" class="md-nav__link">
+  <a href="#conclusion" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Filter the data for a given city
+        Conclusion
       
     </span>
   </a>
@@ -1633,7 +1649,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">#</a></h2>
+<h2 id="lizmap-related-links">Lizmap related Links<a class="headerlink" href="#lizmap-related-links" title="Permanent link">#</a></h2>
 <ul>
 <li>Demo <a href="https://demo.lizmap.com">https://demo.lizmap.com</a></li>
 <li>Lizmap cloud out-of-the-box <a href="https://www.lizmap.com">https://www.lizmap.com</a></li>
@@ -1663,11 +1679,12 @@
 <ul>
 <li><a href="https://docs.lizmap.com/">https://docs.lizmap.com/</a></li>
 <li>Check <a href="https://docs.lizmap.com/current/en/introduction.html">the architecture and manuals</a></li>
+<li><strong>Dataviz documentation</strong> <a href="https://docs.lizmap.com/current/en/publish/lizmap_plugin/dataviz.html">https://docs.lizmap.com/current/en/publish/lizmap_plugin/dataviz.html</a></li>
 </ul>
 <h2 id="discover-the-data">Discover the data<a class="headerlink" href="#discover-the-data" title="Permanent link">#</a></h2>
-<p><strong>Land use polygon layer</strong> from "Le Grand Narbonne" open-data website: format <strong>FlatGeoBUF</strong> <code>.fgb)</code></p>
+<p><strong>Land use polygon layer</strong> from "Le Grand Narbonne" open-data website: format <strong>FlatGeoBUF</strong> (<code>.fgb</code> extension)</p>
 <p><img alt="data in QGIS" src="../media/short_dataviz/00_portail_openig.jpg" /></p>
-<p>Direct access:</p>
+<p>Direct access (no need to download these files at the moment):</p>
 <ul>
 <li><a href="../media/short_dataviz/data/ocsol_gn_pnr_2021.fgb">Land use in 2021</a></li>
 <li><a href="../media/short_dataviz/data/evol_2018_2021.fgb">Evolution between 2018 &amp; 2021</a></li>
@@ -1698,27 +1715,29 @@ It's to lock <strong>your internal QGIS password manager</strong>.</p>
 <p class="admonition-title">Question</p>
 <p>Is-it 👍 or something else ?</p>
 </div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This short workshop was designed for <strong>90 minutes</strong>, so some steps in the QGIS downloaded project are already done.</p>
-</div>
 <p>Now you should be able to go to the <strong>Lizmap plugin</strong> <code>Training</code> tab (the last one at the bottom of the left menu), fill the form, and click the <code>Download and extract</code> button, then <code>Open file browser</code></p>
 <p><img alt="Get the workshop project" src="../media/short_dataviz/get_workshop_qgis_project.png" /></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Please open the newly created QGIS project in QGIS.</p>
 </div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This short workshop was designed for <strong>90 minutes</strong>, so some steps in the QGIS downloaded project are already done.</p>
+</div>
 <h2 id="the-workshop-qgis-project">The workshop QGIS project<a class="headerlink" href="#the-workshop-qgis-project" title="Permanent link">#</a></h2>
 <p>The QGIS project <strong>demo_XXXX.qgs</strong> built for this shot workshop:</p>
 <ul>
 <li><strong>shows the data</strong> organized in a <strong>layer tree</strong></li>
 <li>the <strong>layers have been styled</strong> based on the given metadata (colors corresponding to the land use categories)</li>
-<li>Each land use data layer has</li>
-<li>a <code>code_insee</code> field, which is the unique code of one of the 5 cities.</li>
-<li>a <code>color</code> field containing the color of the corresponding category. It is based on a <strong>QGIS expression</strong> using the field from a join with the <code>glossary</code> layer.</li>
-<li>the <strong>group Land use</strong> have been configured to let only one layer visible at a time (mutually exclusive)</li>
-<li><strong>relations</strong> have been set up in the QGIS project properties dialog (links between cities and the other layers)</li>
-<li>A <strong>aerial photo</strong> layer has been added</li>
+<li>Each land use data layer has<ul>
+<li>a <code>code_insee</code> field, which is the <strong>unique code</strong> of one of the 5 <strong>cities</strong>.</li>
+<li>a <code>color</code> field containing <strong>the color of the corresponding category</strong>. It is based on a <strong>QGIS expression</strong> using the field from a join with the <code>glossary</code> layer.</li>
+</ul>
+</li>
+<li>the <strong>group Land use</strong> have been configured to let only <strong>one layer visible at a time</strong> (mutually exclusive)</li>
+<li><strong>relations</strong> have been set up in the <strong>QGIS project properties</strong> dialog (links between cities and the other layers)</li>
+<li>A <strong>aerial photo</strong> layer has been added as a background layer</li>
 </ul>
 <p><img alt="styled data in QGIS" src="../media/short_dataviz/data_in_qgis_styled.png" /></p>
 <h2 id="first-lizmap-publication">First Lizmap publication<a class="headerlink" href="#first-lizmap-publication" title="Permanent link">#</a></h2>
@@ -1741,7 +1760,7 @@ It's to lock <strong>your internal QGIS password manager</strong>.</p>
 <p>With the <strong>dataviz</strong> panel of the <strong>Lizmap plugin</strong>, you can create a few kinds of graph with only a few clicks: <strong>scatter, pie, histogram, box, bar, histogram2d, polar, sunburst, HTML</strong></p>
 <p>You can <strong>add as many plots as needed</strong>.</p>
 <p>Each plot is based on the <strong>data</strong> of a <strong>QGIS vector layer</strong>.</p>
-<p>To <strong>add a new plot</strong> in your Lizmap project map:</p>
+<p>To <strong>add a new plot</strong> in your Lizmap project map, we will soon use the <strong>following steps</strong>:</p>
 <ul>
 <li>Click on the <strong>+</strong> button</li>
 <li>Select the <strong>type of chart</strong> to add. Use <code>bar</code> or <code>pie</code>. (<code>histogram</code> must rarely be used !)</li>
@@ -1754,20 +1773,18 @@ It's to lock <strong>your internal QGIS password manager</strong>.</p>
 <li><strong>Traces</strong> : You can add one or many traces : the <strong>Y field(s)</strong> of your graph.
   They represent <strong>the value to be ploted</strong>. If more than one value in the chosen Y fields share the same X value, they will be aggregated.</li>
 </ul>
-<details>
-  <summary>Additional plot options (click to show)</summary>
-
-  * **Layout** : The layout can be customized. It must be a JSON dictionary.
-    You can read the [documentation of Plotly](https://plotly.com/javascript/reference/layout/) about the **layout configuration**
-  * **Display filtered plot in popups of parent layer** : if you check this checkbox, the children of your
-    layer will get the same graph as the parent plot but filtered only for them.
-    It's useful if you want to see the statistics of one entity instead of all.
-  * **Only show child popup** : The main graph will not be shown in the main container and only the filtered
-    graph of the relation of the layer will be displayed in the popup when you select the element.
-  * **Display the legend**, sometimes, the legend is not necessary.
-  * **Display plot only when the layer is visible**.
-</details>
-
+<h2 id="additional-plot-options">Additional plot options<a class="headerlink" href="#additional-plot-options" title="Permanent link">#</a></h2>
+<ul>
+<li><strong>Layout</strong> : The layout can be customized. It must be a JSON dictionary.
+  You can read the <a href="https://plotly.com/javascript/reference/layout/">documentation of Plotly</a> about the <strong>layout configuration</strong></li>
+<li><strong>Display filtered plot in popups of parent layer</strong> : if you check this checkbox, the children of your
+  layer will get the same graph as the parent plot but filtered only for them.
+  It's useful if you want to see the statistics of one entity instead of all.</li>
+<li><strong>Only show child popup</strong> : The main graph will not be shown in the main container and only the filtered
+  graph of the relation of the layer will be displayed in the popup when you select the element.</li>
+<li><strong>Display the legend</strong>, sometimes, the legend is not necessary.</li>
+<li><strong>Display plot only when the layer is visible</strong>.</li>
+</ul>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p>Some options might be visible or not according to the kind of chart, like choosing for horizontal/vertical layout for a bar chart.</p>
@@ -1795,33 +1812,66 @@ It's to lock <strong>your internal QGIS password manager</strong>.</p>
 <h2 id="a-bar-chart-with-more-detailed-land-use-categories">A bar chart with more detailed land use categories<a class="headerlink" href="#a-bar-chart-with-more-detailed-land-use-categories" title="Permanent link">#</a></h2>
 <p>We would like to show a <strong>bar chart</strong> of the <strong>Level 2</strong> categories, displayed by <strong>descending total of surface</strong>.</p>
 <p><img alt="lizmap second plot" src="../media/short_dataviz/lizmap_second_plot.png" /></p>
-<details>
-  <summary><b>Try it yourself !</b> Configure the bar chart, layer "Detailed landuse"</summary>
-
-  ![second plot configuration](media/short_dataviz/lizmap_plugin_second_plot_conf.png)
-
-  Here is the JSON to add in the **layout**
-  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span><span class="nt">"margin"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"l"</span><span class="p">:</span><span class="w"> </span><span class="mi">70</span><span class="p">},</span><span class="w"> </span><span class="nt">"xaxis"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"categoryorder"</span><span class="p">:</span><span class="w"> </span><span class="s2">"total descending"</span><span class="p">,</span><span class="w"> </span><span class="nt">"showticklabels"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w"> </span><span class="nt">"yaxis"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"tickformat"</span><span class="p">:</span><span class="w"> </span><span class="s2">",.2f"</span><span class="p">,</span><span class="w"> </span><span class="nt">"ticksuffix"</span><span class="p">:</span><span class="w"> </span><span class="s2">" ha"</span><span class="p">}}</span>
-</code></pre></div></td></tr></table></div>
-
-  Also **uncheck** the checkbox `Display the legend`
-  and **check** the checkbox `Display plot only when the layer is visible`
-</details>
-
+<p>Lets configure the <strong>bar chart</strong>, layer `Detailed landuse</p>
+<p><img alt="second plot configuration" src="../media/short_dataviz/lizmap_plugin_second_plot_conf.png" /></p>
+<p>Here is the JSON to add in the <strong>layout</strong>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="p">{</span><span class="nt">"margin"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"l"</span><span class="p">:</span><span class="w"> </span><span class="mi">70</span><span class="p">},</span><span class="w"> </span><span class="nt">"xaxis"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"categoryorder"</span><span class="p">:</span><span class="w"> </span><span class="s2">"total descending"</span><span class="p">,</span><span class="w"> </span><span class="nt">"showticklabels"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">},</span><span class="w"> </span><span class="nt">"yaxis"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="nt">"tickformat"</span><span class="p">:</span><span class="w"> </span><span class="s2">",.2f"</span><span class="p">,</span><span class="w"> </span><span class="nt">"ticksuffix"</span><span class="p">:</span><span class="w"> </span><span class="s2">" ha"</span><span class="p">}}</span>
+</code></pre></div></td></tr></table></div></p>
+<p>Also <strong>uncheck</strong> the checkbox <code>Display the legend</code>
+and <strong>check</strong> the checkbox <code>Display plot only when the layer is visible</code></p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
 <p>Once configured, you can also apply &amp; send, to see the result in Lizmap Web Client</p>
+</div>
 <h2 id="a-special-versatile-plot-type-the-html-plot">A special &amp; versatile plot type: the HTML plot<a class="headerlink" href="#a-special-versatile-plot-type-the-html-plot" title="Permanent link">#</a></h2>
-<p>This type of plot allows to <strong>create and style your own content</strong> based on the source vector data.</p>
-<p>We will try a <strong>very simple example first</strong>, and then try to add <strong>a more complexe plot</strong>.</p>
-<h3 id="simple-html-plot">Simple HTML plot<a class="headerlink" href="#simple-html-plot" title="Permanent link">#</a></h3>
+<p>This type of plot allows <strong>creating and styling your own content</strong> based on the source vector data.</p>
 <p><strong>Principle</strong> : you can use the <code>HTML</code> language, as in some parts of <strong>QGIS</strong> (print layouts, labels, etc.) to create your content.</p>
 <p>Lizmap will automatically replace variables <code>{$x}</code> with the values from the <strong>X</strong> field and <code>{$y1}</code>, <code>{$y2}</code> from the  <strong>aggregated values</strong> of the traces (Y) data.</p>
-<p>Lets configure it with <strong>Lizmap plugin</strong></p>
+<p>Let's configure it with <strong>Lizmap plugin</strong></p>
 <p><img alt="HTML plot for the cities" src="../media/short_dataviz/html_city_plot.png" /></p>
-<p>Result:</p>
+<p><strong>Result</strong>:</p>
 <p><img alt="HTML plot for the cities result" src="../media/short_dataviz/html_cities_result.png" /></p>
-<p>You see Lizmap will display <strong>one HTML block per X unique value</strong>. If you want to sum up all data (and lose the City name), you could use <code>depart</code> for the <strong>X field</strong> (which is unique accross all cities) and remove the line <code>City: {$x}</code> from the HTML template.</p>
-<h2 id="filter-the-data-for-a-given-city">Filter the data for a given city<a class="headerlink" href="#filter-the-data-for-a-given-city" title="Permanent link">#</a></h2>
-<p>TODO</p>
+<p>You see Lizmap will display <strong>one HTML block per X unique value</strong>.</p>
+<p>If you want to <strong>sum up all data</strong> (but loose the City name),
+you could use <code>depart</code> for the <strong>X field</strong> (which is unique across all cities)
+and remove the line <code>City: {$x}</code> from the <strong>HTML template</strong>.</p>
+<h2 id="plots-filtered-in-the-city-popups">Plots filtered in the City popups<a class="headerlink" href="#plots-filtered-in-the-city-popups" title="Permanent link">#</a></h2>
+<p>Lizmap allows the user to click on the map and get the object data,
+as QGIS does with the <code>Identify features</code> map tool.</p>
+<p>In the <strong>Lizmap plugin</strong> <code>Layers</code> tab:
+* Select the layer <code>Cities</code> in the layer tree
+* Under the group <code>layer tree options</code>, check the checkbox <code>Popup</code>
+  and select the radio button <code>No children displayed</code></p>
+<p>Then <strong>Apply &amp; send</strong>, and see the result: when clicking on a city,
+the popup is displayed, and show a <strong>table of all the fields aliases &amp; values</strong>
+for this city.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>You can completely configure the content of Lizmap popup.
+See more information <a href="https://docs.lizmap.com/current/fr/publish/configuration/popup.html">in the documentation</a></p>
+</div>
+<p>Now, we would like to show the filtered plots under the City popup,
+showing only the data for this city.</p>
+<p>To do so, we only need to check the checkbox <code>Display filtered plot in popus of parent layer</code>
+in the plot configuration</p>
+<p><img alt="Display filtered plot in parent layer popup" src="../media/short_dataviz/lizmap_plugin_display_filtered_plot.png" /></p>
+<p>Then, <strong>save &amp; publish</strong>, and click again on a city in Lizmap Web Client.</p>
+<p><img alt="Filtered plot in popup result" src="../media/short_dataviz/lizmap_popup_filted_plot_result.png" /></p>
+<h2 id="add-filtering-capability">Add filtering capability<a class="headerlink" href="#add-filtering-capability" title="Permanent link">#</a></h2>
+<p>We have already defined <strong>relations</strong> in the QGIS project properties between the layer <code>Cities</code> and the <strong>land use vector layers</strong>.</p>
+<p>Configure the <strong>attribute tables</strong> for the parent and the child layers in Lizmap plugin.</p>
+<p><img alt="Attribute tables" src="../media/short_dataviz/lizmap_plugin_attribute_table.png" /></p>
+<p>Add the tool <code>Locate by layer</code> for the parent layer <code>Cities</code> and set it to trigger the filter on change.</p>
+<p><img alt="Locate by layer" src="../media/short_dataviz/lizmap_plugin_locate_by_layer.png" /></p>
+<p>After applying these configurations, and publish it to the server, you will then be able to <strong>select a city</strong> with the combo box in the top-right corner of the map, and Lizmap will:</p>
+<ul>
+<li><strong>zoom</strong> to the city,</li>
+<li>show only the polygons <strong>related to this city</strong>,</li>
+<li>and <strong>filter the plots</strong> accordingly</li>
+</ul>
+<p><img alt="Final view with city filter" src="../media/short_dataviz/final_view_with_locate_filter.gif" /></p>
+<h2 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h2>
+<p>😎 <strong>Thanks for your participation</strong></p>
 
 
 
