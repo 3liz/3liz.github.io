@@ -67,10 +67,15 @@ hide:
 * [QGIS-FR 2022 🇫🇷 - Les expressions et les formulaires pour créer un outil de saisie professionnel](https://docs.3liz.org/presentations/2022-01_QGISFR_2022_outil_saisie_avec_expressions_Michael_DOUCHIN.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/QGISFR-2022-Outil_saisie_avec_expressions.pdf)
 
+
 ## QGIS Server
 
+* [QGIS UC 2026 Laax 🇬🇧 - QJazz - QGIS Server ready for the cloud](https://docs.3liz.org/presentations/2026-10-05-qjazz-qgis-uc.html)
+  | [PDF](https://docs.3liz.org/presentations/pdf/2026-10-05-qjazz-qgis-uc.pdf)
+* [FOSS4G Be 2025 Brussels 🇬🇧 - QJazz - QGIS Server ready for the cloud](https://docs.3liz.org/presentations/2025-09-25-qjazz-foss4g-be.html)
 * Py-QGIS-Server2 🇬🇧 - QGIS Server ready for the cloud
   | [YouTube](https://www.youtube.com/watch?v=MtjxRIll4zs)
+  | [PDF](https://docs.3liz.org/presentations/docs/pdf/2024-09-QGIS-UC-Bratislava-Py-Qgis-Server2.pdf)
 * [FOSS4G 2022 Firenze 🇬🇧 - QGIS Server into the wild](https://docs.3liz.org/presentations/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/2022-08_Foss4G_2022_Firenze_QGIS_Server_into_the_wild.pdf)
   | [YouTube](https://www.youtube.com/watch?v=bPru5zOvj54)
@@ -81,6 +86,14 @@ hide:
 
 [QGISFR 2024 🇫🇷 - QFieldCloud auto-hébergé](https://docs.3liz.org/presentations/2024-03-28_QGISFR_retour_experience_qfieldcloud_heberge.html)
   | [PDF](https://docs.3liz.org/presentations/pdf/2024-03-28_QGISFR_retour_experience_qfieldcloud_heberge.pdf)
+
+
+## YAPT - Yet Another Plugin Tool
+
+* [QGIS UC 2026 Laax 🇬🇧 - YAPT - Yet Another Plugin Tool](https://docs.3liz.org/presentations/2026-10-05-yapt-qgis-uc.html)
+  | [PDF](https://docs.3liz.org/presentations/pdf/2026-10-05-yapt-qgis-uc.pdf)
+
+
 ## Dynamic layers
 
 * [QGIS UC 2025 Norrköping 🇬🇧](https://docs.3liz.org/presentations/2025-06-QGIS-UC-Norrkoping-Dynamic-Layers.html)
