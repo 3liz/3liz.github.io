@@ -23,6 +23,8 @@ You need to follow the tutorial how to add a [custom repository](./tutorial/qgis
 * [QuickOSM](../QuickOSM/)
 * [PgMetadata](../qgis-pgmetadata-plugin/)
 * [RAEPA](../qgis-raepa-plugin/)
+* [RoadNetwork](../qgis-road-network-plugin/)
+* [StarEau](../qgis-stareau-plugin/)
 * [Véloroutes et voies vertes](../qgis-veloroutes_voies_vertes-plugin/)
 
 ## Server
